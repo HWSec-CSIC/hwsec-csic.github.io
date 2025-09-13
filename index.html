@@ -38,7 +38,7 @@
 
     /* Team */
     .team-member { text-align: center; }
-    .team-member img { width: 100px; height: 100px; border-radius: 50%; background: #ddd; margin-bottom: 10px; }
+    .team-member img { width: 20%; height: auto; background: #ddd; margin-bottom: 10px; }
 
     /* Footer */
     footer { background: #222; color: #fff; text-align: center; padding: 20px; }
@@ -53,7 +53,7 @@
         <li><a href="#research">Research</a></li>
         <li><a href="#people">People</a></li>
         <li><a href="#publications">Publications</a></li>
-        <li><a href="#news">News</a></li>
+        <li><a href="#projects">Projects</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
     </div>
@@ -62,15 +62,13 @@
   <!-- Hero -->
   <section class="hero" style="padding: 0px">
     <h1>HWSec-CSIC: Trusted SoCs (Systems-on-Chip) based on CMOS and integrated photonics technologies</h1>
-    <p>Description</p>
   </section>
 
   <!-- About -->
   <section id="about">
     <h2>About Us</h2>
-    <img src="img/grupo.jpeg" alt="grupo" style="display:block; margin:20px auto; width:1024px; height:auto;">
-    <p>Our group focuses on cutting-edge research in computational science, data-driven modeling, and interdisciplinary applications. We aim to create impactful innovations through collaboration and exploration.</p>
-    
+    <h3>The security of modern computing infrastructures heavily relies on the hardware components but Computer-aided design (CAD) tools and frameworks required for their design and foundries for their fabrication rely on non-European companies. Recent geopolitical factors have brought into light the importance of technological sovereignty highlighting the necessity of new paradigms to provide advanced and competitive solutions. One example is the growing popularity of RISC-V microprocessors that provide an alternative versus other proprietary platforms.</h3>
+    <img src="img/grupo.jpeg" alt="grupo" style="display:block; margin:20px auto; width: 90%; height:auto;">
 </section>
 
   <!-- Research -->
@@ -78,16 +76,13 @@
     <h2>Research Areas</h2>
     <div class="grid">
       <div class="card">
-        <h3>AI & Machine Learning</h3>
-        <p>Exploring new algorithms and applications.</p>
+        <h3>Development of new architectures for trusted and tamper-resistant SoC based on RISC-V processors.</h3>
       </div>
       <div class="card">
-        <h3>Computational Biology</h3>
-        <p>Modeling biological systems and processes.</p>
+        <h3>Photonic devices for security applications</h3>
       </div>
       <div class="card">
-        <h3>Collaborative Systems</h3>
-        <p>Building tools for large-scale collaboration.</p>
+        <h3>Methodologies for die-to-dice communication using reliable open frameworks</h3>
       </div>
     </div>
   </section>
@@ -95,25 +90,62 @@
   <!-- People -->
   <section id="people">
     <h2>Our Team</h2>
+    <h3>Permanent Researchers</h3>
     <div class="grid">
       <div class="team-member">
-        <img src="img/brox.png">
+        <img src="img/team/Brox.png">
         <h2>Dr. Piedad Brox</h2>
         <h3>(Tenured Scientist)</h3>
       </div>
       <div class="team-member">
-        <img src="img/macarena.png">
-        <h3>Dr. Macarena C. Martínez-Rodríguez (Tenured Scientist)</h3>
+        <img src="img/team/Martinez.png">
+        <h2>Dr. Macarena C. Martínez-Rodríguez</h2>
+        <h3>(Tenured Scientist)</h3>
       </div>
     </div>
+    <h3>Post-Doctoral Researcher</h3>
     <div class="grid">
         <div class="team-member">
-          <img src="img/eros.png">
-          <h3>Dr. Eros Camacho-Ruiz (Postdoc Researcher)</h3>
+          <img src="img/team/Camacho.jpg">
+          <h3>Dr. Eros Camacho-Ruiz</h3>
         </div>
         <div class="team-member">
           <img src="img/david.png">
-          <h3>Dr. David Martín (Postdoc Researcher)</h3>
+          <h3>Dr. David Martín</h3>
+        </div>
+    </div>
+    <h3>PhD Students</h3>
+    <div class="grid">
+        <div class="team-member">
+          <img src="img/david.png">
+          <h3>Apurba Karmakar</h3>
+        </div>
+        <div class="team-member">
+          <img src="img/team/Camacho.jpg">
+          <h3>Pablo Navarro-Torrero</h3>
+        </div>
+        <div class="team-member">
+          <img src="img/team/Camacho.jpg">
+          <h3>Francisco Javier Rubio-Barbero</h3>
+        </div>
+        <div class="team-member">
+          <img src="img/team/Camacho.jpg">
+          <h3>Jorge</h3>
+        </div>
+        <div class="team-member">
+          <img src="img/team/Camacho.jpg">
+          <h3>Juan Manuel Moreno Cenizo</h3>
+        </div>
+    </div>
+    <h3>Technical Researcher</h3>
+    <div class="grid">
+        <div class="team-member">
+          <img src="img/david.png">
+          <h3>Pau</h3>
+        </div>
+        <div class="team-member">
+          <img src="img/david.png">
+          <h3>Ignacio</h3>
         </div>
     </div>
   </section>
@@ -121,19 +153,216 @@
   <!-- Publications -->
   <section id="publications">
     <h2>Publications</h2>
-    <ul>
-      <li>Smith, A. et al. (2023). Title of Research Paper. <em>Journal Name</em>.</li>
-      <li>Doe, J. et al. (2022). Another Publication. <em>Conference XYZ</em>.</li>
-    </ul>
+    <ol>
+      <li>A Side-Channel Protected and High-Performance Hardware Implementation for EdDSA25519, P. Navarro-Torrero, E. Camacho-Ruiz, M.C. Martínez-Rodríguez and P. Brox, Journal Paper IEEE Access Vol 13, IEEE ISSN: 2169-3536</li> 
+      <li>Sensitive broadband ultrasound sensor based on a low-loss high-Q fused-silica plano-concave microresonator, D. Martin-Sanchez, E. Z. Zhang, J. A. Guggenheim, P. C. Beard, 2025, Opt. Express, 33(19), 39875-39888</li>
+      <li>Hardware-Efficient Configurable Ring-Oscillator-Based Physical Unclonable Function/True Random Number Generator Module for Secure Key Management, S. Sánchez-Solano, L.F. Rojas-Muñoz, M.C. Martínez-Rodríguez and P. Brox, Journal Paper · Sensors, vol. 24, no. 17, article 5674, 2024, MDPI    ISSN: 1424-8220</li>
+      <li>Laser frequency noise characterisation using high-finesse plano-concave optical microresonators, D. Martin-Sanchez, E. Z. Zhang, J. Paterson, J. A. Guggenheim, Z. Liu, P. C. Beard, 2024, Opt. Lett., 49(3)</li>
+      <li>Timing-Attack-Resistant Acceleration of NTRU Round 3 Encryption on Resource-Constrained Embedded Systems, E. Camacho-Ruiz, M.C. Martínez-Rodríguez, S. Sánchez-Solano and P. Brox, Journal Paper Cryptography, vol. 7, no.2, article 29, 2023, MDPI ISSN: 2410-387X</li>
+      <li>On-Line Evaluation and Monitoring of Security Features of an RO-Based PUF/TRNG for IoT Devices, L.F. Rojas-Muñoz, S. Sánchez-Solano, M.C. Martínez-Rodríguez and P. Brox, Journal Paper · Sensors, vol. 23, no. 8, article 4070, 2023, MDPI    ISSN: 1424-8220</li>
+      <li>An ABCD transfer matrix model of Gaussian beam propagation in plano-concave optical microresonators, D. Martin-Sanchez, J. Li, E. Z. Zhang, P. C. Beard, J. A. Guggenheim, 2023, Opt. Express, 31(10), 16523-16534</li>
+      <li>True Random Number Generation Capability of a Ring Oscillator PUF for Reconfigurable Devices, L.F. Rojas-Muñoz, S. Sánchez-Solano, M.C. Martínez-Rodríguez and P. Brox, Journal Paper · Electronics, vol. 11, no. 23, article 4028, 2022, MDPI    ISSN: 2079-9292</li>
+      <li>Timing-Optimized Hardware Implementation to Accelerate Polynomial Multiplication in the NTRU Algorithm, E. Camacho-Ruiz, S. Sánchez-Solano, P. Brox and M.C. Martínez-Rodríguez, Journal Paper · ACM Journal on Emerging Technologies in Computing Systems, vol. 17, no. 3, article 35, 2021, ACM ISSN: 1550-4832</li>
+      <li>Simultaneous Refractive Index Sensing Using an Array of Suspended Porous Silicon Membranes, David Martin-Sánchez, Todora Angelova, Jaime Garcia-Ruperez, Journal Paper · IEEE Sensors Journal, vol 20, no. 15, 2020</li>
+    </ol>
   </section>
 
-  <!-- News -->
-  <section id="news">
-    <h2>News & Updates</h2>
-    <ul>
-      <li>🚀 We received a new grant for AI research (2025).</li>
-      <li>🎉 Congratulations to Jane for winning the best paper award!</li>
-    </ul>
+  <!-- Projects -->
+  <section id="projects">
+    <h2>Projects</h2>
+    <details>
+      <summary 
+      style="font-size: 1.3em;     /* same as h3 */
+      font-weight: bold;
+      margin: 8px 0;">
+      Q-FENCE: Securing Tomorrow’s Digital Infrastructure with Quantum-Resistant Cryptography
+      </summary>
+      <table border="0" cellspacing="0" cellpadding="8">
+        <tr>
+          <td><b>PI</b></td>
+          <td>Piedad Brox Jiménez</td>
+        </tr>
+        <tr>
+          <td><b>Participant Institutions</b></td>
+          <td>South East Technological University (Ireland), Agencia Estatal Consejo Superior de Investigaciones Científicas (CSIC), Politecnico Di Torino (Italy), Universite Du Luxembourg (Luxemburg), University College Cork (Ireland), Universitatea Din Bucuresti (Romania), Fraunhofer Gesellschaft Zur Forderung Der Angewandten Forschung EV (Germany), Instytut Informatyki Teoretycznej Istosowanej Polskiej Akademii Nauk (Poland) , Logiicdev GmbH (Austria), Toshiba Europe Limited (United Kingdom), Red Hat Limited (Ireland), Martel GmbH (Czech Republic),  Telespazio SPA (Italy), IoT Lab Association (Czech Republic), Mandat International alias Fondation pour la Coopération Internationale (Czech Republic).</td>
+        </tr>
+        <tr>
+          <td><b>Funding Agency</b></td>
+          <td>European Commission (Horizon Europe)</td>
+        </tr>
+        <tr>
+          <td><b>Call</b></td>
+          <td>HORIZON-CL3-2024-CS-01</td>
+        </tr>
+        <tr>
+          <td><b>GA</b></td>
+          <td>101225708</td>
+        </tr>
+        <tr>
+          <td><b>IMSE Budget</b></td>
+          <td>517.500€</td>
+        </tr>
+        <tr>
+          <td><b>Total Budget</b></td>
+          <td>5.312.198,75€</td>
+        </tr>
+        <tr>
+          <td><b>Project duration</b></td>
+          <td>1 Nov 2025 – 31 Oct 2028</td>
+        </tr>
+        <tr>
+          <td><b>Abstract</b></td>
+          <td>Q-FENCE is a transformative initiative aimed at securing tomorrow’s digital infrastructure with quantum-resistant cryptography. In response to the rising threats posed by quantum computing, Q-FENCE develops a robust hybrid framework integrating classical, quantum, and post-quantum cryptographic techniques. Utilizing innovative approaches such as Ring-LWE, Module-LWE, Quantum Random Number Generators, and hardware-accelerated primitives, the project establishes a dual-layer security model that fortifies data protection across diverse infrastructures. Leveraging hardware-accelerated primitives and energy-efficient protocols, Q-FENCE ensures quantum resilience while addressing critical challenges such as seamless integration with legacy systems, regulatory compliance, and scalable deployment. By addressing key challenges like legacy system integration, interoperability, and regulatory compliance, it ensures a phased and seamless adoption across sectors including finance, healthcare, IoT, satellite and digital networks. Through sector specific demonstrators, best-practice guidelines, and collaboration with EU policymakers, Q-FENCE bridges the gap between theoretical advancements and real-world applications, fostering digital sovereignty and resilience. Positioned as a critical player in the quantum-ready future, Q-FENCE not only safeguards sensitive data but also empowers stakeholders with practical, scalable, and innovative post-quantum solutions.</td>
+        </tr>
+      </table>
+      <img src="img/europe.png" style="width:20%; height:auto">
+    </details>
+
+    <details>
+      <summary 
+      style="font-size: 1.3em;     /* same as h3 */
+      font-weight: bold;
+      margin: 8px 0;">
+      DECIDE: Democratizing European Chip Innovation and Design Ecosystem
+      </summary>
+      <table border="0" cellspacing="0" cellpadding="8">
+        <tr>
+          <td><b>PI</b></td>
+          <td>Macarena C. Martínez Rodríguez</td>
+        </tr>
+        <tr>
+          <td><b>Participant Institutions</b></td>
+          <td>IMEC (Belgium), French Alternative Energies and Atomic Energy Commission (CEA, France), Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e. V. (Germany), Leibniz Institute for High Performance Microelectronics (IHP, Germany), Silicon Austria Labs (Austria), Fondazione Chips-IT (Italy), Spanish National Research Council (CSIC, Spain), International Iberian Nanotechnology Laboratory (Portugal), Eindhoven University of Technology (The Netherlands), Tampere University (Finland), CVUT (Czech Republic) and AGH University of Krakow (Poland).</td>
+        </tr>
+        <tr>
+          <td><b>Funding Agency</b></td>
+          <td>European Commission (Chips Joint Undertaking (Chips JU) programme)</td>
+        </tr>
+        <tr>
+          <td><b>Call</b></td>
+          <td>DIGITAL-Chips-2024-CSA-CDP-1</td>
+        </tr>
+        <tr>
+          <td><b>GA</b></td>
+          <td>101218811</td>
+        </tr>
+        <tr>
+          <td><b>IMSE Budget</b></td>
+          <td>840.327€</td>
+        </tr>
+        <tr>
+          <td><b>Total Budget</b></td>
+          <td>24.980.603,06€</td>
+        </tr>
+        <tr>
+          <td><b>Project duration</b></td>
+          <td>1 Jan 2025 – 31 Dec 2028</td>
+        </tr>
+        <tr>
+          <td><b>Abstract</b></td>
+          <td>The DECIDE project aims to create a virtual design platform to democratize access to advanced semiconductor technologies across Europe. This platform will support the innovation and competitiveness of European startups, SMEs, and research institutions. By integrating Design Enablement Teams (DETs), the platform will offer customized support, access to Electronic Design Automation (EDA) tools, intellectual property (IP), and pilot line technologies, helping Europe to deploy next-generation semiconductor technologies rapidly. DECIDE addresses the decline in Europe's global semiconductor market share, particularly in the fabless sector. The project aims to reverse this trend by expanding the number of European fabless companies. The unified platform will lower barriers to entry for SMEs and startups by reducing the costs associated with EDA tools and IP, enabling these companies to innovate and grow. DECIDE will provide early access to advanced technologies, fostering Europe's leadership in the global semiconductor space. In addition to economic growth, DECIDE contributes to environmental sustainability by promoting the design of energy-efficient chips, aligning with the European Green Deal. It will support the development of eco-friendly technologies while also addressing Europe's reliance on non-European technologies. By building a robust semiconductor design ecosystem, DECIDE ensures that Europe can compete globally and retain technological sovereignty. The project's core objectives include supporting startups and SMEs, democratizing access to EDA tools, and fostering a sustainable semiconductor ecosystem. By offering access to advanced technologies, training, and a marketplace for IP, DECIDE will boost innovation and strengthen Europe's semiconductor industry. The platform will also help reduce financial and technical barriers, allowing more companies to develop and bring new technologies to market, ultimately contributing to Europe's digital and environmental goal.</td>
+        </tr>
+      </table>
+      <img src="img/europe.png" style="width:20%; height:auto">
+    </details>
+
+    <details>
+      <summary 
+      style="font-size: 1.3em;     /* same as h3 */
+      font-weight: bold;
+      margin: 8px 0;">
+      QUBIP: Quantum-oriented Update to Browsers and Infrastructures for the PQ Transition
+      </summary>
+      <table border="0" cellspacing="0" cellpadding="8">
+        <tr>
+          <td><b>PI</b></td>
+          <td>Piedad Brox Jiménez</td>
+        </tr>
+        <tr>
+          <td><b>Participant Institutions</b></td>
+          <td>LINKS Foundation (Italy), Agencia Estatal de Investigaciones Científicas (CSIC, Spain), Tampere University (Finland), Telefónica I+D (Spain), Politecnico di Torino (POLITO, Italy), Telsy (Italy), Security Pattern (Italy), Universidad Politécnica de Madrid (Spain), RED HAT Limited (Czech Republic), Smart Factory (Italy), Fundación Cibervoluntarios (Spain).</td>
+        </tr>
+        <tr>
+          <td><b>Funding Agency</b></td>
+          <td>European Commission (Horizon Europe)</td>
+        </tr>
+        <tr>
+          <td><b>Call</b></td>
+          <td>HORIZON-CL3-2022-CS-01-03</td>
+        </tr>
+        <tr>
+          <td><b>GA</b></td>
+          <td>251944</td>
+        </tr>
+        <tr>
+          <td><b>IMSE Budget</b></td>
+          <td>303.720€</td>
+        </tr>
+        <tr>
+          <td><b>Total Budget</b></td>
+          <td>4.999.648€</td>
+        </tr>
+        <tr>
+          <td><b>Project duration</b></td>
+          <td>1 Sep 2023 – 31 Aug 2026</td>
+        </tr>
+        <tr>
+          <td><b>Abstract</b></td>
+          <td>The exciting frontiers opened by the development of quantum computers (QC) come at the cost of breaking the foundations of current digital security. The research community is working to the definition of post-quantum cryptography (PQC) to counteract this threat. However, the transition to PQC is delicate and takes time because it impacts many functions, algorithms, and protocols in apriori unknown cascade of dependencies. QUBIP is conceived to contribute to the EU transition to PQC with the goal of simplifying and making replicable the process by means of recommended practices and counteract post-quantum threats as soon as possible. QUBIP focuses on digital infrastructure addressing the 5 main building blocks that use public-key cryptography for security purposes: hardware, cryptographic libraries, operating system, communication protocols and applications. QUBIP address all 5 blocks coherently solving all dependency issues that may arise inside each block and among blocks with the final aim to validate at TRL6 three infrastructures making use of those blocks in IoT-based Digital Manufacturing, Internet Browsing, and Software Networks Environments for Telcos use cases. The return-of-experience from the three practical exercises is then maximized by developing a migration playbook, that will contain the lessons learned and an evaluation of all the technical, economic, and legal barriers encountered together with the solutions to overcome them to enable the definition of a replicable process, suitable to provide structured accompanying and practical guidance to industrial stakeholders. The technical activities are corroborated by three supporting activities (i) evaluation of the capabilities of QCs to assess their implication to primitives, algorithms and protocols adopted, and contribution to (ii) standardization efforts addressing transition to PQC processes and (iii) policy measures addressing technology changes coming from the advent of QC and PQC.</td>
+        </tr>
+      </table>
+      <img src="img/europe.png" style="width:20%; height:auto">
+    </details>
+
+     <details>
+      <summary 
+      style="font-size: 1.3em;     /* same as h3 */
+      font-weight: bold;
+      margin: 8px 0;">
+      SQPRIM: Secure post-quantum cryptographic primitives 
+      </summary>
+      <table border="0" cellspacing="0" cellpadding="8">
+        <tr>
+          <td><b>PI</b></td>
+          <td>Piedad Brox Jiménez</td>
+        </tr>
+        <tr>
+          <td><b>Participant Institutions</b></td>
+          <td>Instituto de Microelectrónica de Sevilla, Agencia Estatal Investigaciones Científicas (CSIC, Spain)</td>
+        </tr>
+        <tr>
+          <td><b>Funding Agency</b></td>
+          <td>European Commission (Horizon Europe)</td>
+        </tr>
+        <tr>
+          <td><b>Call</b></td>
+          <td>HORIZON-CL3-2022-CS-01-03</td>
+        </tr>
+        <tr>
+          <td><b>GA</b></td>
+          <td>251944</td>
+        </tr>
+        <tr>
+          <td><b>IMSE Budget</b></td>
+          <td>303.720€</td>
+        </tr>
+        <tr>
+          <td><b>Total Budget</b></td>
+          <td>4.999.648€</td>
+        </tr>
+        <tr>
+          <td><b>Project duration</b></td>
+          <td>1 Sep 2023 – 31 Aug 2026</td>
+        </tr>
+        <tr>
+          <td><b>Abstract</b></td>
+          <td>The exciting frontiers opened by the development of quantum computers (QC) come at the cost of breaking the foundations of current digital security. The research community is working to the definition of post-quantum cryptography (PQC) to counteract this threat. However, the transition to PQC is delicate and takes time because it impacts many functions, algorithms, and protocols in apriori unknown cascade of dependencies. QUBIP is conceived to contribute to the EU transition to PQC with the goal of simplifying and making replicable the process by means of recommended practices and counteract post-quantum threats as soon as possible. QUBIP focuses on digital infrastructure addressing the 5 main building blocks that use public-key cryptography for security purposes: hardware, cryptographic libraries, operating system, communication protocols and applications. QUBIP address all 5 blocks coherently solving all dependency issues that may arise inside each block and among blocks with the final aim to validate at TRL6 three infrastructures making use of those blocks in IoT-based Digital Manufacturing, Internet Browsing, and Software Networks Environments for Telcos use cases. The return-of-experience from the three practical exercises is then maximized by developing a migration playbook, that will contain the lessons learned and an evaluation of all the technical, economic, and legal barriers encountered together with the solutions to overcome them to enable the definition of a replicable process, suitable to provide structured accompanying and practical guidance to industrial stakeholders. The technical activities are corroborated by three supporting activities (i) evaluation of the capabilities of QCs to assess their implication to primitives, algorithms and protocols adopted, and contribution to (ii) standardization efforts addressing transition to PQC processes and (iii) policy measures addressing technology changes coming from the advent of QC and PQC.</td>
+        </tr>
+      </table>
+      <img src="img/europe.png" style="width:20%; height:auto">
+    </details>
+
+    
   </section>
 
   <!-- Contact -->
@@ -144,7 +373,7 @@
 
   <!-- Footer -->
   <footer>
-    <p>© 2025 Research Group. All rights reserved.</p>
+    <p>© 2025 HWSec-CSIC. All rights reserved.</p>
   </footer>
 </body>
 </html>
