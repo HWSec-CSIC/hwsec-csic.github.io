@@ -20,7 +20,7 @@
     /* Hero */
     /* .hero { height: 100vh; background: linear-gradient(to right, #e6f0ff, #cce0ff); display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px; }
    */
-    .hero { height: 40vh; 
+    .hero { width: 70%; 
         background-image: url("img/bg.png");
         background-repeat: no-repeat;
         background-size: cover;                /* make image cover the area */
@@ -42,13 +42,62 @@
 
     /* Footer */
     footer { background: #222; color: #fff; text-align: center; padding: 20px; }
+
+    /* Hamburger hidden on desktop */
+    .menu-toggle {
+      display: none;
+      background: none;
+      border: none;
+      font-size: 1.5rem;
+      cursor: pointer;
+    }
+
+    /* 📱 Mobile styles */
+    @media (max-width: 1100px) {
+      .menu-toggle {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;          /* hidden by default */
+        flex-direction: column;
+        gap: 12px;
+        position: absolute;
+        top: 60px;              /* just below navbar */
+        right: 16px;
+        background: #fff;
+        padding: 12px;
+        border: 1px solid #ddd;
+        border-radius: 6px;
+      }
+
+      .nav-links.show {
+        display: flex;          /* toggled on */
+      }
+      }
   </style>
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function() {
+      const toggleBtn = document.querySelector('.menu-toggle');
+      const navLinks = document.querySelector('.nav-links');
+
+      toggleBtn.addEventListener('click', () => {
+        navLinks.classList.toggle('show');
+      });
+    });
+  </script>
+
 </head>
 <body>
   <!-- Navbar -->
   <nav>
     <div class="container">
-    <img src="img/logo.jpeg" alt="logo" width="80px"><h1>HWSec-CSIC</h1><ul>
+    <img src="img/logo.jpeg" alt="logo" width="80px"><h1>HWSec-CSIC</h1>
+    <button class="menu-toggle" aria-label="Toggle menu">
+      ☰
+    </button>
+    <ul class="nav-links">
         <li><a href="#about">About</a></li>
         <li><a href="#research">Research</a></li>
         <li><a href="#people">People</a></li>
