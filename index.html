@@ -30,15 +30,15 @@
     .hero p { font-size: 1.2rem; max-width: 600px; color:#fff}
 
     /* Sections */
-    section { padding: 80px 20px; max-width: 1100px; margin: auto; }
+    section { padding: 80px 20px; width: 70%; margin: auto; }
 
     /* Cards */
     .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; }
-    .card { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); text-align: center; }
+    .card { background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); align-items: center; text-align: center;}
 
     /* Team */
     .team-member { text-align: center; }
-    .team-member img { width: 20%; height: auto; background: #ddd; margin-bottom: 10px; }
+    .team-member img { width: auto; height: 200px; background: #ddd; margin-bottom: 10px; }
 
     /* Footer */
     footer { background: #222; color: #fff; text-align: center; padding: 20px; }
@@ -66,20 +66,20 @@
 
   <!-- About -->
   <section id="about">
-    <h2>About Us</h2>
+    <h1>About Us</h1>
     <h3>The security of modern computing infrastructures heavily relies on the hardware components but Computer-aided design (CAD) tools and frameworks required for their design and foundries for their fabrication rely on non-European companies. Recent geopolitical factors have brought into light the importance of technological sovereignty highlighting the necessity of new paradigms to provide advanced and competitive solutions. One example is the growing popularity of RISC-V microprocessors that provide an alternative versus other proprietary platforms.</h3>
     <img src="img/grupo.jpeg" alt="grupo" style="display:block; margin:20px auto; width: 90%; height:auto;">
 </section>
 
   <!-- Research -->
   <section id="research">
-    <h2>Research Areas</h2>
+    <h1>Research Areas</h1>
     <div class="grid">
       <div class="card">
-        <h3>Development of new architectures for trusted and tamper-resistant SoC based on RISC-V processors.</h3>
+        <h3 style="vertical-align: middle">Development of new architectures for trusted and tamper-resistant SoC based on RISC-V processors.</h3>
       </div>
       <div class="card">
-        <h3>Photonic devices for security applications</h3>
+        <h3 style="margin: auto">Photonic devices for security applications</h3>
       </div>
       <div class="card">
         <h3>Methodologies for die-to-dice communication using reliable open frameworks</h3>
@@ -89,12 +89,12 @@
 
   <!-- People -->
   <section id="people">
-    <h2>Our Team</h2>
-    <h3>Permanent Researchers</h3>
+    <h1>Our Team</h1>
+    <h2>Permanent Researchers</h2>
     <div class="grid">
       <div class="team-member">
         <img src="img/team/Brox.png">
-        <h2>Dr. Piedad Brox</h2>
+        <h2>Dr. Piedad Brox Jiménez</h2>
         <h3>(Tenured Scientist)</h3>
       </div>
       <div class="team-member">
@@ -103,56 +103,56 @@
         <h3>(Tenured Scientist)</h3>
       </div>
     </div>
-    <h3>Post-Doctoral Researcher</h3>
+    <h2>Post-Doctoral Researcher</h2>
     <div class="grid">
         <div class="team-member">
           <img src="img/team/Camacho.jpg">
-          <h3>Dr. Eros Camacho-Ruiz</h3>
+          <h2>Dr. Eros Camacho-Ruiz</h2>
         </div>
         <div class="team-member">
-          <img src="img/david.png">
-          <h3>Dr. David Martín</h3>
+          <img src="img/team/david.png">
+          <h2>Dr. David Martín Sánchez</h2>
         </div>
     </div>
-    <h3>PhD Students</h3>
+    <h2>PhD Students</h2>
     <div class="grid">
         <div class="team-member">
-          <img src="img/david.png">
+          <img src="img/team/karmakar.jpeg">
           <h3>Apurba Karmakar</h3>
         </div>
         <div class="team-member">
-          <img src="img/team/Camacho.jpg">
+          <img src="img/team/Navarro.jpg">
           <h3>Pablo Navarro-Torrero</h3>
         </div>
         <div class="team-member">
-          <img src="img/team/Camacho.jpg">
+          <img src="img/team/rubio.jpeg">
           <h3>Francisco Javier Rubio-Barbero</h3>
         </div>
         <div class="team-member">
-          <img src="img/team/Camacho.jpg">
-          <h3>Jorge</h3>
+          <img src="img/team/ciudadreal.jpeg">
+          <h3>Jorge Ciudad Real Lacuesta</h3>
         </div>
         <div class="team-member">
-          <img src="img/team/Camacho.jpg">
+          <img src="img/team/moreno.jpeg">
           <h3>Juan Manuel Moreno Cenizo</h3>
         </div>
     </div>
-    <h3>Technical Researcher</h3>
+    <h2>Technical Researcher</h2>
     <div class="grid">
         <div class="team-member">
-          <img src="img/david.png">
-          <h3>Pau</h3>
+          <img src="img/team/ortega.jpeg">
+          <h3>Pau Ortega Castro</h3>
         </div>
         <div class="team-member">
-          <img src="img/david.png">
-          <h3>Ignacio</h3>
+          <img src="img/team/ignacio.jpeg">
+          <h3>Ignacio Martínez Fernández</h3>
         </div>
     </div>
   </section>
 
   <!-- Publications -->
   <section id="publications">
-    <h2>Publications</h2>
+    <h1>Publications</h1>
     <ol>
       <li>A Side-Channel Protected and High-Performance Hardware Implementation for EdDSA25519, P. Navarro-Torrero, E. Camacho-Ruiz, M.C. Martínez-Rodríguez and P. Brox, Journal Paper IEEE Access Vol 13, IEEE ISSN: 2169-3536</li> 
       <li>Sensitive broadband ultrasound sensor based on a low-loss high-Q fused-silica plano-concave microresonator, D. Martin-Sanchez, E. Z. Zhang, J. A. Guggenheim, P. C. Beard, 2025, Opt. Express, 33(19), 39875-39888</li>
@@ -169,10 +169,11 @@
 
   <!-- Projects -->
   <section id="projects">
-    <h2>Projects</h2>
+    <h1>Projects</h1>
+    <h2>European Projects</h2>
     <details>
       <summary 
-      style="font-size: 1.3em;     /* same as h3 */
+      style="font-size: 1.2em;     /* same as h3 */
       font-weight: bold;
       margin: 8px 0;">
       Q-FENCE: Securing Tomorrow’s Digital Infrastructure with Quantum-Resistant Cryptography
@@ -220,7 +221,7 @@
 
     <details>
       <summary 
-      style="font-size: 1.3em;     /* same as h3 */
+      style="font-size: 1.2em;     /* same as h3 */
       font-weight: bold;
       margin: 8px 0;">
       DECIDE: Democratizing European Chip Innovation and Design Ecosystem
@@ -268,7 +269,7 @@
 
     <details>
       <summary 
-      style="font-size: 1.3em;     /* same as h3 */
+      style="font-size: 1.2em;     /* same as h3 */
       font-weight: bold;
       margin: 8px 0;">
       QUBIP: Quantum-oriented Update to Browsers and Infrastructures for the PQ Transition
@@ -314,9 +315,9 @@
       <img src="img/europe.png" style="width:20%; height:auto">
     </details>
 
-     <details>
+    <details>
       <summary 
-      style="font-size: 1.3em;     /* same as h3 */
+      style="font-size: 1.2em;     /* same as h3 */
       font-weight: bold;
       margin: 8px 0;">
       SQPRIM: Secure post-quantum cryptographic primitives 
@@ -332,34 +333,188 @@
         </tr>
         <tr>
           <td><b>Funding Agency</b></td>
+          <td>MARIE SKLODOWSKA CURIE – Horizon Europe</td>
+        </tr>
+        <tr>
+          <td><b>GA</b></td>
+          <td>253397</td>
+        </tr>
+        <tr>
+          <td><b>IMSE Budget</b></td>
+          <td>167.236,25 €</td>
+        </tr>
+        <tr>
+          <td><b>Project duration</b></td>
+          <td>1 Jul 2023 – 31 Aug 2025</td>
+        </tr>
+        <tr>
+          <td><b>Abstract</b></td>
+          <td>Quantum computers pose a huge threat to cybersecurity, with the potential of solving complex problems in just a fraction of the time it takes to the most powerful supercomputers today. With conventional public key infrastructure (PKI) cryptography at risk, we face the task of securing our digital systems with the development of new cryptographic primitives for the post-quantum era. Inspired by nature, this project aims to developing the biometric equivalents of fingerprints and DNA for the digital world that will univocally and individually identify hardware. For this goal, Physically Unclonable Functions (PUFs) will be developed to provide hardware-based digital identifiers that will be utilised to build lightweight encryption and robust authentication procedures. But creating such unique structures is challenging in a fast-growing digital environment with increasing demand for new interconnected devices, such as the Internet of Things (IoT). To achieve this goal, we will combine light and sound. We will use ultrasound (US) waves to control the travel path of a light beam transmitted through a scattering medium to generate unique patterns. This novel method can potentially generate a high number of unique patterns while reducing the cost and complexity compared to current systems exploiting optical PUFs. The proposed device is expected to be unconditionally unclonable and, therefore, safe in the post-quantum era. This project will also explore the integration of the proposed novel PUFs with CMOS-based cryptographic primitives to create IDentity of Things (IDoT). The proposed solution is expected to be of relevance in a wide spectrum of application domains such as financial systems, medical services, energy industry, governments, and citizens.</td>
+        </tr>
+      </table>
+      <img src="img/europe.png" style="width:20%; height:auto">
+    </details>
+
+    <details>
+      <summary 
+      style="font-size: 1.2em;     /* same as h3 */
+      font-weight: bold;
+      margin: 8px 0;">
+      GoIT: Open-source hardware: a step towards Europe’s digital Independence 
+      </summary>
+      <table border="0" cellspacing="0" cellpadding="8">
+        <tr>
+          <td><b>PI</b></td>
+          <td>Piedad Brox Jiménez</td>
+        </tr>
+        <tr>
+          <td><b>Participant Institutions</b></td>
+          <td>Elektronikas un Datorzinatnu Instituts (LV), Instituto de Tecnologías Físicas y de la Información “Leonardo Torres Quevedo” (ITEFI) -CSIC, Sorbonne Université (FR), Centre National de la Recherche Scientifique(CNRS)(FR), Free Silicon Foundation (IT), Fibraservi BVBA (BE)</td>
+        </tr>
+        <tr>
+          <td><b>Funding Agency</b></td>
           <td>European Commission (Horizon Europe)</td>
         </tr>
         <tr>
           <td><b>Call</b></td>
-          <td>HORIZON-CL3-2022-CS-01-03</td>
+          <td>HORIZON-CL4-2021-DIGITAL-EMERGING-01</td>
         </tr>
         <tr>
           <td><b>GA</b></td>
-          <td>251944</td>
+          <td>240413</td>
         </tr>
         <tr>
           <td><b>IMSE Budget</b></td>
-          <td>303.720€</td>
+          <td>167.236,25 €</td>
         </tr>
         <tr>
           <td><b>Total Budget</b></td>
-          <td>4.999.648€</td>
+          <td>-</td>
         </tr>
         <tr>
           <td><b>Project duration</b></td>
-          <td>1 Sep 2023 – 31 Aug 2026</td>
+          <td>1 Sep 2022 – 28 Feb 2025</td>
         </tr>
         <tr>
           <td><b>Abstract</b></td>
-          <td>The exciting frontiers opened by the development of quantum computers (QC) come at the cost of breaking the foundations of current digital security. The research community is working to the definition of post-quantum cryptography (PQC) to counteract this threat. However, the transition to PQC is delicate and takes time because it impacts many functions, algorithms, and protocols in apriori unknown cascade of dependencies. QUBIP is conceived to contribute to the EU transition to PQC with the goal of simplifying and making replicable the process by means of recommended practices and counteract post-quantum threats as soon as possible. QUBIP focuses on digital infrastructure addressing the 5 main building blocks that use public-key cryptography for security purposes: hardware, cryptographic libraries, operating system, communication protocols and applications. QUBIP address all 5 blocks coherently solving all dependency issues that may arise inside each block and among blocks with the final aim to validate at TRL6 three infrastructures making use of those blocks in IoT-based Digital Manufacturing, Internet Browsing, and Software Networks Environments for Telcos use cases. The return-of-experience from the three practical exercises is then maximized by developing a migration playbook, that will contain the lessons learned and an evaluation of all the technical, economic, and legal barriers encountered together with the solutions to overcome them to enable the definition of a replicable process, suitable to provide structured accompanying and practical guidance to industrial stakeholders. The technical activities are corroborated by three supporting activities (i) evaluation of the capabilities of QCs to assess their implication to primitives, algorithms and protocols adopted, and contribution to (ii) standardization efforts addressing transition to PQC processes and (iii) policy measures addressing technology changes coming from the advent of QC and PQC.</td>
+          <td>Europe's IT hardware development is constantly challenged by outrageously expensive development tools, legal constraints like NDAs or patents, lock-in threats, dependency from external vendors or supply chains and foreign political events. Europe's digital infrastructure (from consumer to critical appliances) is heavily relying on foreign closed-source chips which are literally black-boxes which may (and have been proven to) contain malicious features. This situation makes the hardware development expensive and inefficient, and undermines the very principle of sovereignty, resilience and re-usability. Open-source silicon chips, which are open in their entirety, i.e. down to the physical layout, carry the potential of catapulting Europe into a renaissance of digital technology. Several challenges are on the way, many of which will require the participation of the stakeholders (from the fertile ground made of 'nerdy' hobbyists and makers who are the early protagonists of the scene, all the way up to large enterprises), as well as the participation of policymakers and regulatory bodies. The road ahead is steep, but rich of rewards. Therefore we loudly say: Go IT!.</td>
         </tr>
       </table>
       <img src="img/europe.png" style="width:20%; height:auto">
+    </details>
+
+    <h2 style="margin-top: 50px;">National Projects</h2>
+    <details>
+      <summary 
+      style="font-size: 1.2em;     /* same as h3 */
+      font-weight: bold;
+      margin: 8px 0;">
+      CryptoPIC: Advanced security in Photonic Integrated Circuits
+      </summary>
+      <table border="0" cellspacing="0" cellpadding="8">
+        <tr>
+          <td><b>PI</b></td>
+          <td>David Martín Sánchez, Piedad Brox Jiménez </td>
+        </tr>
+        <tr>
+          <td><b>Participant Institutions</b></td>
+          <td>Instituto de Microelectrónica de Sevilla (IMSE-CNM, CSIC/Univ. Sevilla) and Instituto de Microelectrónica de Barcelona (IMB-CNM, CSIC)</td>
+        </tr>
+        <tr>
+          <td><b>Funding Agency</b></td>
+          <td>Agencia Estatal de Investigación – Proyectos de Generación Conocimiento 2024 AEI (coordinated Project)</td>
+        </tr>
+        <tr>
+          <td><b>IMSE Budget</b></td>
+          <td>114.850€</td>
+        </tr>
+        <tr>
+          <td><b>Project duration</b></td>
+          <td>1 Nov 2025 – 30 Oct 2028</td>
+        </tr>
+        <tr>
+          <td><b>Abstract</b></td>
+          <td>The clear advantages of living in the digital age have accelerated the infiltration of technology. But digital technology has also brought serious risks, such as exposure of sensitive information, unauthorised access to private networks, attacks on critical infrastructure, and theft of intellectual property. Cybersecurity has been developed to counteract these attacks and to protect people, information, and digital devices. But the quantum technology revolution is on its way. Quantum computers are expected to lead to a technological and social shift equal or greater than the digital age. This technology will be able to complete tasks in a fraction of the time that it takes current supercomputers. This poses a serious security threat, since these computers will be capable of cracking our current cryptographic systems within a reasonable timescale and cost, such as Public Key Infrastructure (PKI)-based system. Hence, cybersecurity must adapt fast to provide new solutions for this new era. Hardware cryptographic primitives are being developed to reinforce security, privacy, and reliability. One particular primitive is the physical unclonable function (PUF) which is responsible for generating the cryptographic keys that are used in the encryption and authentication protocols. These elements are essential to prevent the exposure of private data and the unauthorised access to networks and communications. To ensure the security of the cryptographic keys, PUFs are based on physical features intrinsic to each device in order to generate device-specific identifiers. Identifying individual devices is, however, challenging, especially when the manufacturing process of chips is designed for mass production. Traditionally, PUFs have exploited random manufacturing variations among electronic circuits. However, Machine Learning (ML) algorithms running in quantum computers will be able to emulate the manufacturing variabilities, enabling cloning. Research on stronger PUFs for the post-quantum era is still a nascent field. One of the most promising proposals are optical PUFs. These architectures offer unconditional physical unclonability and are expected to remain safe even in the post-quantum era. However, despite the higher security offered by them, weak electronic PUFs are still preferred. The reason rests on their compatibility with the CMOS process, which enables their integration and reduces the costs and the power consumption. The goal of this project is to conduct research focussed on providing new technology that remains safe in the post-quantum era, ensuring the integrity of digital services. To achieve that, we tackle the main challenge ahead for optical PUFs: realising their miniaturisation. To do it, we will develop robust cryptographic primitive that can be implemented in a photonic integrated circuit fabricated using standard CMOS. For that aim, we will first design a photonic circuit implementing the functionality of a strong PUF. Then, we will design a series of basic elements also required for developing a security system capable of generating cryptographic keys based on the PUFs digital signature, such as the XOR operation and basic permutations. Achieving these goals will allow us to realise strong PUFs compatible with electronic devices, especially in the context of IoT devices, which pose severe constraints on memory sizes and power consumption.</td>
+        </tr>
+      </table>
+      <img src="img/spain.png" style="width:20%; height:auto">
+    </details>
+
+    <details>
+      <summary 
+      style="font-size: 1.2em;     /* same as h3 */
+      font-weight: bold;
+      margin: 8px 0;">
+      ARES: Diseño, implementación y validación de raíces de confianza hardware resistentes a ataques para sistemas empotrados seguros
+      </summary>
+      <table border="0" cellspacing="0" cellpadding="8">
+        <tr>
+          <td><b>PI</b></td>
+          <td>Piedad Brox Jiménez, Carlos J. Jiménez Fernández </td>
+        </tr>
+        <tr>
+          <td><b>Participant Institutions</b></td>
+          <td>Instituto de Microelectrónica de Sevilla (IMSE-CNM, CSIC/Univ. Sevilla)</td>
+        </tr>
+        <tr>
+          <td><b>Funding Agency</b></td>
+          <td>Agencia Estatal de Investigación – Proyectos de Generación Conocimiento 2021 AEI </td>
+        </tr>
+        <tr>
+          <td><b>IMSE Budget</b></td>
+          <td>146.410€</td>
+        </tr>
+        <tr>
+          <td><b>Project duration</b></td>
+          <td>1 Sep 2021 – 31 Oct 2025</td>
+        </tr>
+        <tr>
+          <td><b>Abstract</b></td>
+          <td>The inclusion of secure elements in embedded devices is improving in current available commercial solutions. Some manufacturers offer solutions to protect their products against cybersecurity threats. However, the restricted hardware resources of certain devices (e.g. in the Internet-of-Things context) make unfeasible the adoption of some of these complex protection schemes such as Trusted Platform Modules. The design of a Root-of-Trust (RoT) using low-cost hardware modules is presented in this project as alternative. The RoT is conceived as cornerstone, thus deriving trust for the rest of components that compose the embedded system. The RoT will be designed to be a modular, configurable and adaptable structure, thus leveraging the resources to offer dedicated solutions for each particular application case.
+              The tendency of open source initiatives for embedded systems has been consolidated with the advent and rapid growth of the RISC-V Instruction Set Architecture (ISA) together with its comprehensive hardware and software ecosystems. However, the open nature of RISC-V ISA is a double edged-sword for security purposes. The flexibility of the instruction set allows the possibility of developing various cryptography-specific extensions or variants of the ISA with the aim of increasing the level of security.
+              But at the same time, the full-access to many ‘open-hardware’ implementations of the RISC-V ISA could expose them to more vulnerabilities compared to the proprietary world where this information is hidden and protected by strong Intellectual Property rights. Therefore, the development of solutions to foster the security of embedded systems based on this ISA is an open challenge for research community. This project will increase the security of embedded RISC-V systems by incorporating a RoT anchored in the device’s own hardware. This strategy will be also adapted to be used by cores with proprietary ISA, thus allowing to establish a performance comparison between both choices (open and non-open) for embedded systems.
+              The general objective of the ARES project is to provide hardware solutions to improve the security of embedded systems, designing a hardware RoT that includes cryptographic primitives for secure storage, processing and transmission of data. The building components of the RoT will be Physical Unclonable Functions (PUFs) to generate the identity of the electronic device and generate cryptographic keys as well as entropy sources, and cryptographic primitives for data encryption and decryption. All these elements will include measures to verify its correct behavior and countermeasures to prevent physical attacks. Implementations will be carried out in both FPGA and ASIC technology, using ARM and RISC-V processors, suitable to be used in Internet-of-Things (IoT) technology. For the sake of validation, the project will develop a demonstrator to leverage project advances in a sector as eHealth where security is crucial</td>
+        </tr>
+      </table>
+      <img src="img/spain.png" style="width:20%; height:auto">
+    </details>
+
+    
+    <h2 style="margin-top: 50px;">Agency Projects</h2>
+    <details>
+      <summary 
+      style="font-size: 1.2em;     /* same as h3 */
+      font-weight: bold;
+      margin: 8px 0;">
+      TECHNOQUANTUM: Hardware-based Technologies to Secure Digital Systems in the Quantum World
+      </summary>
+      <table border="0" cellspacing="0" cellpadding="8">
+        <tr>
+          <td><b>PI</b></td>
+          <td>Piedad Brox Jiménez </td>
+        </tr>
+        <tr>
+          <td><b>Participant Institutions</b></td>
+          <td>Instituto de Microelectrónica de Sevilla (Spain), Univ. Tampere (Finland), CEA-LIST (France), Eindhoven Univ. Of Technology (The Netherlands), LINKS Foundazione (Italy), Politecnico Di Torino (Italy)</td>
+        </tr>
+        <tr>
+          <td><b>Funding Agency</b></td>
+          <td>iLINK Program funded by CSIC (open public competition among CSIC researchers) </td>
+        </tr>
+        <tr>
+          <td><b>IMSE Budget</b></td>
+          <td>29.951€</td>
+        </tr>
+        <tr>
+          <td><b>Project duration</b></td>
+          <td>2025-2026</td>
+        </tr>
+        <tr>
+          <td><b>Abstract</b></td>
+          <td>The security of most digital infrastructures relies on public key cryptography (PKC), which enables secure communications between entities without sharing any pre-established secret. The robustness of current PKC techniques is based on the computation complexity of two mathematical problems: the factorization of large numbers and the computation of discrete logarithms, which cannot be solved by current computing systems in a reasonable amount of time. However, quantum computing will be able to solve these problems and hence make vulnerable any digital system based on PKC. Therefore, current cryptographic primitives need to be replaced by an upgraded quantum-resistant cryptography, known as Post-Quantum Cryptography (PQC). Providing such PQC requires a multidisciplinary approach combining the expertise of different research teams working in different areas. This proposal aims to establish a consortium able to identify solutions and potential limitations in the development of microelectronic and nanophotonic technologies for secure digital systems in the postquantum world. To achieve this goal, the TECHNOQUANTUM project will create an international network of expert research teams specialized in system and communications security, software and hardware engineering, and electronic and photonic design. Through a series of seminars, short stays, and meetings, the participants will exchange ideas and validate hypothesis, consolidating already-established collaborations and creating new ones. This will result in a strategic plan to design research projects together and participate in international competitive calls, with the aim of building resilient digitized cities, communities and services (in line with the Sustainable Development Goals, SDGs) to drive societal and economic growth.</td>
+        </tr>
+      </table>
+      <img src="img/csic.png" style="width:20%; height:auto">
     </details>
 
     
@@ -368,7 +523,8 @@
   <!-- Contact -->
   <section id="contact">
     <h2>Contact Us</h2>
-    <p>Email us at <a href="mailto:info@researchgroup.org">info@researchgroup.org</a></p>
+    <p>Email us at <a href="mailto:p.brox@csic.es">p.brox@csic.es</a></p>
+    <a href="https://www.imse-cnm.csic.es/"><img src="img/imse.png" style="width:50%; height:auto"></a>
   </section>
 
   <!-- Footer -->
