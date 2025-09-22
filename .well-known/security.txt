@@ -1,0 +1,4 @@
+Contact: mailto:p.brox@csic.es
+Policy: https://hwsec-csic.github.io/
+Preferred-Languages: en, es
+Canonical: https://hwsec-csic.github.io/.well-known/security.txt

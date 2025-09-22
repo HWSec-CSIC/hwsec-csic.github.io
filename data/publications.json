@@ -1,0 +1,99 @@
+[
+  {
+    "title": "A Side-Channel Protected and High-Performance Hardware Implementation for EdDSA25519",
+    "authors": ["P. Navarro-Torrero", "E. Camacho-Ruiz", "M.C. Martínez-Rodríguez", "P. Brox"],
+    "journal": "IEEE Access",
+    "volume": "13",
+    "year": 2025,
+    "doi": "10.1109/ACCESS.2025.3584696"
+  },
+  {
+    "title": "Sensitive Broadband Ultrasound Sensor Based on a Low-Loss High-Q Fused-Silica Plano-Concave Microresonator",
+    "authors": ["D. Martín-Sánchez", "E. Z. Zhang", "Z. Liu", "J. A. Guggenheim", "P. C. Beard"],
+    "journal": "Optics Express",
+    "volume": "33",
+    "issue": "19",
+    "pages": "39875–39888",
+    "year": 2025,
+    "doi": "10.1364/OE.572433"
+  },
+  {
+    "title": "Hardware-Efficient Configurable Ring-Oscillator-Based Physical Unclonable Function/True Random Number Generator Module for Secure Key Management",
+    "authors": ["S. Sánchez-Solano", "L.F. Rojas-Muñoz", "M.C. Martínez-Rodríguez", "P. Brox"],
+    "journal": "Sensors",
+    "volume": "24",
+    "issue": "17",
+    "article": "5674",
+    "year": 2024,
+    "doi": "10.3390/s24175674"
+  },
+  {
+    "title": "Laser Frequency Noise Characterisation Using High-Finesse Plano-Concave Optical Microresonators",
+    "authors": ["D. Martín-Sánchez", "E. Z. Zhang", "J. Paterson", "J. A. Guggenheim", "Z. Liu", "P. C. Beard"],
+    "journal": "Optics Letters",
+    "volume": "49",
+    "issue": "3",
+    "pages": "678–681",
+    "year": 2024,
+    "doi": "10.1364/OL.510516"
+  },
+  {
+    "title": "Timing-Attack-Resistant Acceleration of NTRU Round 3 Encryption on Resource-Constrained Embedded Systems",
+    "authors": ["E. Camacho-Ruiz", "M.C. Martínez-Rodríguez", "S. Sánchez-Solano", "P. Brox"],
+    "journal": "Cryptography",
+    "volume": "7",
+    "issue": "2",
+    "article": "29",
+    "year": 2023,
+    "doi": "10.3390/cryptography7020029"
+  },
+  {
+    "title": "On-Line Evaluation and Monitoring of Security Features of an RO-Based PUF/TRNG for IoT Devices",
+    "authors": ["L.F. Rojas-Muñoz", "S. Sánchez-Solano", "M.C. Martínez-Rodríguez", "P. Brox"],
+    "journal": "Sensors",
+    "volume": "23",
+    "issue": "8",
+    "article": "4070",
+    "year": 2023,
+    "doi": "10.3390/s23084070"
+  },
+  {
+    "title": "An ABCD Transfer Matrix Model of Gaussian Beam Propagation in Plano-Concave Optical Microresonators",
+    "authors": ["D. Martín-Sánchez", "J. Li", "E. Z. Zhang", "P. C. Beard", "J. A. Guggenheim"],
+    "journal": "Optics Express",
+    "volume": "31",
+    "issue": "10",
+    "pages": "16523–16534",
+    "year": 2023,
+    "doi": "10.1364/OE.484212"
+  },
+  {
+    "title": "True Random Number Generation Capability of a Ring Oscillator PUF for Reconfigurable Devices",
+    "authors": ["L.F. Rojas-Muñoz", "S. Sánchez-Solano", "M.C. Martínez-Rodríguez", "P. Brox"],
+    "journal": "Electronics",
+    "volume": "11",
+    "issue": "23",
+    "article": "4028",
+    "year": 2022,
+    "doi": "10.3390/electronics11234028"
+  },
+  {
+    "title": "Timing-Optimized Hardware Implementation to Accelerate Polynomial Multiplication in the NTRU Algorithm",
+    "authors": ["E. Camacho-Ruiz", "S. Sánchez-Solano", "P. Brox", "M.C. Martínez-Rodríguez"],
+    "journal": "ACM Journal on Emerging Technologies in Computing Systems",
+    "volume": "17",
+    "issue": "3",
+    "article": "35",
+    "year": 2021,
+    "doi": "10.1145/3445979"
+  },
+  {
+    "title": "Simultaneous Refractive Index Sensing Using an Array of Suspended Porous Silicon Membranes",
+    "authors": ["D. Martín-Sánchez", "T. Angelova", "J. Garcia-Ruperez"],
+    "journal": "IEEE Sensors Journal",
+    "volume": "20",
+    "issue": "15",
+    "year": 2020,
+    "doi": "10.1109/JSEN.2020.2983218"
+  }
+]

@@ -1,0 +1,5 @@
+# Allow all
+User-agent: *
+Allow: /
+
+Sitemap: https://hwsec-csic.github.io/sitemap.xml
