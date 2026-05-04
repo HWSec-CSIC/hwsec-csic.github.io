@@ -4,10 +4,10 @@ A minimal, Apple‑inspired static site for the HWSec‑CSIC group. Built with p
 
 ## Structure
 - `index.html` — Home page with sections: Hero, About, Research, People, Publications, Projects, Contact
-- `styles.css` — Design system: system font, responsive grid, translucent header, glass cards, dark mode preference
-- `script.js` — Mobile nav, reveal‑on‑scroll, smooth scrolling, back‑to‑top button
-- `script.js` — Mobile nav, reveal‑on‑scroll, smooth scrolling, back‑to‑top button, team filters/list view, animated details, and publications renderer with search/sort/copy DOI
-- `img/` — Images and logos
+- `css/style.css` — Design system: system font, responsive grid, translucent header, glass cards, dark mode preference
+- `js/script.js` — Mobile nav, reveal‑on‑scroll, smooth scrolling, back‑to‑top button
+- `js/script.js` — Mobile nav, reveal‑on‑scroll, smooth scrolling, back‑to‑top button, team filters/list view, animated details, and publications renderer with search/sort/copy DOI
+- `assets/images/` — Images and logos
 - `robots.txt`, `sitemap.xml` — Basic SEO plumbing
 
 ## Local preview
@@ -22,11 +22,11 @@ Open http://localhost:8080
 - The site honors `prefers-reduced-motion` and `prefers-color-scheme: dark`.
 
 ## Publications: how to add or edit
-- Source of truth is `data/publications.json` (array of objects). Required fields: `title`, `authors` (array of strings), `journal`, `year`, `doi`. Optional: `volume`, `issue`, `pages`, `article`.
+- Source of truth is `assets/docs/publications.json` (array of objects). Required fields: `title`, `authors` (array of strings), `journal`, `year`, `doi`. Optional: `volume`, `issue`, `pages`, `article`.
 - The list on the home page is rendered client‑side. If JSON fails to load (e.g. on very old browsers), a server‑rendered fallback list in `index.html` is shown.
 - The Publications section includes a search box (title/authors/DOI) and a toggle to sort by year (descending/ascending). Each entry has a "Copy DOI" button.
 
-Example entry in `data/publications.json`:
+Example entry in `assets/docs/publications.json`:
 ```
 {
 	"title": "Timing‑Optimized Hardware Implementation to Accelerate Polynomial Multiplication in the NTRU Algorithm",
@@ -41,6 +41,6 @@ Example entry in `data/publications.json`:
 ```
 
 ## Customization
-- Replace `img/logo.jpeg` with an SVG for sharper rendering.
-- Tune colors in `:root` variables inside `styles.css`.
+- Replace `assets/images/logo.jpeg` with an SVG for sharper rendering.
+- Tune colors in `:root` variables inside `css/style.css`.
 - Add or edit content directly in `index.html`.

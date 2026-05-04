@@ -193,7 +193,7 @@
 
     // Fetch publications from JSON
     document.addEventListener("DOMContentLoaded", () => {
-        fetch('data/publications.json')
+        fetch('assets/docs/publications.json')
             .then(response => response.json())
             .then(data => {
                 publicationsData = data;
@@ -203,7 +203,7 @@
             .catch(error => {
                 console.error('Error loading publications:', error);
                 document.getElementById('publications-container').innerHTML = 
-                    `<p class="text-error p-md">Failed to load publications from data/publications.json. Please check your network connection or ensure the file exists.</p>`;
+                    `<p class="text-error p-md">Failed to load publications from assets/docs/publications.json. Please check your network connection or ensure the file exists.</p>`;
             });
     });
 

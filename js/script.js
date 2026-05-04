@@ -364,7 +364,7 @@
     const applyDebounced = debounce(apply, 300);
 
     try {
-      const res = await fetch('data/publications.json', { cache: 'no-store' });
+      const res = await fetch('assets/docs/publications.json', { cache: 'no-store' });
       if (!res.ok) return; 
       pubs = await res.json();
       apply();

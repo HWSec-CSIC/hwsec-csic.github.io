@@ -286,7 +286,7 @@ a:hover { color: var(--accent); }
   content: "";
   position: absolute;
   inset: 0;
-  background-image: url("img/bg-1600.png");
+  background-image: url("../assets/images/bg-1600.png");
   background-size: cover;
   background-position: center;
   opacity: 0.5;
