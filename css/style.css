@@ -280,6 +280,16 @@ a:hover { color: var(--accent); }
   .site-nav ul { flex-direction: column; gap: 8px; }
 }
 
+/* Burger -> X animation */
+.burger { display:inline-block; width:20px; height:16px; position:relative; }
+.burger .bar { display:block; position:absolute; left:0; right:0; height:2px; background: currentColor; border-radius:2px; transition: transform 260ms cubic-bezier(.2,.9,.2,1), opacity 160ms ease; }
+.burger .bar1 { top:0; }
+.burger .bar2 { top:50%; transform: translateY(-50%); }
+.burger .bar3 { bottom:0; }
+.menu-toggle.open .bar1 { transform: translateY(7px) rotate(45deg); }
+.menu-toggle.open .bar2 { opacity: 0; transform: scaleX(0.2); }
+.menu-toggle.open .bar3 { transform: translateY(-7px) rotate(-45deg); }
+
 /* =========================================
    Hero Section
    ========================================= */

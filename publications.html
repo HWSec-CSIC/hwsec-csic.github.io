@@ -115,8 +115,12 @@
             <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">memory</span>
             HWSec-CSIC
         </a>
-        <button class="menu-toggle md:hidden" aria-label="Toggle navigation" aria-expanded="false">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        <button class="menu-toggle md:hidden" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+            <span class="burger" aria-hidden="true">
+                <span class="bar bar1"></span>
+                <span class="bar bar2"></span>
+                <span class="bar bar3"></span>
+            </span>
         </button>
         <nav class="site-nav w-full md:w-auto flex gap-4 md:gap-8 items-center overflow-x-auto whitespace-nowrap font-['Space_Grotesk']" role="navigation">
             <a class="text-slate-400 hover:text-blue-300 transition-colors font-label-sm text-label-sm" href="index.html">About</a>

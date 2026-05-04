@@ -57,17 +57,54 @@
   const nav = document.querySelector('.site-nav');
   const links = nav ? document.querySelectorAll('.site-nav a') : [];
   if (toggle && nav) {
+    const onKeydown = (e) => {
+      if (e.key === 'Escape') closeMenu();
+      if (e.key === 'Tab' && nav.classList.contains('open')) handleTabTrap(e);
+    };
+
+    const onDocClick = (e) => {
+      if (!nav.contains(e.target) && e.target !== toggle && nav.classList.contains('open')) closeMenu();
+    };
+
+    function openMenu() {
+      nav.classList.add('open');
+      toggle.classList.add('open');
+      toggle.setAttribute('aria-expanded', 'true');
+      const first = nav.querySelector('a,button,[tabindex]:not([tabindex="-1"])');
+      if (first) first.focus();
+      document.addEventListener('keydown', onKeydown);
+      document.addEventListener('click', onDocClick);
+    }
+
+    function closeMenu() {
+      nav.classList.remove('open');
+      toggle.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+      toggle.focus();
+      document.removeEventListener('keydown', onKeydown);
+      document.removeEventListener('click', onDocClick);
+    }
+
+    function handleTabTrap(e) {
+      const focusable = Array.from(nav.querySelectorAll('a,button,[tabindex]:not([tabindex="-1"])')).filter(n => !n.hasAttribute('disabled'));
+      if (!focusable.length) return;
+      const first = focusable[0];
+      const last = focusable[focusable.length - 1];
+      if (e.shiftKey && document.activeElement === first) {
+        e.preventDefault();
+        last.focus();
+      } else if (!e.shiftKey && document.activeElement === last) {
+        e.preventDefault();
+        first.focus();
+      }
+    }
+
     toggle.addEventListener('click', () => {
-      const isOpen = nav.classList.toggle('open');
-      toggle.setAttribute('aria-expanded', String(isOpen));
+      if (nav.classList.contains('open')) closeMenu();
+      else openMenu();
     });
     // Close menu on link click (mobile)
-    links.forEach((a) => a.addEventListener('click', () => {
-      if (nav.classList.contains('open')) {
-        nav.classList.remove('open');
-        toggle.setAttribute('aria-expanded', 'false');
-      }
-    }));
+    links.forEach((a) => a.addEventListener('click', () => { if (nav.classList.contains('open')) closeMenu(); }));
   }
 
   // Smooth scroll
