@@ -140,38 +140,13 @@
     onScroll();
   }
 
-  // Auto-hide header - only if header element exists
-  (function headerAutoHide(){
+  // Keep header visible on scroll for a stable mobile experience
+  (function headerVisible(){
     const header = document.querySelector('.site-header') || document.querySelector('header');
-    const nav = document.getElementById('primary-nav');
     if (!header) return;
-    header.classList.add('transition-transform', 'duration-300', 'will-change-transform');
-    let lastY = window.scrollY;
-    let ticking = false;
-    const threshold = 8; 
-    const update = () => {
-      ticking = false;
-      const y = window.scrollY;
-      const goingDown = y > lastY + threshold;
-      const goingUp = y < lastY - threshold;
-      const navOpen = nav && nav.classList.contains('open');
-
-      if (navOpen || y <= 0 || y < 80) {
-        header.classList.remove('-translate-y-full');
-        lastY = y;
-        return;
-      }
-      if (goingDown) header.classList.add('-translate-y-full');
-      else if (goingUp) header.classList.remove('-translate-y-full');
-      lastY = y;
-    };
-    window.addEventListener('scroll', () => {
-      if (!ticking) {
-        window.requestAnimationFrame(update);
-        ticking = true;
-      }
-    }, { passive: true });
-    update();
+    header.classList.remove('transition-transform', 'duration-300');
+    // ensure header remains fixed and visible
+    header.style.transform = 'translateY(0)';
   })();
 
   // Security links
