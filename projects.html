@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html class="dark" lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Research Projects | HWSec-CSIC</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+    .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+</style>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+        darkMode: "class",
+        theme: {
+            extend: {
+                "colors": {
+                    "on-tertiary": "#002e6a",
+                    "on-secondary": "#003824",
+                    "surface": "#0b1326",
+                    "on-surface-variant": "#c2c7d1",
+                    "secondary-container": "#00a572",
+                    "primary-container": "#0f4c81",
+                    "on-primary-fixed-variant": "#07497d",
+                    "secondary-fixed-dim": "#4edea3",
+                    "on-error": "#690005",
+                    "secondary": "#4edea3",
+                    "tertiary-fixed-dim": "#adc6ff",
+                    "tertiary": "#adc6ff",
+                    "surface-dim": "#0b1326",
+                    "surface-container": "#171f33",
+                    "on-primary-fixed": "#001c37",
+                    "tertiary-fixed": "#d8e2ff",
+                    "on-background": "#dae2fd",
+                    "primary-fixed-dim": "#a0c9ff",
+                    "secondary-fixed": "#6ffbbe",
+                    "primary-fixed": "#d2e4ff",
+                    "on-primary-container": "#8ebdf9",
+                    "error-container": "#93000a",
+                    "tertiary-container": "#00479c",
+                    "outline-variant": "#42474f",
+                    "on-tertiary-fixed": "#001a42",
+                    "surface-tint": "#a0c9ff",
+                    "surface-container-low": "#131b2e",
+                    "on-secondary-container": "#00311f",
+                    "surface-container-highest": "#2d3449",
+                    "primary": "#a0c9ff",
+                    "on-secondary-fixed-variant": "#005236",
+                    "on-surface": "#dae2fd",
+                    "surface-container-high": "#222a3d",
+                    "outline": "#8c919a",
+                    "on-primary": "#00325a",
+                    "on-error-container": "#ffdad6",
+                    "inverse-primary": "#2d6197",
+                    "on-tertiary-container": "#9abaff",
+                    "inverse-on-surface": "#283044",
+                    "on-tertiary-fixed-variant": "#004395",
+                    "surface-bright": "#31394d",
+                    "error": "#ffb4ab",
+                    "background": "#0b1326",
+                    "surface-container-lowest": "#060e20",
+                    "on-secondary-fixed": "#002113",
+                    "inverse-surface": "#dae2fd",
+                    "surface-variant": "#2d3449"
+                },
+                "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+                },
+                "spacing": {
+                    "md": "1.5rem",
+                    "xs": "0.5rem",
+                    "xl": "4rem",
+                    "sm": "1rem",
+                    "margin": "32px",
+                    "lg": "2.5rem",
+                    "gutter": "24px",
+                    "base": "4px"
+                },
+                "fontFamily": {
+                    "headline-md": ["Space Grotesk"],
+                    "label-sm": ["Space Grotesk"],
+                    "display-xl": ["Space Grotesk"],
+                    "body-md": ["Space Grotesk"],
+                    "headline-lg": ["Space Grotesk"],
+                    "mono-data": ["Space Grotesk"],
+                    "body-lg": ["Space Grotesk"]
+                },
+                "fontSize": {
+                    "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "500" }],
+                    "label-sm": ["13px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                    "display-xl": ["48px", { "lineHeight": "1.1", "fontWeight": "700" }],
+                    "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                    "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                    "mono-data": ["14px", { "lineHeight": "1.4", "fontWeight": "400" }],
+                    "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }]
+                }
+            }
+        }
+    }
+</script>
+</head>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md text-body-md">
+<header class="site-header docked full-width top-0 sticky bg-slate-950/80 backdrop-blur-md border-b border-blue-900/30 shadow-[0_4px_20px_-5px_rgba(15,76,129,0.3)] z-50">
+<div class="flex flex-col md:flex-row justify-between md:items-center gap-3 w-full px-6 py-4 max-w-screen-2xl mx-auto">
+<a class="text-2xl font-bold tracking-tighter text-blue-500 dark:text-blue-400 flex items-center gap-2 font-['Space_Grotesk']" href="index.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">memory</span>
+            HWSec-CSIC
+        </a>
+<nav class="w-full md:w-auto flex gap-4 md:gap-8 items-center overflow-x-auto whitespace-nowrap font-['Space_Grotesk']">
+<a class="text-slate-400 hover:text-blue-300 transition-colors font-label-sm text-label-sm" href="index.html">About</a>
+<a class="text-slate-400 hover:text-blue-300 transition-colors font-label-sm text-label-sm" href="team.html">Team</a>
+<a class="text-slate-400 hover:text-blue-300 transition-colors font-label-sm text-label-sm" href="publications.html">Publications</a>
+<a class="text-blue-400 border-b-2 border-emerald-500 pb-1 font-label-sm text-label-sm hover:bg-blue-900/20 transition-all duration-200" href="projects.html">Projects</a>
+</nav>
+<div class="w-full md:w-auto flex items-center justify-end gap-3">
+<a class="inline-flex items-center justify-center bg-primary-container text-on-primary-container font-label-sm text-label-sm px-4 py-2 rounded border border-primary/20 hover:brightness-110 transition-all duration-200" href="mailto:p.brox@csic.es">Contact Us</a>
+</div>
+</div>
+</header>
+
+<main class="flex-grow max-w-screen-2xl w-full mx-auto px-6 py-12 md:py-margin flex flex-col gap-xl">
+<section class="w-full bg-background border-b border-surface-variant relative overflow-hidden">
+    <div class="max-w-screen-2xl mx-auto px-6 py-xl relative z-10 flex flex-col gap-sm">
+        <h1 class="font-display-xl text-display-xl text-primary">Project Portfolio</h1>
+        <p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">
+            An overview of our active and completed research projects across European, National, and Agency-level funding streams. 
+        </p>
+    </div>
+</section>
+
+<section class="flex flex-col gap-xl project-portfolio-section">
+
+    <div class="category-section">
+        <div class="flex items-center gap-3 mb-6">
+            <span class="material-symbols-outlined text-primary text-3xl">public</span>
+            <h2 class="font-headline-lg text-3xl text-on-surface">European Projects</h2>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
+            <article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-col group transition-all duration-300 hover:border-primary/30 p-md">
+                <div class="flex justify-between items-start mb-md">
+                    <div class="w-12 h-12 rounded-lg bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                        <span class="material-symbols-outlined">enhanced_encryption</span>
+                    </div>
+                    <span class="bg-secondary-container/20 text-secondary px-2 py-1 rounded font-mono-data text-[10px] uppercase tracking-wider border border-secondary/20">Active</span>
+                </div>
+                <h4 class="font-headline-md text-headline-md text-on-surface mb-md group-hover:text-primary-fixed transition-colors">Q-FENCE: Securing Tomorrow’s Digital Infrastructure with Quantum-Resistant Cryptography</h4>
+                <div class="font-body-md text-body-md text-on-surface-variant text-sm flex-grow">
+                    <div class="grid grid-cols-1 gap-y-3 mt-sm text-[13px] leading-relaxed">
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">PI:</span><span class="text-on-surface">Piedad Brox Jiménez</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">Participants:</span><span class="text-on-surface">SETU (Ireland), CSIC, Polito, Uni Luxembourg, UCC, etc.</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">Call:</span><span class="text-on-surface">HORIZON-CL3-2024-CS-01</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">GA:</span><span class="text-on-surface">101225708</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">IMSE Budget:</span><span class="text-on-surface">517.500€</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">Total Budget:</span><span class="text-on-surface">5.312.198,75€</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">Duration:</span><span class="text-on-surface">1 Nov 2025 – 31 Oct 2028</span></div>
+                        <div class="mt-2"><span class="font-semibold text-primary block mb-1">Abstract:</span><p class="text-on-surface-variant italic line-clamp-4">Q-FENCE is a transformative initiative aimed at securing tomorrow’s digital infrastructure with quantum-resistant cryptography. It develops a robust hybrid framework integrating classical, quantum, and post-quantum cryptographic techniques...</p></div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 mt-md pt-sm border-t border-outline-variant/10">
+                    <span class="text-xs text-on-surface-variant font-label-sm uppercase tracking-wider">Funded by:</span>
+                    <span class="text-xs font-mono-data text-primary">European Commission (Horizon Europe)</span>
+                </div>
+            </article>
+
+            <article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-col group transition-all duration-300 hover:border-primary/30 p-md">
+                <div class="flex justify-between items-start mb-md">
+                    <div class="w-12 h-12 rounded-lg bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                        <span class="material-symbols-outlined">memory</span>
+                    </div>
+                    <span class="bg-secondary-container/20 text-secondary px-2 py-1 rounded font-mono-data text-[10px] uppercase tracking-wider border border-secondary/20">Active</span>
+                </div>
+                <h4 class="font-headline-md text-headline-md text-on-surface mb-md group-hover:text-primary-fixed transition-colors">DECIDE: Democratizing European Chip Innovation and Design Ecosystem</h4>
+                <div class="font-body-md text-body-md text-on-surface-variant text-sm flex-grow">
+                    <div class="grid grid-cols-1 gap-y-3 mt-sm text-[13px] leading-relaxed">
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">PI:</span><span class="text-on-surface">Macarena C. Martínez Rodríguez</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">Participants:</span><span class="text-on-surface">IMEC (BE), CEA (FR), Fraunhofer (DE), IHP (DE), Silicon Austria Labs, CSIC, etc.</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">Call:</span><span class="text-on-surface">DIGITAL-Chips-2024-CSA-CDP-1</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">GA:</span><span class="text-on-surface">101218811</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">IMSE Budget:</span><span class="text-on-surface">840.327€</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">Total Budget:</span><span class="text-on-surface">24.980.603,06€</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">Duration:</span><span class="text-on-surface">1 Jan 2025 – 31 Dec 2028</span></div>
+                        <div class="mt-2"><span class="font-semibold text-primary block mb-1">Abstract:</span><p class="text-on-surface-variant italic line-clamp-4">The DECIDE project aims to create a virtual design platform to democratize access to advanced semiconductor technologies across Europe, supporting the innovation and competitiveness of European startups, SMEs, and research institutions.</p></div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 mt-md pt-sm border-t border-outline-variant/10">
+                    <span class="text-xs text-on-surface-variant font-label-sm uppercase tracking-wider">Funded by:</span>
+                    <span class="text-xs font-mono-data text-primary">European Commission (Chips JU)</span>
+                </div>
+            </article>
+
+            <article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-col group transition-all duration-300 hover:border-primary/30 p-md">
+                <div class="flex justify-between items-start mb-md">
+                    <div class="w-12 h-12 rounded-lg bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                        <span class="material-symbols-outlined">shield_locked</span>
+                    </div>
+                    <span class="bg-secondary-container/20 text-secondary px-2 py-1 rounded font-mono-data text-[10px] uppercase tracking-wider border border-secondary/20">Active</span>
+                </div>
+                <h4 class="font-headline-md text-headline-md text-on-surface mb-md group-hover:text-primary-fixed transition-colors">QUBIP: Quantum-oriented Update to Browsers and Infrastructures for the PQ Transition</h4>
+                <div class="font-body-md text-body-md text-on-surface-variant text-sm flex-grow">
+                    <div class="grid grid-cols-1 gap-y-3 mt-sm text-[13px] leading-relaxed">
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">PI:</span><span class="text-on-surface">Piedad Brox Jiménez</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">Participants:</span><span class="text-on-surface">LINKS Foundation, CSIC, Tampere Univ, Telefónica I+D, POLITO, etc.</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">Call:</span><span class="text-on-surface">HORIZON-CL3-2022-CS-01-03</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">GA:</span><span class="text-on-surface">251944</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">IMSE Budget:</span><span class="text-on-surface">303.720€</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">Total Budget:</span><span class="text-on-surface">4.999.648€</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">Duration:</span><span class="text-on-surface">1 Sep 2023 – 31 Aug 2026</span></div>
+                        <div class="mt-2"><span class="font-semibold text-primary block mb-1">Abstract:</span><p class="text-on-surface-variant italic line-clamp-4">Conceived to contribute to the EU transition to PQC with the goal of simplifying and making replicable the process by means of recommended practices and counteract post-quantum threats as soon as possible.</p></div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 mt-md pt-sm border-t border-outline-variant/10">
+                    <span class="text-xs text-on-surface-variant font-label-sm uppercase tracking-wider">Funded by:</span>
+                    <span class="text-xs font-mono-data text-primary">European Commission (Horizon Europe)</span>
+                </div>
+            </article>
+
+            <article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-col group transition-all duration-300 hover:border-primary/30 p-md">
+                <div class="flex justify-between items-start mb-md">
+                    <div class="w-12 h-12 rounded-lg bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                        <span class="material-symbols-outlined">fingerprint</span>
+                    </div>
+                    <span class="bg-surface-variant text-on-surface-variant px-2 py-1 rounded font-mono-data text-[10px] uppercase tracking-wider border border-outline-variant/30">Completed</span>
+                </div>
+                <h4 class="font-headline-md text-headline-md text-on-surface mb-md group-hover:text-primary-fixed transition-colors">SQPRIM: Secure post-quantum cryptographic primitives</h4>
+                <div class="font-body-md text-body-md text-on-surface-variant text-sm flex-grow">
+                    <div class="grid grid-cols-1 gap-y-3 mt-sm text-[13px] leading-relaxed">
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">PI:</span><span class="text-on-surface">Piedad Brox Jiménez</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">Participants:</span><span class="text-on-surface">IMSE-CNM, CSIC</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">GA:</span><span class="text-on-surface">253397</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">IMSE Budget:</span><span class="text-on-surface">167.236,25 €</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">Duration:</span><span class="text-on-surface">1 Jul 2023 – 31 Aug 2025</span></div>
+                        <div class="mt-2"><span class="font-semibold text-primary block mb-1">Abstract:</span><p class="text-on-surface-variant italic line-clamp-4">Inspired by nature, this project aims to develop the biometric equivalents of fingerprints and DNA for the digital world using light and sound. Optical and ultrasound PUFs will provide robust identifiers unconditionally safe in the post-quantum era.</p></div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 mt-md pt-sm border-t border-outline-variant/10">
+                    <span class="text-xs text-on-surface-variant font-label-sm uppercase tracking-wider">Funded by:</span>
+                    <span class="text-xs font-mono-data text-primary">MARIE SKLODOWSKA CURIE – Horizon Europe</span>
+                </div>
+            </article>
+
+            <article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-col group transition-all duration-300 hover:border-primary/30 p-md">
+                <div class="flex justify-between items-start mb-md">
+                    <div class="w-12 h-12 rounded-lg bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                        <span class="material-symbols-outlined">code_blocks</span>
+                    </div>
+                    <span class="bg-surface-variant text-on-surface-variant px-2 py-1 rounded font-mono-data text-[10px] uppercase tracking-wider border border-outline-variant/30">Completed</span>
+                </div>
+                <h4 class="font-headline-md text-headline-md text-on-surface mb-md group-hover:text-primary-fixed transition-colors">GoIT: Open-source hardware: a step towards Europe’s digital Independence</h4>
+                <div class="font-body-md text-body-md text-on-surface-variant text-sm flex-grow">
+                    <div class="grid grid-cols-1 gap-y-3 mt-sm text-[13px] leading-relaxed">
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">PI:</span><span class="text-on-surface">Piedad Brox Jiménez</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">Participants:</span><span class="text-on-surface">Elektronikas un Datorzinatnu Instituts (LV), ITEFI-CSIC, Sorbonne Université (FR), etc.</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">Call:</span><span class="text-on-surface">HORIZON-CL4-2021-DIGITAL-EMERGING-01</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">GA:</span><span class="text-on-surface">240413</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">IMSE Budget:</span><span class="text-on-surface">167.236,25 €</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">Duration:</span><span class="text-on-surface">1 Sep 2022 – 28 Feb 2025</span></div>
+                        <div class="mt-2"><span class="font-semibold text-primary block mb-1">Abstract:</span><p class="text-on-surface-variant italic line-clamp-4">Europe's digital infrastructure heavily relies on foreign closed-source chips. GoIT addresses this by promoting open-source silicon chips, catapulting Europe into a renaissance of digital technology and sovereignty.</p></div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 mt-md pt-sm border-t border-outline-variant/10">
+                    <span class="text-xs text-on-surface-variant font-label-sm uppercase tracking-wider">Funded by:</span>
+                    <span class="text-xs font-mono-data text-primary">European Commission (Horizon Europe)</span>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div class="category-section mt-12">
+        <div class="flex items-center gap-3 mb-6">
+            <span class="material-symbols-outlined text-primary text-3xl">location_on</span>
+            <h2 class="font-headline-lg text-3xl text-on-surface">National Projects</h2>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
+            <article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-col group transition-all duration-300 hover:border-primary/30 p-md">
+                <div class="flex justify-between items-start mb-md">
+                    <div class="w-12 h-12 rounded-lg bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                        <span class="material-symbols-outlined">lightbulb</span>
+                    </div>
+                    <span class="bg-secondary-container/20 text-secondary px-2 py-1 rounded font-mono-data text-[10px] uppercase tracking-wider border border-secondary/20">Active</span>
+                </div>
+                <h4 class="font-headline-md text-headline-md text-on-surface mb-md group-hover:text-primary-fixed transition-colors">CryptoPIC: Advanced security in Photonic Integrated Circuits</h4>
+                <div class="font-body-md text-body-md text-on-surface-variant text-sm flex-grow">
+                    <div class="grid grid-cols-1 gap-y-3 mt-sm text-[13px] leading-relaxed">
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">PI:</span><span class="text-on-surface">David Martín Sánchez, Piedad Brox Jiménez</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">Participants:</span><span class="text-on-surface">IMSE-CNM (CSIC/Univ. Sevilla) and IMB-CNM (CSIC)</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">IMSE Budget:</span><span class="text-on-surface">114.850€</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">Duration:</span><span class="text-on-surface">1 Nov 2025 – 30 Oct 2028</span></div>
+                        <div class="mt-2"><span class="font-semibold text-primary block mb-1">Abstract:</span><p class="text-on-surface-variant italic line-clamp-4">Addresses the quantum technology revolution's threat to digital security. The project aims to realize miniaturization of optical PUFs, developing robust cryptographic primitives implemented in photonic integrated circuits fabricated using standard CMOS.</p></div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 mt-md pt-sm border-t border-outline-variant/10">
+                    <span class="text-xs text-on-surface-variant font-label-sm uppercase tracking-wider">Funded by:</span>
+                    <span class="text-xs font-mono-data text-primary">Agencia Estatal de Investigación (Generación Conocimiento)</span>
+                </div>
+            </article>
+
+            <article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-col group transition-all duration-300 hover:border-primary/30 p-md">
+                <div class="flex justify-between items-start mb-md">
+                    <div class="w-12 h-12 rounded-lg bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                        <span class="material-symbols-outlined">gpp_good</span>
+                    </div>
+                    <span class="bg-surface-variant text-on-surface-variant px-2 py-1 rounded font-mono-data text-[10px] uppercase tracking-wider border border-outline-variant/30">Completed</span>
+                </div>
+                <h4 class="font-headline-md text-headline-md text-on-surface mb-md group-hover:text-primary-fixed transition-colors">ARES: Diseño, implementación y validación de raíces de confianza hardware resistentes a ataques</h4>
+                <div class="font-body-md text-body-md text-on-surface-variant text-sm flex-grow">
+                    <div class="grid grid-cols-1 gap-y-3 mt-sm text-[13px] leading-relaxed">
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">PI:</span><span class="text-on-surface">Piedad Brox Jiménez, Carlos J. Jiménez Fernández</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">Participants:</span><span class="text-on-surface">IMSE-CNM (CSIC/Univ. Sevilla)</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">IMSE Budget:</span><span class="text-on-surface">146.410€</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">Duration:</span><span class="text-on-surface">1 Sep 2021 – 31 Oct 2025</span></div>
+                        <div class="mt-2"><span class="font-semibold text-primary block mb-1">Abstract:</span><p class="text-on-surface-variant italic line-clamp-4">Providing hardware solutions to improve the security of embedded systems, designing a Root-of-Trust (RoT) that includes physical unclonable functions (PUFs) and cryptographic primitives suitable for RISC-V and ARM IoT technologies.</p></div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 mt-md pt-sm border-t border-outline-variant/10">
+                    <span class="text-xs text-on-surface-variant font-label-sm uppercase tracking-wider">Funded by:</span>
+                    <span class="text-xs font-mono-data text-primary">Agencia Estatal de Investigación (Generación Conocimiento)</span>
+                </div>
+            </article>
+        </div>
+    </div>
+
+    <div class="category-section mt-12">
+        <div class="flex items-center gap-3 mb-6">
+            <span class="material-symbols-outlined text-primary text-3xl">account_balance</span>
+            <h2 class="font-headline-lg text-3xl text-on-surface">Agency Projects</h2>
+        </div>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
+            <article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-col group transition-all duration-300 hover:border-primary/30 p-md">
+                <div class="flex justify-between items-start mb-md">
+                    <div class="w-12 h-12 rounded-lg bg-surface-container-high border border-outline-variant/30 flex items-center justify-center text-primary group-hover:bg-primary group-hover:text-on-primary transition-colors">
+                        <span class="material-symbols-outlined">science</span>
+                    </div>
+                    <span class="bg-secondary-container/20 text-secondary px-2 py-1 rounded font-mono-data text-[10px] uppercase tracking-wider border border-secondary/20">Active</span>
+                </div>
+                <h4 class="font-headline-md text-headline-md text-on-surface mb-md group-hover:text-primary-fixed transition-colors">TECHNOQUANTUM: Hardware-based Technologies to Secure Digital Systems in the Quantum World</h4>
+                <div class="font-body-md text-body-md text-on-surface-variant text-sm flex-grow">
+                    <div class="grid grid-cols-1 gap-y-3 mt-sm text-[13px] leading-relaxed">
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">PI:</span><span class="text-on-surface">Piedad Brox Jiménez</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">Participants:</span><span class="text-on-surface">IMSE-CNM, Univ. Tampere, CEA-LIST, Eindhoven Univ. of Technology, LINKS, POLITO</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">IMSE Budget:</span><span class="text-on-surface">29.951€</span></div>
+                        <div class="flex gap-2"><span class="font-semibold text-primary w-28 shrink-0">Duration:</span><span class="text-on-surface">2025 - 2026</span></div>
+                        <div class="mt-2"><span class="font-semibold text-primary block mb-1">Abstract:</span><p class="text-on-surface-variant italic line-clamp-4">Establishes a consortium to identify solutions and limitations in developing microelectronic and nanophotonic technologies for secure digital systems in the post-quantum world, leading to resilient digitized communities.</p></div>
+                    </div>
+                </div>
+                <div class="flex items-center gap-2 mt-md pt-sm border-t border-outline-variant/10">
+                    <span class="text-xs text-on-surface-variant font-label-sm uppercase tracking-wider">Funded by:</span>
+                    <span class="text-xs font-mono-data text-primary">CSIC (iLINK Program)</span>
+                </div>
+            </article>
+        </div>
+    </div>
+
+</section>
+</main>
+
+<footer class="w-full border-t border-blue-900/20 bg-slate-950 mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-8 py-12 max-w-screen-2xl mx-auto font-['Space_Grotesk'] text-sm text-blue-600 dark:text-blue-400">
+    
+    <div class="flex flex-col gap-4">
+        <span class="text-lg font-bold text-blue-500 flex items-center gap-2">
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">memory</span>
+            HWSec-CSIC
+        </span>
+        <p class="text-slate-500 leading-relaxed">
+            Trusted Systems-on-Chip based on CMOS and integrated photonics technologies
+        </p>
+        <div class="text-slate-500 flex flex-col gap-1 mt-2 text-[13px]">
+            <span class="font-semibold text-slate-400">Instituto de Microelectrónica de Sevilla</span>
+            <span>Cl Américo Vespucio, 28.</span>
+            <span>Sevilla TechPark, 41092 Sevilla · Spain</span>
+            <span class="flex items-center gap-2 mt-1">
+                <span class="material-symbols-outlined text-[16px]">call</span> +34 954 466 666
+            </span>
+        </div>
+    </div>
+
+    <div class="flex flex-col gap-3">
+        <h4 class="text-emerald-400 font-semibold mb-1">Institutions</h4>
+        <a class="text-slate-500 hover:text-emerald-400 transition-colors flex items-start gap-2" href="http://www.imse-cnm.csic.es/" target="_blank" rel="noopener noreferrer">
+            <span class="material-symbols-outlined text-[18px] shrink-0">science</span>
+            <span>Instituto de Microelectrónica de Sevilla <br> (IMSE-cnm, CSIC, US)</span>
+        </a>
+        <a class="text-slate-500 hover:text-emerald-400 transition-colors flex items-start gap-2" href="https://www.csic.es/" target="_blank" rel="noopener noreferrer">
+            <span class="material-symbols-outlined text-[18px] shrink-0">account_balance</span>
+            <span>Consejo Superior de Investigaciones Científicas</span>
+        </a>
+        <a class="text-slate-500 hover:text-emerald-400 transition-colors flex items-start gap-2" href="https://www.us.es/" target="_blank" rel="noopener noreferrer">
+            <span class="material-symbols-outlined text-[18px] shrink-0">school</span>
+            <span>Universidad de Sevilla</span>
+        </a>
+    </div>
+
+    
+
+    <div class="flex flex-col gap-2">
+        <h4 class="text-emerald-400 font-semibold mb-2">Connect</h4>
+        <a class="text-slate-500 hover:text-emerald-400 transition-colors flex items-center gap-2" href="mailto:p.brox@csic.es">
+            <span class="material-symbols-outlined text-[16px]">mail</span>
+            p.brox@csic.es
+        </a>
+        <div class="flex gap-4 mt-3">
+            <a class="text-slate-500 hover:text-emerald-400 transition-colors" href="https://github.com/HWSec-CSIC" title="GitHub Repository">
+            <!-- GitHub SVG -->
+            <svg class="w-[20px] h-[20px]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+            </svg>
+        </a>
+
+        <a class="text-slate-500 hover:text-emerald-400 transition-colors" href="https://www.linkedin.com/company/instituto-de-microelectr%C3%B3nica-de-sevilla-imse-cnm/" title="LinkedIn Profile">
+            <!-- LinkedIn SVG -->
+            <svg class="w-[20px] h-[20px]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+            </svg>
+        </a>
+            <a class="text-slate-500 hover:text-emerald-400 transition-colors" href="https://maps.app.goo.gl/NFLzyC6rneRJ3e586" target="_blank" rel="noopener noreferrer" title="View on Map">
+                <span class="material-symbols-outlined text-[20px]">location_on</span>
+            </a>
+        </div>
+    </div>
+
+    <div class="col-span-1 md:col-span-2 lg:col-span-4 mt-8 pt-8 border-t border-blue-900/10 text-center flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-slate-500">© 2026 HWSec-CSIC. All rights reserved.</p>
+    </div>
+</div>
+</footer>
+</body>
+</html>

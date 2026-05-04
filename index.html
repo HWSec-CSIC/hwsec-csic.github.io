@@ -1,844 +1,301 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="dark" lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>HWSec-CSIC — Trusted Hardware & Photonics</title>
-  <meta name="description" content="HWSec-CSIC: Trusted SoCs based on CMOS and integrated photonics. Research in secure architectures, photonic security devices, and open die-to-die communication." />
-  <meta property="og:title" content="HWSec-CSIC — Trusted Hardware & Photonics" />
-  <meta property="og:description" content="Trusted SoCs based on CMOS and integrated photonics. Secure architectures, photonic security, and open die‑to‑die communication." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://hwsec-csic.github.io/" />
-  <meta property="og:image" content="https://hwsec-csic.github.io/img/grupo.jpeg" />
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="HWSec-CSIC — Trusted Hardware & Photonics" />
-  <meta name="twitter:description" content="Trusted SoCs based on CMOS and integrated photonics. Secure architectures, photonic security, and open die‑to‑die communication." />
-  <meta name="twitter:image" content="https://hwsec-csic.github.io/img/grupo.jpeg" />
-  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)" />
-  <meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)" />
-  <meta name="color-scheme" content="light dark" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/img/icons/apple-touch-icon.png" />
-  <link rel="canonical" href="https://hwsec-csic.github.io/" />
-  <link rel="icon" type="image/png" sizes="16x16" href="/img/icons/favicon-16x16.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="/img/icons/favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="48x48" href="/img/icons/favicon-48x48.png" />
-  <link rel="icon" type="image/png" sizes="64x64" href="/img/icons/favicon-64x64.png" />
-  <link rel="shortcut icon" href="/favicon.ico" />
-  <link rel="manifest" href="/site.webmanifest" />
-  <link rel="preload" as="image" href="img/bg-1600.png" imagesrcset="img/bg-1600.png 1x, img/bg-3200.png 2x" />
-  <link rel="stylesheet" href="styles.css" />
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "HWSec-CSIC",
-    "url": "https://hwsec-csic.github.io/",
-    "logo": "https://hwsec-csic.github.io/img/logo.jpeg",
-    "sameAs": [
-      "https://github.com/HWSec-CSIC"
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "BreadcrumbList",
-    "itemListElement": [
-      {"@type": "ListItem", "position": 1, "name": "Home", "item": "https://hwsec-csic.github.io/"},
-      {"@type": "ListItem", "position": 2, "name": "Research", "item": "https://hwsec-csic.github.io/#research"},
-      {"@type": "ListItem", "position": 3, "name": "People", "item": "https://hwsec-csic.github.io/#people"},
-      {"@type": "ListItem", "position": 4, "name": "Publications", "item": "https://hwsec-csic.github.io/#publications"},
-      {"@type": "ListItem", "position": 5, "name": "Projects", "item": "https://hwsec-csic.github.io/#projects"}
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@graph": [
-      {
-        "@type": "ScholarlyArticle",
-        "name": "A Side-Channel Protected and High-Performance Hardware Implementation for EdDSA25519",
-        "author": [
-          {"@type":"Person","name":"P. Navarro-Torrero"},
-          {"@type":"Person","name":"E. Camacho-Ruiz"},
-          {"@type":"Person","name":"M.C. Martínez-Rodríguez"},
-          {"@type":"Person","name":"P. Brox"}
-        ],
-        "isPartOf": {"@type":"Periodical","name":"IEEE Access","volumeNumber":"13"},
-        "datePublished": "2025",
-        "identifier": "https://doi.org/10.1109/ACCESS.2025.3584696",
-        "url": "https://doi.org/10.1109/ACCESS.2025.3584696"
-      },
-      {
-        "@type": "ScholarlyArticle",
-        "name": "Sensitive Broadband Ultrasound Sensor Based on a Low-Loss High-Q Fused-Silica Plano-Concave Microresonator",
-        "author": [
-          {"@type":"Person","name":"David Martín-Sánchez"},
-          {"@type":"Person","name":"Edward Z. Zhang"},
-          {"@type":"Person","name":"Zhixin Liu"},
-          {"@type":"Person","name":"James A. Guggenheim"},
-          {"@type":"Person","name":"Paul C. Beard"}
-        ],
-        "isPartOf": {"@type":"Periodical","name":"Optics Express","volumeNumber":"33","issueNumber":"19"},
-        "pageStart": "39875",
-        "pageEnd": "39888",
-        "datePublished": "2025",
-        "identifier": "https://doi.org/10.1364/OE.572433",
-        "url": "https://doi.org/10.1364/OE.572433"
-      },
-      {
-        "@type": "ScholarlyArticle",
-        "name": "Hardware-Efficient Configurable Ring-Oscillator-Based Physical Unclonable Function/True Random Number Generator Module for Secure Key Management",
-        "author": [
-          {"@type":"Person","name":"S. Sánchez-Solano"},
-          {"@type":"Person","name":"L.F. Rojas-Muñoz"},
-          {"@type":"Person","name":"M.C. Martínez-Rodríguez"},
-          {"@type":"Person","name":"P. Brox"}
-        ],
-        "isPartOf": {"@type":"Periodical","name":"Sensors","volumeNumber":"24","issueNumber":"17"},
-        "articleNumber": "5674",
-        "datePublished": "2024",
-        "identifier": "https://doi.org/10.3390/s24175674",
-        "url": "https://doi.org/10.3390/s24175674"
-      },
-      {
-        "@type": "ScholarlyArticle",
-        "name": "Laser Frequency Noise Characterisation Using High-Finesse Plano-Concave Optical Microresonators",
-        "author": [
-          {"@type":"Person","name":"D. Martín-Sánchez"},
-          {"@type":"Person","name":"E. Z. Zhang"},
-          {"@type":"Person","name":"J. Paterson"},
-          {"@type":"Person","name":"J. A. Guggenheim"},
-          {"@type":"Person","name":"Z. Liu"},
-          {"@type":"Person","name":"P. C. Beard"}
-        ],
-        "isPartOf": {"@type":"Periodical","name":"Optics Letters","volumeNumber":"49","issueNumber":"3"},
-        "pageStart": "678",
-        "pageEnd": "681",
-        "datePublished": "2024",
-        "identifier": "https://doi.org/10.1364/OL.510516",
-        "url": "https://doi.org/10.1364/OL.510516"
-      },
-      {
-        "@type": "ScholarlyArticle",
-        "name": "Timing-Attack-Resistant Acceleration of NTRU Round 3 Encryption on Resource-Constrained Embedded Systems",
-        "author": [
-          {"@type":"Person","name":"E. Camacho-Ruiz"},
-          {"@type":"Person","name":"M.C. Martínez-Rodríguez"},
-          {"@type":"Person","name":"S. Sánchez-Solano"},
-          {"@type":"Person","name":"P. Brox"}
-        ],
-        "isPartOf": {"@type":"Periodical","name":"Cryptography","volumeNumber":"7","issueNumber":"2"},
-        "articleNumber": "29",
-        "datePublished": "2023",
-        "identifier": "https://doi.org/10.3390/cryptography7020029",
-        "url": "https://doi.org/10.3390/cryptography7020029"
-      },
-      {
-        "@type": "ScholarlyArticle",
-        "name": "On-Line Evaluation and Monitoring of Security Features of an RO-Based PUF/TRNG for IoT Devices",
-        "author": [
-          {"@type":"Person","name":"L.F. Rojas-Muñoz"},
-          {"@type":"Person","name":"S. Sánchez-Solano"},
-          {"@type":"Person","name":"M.C. Martínez-Rodríguez"},
-          {"@type":"Person","name":"P. Brox"}
-        ],
-        "isPartOf": {"@type":"Periodical","name":"Sensors","volumeNumber":"23","issueNumber":"8"},
-        "articleNumber": "4070",
-        "datePublished": "2023",
-        "identifier": "https://doi.org/10.3390/s23084070",
-        "url": "https://doi.org/10.3390/s23084070"
-      },
-      {
-        "@type": "ScholarlyArticle",
-        "name": "An ABCD Transfer Matrix Model of Gaussian Beam Propagation in Plano-Concave Optical Microresonators",
-        "author": [
-          {"@type":"Person","name":"D. Martín-Sánchez"},
-          {"@type":"Person","name":"J. Li"},
-          {"@type":"Person","name":"E. Z. Zhang"},
-          {"@type":"Person","name":"P. C. Beard"},
-          {"@type":"Person","name":"J. A. Guggenheim"}
-        ],
-        "isPartOf": {"@type":"Periodical","name":"Optics Express","volumeNumber":"31","issueNumber":"10"},
-        "pageStart": "16523",
-        "pageEnd": "16534",
-        "datePublished": "2023",
-        "identifier": "https://doi.org/10.1364/OE.484212",
-        "url": "https://doi.org/10.1364/OE.484212"
-      },
-      {
-        "@type": "ScholarlyArticle",
-        "name": "True Random Number Generation Capability of a Ring Oscillator PUF for Reconfigurable Devices",
-        "author": [
-          {"@type":"Person","name":"L.F. Rojas-Muñoz"},
-          {"@type":"Person","name":"S. Sánchez-Solano"},
-          {"@type":"Person","name":"M.C. Martínez-Rodríguez"},
-          {"@type":"Person","name":"P. Brox"}
-        ],
-        "isPartOf": {"@type":"Periodical","name":"Electronics","volumeNumber":"11","issueNumber":"23"},
-        "articleNumber": "4028",
-        "datePublished": "2022",
-        "identifier": "https://doi.org/10.3390/electronics11234028",
-        "url": "https://doi.org/10.3390/electronics11234028"
-      },
-      {
-        "@type": "ScholarlyArticle",
-        "name": "Timing-Optimized Hardware Implementation to Accelerate Polynomial Multiplication in the NTRU Algorithm",
-        "author": [
-          {"@type":"Person","name":"E. Camacho-Ruiz"},
-          {"@type":"Person","name":"S. Sánchez-Solano"},
-          {"@type":"Person","name":"P. Brox"},
-          {"@type":"Person","name":"M.C. Martínez-Rodríguez"}
-        ],
-        "isPartOf": {"@type":"Periodical","name":"ACM Journal on Emerging Technologies in Computing Systems","volumeNumber":"17","issueNumber":"3"},
-        "articleNumber": "35",
-        "datePublished": "2021",
-        "identifier": "https://doi.org/10.1145/3445979",
-        "url": "https://doi.org/10.1145/3445979"
-      },
-      {
-        "@type": "ScholarlyArticle",
-        "name": "Simultaneous Refractive Index Sensing Using an Array of Suspended Porous Silicon Membranes",
-        "author": [
-          {"@type":"Person","name":"David Martín-Sánchez"},
-          {"@type":"Person","name":"Todora Angelova"},
-          {"@type":"Person","name":"Jaime García-Rupérez"}
-        ],
-        "isPartOf": {"@type":"Periodical","name":"IEEE Sensors Journal","volumeNumber":"20","issueNumber":"15"},
-        "datePublished": "2020",
-        "identifier": "https://doi.org/10.1109/JSEN.2020.2983218",
-        "url": "https://doi.org/10.1109/JSEN.2020.2983218"
-      }
-      ,
-      {
-        "@type": "Person",
-        "name": "Dr. Piedad Brox Jiménez",
-        "affiliation": {"@type":"Organization","name":"IMSE-CNM (CSIC/US)"},
-        "url": "https://hwsec-csic.github.io/",
-        "sameAs": [
-          "https://orcid.org/0000-0003-1059-5338",
-          "https://scholar.google.com/citations?user=Q38fPzUAAAAJ"
-        ]
-      },
-      {
-        "@type": "Person",
-        "name": "Dr. Macarena C. Martínez-Rodríguez",
-        "affiliation": {"@type":"Organization","name":"IMSE-CNM (CSIC/US)"},
-        "url": "https://hwsec-csic.github.io/",
-        "sameAs": []
-      },
-      {
-        "@type": "Person",
-        "name": "Dr. Eros Camacho-Ruiz",
-        "affiliation": {"@type":"Organization","name":"IMSE-CNM (CSIC/US)"},
-        "url": "https://hwsec-csic.github.io/",
-        "sameAs": [
-          "https://orcid.org/0000-0002-3177-2260",
-          "https://scholar.google.com/citations?user=q1uEoHQAAAAJ"
-        ]
-      },
-      {
-        "@type": "Person",
-        "name": "Dr. David Martín Sánchez",
-        "affiliation": {"@type":"Organization","name":"IMSE-CNM (CSIC/US)"},
-        "url": "https://hwsec-csic.github.io/",
-        "sameAs": [
-          "https://orcid.org/0000-0003-0131-5226",
-          "https://scholar.google.com/citations?user=JBEyXwUAAAAJ"
-        ]
-      }
-    ]
-  }
-  </script>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>HWSec-CSIC — Trusted Hardware & Photonics</title>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "tertiary": "#adc6ff",
+                        "surface-container-lowest": "#060e20",
+                        "secondary-fixed-dim": "#4edea3",
+                        "inverse-primary": "#2d6197",
+                        "background": "#0b1326",
+                        "surface-container-highest": "#2d3449",
+                        "on-secondary-fixed": "#002113",
+                        "on-tertiary": "#002e6a",
+                        "tertiary-container": "#00479c",
+                        "on-secondary-container": "#00311f",
+                        "on-error-container": "#ffdad6",
+                        "surface-bright": "#31394d",
+                        "on-tertiary-fixed": "#001a42",
+                        "surface-dim": "#0b1326",
+                        "secondary-fixed": "#6ffbbe",
+                        "surface-container-low": "#131b2e",
+                        "primary-fixed-dim": "#a0c9ff",
+                        "on-error": "#690005",
+                        "tertiary-fixed": "#d8e2ff",
+                        "primary-fixed": "#d2e4ff",
+                        "outline-variant": "#42474f",
+                        "on-primary-fixed": "#001c37",
+                        "tertiary-fixed-dim": "#adc6ff",
+                        "surface-tint": "#a0c9ff",
+                        "on-surface": "#dae2fd",
+                        "on-surface-variant": "#c2c7d1",
+                        "surface-container": "#171f33",
+                        "surface-container-high": "#222a3d",
+                        "secondary": "#4edea3",
+                        "on-tertiary-container": "#9abaff",
+                        "error-container": "#93000a",
+                        "surface-variant": "#2d3449",
+                        "on-tertiary-fixed-variant": "#004395",
+                        "on-primary-fixed-variant": "#07497d",
+                        "inverse-on-surface": "#283044",
+                        "outline": "#8c919a",
+                        "primary-container": "#0f4c81",
+                        "surface": "#0b1326",
+                        "on-primary": "#00325a",
+                        "on-primary-container": "#8ebdf9",
+                        "inverse-surface": "#dae2fd",
+                        "error": "#ffb4ab",
+                        "on-background": "#dae2fd",
+                        "primary": "#a0c9ff",
+                        "secondary-container": "#00a572",
+                        "on-secondary-fixed-variant": "#005236",
+                        "on-secondary": "#003824"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "md": "1.5rem",
+                        "xl": "4rem",
+                        "sm": "1rem",
+                        "margin": "32px",
+                        "lg": "2.5rem",
+                        "base": "4px",
+                        "xs": "0.5rem",
+                        "gutter": "24px"
+                    },
+                    "fontFamily": {
+                        "label-sm": ["Space Grotesk"],
+                        "body-lg": ["Space Grotesk"],
+                        "display-xl": ["Space Grotesk"],
+                        "headline-lg": ["Space Grotesk"],
+                        "mono-data": ["Space Grotesk"],
+                        "body-md": ["Space Grotesk"],
+                        "headline-md": ["Space Grotesk"]
+                    },
+                    "fontSize": {
+                        "label-sm": ["13px", { "lineHeight": "1.0", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "body-lg": ["18px", { "lineHeight": "1.6", "fontWeight": "400" }],
+                        "display-xl": ["48px", { "lineHeight": "1.1", "fontWeight": "700" }],
+                        "headline-lg": ["32px", { "lineHeight": "1.2", "fontWeight": "600" }],
+                        "mono-data": ["14px", { "lineHeight": "1.4", "fontWeight": "400" }],
+                        "body-md": ["16px", { "lineHeight": "1.5", "fontWeight": "400" }],
+                        "headline-md": ["24px", { "lineHeight": "1.3", "fontWeight": "500" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
 </head>
-<body>
-  <div class="progress-bar" aria-hidden="true"></div>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <!-- Header / Navbar -->
-  <header class="site-header">
-    <div class="container nav">
-      <a class="brand" href="#top" aria-label="HWSec-CSIC home">
-        <img src="img/logo.jpeg" alt="HWSec-CSIC logo" width="40" height="40" loading="eager" />
-        <span>HWSec-CSIC</span>
-      </a>
-      <button class="menu-toggle" aria-label="Open menu" aria-controls="primary-nav" aria-expanded="false">☰</button>
-      <nav id="primary-nav" class="site-nav" aria-label="Primary">
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#research">Research</a></li>
-          <li><a href="#people">People</a></li>
-          <li><a href="#publications">Publications</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+<body class="bg-background text-on-background min-h-screen flex flex-col font-body-md text-body-md selection:bg-primary-container selection:text-on-primary-container">
+<header class="site-header docked full-width top-0 sticky bg-slate-950/80 backdrop-blur-md border-b border-blue-900/30 shadow-[0_4px_20px_-5px_rgba(15,76,129,0.3)] z-50">
+<div class="flex flex-col md:flex-row justify-between md:items-center gap-3 w-full px-6 py-4 max-w-screen-2xl mx-auto">
+<a class="text-2xl font-bold tracking-tighter text-blue-500 dark:text-blue-400 flex items-center gap-2 font-['Space_Grotesk']" href="index.html">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">memory</span>
+                HWSec-CSIC
+            </a>
+<nav class="w-full md:w-auto flex gap-4 md:gap-8 items-center overflow-x-auto whitespace-nowrap font-['Space_Grotesk']">
+<a class="text-blue-400 border-b-2 border-emerald-500 pb-1 font-label-sm text-label-sm hover:bg-blue-900/20 transition-all duration-200" href="index.html">About</a>
+<a class="text-slate-400 hover:text-blue-300 transition-colors font-label-sm text-label-sm" href="team.html">Team</a>
+<a class="text-slate-400 hover:text-blue-300 transition-colors font-label-sm text-label-sm" href="publications.html">Publications</a>
+<a class="text-slate-400 hover:text-blue-300 transition-colors font-label-sm text-label-sm" href="projects.html">Projects</a>
+</nav>
+<div class="w-full md:w-auto flex items-center justify-end gap-3">
+<a class="inline-flex items-center justify-center bg-primary-container text-on-primary-container font-label-sm text-label-sm px-4 py-2 rounded border border-primary/20 hover:brightness-110 transition-all duration-200" href="mailto:p.brox@csic.es">
+                Contact Us
+            </a>
+</div>
+</div>
+</header>
+<main class="flex-grow flex flex-col gap-xl pb-xl">
+<section class="relative w-full min-h-[716px] flex items-center justify-center overflow-hidden border-b border-surface-variant px-margin py-xl">
+<div class="absolute inset-0 z-0 opacity-20">
+<img class="w-full h-full object-cover" data-alt="A highly detailed macro photograph of a complex silicon microchip illuminated by dramatic, deep sapphire blue and vibrant emerald green lighting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDs5RrQ9FE9F9txVX73bbKvfIF95bc4wWYuwUvhnhwtCWzqVJouOkMOz26wuCzbu3AA67KMh8gqUaU6rUC-yZ9oHUCB19Ugptb_YBuWqSmrLo0UYp_-h1QQo9zOJK3ykSOoYXZW-3VSs54NlDdyi14RuIIHyeAMm0fRS8icqAfW6o76DIUYv_iZA8NRP6wnjbfkEmmMnle2sNxysnCfDFbg4NSgtSDh9a7IxI0zag1_s_trKWfp7V20Z-x5V9oMJFIOkXk-z4OX0gM"/>
+<div class="absolute inset-0 bg-gradient-to-t from-background via-background/80 to-transparent"></div>
+</div>
+<div class="relative z-10 max-w-screen-xl mx-auto flex flex-col items-center text-center gap-lg">
+<div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-surface-container border border-surface-variant backdrop-blur-md">
+<span class="w-2 h-2 rounded-full bg-secondary animate-pulse"></span>
+<span class="font-label-sm text-label-sm text-secondary">Instituto de Microelctrónica de Sevilla (IMSE-cnm)</span>
+</div>
+<h1 class="font-display-xl text-display-xl text-on-surface max-w-4xl tracking-tight leading-tight">
+                    Trusted Systems-on-Chip based on <br/>
+<span class="text-transparent bg-clip-text bg-gradient-to-r from-primary to-secondary">CMOS and integrated photonics technologies</span>
+</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                    HWSec-CSIC advances secure SoCs using CMOS and integrated photonics, from tamper‑resistant RISC‑V architectures to trustworthy die‑to‑die communication.
+                </p>
+<div class="flex gap-4 mt-sm">
+<a href="team.html" class="px-6 py-3 rounded-DEFAULT bg-primary-container text-on-primary-container font-label-sm text-label-sm hover:brightness-110 transition-all flex items-center gap-2">
+                        Meet the Team
+                        <span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a href="publications.html" class="px-6 py-3 rounded-DEFAULT border border-surface-variant text-on-surface hover:bg-surface-container transition-all font-label-sm text-label-sm">
+                        View Publications
+                    </a>
+</div>
+</div>
+</section>
 
-  <main id="main">
-  <!-- Hero -->
-  <section id="top" class="hero reveal" aria-label="Intro">
-    <div class="container hero-inner">
-      <h1 class="headline">HWSec-CSIC: Trusted Systems-on-Chip based on CMOS and integrated photonics technologies</h1>
-      <p class="subhead">HWSec-CSIC advances secure SoCs using CMOS and integrated photonics — from tamper‑resistant RISC‑V architectures to trustworthy die‑to‑die communication.</p>
-      <div class="cta">
-        <a class="btn primary" href="#research">Explore research</a>
-        <a class="btn" href="#people">Meet the team</a>
-      </div>
+<section class="max-w-screen-2xl mx-auto w-full px-margin flex flex-col lg:flex-row gap-lg items-center">
+    <div class="w-full lg:w-1/2 flex flex-col gap-sm">
+        <div class="flex items-center gap-xs">
+            <span class="material-symbols-outlined text-primary text-3xl">info</span>
+            <h2 class="font-headline-lg text-headline-lg text-on-surface">About Us</h2>
+        </div>
+        <p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+            The security of modern computing infrastructures heavily relies on hardware. Yet, many CAD tools and foundries are non‑European. With technological sovereignty back in focus, we explore new paradigms that deliver advanced, competitive and open solutions — including secure RISC‑V as an alternative to proprietary platforms.
+        </p>
     </div>
-  </section>
+    <div class="w-full lg:w-1/2">
+        <img src="img/grupo.jpeg" alt="HWSec-CSIC group" class="rounded-xl border border-primary/20 shadow-[0_0_20px_rgba(15,76,129,0.15)] w-full object-cover" />
+    </div>
+</section>
 
-  <!-- About -->
-  <section id="about" class="section reveal">
-    <div class="container">
-      <h2 class="section-title">About Us</h2>
-      <p class="lead">The security of modern computing infrastructures heavily relies on hardware. Yet, many CAD tools and foundries are non‑European. With technological sovereignty back in focus, we explore new paradigms that deliver advanced, competitive and open solutions — including secure RISC‑V as an alternative to proprietary platforms.</p>
-      <figure class="media">
-        <img 
-          src="img/grupo-1200.jpeg" 
-          srcset="img/grupo-1200.jpeg 1200w, img/grupo-2400.jpeg 2400w" 
-          sizes="(max-width: 1200px) 100vw, 1200px"
-          alt="HWSec-CSIC group" loading="lazy" decoding="async" width="1200" />
-      </figure>
-    </div>
-  </section>
+<section class="max-w-screen-2xl mx-auto w-full px-margin flex flex-col gap-lg mt-8">
+<div class="flex justify-between items-end border-b border-surface-variant pb-sm">
 
-  <!-- Research -->
-  <section id="research" class="section reveal">
-    <div class="container">
-      <h2 class="section-title">Research Areas</h2>
-      <div class="grid cards">
-        <article class="card">
-          <h3>Trusted, tamper‑resistant SoCs on RISC‑V</h3>
-          <p>Design of secure architectures and primitives to harden embedded systems against side‑channel and fault attacks.</p>
-        </article>
-        <article class="card">
-          <h3>Photonic devices for security</h3>
-          <p>Integrated photonics for unclonable identities and quantum‑ready cryptographic mechanisms.</p>
-        </article>
-        <article class="card">
-          <h3>Open die‑to‑die communication</h3>
-          <p>Methodologies and IP leveraging open frameworks to build trustworthy chiplet‑based systems.</p>
-        </article>
-      </div>
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface">Research Areas</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2">Investigating critical vulnerabilities at the hardware level.</p>
+</div>
+<a class="font-label-sm text-label-sm text-primary flex items-center gap-1 hover:text-tertiary transition-colors" href="projects.html">
+                    View All Projects <span class="material-symbols-outlined text-[16px]">arrow_outward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+    
+<div class="group relative overflow-hidden rounded-xl bg-surface-container border border-primary/10 p-lg flex flex-col justify-between min-h-[320px] transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_15px_rgba(15,76,129,0.2)]">
+    <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
+    <div class="relative z-10 flex flex-col gap-sm">
+        <div class="w-12 h-12 rounded-lg bg-surface flex items-center justify-center border border-primary/10 group-hover:border-primary transition-colors">
+            <span class="material-symbols-outlined text-primary">security</span>
+        </div>
+        <h3 class="font-headline-md text-headline-md text-on-surface">Trusted, tamper‑resistant SoCs on RISC‑V</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant">
+            Design of secure architectures and primitives to harden embedded systems against side‑channel and fault attacks.
+        </p>
     </div>
-  </section>
+</div>
 
-  <!-- People -->
-  <section id="people" class="section reveal">
-    <div class="container">
-  <h2 class="section-title">Our Team</h2>
-  <p class="lead" id="team-legend" style="margin-top:-8px;color:var(--ink-2); font-size:14px;">Filter by role. Roles are shown as tags on each card.</p>
-      <div class="team-controls" role="region" aria-label="Team controls">
-        <div class="filters" role="radiogroup" aria-label="Filter by role">
-          <button class="pill active" data-filter="all" aria-pressed="true">All</button>
-          <button class="pill" data-filter="permanent" aria-pressed="false">Permanent</button>
-          <button class="pill" data-filter="postdoc" aria-pressed="false">Postdoc</button>
-          <button class="pill" data-filter="phd" aria-pressed="false">PhD</button>
-          <button class="pill" data-filter="technical" aria-pressed="false">Technical</button>
-          <button class="pill" data-filter="external" aria-pressed="false">External</button>
+<div class="group relative overflow-hidden rounded-xl bg-surface-container border border-primary/10 p-lg flex flex-col justify-between min-h-[320px] transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_15px_rgba(15,76,129,0.2)]">
+    <div class="absolute left-0 top-0 bottom-0 w-1 bg-secondary opacity-0 group-hover:opacity-100 transition-opacity"></div>
+    <div class="relative z-10 flex flex-col gap-sm">
+        <div class="w-12 h-12 rounded-lg bg-surface flex items-center justify-center border border-primary/10 group-hover:border-secondary transition-colors">
+            <span class="material-symbols-outlined text-secondary">lightbulb</span>
         </div>
-      </div>
-      
-      <h3 class="section-subtitle">Permanent Researchers</h3>
-  <div class="grid team list-view">
-  <div class="team-member" data-role="permanent">
-  <div class="avatar"><img src="img/team/Brox-260.png" srcset="img/team/Brox-260.png 260w, img/team/Brox-520.png 520w" sizes="(max-width: 600px) 40vw, 260px" width="260" height="260" alt="Dr. Piedad Brox Jiménez" loading="lazy"></div>
-        <h4>Dr. Piedad Brox Jiménez</h4>
-        <p class="role">Tenured Scientist</p>
-        <div class="links">
-          <a href="https://orcid.org/0000-0003-1059-5338"><img src="img/orcid.png" alt="ORCID" width="32" height="32" loading="lazy" class="icon"></a>
-          <a href="https://scholar.google.com/citations?user=Q38fPzUAAAAJ&hl=es"><img src="img/gs.png" alt="Google Scholar" width="32" height="32" loading="lazy" class="icon"></a>
-        </div>
-      </div>
-  <div class="team-member" data-role="permanent">
-  <div class="avatar"><img src="img/team/Martinez-260.png" srcset="img/team/Martinez-260.png 260w, img/team/Martinez-520.png 520w" sizes="(max-width: 600px) 40vw, 260px" width="260" height="260" alt="Dr. Macarena C. Martínez-Rodríguez" loading="lazy"></div>
-        <h4>Dr. Macarena C. Martínez‑Rodríguez</h4>
-        <p class="role">Tenured Scientist</p>
-        <div class="links">
-          <a href="https://orcid.org/0000-0003-3025-5736"><img src="img/orcid.png" alt="ORCID" width="32" height="32" loading="lazy" class="icon"></a>
-          <a href="https://scholar.google.com/citations?user=TJRg5D4AAAAJ&hl=es"><img src="img/gs.png" alt="Google Scholar" width="32" height="32" loading="lazy" class="icon"></a>
-        </div>
-      </div>
+        <h3 class="font-headline-md text-headline-md text-on-surface">Photonic devices for security</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant">
+            Integrated photonics for unclonable identities and quantum‑ready cryptographic mechanisms.
+        </p>
     </div>
-    <h3 class="section-subtitle">Post‑Doctoral Researchers</h3>
-  <div class="grid team list-view">
-    <div class="team-member" data-role="postdoc">
-          <div class="avatar"><img src="img/team/Camacho-260.jpg" srcset="img/team/Camacho-260.jpg 260w, img/team/Camacho-520.jpg 520w" sizes="(max-width: 600px) 40vw, 260px" width="260" height="260" alt="Dr. Eros Camacho-Ruiz" loading="lazy"></div>
-          <h4>Dr. Eros Camacho‑Ruiz</h4>
-          <div class="links">
-            <a href="https://orcid.org/0000-0002-3177-2260"><img src="img/orcid.png" alt="ORCID" width="32" height="32" loading="lazy" class="icon"></a>
-            <a href="https://scholar.google.com/citations?user=q1uEoHQAAAAJ&hl=es"><img src="img/gs.png" alt="Google Scholar" width="32" height="32" loading="lazy" class="icon"></a>
-          </div>
+</div>
+
+<div class="group relative overflow-hidden rounded-xl bg-surface-container border border-primary/10 p-lg flex flex-col justify-between min-h-[320px] transition-all duration-300 hover:border-primary/30 hover:shadow-[0_0_15px_rgba(15,76,129,0.2)]">
+    <div class="absolute left-0 top-0 bottom-0 w-1 bg-tertiary opacity-0 group-hover:opacity-100 transition-opacity"></div>
+    <div class="relative z-10 flex flex-col gap-sm">
+        <div class="w-12 h-12 rounded-lg bg-surface flex items-center justify-center border border-primary/10 group-hover:border-tertiary transition-colors">
+            <span class="material-symbols-outlined text-tertiary">hub</span>
         </div>
-  <div class="team-member" data-role="postdoc">
-          <div class="avatar"><img src="img/team/david-260.png" srcset="img/team/david-260.png 260w, img/team/david-520.png 520w" sizes="(max-width: 600px) 40vw, 260px" width="260" height="260" alt="Dr. David Martín Sánchez" loading="lazy"></div>
-          <h4>Dr. David Martín Sánchez</h4>
-          <div class="links">
-            <a href="https://orcid.org/0000-0003-0131-5226"><img src="img/orcid.png" alt="ORCID" width="32" height="32" loading="lazy" class="icon"></a>
-            <a href="https://scholar.google.com/citations?user=JBEyXwUAAAAJ&hl=es"><img src="img/gs.png" alt="Google Scholar" width="32" height="32" loading="lazy" class="icon"></a>
-          </div>
-        </div>
+        <h3 class="font-headline-md text-headline-md text-on-surface">Open die‑to‑die communication</h3>
+        <p class="font-body-md text-body-md text-on-surface-variant">
+            Methodologies and IP leveraging open frameworks to build trustworthy chiplet‑based systems.
+        </p>
     </div>
-    <h3 class="section-subtitle">PhD Students</h3>
-  <div class="grid team list-view">
-    <div class="team-member" data-role="phd">
-          <div class="avatar"><img src="img/team/karmakar-260.jpeg" srcset="img/team/karmakar-260.jpeg 260w, img/team/karmakar-520.jpeg 520w" sizes="(max-width: 600px) 40vw, 260px" width="260" height="260" alt="Apurba Karmakar" loading="lazy"></div>
-          <h4>Apurba Karmakar</h4>
-          <div class="links">
-            <a href="https://orcid.org/0009-0000-4743-8622"><img src="img/orcid.png" alt="ORCID" width="32" height="32" loading="lazy" class="icon"></a>
-            <a href="https://scholar.google.com/citations?user=ySaOudkAAAAJ&hl=es&oi=ao"><img src="img/gs.png" alt="Google Scholar" width="32" height="32" loading="lazy" class="icon"></a>
-          </div>
-        </div>
-  <div class="team-member" data-role="phd">
-          <div class="avatar"><img src="img/team/Navarro-260.jpg" srcset="img/team/Navarro-260.jpg 260w, img/team/Navarro-520.jpg 520w" sizes="(max-width: 600px) 40vw, 260px" width="260" height="260" alt="Pablo Navarro-Torrero" loading="lazy"></div>
-          <h4>Pablo Navarro‑Torrero</h4>
-          <div class="links">
-            <a href="https://orcid.org/0009-0006-9360-4322"><img src="img/orcid.png" alt="ORCID" width="32" height="32" loading="lazy" class="icon"></a>
-            <a href="https://scholar.google.com/citations?user=yByHHBwAAAAJ&hl=es"><img src="img/gs.png" alt="Google Scholar" width="32" height="32" loading="lazy" class="icon"></a>
-          </div>
-        </div>
-  <div class="team-member" data-role="phd">
-          <div class="avatar"><img src="img/team/rubio-260.jpeg" srcset="img/team/rubio-260.jpeg 260w, img/team/rubio-520.jpeg 520w" sizes="(max-width: 600px) 40vw, 260px" width="260" height="260" alt="Francisco Javier Rubio-Barbero" loading="lazy"></div>
-          <h4>Francisco Javier Rubio‑Barbero</h4>
-          <div class="links">
-            <a href="https://orcid.org/0000-0002-0971-5825"><img src="img/orcid.png" alt="ORCID" width="32" height="32" loading="lazy" class="icon"></a>
-            <a href="https://scholar.google.com/citations?user=wS0BzLgAAAAJ&hl=es"><img src="img/gs.png" alt="Google Scholar" width="32" height="32" loading="lazy" class="icon"></a>
-          </div>
-        </div>
-  <div class="team-member" data-role="phd">
-          <div class="avatar"><img src="img/team/ciudadreal-260.jpeg" srcset="img/team/ciudadreal-260.jpeg 260w, img/team/ciudadreal-520.jpeg 520w" sizes="(max-width: 600px) 40vw, 260px" width="260" height="260" alt="Jorge Ciudad Real Lacuesta" loading="lazy"></div>
-          <h4>Jorge Ciudad Real Lacuesta</h4>
-          <div class="links">
-            <a href="https://orcid.org/0009-0001-5179-650X"><img src="img/orcid.png" alt="ORCID" width="32" height="32" loading="lazy" class="icon"></a>
-          </div>
-        </div>
-        <div class="team-member" data-role="phd">
-          <div class="avatar"><img src="img/team/moreno-260.jpeg" srcset="img/team/moreno-260.jpeg 260w, img/team/moreno-520.jpeg 520w" sizes="(max-width: 600px) 40vw, 260px" width="260" height="260" alt="Juan Manuel Moreno Cenizo" loading="lazy"></div>
-          <h4>Juan Manuel Moreno Cenizo</h4>
+</div>
+
+</div>
+</section>
+</main>
+<footer class="w-full border-t border-blue-900/20 bg-slate-950 mt-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 px-8 py-12 max-w-screen-2xl mx-auto font-['Space_Grotesk'] text-sm text-blue-600 dark:text-blue-400">
+    
+    <div class="flex flex-col gap-4">
+        <span class="text-lg font-bold text-blue-500 flex items-center gap-2">
+            <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">memory</span>
+            HWSec-CSIC
+        </span>
+        <p class="text-slate-500 leading-relaxed">
+            Trusted Systems-on-Chip based on CMOS and integrated photonics technologies
+        </p>
+        <div class="text-slate-500 flex flex-col gap-1 mt-2 text-[13px]">
+            <span class="font-semibold text-slate-400">Instituto de Microelectrónica de Sevilla</span>
+            <span>Cl Américo Vespucio, 28.</span>
+            <span>Sevilla TechPark, 41092 Sevilla · Spain</span>
+            <span class="flex items-center gap-2 mt-1">
+                <span class="material-symbols-outlined text-[16px]">call</span> +34 954 466 666
+            </span>
         </div>
     </div>
-    <h3 class="section-subtitle">Technical Researchers</h3>
-  <div class="grid team list-view">
-    <div class="team-member" data-role="technical">
-          <div class="avatar"><img src="img/team/ortega-260.jpeg" srcset="img/team/ortega-260.jpeg 260w, img/team/ortega-520.jpeg 520w" sizes="(max-width: 600px) 40vw, 260px" width="260" height="260" alt="Pau Ortega Castro" loading="lazy"></div>
-          <h4>Pau Ortega Castro</h4>
-        </div>
-  <div class="team-member" data-role="technical">
-          <div class="avatar"><img src="img/team/ignacio-260.jpeg" srcset="img/team/ignacio-260.jpeg 260w, img/team/ignacio-520.jpeg 520w" sizes="(max-width: 600px) 40vw, 260px" width="260" height="260" alt="Ignacio Martínez Fernández" loading="lazy"></div>
-          <h4>Ignacio Martínez Fernández</h4>
-        </div>
+
+    <div class="flex flex-col gap-3">
+        <h4 class="text-emerald-400 font-semibold mb-1">Institutions</h4>
+        <a class="text-slate-500 hover:text-emerald-400 transition-colors flex items-start gap-2" href="http://www.imse-cnm.csic.es/" target="_blank" rel="noopener noreferrer">
+            <span class="material-symbols-outlined text-[18px] shrink-0">science</span>
+            <span>Instituto de Microelectrónica de Sevilla <br> (IMSE-cnm, CSIC, US)</span>
+        </a>
+        <a class="text-slate-500 hover:text-emerald-400 transition-colors flex items-start gap-2" href="https://www.csic.es/" target="_blank" rel="noopener noreferrer">
+            <span class="material-symbols-outlined text-[18px] shrink-0">account_balance</span>
+            <span>Consejo Superior de Investigaciones Científicas</span>
+        </a>
+        <a class="text-slate-500 hover:text-emerald-400 transition-colors flex items-start gap-2" href="https://www.us.es/" target="_blank" rel="noopener noreferrer">
+            <span class="material-symbols-outlined text-[18px] shrink-0">school</span>
+            <span>Universidad de Sevilla</span>
+        </a>
     </div>
-    <h3 class="section-subtitle">External Collaborator</h3>
-  <div class="grid team list-view">
-    <div class="team-member" data-role="external">
-          <div class="avatar"><img src="img/team/santi-260.jpeg" srcset="img/team/santi-260.jpeg 260w, img/team/santi-520.jpeg 520w" sizes="(max-width: 600px) 40vw, 260px" width="260" height="260" alt="Santiago Sánchez Solano" loading="lazy"></div>
-          <h4>Santiago Sánchez Solano</h4>
-          <div class="links">
-            <a href="https://orcid.org/0000-0002-0700-0447"><img src="img/orcid.png" alt="ORCID" width="32" height="32" loading="lazy" class="icon"></a>
-            <a href="https://scholar.google.com/citations?user=lirVGPcAAAAJ&hl=en"><img src="img/gs.png" alt="Google Scholar" width="32" height="32" loading="lazy" class="icon"></a>
-          </div>
-        </div>
-    </div>
-  </section>
-
-  <!-- Publications -->
-  <section id="publications" class="section reveal">
-    <div class="container">
-    <h2 class="section-title">Publications</h2>
-    <div class="pubs-controls" role="region" aria-label="Publications controls">
-      <input type="search" id="pubs-search" placeholder="Search title or author" aria-label="Search publications" />
-      <button id="pubs-sort" class="pill" aria-pressed="false" aria-label="Toggle sort by year">Sort by year</button>
-    </div>
-  <div class="pubs" id="pubs-list">
-    <li><a class="pub-card" href="https://doi.org/10.1109/ACCESS.2025.3584696" target="_blank" rel="noopener">A Side-Channel Protected and High-Performance Hardware Implementation for EdDSA25519, P. Navarro-Torrero, E. Camacho-Ruiz, M.C. Martínez-Rodríguez and P. Brox, IEEE Access, vol. 13, 2025</a></li>
-    <li><a class="pub-card" href="https://doi.org/10.1364/OE.572433" target="_blank" rel="noopener">Sensitive Broadband Ultrasound Sensor Based on a Low-Loss High-Q Fused-Silica Plano-Concave Microresonator, D. Martín-Sánchez, E. Z. Zhang, Z. Liu, J. A. Guggenheim, P. C. Beard, Optics Express, 33(19), 39875–39888, 2025</a></li>
-    <li><a class="pub-card" href="https://doi.org/10.3390/s24175674" target="_blank" rel="noopener">Hardware-Efficient Configurable Ring-Oscillator-Based Physical Unclonable Function/True Random Number Generator Module for Secure Key Management, S. Sánchez-Solano, L.F. Rojas-Muñoz, M.C. Martínez-Rodríguez and P. Brox, Sensors, 24(17):5674, 2024</a></li>
-    <li><a class="pub-card" href="https://doi.org/10.1364/OL.510516" target="_blank" rel="noopener">Laser Frequency Noise Characterisation Using High-Finesse Plano-Concave Optical Microresonators, D. Martín-Sánchez, E. Z. Zhang, J. Paterson, J. A. Guggenheim, Z. Liu, P. C. Beard, Optics Letters, 49(3):678–681, 2024</a></li>
-    <li><a class="pub-card" href="https://doi.org/10.3390/cryptography7020029" target="_blank" rel="noopener">Timing-Attack-Resistant Acceleration of NTRU Round 3 Encryption on Resource-Constrained Embedded Systems, E. Camacho-Ruiz, M.C. Martínez-Rodríguez, S. Sánchez-Solano and P. Brox, Cryptography, 7(2):29, 2023</a></li>
-    <li><a class="pub-card" href="https://doi.org/10.3390/s23084070" target="_blank" rel="noopener">On-Line Evaluation and Monitoring of Security Features of an RO-Based PUF/TRNG for IoT Devices, L.F. Rojas-Muñoz, S. Sánchez-Solano, M.C. Martínez-Rodríguez and P. Brox, Sensors, 23(8):4070, 2023</a></li>
-    <li><a class="pub-card" href="https://doi.org/10.1364/OE.484212" target="_blank" rel="noopener">An ABCD Transfer Matrix Model of Gaussian Beam Propagation in Plano-Concave Optical Microresonators, D. Martín-Sánchez, J. Li, E. Z. Zhang, P. C. Beard, J. A. Guggenheim, Optics Express, 31(10), 16523–16534, 2023</a></li>
-    <li><a class="pub-card" href="https://doi.org/10.3390/electronics11234028" target="_blank" rel="noopener">True Random Number Generation Capability of a Ring Oscillator PUF for Reconfigurable Devices, L.F. Rojas-Muñoz, S. Sánchez-Solano, M.C. Martínez-Rodríguez and P. Brox, Electronics, 11(23):4028, 2022</a></li>
-  <li><a class="pub-card" href="https://doi.org/10.1145/3445979" target="_blank" rel="noopener">Timing-Optimized Hardware Implementation to Accelerate Polynomial Multiplication in the NTRU Algorithm, E. Camacho-Ruiz, S. Sánchez-Solano, P. Brox and M.C. Martínez-Rodríguez, ACM Journal on Emerging Technologies in Computing Systems, 17(3):35, 2021</a></li>
-  <li><a class="pub-card" href="https://doi.org/10.1109/JSEN.2020.2983218" target="_blank" rel="noopener">Simultaneous Refractive Index Sensing Using an Array of Suspended Porous Silicon Membranes, D. Martín-Sánchez, T. Angelova, J. Garcia-Ruperez, IEEE Sensors Journal, 20(15), 2020</a></li>
-  </div>
-    </div>
-  </section>
-
-  <!-- Projects -->
-  <section id="projects" class="section reveal">
-    <div class="container">
-    <h2 class="section-title">Projects</h2>
-    <div class="projects-controls" aria-label="Projects view controls">
-      <button class="pill" id="proj-expand" type="button">Expand all</button>
-      <button class="pill" id="proj-collapse" type="button">Collapse all</button>
-    </div>
-  <h3 class="section-subtitle with-flag">European Projects <img class="flag" src="img/europe.png" alt="European Union flag" loading="lazy" decoding="async"></h3>
-    <details>
-      <summary>
-      Q-FENCE: Securing Tomorrow’s Digital Infrastructure with Quantum-Resistant Cryptography
-      </summary>
-      <div class="details-content">
-      <div class="table-wrap"><table border="0" cellspacing="0" cellpadding="8">
-        <tr>
-          <td><b>PI</b></td>
-          <td>Piedad Brox Jiménez</td>
-        </tr>
-        <tr>
-          <td><b>Participant Institutions</b></td>
-          <td>South East Technological University (Ireland), Agencia Estatal Consejo Superior de Investigaciones Científicas (CSIC), Politecnico Di Torino (Italy), Universite Du Luxembourg (Luxemburg), University College Cork (Ireland), Universitatea Din Bucuresti (Romania), Fraunhofer Gesellschaft Zur Forderung Der Angewandten Forschung EV (Germany), Instytut Informatyki Teoretycznej Istosowanej Polskiej Akademii Nauk (Poland) , Logiicdev GmbH (Austria), Toshiba Europe Limited (United Kingdom), Red Hat Limited (Ireland), Martel GmbH (Czech Republic),  Telespazio SPA (Italy), IoT Lab Association (Czech Republic), Mandat International alias Fondation pour la Coopération Internationale (Czech Republic).</td>
-        </tr>
-        <tr>
-          <td><b>Funding Agency</b></td>
-          <td>European Commission (Horizon Europe)</td>
-        </tr>
-        <tr>
-          <td><b>Call</b></td>
-          <td>HORIZON-CL3-2024-CS-01</td>
-        </tr>
-        <tr>
-          <td><b>GA</b></td>
-          <td>101225708</td>
-        </tr>
-        <tr>
-          <td><b>IMSE Budget</b></td>
-          <td>517.500€</td>
-        </tr>
-        <tr>
-          <td><b>Total Budget</b></td>
-          <td>5.312.198,75€</td>
-        </tr>
-        <tr>
-          <td><b>Project duration</b></td>
-          <td>1 Nov 2025 – 31 Oct 2028</td>
-        </tr>
-        <tr>
-          <td><b>Abstract</b></td>
-          <td>Q-FENCE is a transformative initiative aimed at securing tomorrow’s digital infrastructure with quantum-resistant cryptography. In response to the rising threats posed by quantum computing, Q-FENCE develops a robust hybrid framework integrating classical, quantum, and post-quantum cryptographic techniques. Utilizing innovative approaches such as Ring-LWE, Module-LWE, Quantum Random Number Generators, and hardware-accelerated primitives, the project establishes a dual-layer security model that fortifies data protection across diverse infrastructures. Leveraging hardware-accelerated primitives and energy-efficient protocols, Q-FENCE ensures quantum resilience while addressing critical challenges such as seamless integration with legacy systems, regulatory compliance, and scalable deployment. By addressing key challenges like legacy system integration, interoperability, and regulatory compliance, it ensures a phased and seamless adoption across sectors including finance, healthcare, IoT, satellite and digital networks. Through sector specific demonstrators, best-practice guidelines, and collaboration with EU policymakers, Q-FENCE bridges the gap between theoretical advancements and real-world applications, fostering digital sovereignty and resilience. Positioned as a critical player in the quantum-ready future, Q-FENCE not only safeguards sensitive data but also empowers stakeholders with practical, scalable, and innovative post-quantum solutions.</td>
-        </tr>
-      </table></div>
-      
-      </div>
-    </details>
-
-    <details>
-      <summary>
-      DECIDE: Democratizing European Chip Innovation and Design Ecosystem
-      </summary>
-      <div class="details-content">
-      <div class="table-wrap"><table border="0" cellspacing="0" cellpadding="8">
-        <tr>
-          <td><b>PI</b></td>
-          <td>Macarena C. Martínez Rodríguez</td>
-        </tr>
-        <tr>
-          <td><b>Participant Institutions</b></td>
-          <td>IMEC (Belgium), French Alternative Energies and Atomic Energy Commission (CEA, France), Fraunhofer-Gesellschaft zur Förderung der angewandten Forschung e. V. (Germany), Leibniz Institute for High Performance Microelectronics (IHP, Germany), Silicon Austria Labs (Austria), Fondazione Chips-IT (Italy), Spanish National Research Council (CSIC, Spain), International Iberian Nanotechnology Laboratory (Portugal), Eindhoven University of Technology (The Netherlands), Tampere University (Finland), CVUT (Czech Republic) and AGH University of Krakow (Poland).</td>
-        </tr>
-        <tr>
-          <td><b>Funding Agency</b></td>
-          <td>European Commission (Chips Joint Undertaking (Chips JU) programme)</td>
-        </tr>
-        <tr>
-          <td><b>Call</b></td>
-          <td>DIGITAL-Chips-2024-CSA-CDP-1</td>
-        </tr>
-        <tr>
-          <td><b>GA</b></td>
-          <td>101218811</td>
-        </tr>
-        <tr>
-          <td><b>IMSE Budget</b></td>
-          <td>840.327€</td>
-        </tr>
-        <tr>
-          <td><b>Total Budget</b></td>
-          <td>24.980.603,06€</td>
-        </tr>
-        <tr>
-          <td><b>Project duration</b></td>
-          <td>1 Jan 2025 – 31 Dec 2028</td>
-        </tr>
-        <tr>
-          <td><b>Abstract</b></td>
-          <td>The DECIDE project aims to create a virtual design platform to democratize access to advanced semiconductor technologies across Europe. This platform will support the innovation and competitiveness of European startups, SMEs, and research institutions. By integrating Design Enablement Teams (DETs), the platform will offer customized support, access to Electronic Design Automation (EDA) tools, intellectual property (IP), and pilot line technologies, helping Europe to deploy next-generation semiconductor technologies rapidly. DECIDE addresses the decline in Europe's global semiconductor market share, particularly in the fabless sector. The project aims to reverse this trend by expanding the number of European fabless companies. The unified platform will lower barriers to entry for SMEs and startups by reducing the costs associated with EDA tools and IP, enabling these companies to innovate and grow. DECIDE will provide early access to advanced technologies, fostering Europe's leadership in the global semiconductor space. In addition to economic growth, DECIDE contributes to environmental sustainability by promoting the design of energy-efficient chips, aligning with the European Green Deal. It will support the development of eco-friendly technologies while also addressing Europe's reliance on non-European technologies. By building a robust semiconductor design ecosystem, DECIDE ensures that Europe can compete globally and retain technological sovereignty. The project's core objectives include supporting startups and SMEs, democratizing access to EDA tools, and fostering a sustainable semiconductor ecosystem. By offering access to advanced technologies, training, and a marketplace for IP, DECIDE will boost innovation and strengthen Europe's semiconductor industry. The platform will also help reduce financial and technical barriers, allowing more companies to develop and bring new technologies to market, ultimately contributing to Europe's digital and environmental goal.</td>
-        </tr>
-      </table></div>
-      
-      </div>
-    </details>
-
-    <details>
-      <summary>
-      QUBIP: Quantum-oriented Update to Browsers and Infrastructures for the PQ Transition
-      </summary>
-      <div class="details-content">
-      <div class="table-wrap"><table border="0" cellspacing="0" cellpadding="8">
-        <tr>
-          <td><b>PI</b></td>
-          <td>Piedad Brox Jiménez</td>
-        </tr>
-        <tr>
-          <td><b>Participant Institutions</b></td>
-          <td>LINKS Foundation (Italy), Agencia Estatal de Investigaciones Científicas (CSIC, Spain), Tampere University (Finland), Telefónica I+D (Spain), Politecnico di Torino (POLITO, Italy), Telsy (Italy), Security Pattern (Italy), Universidad Politécnica de Madrid (Spain), RED HAT Limited (Czech Republic), Smart Factory (Italy), Fundación Cibervoluntarios (Spain).</td>
-        </tr>
-        <tr>
-          <td><b>Funding Agency</b></td>
-          <td>European Commission (Horizon Europe)</td>
-        </tr>
-        <tr>
-          <td><b>Call</b></td>
-          <td>HORIZON-CL3-2022-CS-01-03</td>
-        </tr>
-        <tr>
-          <td><b>GA</b></td>
-          <td>251944</td>
-        </tr>
-        <tr>
-          <td><b>IMSE Budget</b></td>
-          <td>303.720€</td>
-        </tr>
-        <tr>
-          <td><b>Total Budget</b></td>
-          <td>4.999.648€</td>
-        </tr>
-        <tr>
-          <td><b>Project duration</b></td>
-          <td>1 Sep 2023 – 31 Aug 2026</td>
-        </tr>
-        <tr>
-          <td><b>Abstract</b></td>
-          <td>The exciting frontiers opened by the development of quantum computers (QC) come at the cost of breaking the foundations of current digital security. The research community is working to the definition of post-quantum cryptography (PQC) to counteract this threat. However, the transition to PQC is delicate and takes time because it impacts many functions, algorithms, and protocols in apriori unknown cascade of dependencies. QUBIP is conceived to contribute to the EU transition to PQC with the goal of simplifying and making replicable the process by means of recommended practices and counteract post-quantum threats as soon as possible. QUBIP focuses on digital infrastructure addressing the 5 main building blocks that use public-key cryptography for security purposes: hardware, cryptographic libraries, operating system, communication protocols and applications. QUBIP address all 5 blocks coherently solving all dependency issues that may arise inside each block and among blocks with the final aim to validate at TRL6 three infrastructures making use of those blocks in IoT-based Digital Manufacturing, Internet Browsing, and Software Networks Environments for Telcos use cases. The return-of-experience from the three practical exercises is then maximized by developing a migration playbook, that will contain the lessons learned and an evaluation of all the technical, economic, and legal barriers encountered together with the solutions to overcome them to enable the definition of a replicable process, suitable to provide structured accompanying and practical guidance to industrial stakeholders. The technical activities are corroborated by three supporting activities (i) evaluation of the capabilities of QCs to assess their implication to primitives, algorithms and protocols adopted, and contribution to (ii) standardization efforts addressing transition to PQC processes and (iii) policy measures addressing technology changes coming from the advent of QC and PQC.</td>
-        </tr>
-      </table></div>
-      
-      </div>
-    </details>
-
-    <details>
-      <summary>
-      SQPRIM: Secure post-quantum cryptographic primitives 
-      </summary>
-      <div class="details-content">
-      <div class="table-wrap"><table border="0" cellspacing="0" cellpadding="8">
-        <tr>
-          <td><b>PI</b></td>
-          <td>Piedad Brox Jiménez</td>
-        </tr>
-        <tr>
-          <td><b>Participant Institutions</b></td>
-          <td>Instituto de Microelectrónica de Sevilla, Agencia Estatal Investigaciones Científicas (CSIC, Spain)</td>
-        </tr>
-        <tr>
-          <td><b>Funding Agency</b></td>
-          <td>MARIE SKLODOWSKA CURIE – Horizon Europe</td>
-        </tr>
-        <tr>
-          <td><b>GA</b></td>
-          <td>253397</td>
-        </tr>
-        <tr>
-          <td><b>IMSE Budget</b></td>
-          <td>167.236,25 €</td>
-        </tr>
-        <tr>
-          <td><b>Project duration</b></td>
-          <td>1 Jul 2023 – 31 Aug 2025</td>
-        </tr>
-        <tr>
-          <td><b>Abstract</b></td>
-          <td>Quantum computers pose a huge threat to cybersecurity, with the potential of solving complex problems in just a fraction of the time it takes to the most powerful supercomputers today. With conventional public key infrastructure (PKI) cryptography at risk, we face the task of securing our digital systems with the development of new cryptographic primitives for the post-quantum era. Inspired by nature, this project aims to developing the biometric equivalents of fingerprints and DNA for the digital world that will univocally and individually identify hardware. For this goal, Physically Unclonable Functions (PUFs) will be developed to provide hardware-based digital identifiers that will be utilised to build lightweight encryption and robust authentication procedures. But creating such unique structures is challenging in a fast-growing digital environment with increasing demand for new interconnected devices, such as the Internet of Things (IoT). To achieve this goal, we will combine light and sound. We will use ultrasound (US) waves to control the travel path of a light beam transmitted through a scattering medium to generate unique patterns. This novel method can potentially generate a high number of unique patterns while reducing the cost and complexity compared to current systems exploiting optical PUFs. The proposed device is expected to be unconditionally unclonable and, therefore, safe in the post-quantum era. This project will also explore the integration of the proposed novel PUFs with CMOS-based cryptographic primitives to create IDentity of Things (IDoT). The proposed solution is expected to be of relevance in a wide spectrum of application domains such as financial systems, medical services, energy industry, governments, and citizens.</td>
-        </tr>
-      </table></div>
-      
-      </div>
-    </details>
-
-    <details>
-      <summary>
-      GoIT: Open-source hardware: a step towards Europe’s digital Independence 
-      </summary>
-      <div class="details-content">
-      <div class="table-wrap"><table border="0" cellspacing="0" cellpadding="8">
-        <tr>
-          <td><b>PI</b></td>
-          <td>Piedad Brox Jiménez</td>
-        </tr>
-        <tr>
-          <td><b>Participant Institutions</b></td>
-          <td>Elektronikas un Datorzinatnu Instituts (LV), Instituto de Tecnologías Físicas y de la Información “Leonardo Torres Quevedo” (ITEFI) -CSIC, Sorbonne Université (FR), Centre National de la Recherche Scientifique(CNRS)(FR), Free Silicon Foundation (IT), Fibraservi BVBA (BE)</td>
-        </tr>
-        <tr>
-          <td><b>Funding Agency</b></td>
-          <td>European Commission (Horizon Europe)</td>
-        </tr>
-        <tr>
-          <td><b>Call</b></td>
-          <td>HORIZON-CL4-2021-DIGITAL-EMERGING-01</td>
-        </tr>
-        <tr>
-          <td><b>GA</b></td>
-          <td>240413</td>
-        </tr>
-        <tr>
-          <td><b>IMSE Budget</b></td>
-          <td>167.236,25 €</td>
-        </tr>
-        <tr>
-          <td><b>Total Budget</b></td>
-          <td>-</td>
-        </tr>
-        <tr>
-          <td><b>Project duration</b></td>
-          <td>1 Sep 2022 – 28 Feb 2025</td>
-        </tr>
-        <tr>
-          <td><b>Abstract</b></td>
-          <td>Europe's IT hardware development is constantly challenged by outrageously expensive development tools, legal constraints like NDAs or patents, lock-in threats, dependency from external vendors or supply chains and foreign political events. Europe's digital infrastructure (from consumer to critical appliances) is heavily relying on foreign closed-source chips which are literally black-boxes which may (and have been proven to) contain malicious features. This situation makes the hardware development expensive and inefficient, and undermines the very principle of sovereignty, resilience and re-usability. Open-source silicon chips, which are open in their entirety, i.e. down to the physical layout, carry the potential of catapulting Europe into a renaissance of digital technology. Several challenges are on the way, many of which will require the participation of the stakeholders (from the fertile ground made of 'nerdy' hobbyists and makers who are the early protagonists of the scene, all the way up to large enterprises), as well as the participation of policymakers and regulatory bodies. The road ahead is steep, but rich of rewards. Therefore we loudly say: Go IT!.</td>
-        </tr>
-      </table></div>
-      
-      </div>
-    </details>
-
-  <h3 class="section-subtitle with-flag">National Projects <img class="flag" src="img/spain.png" alt="Flag of Spain" loading="lazy" decoding="async"></h3>
-    <details>
-      <summary>
-      CryptoPIC: Advanced security in Photonic Integrated Circuits
-      </summary>
-      <div class="details-content">
-      <div class="table-wrap"><table border="0" cellspacing="0" cellpadding="8">
-        <tr>
-          <td><b>PI</b></td>
-          <td>David Martín Sánchez, Piedad Brox Jiménez </td>
-        </tr>
-        <tr>
-          <td><b>Participant Institutions</b></td>
-          <td>Instituto de Microelectrónica de Sevilla (IMSE-CNM, CSIC/Univ. Sevilla) and Instituto de Microelectrónica de Barcelona (IMB-CNM, CSIC)</td>
-        </tr>
-        <tr>
-          <td><b>Funding Agency</b></td>
-          <td>Agencia Estatal de Investigación – Proyectos de Generación Conocimiento 2024 AEI (coordinated Project)</td>
-        </tr>
-        <tr>
-          <td><b>IMSE Budget</b></td>
-          <td>114.850€</td>
-        </tr>
-        <tr>
-          <td><b>Project duration</b></td>
-          <td>1 Nov 2025 – 30 Oct 2028</td>
-        </tr>
-        <tr>
-          <td><b>Abstract</b></td>
-          <td>The clear advantages of living in the digital age have accelerated the infiltration of technology. But digital technology has also brought serious risks, such as exposure of sensitive information, unauthorised access to private networks, attacks on critical infrastructure, and theft of intellectual property. Cybersecurity has been developed to counteract these attacks and to protect people, information, and digital devices. But the quantum technology revolution is on its way. Quantum computers are expected to lead to a technological and social shift equal or greater than the digital age. This technology will be able to complete tasks in a fraction of the time that it takes current supercomputers. This poses a serious security threat, since these computers will be capable of cracking our current cryptographic systems within a reasonable timescale and cost, such as Public Key Infrastructure (PKI)-based system. Hence, cybersecurity must adapt fast to provide new solutions for this new era. Hardware cryptographic primitives are being developed to reinforce security, privacy, and reliability. One particular primitive is the physical unclonable function (PUF) which is responsible for generating the cryptographic keys that are used in the encryption and authentication protocols. These elements are essential to prevent the exposure of private data and the unauthorised access to networks and communications. To ensure the security of the cryptographic keys, PUFs are based on physical features intrinsic to each device in order to generate device-specific identifiers. Identifying individual devices is, however, challenging, especially when the manufacturing process of chips is designed for mass production. Traditionally, PUFs have exploited random manufacturing variations among electronic circuits. However, Machine Learning (ML) algorithms running in quantum computers will be able to emulate the manufacturing variabilities, enabling cloning. Research on stronger PUFs for the post-quantum era is still a nascent field. One of the most promising proposals are optical PUFs. These architectures offer unconditional physical unclonability and are expected to remain safe even in the post-quantum era. However, despite the higher security offered by them, weak electronic PUFs are still preferred. The reason rests on their compatibility with the CMOS process, which enables their integration and reduces the costs and the power consumption. The goal of this project is to conduct research focussed on providing new technology that remains safe in the post-quantum era, ensuring the integrity of digital services. To achieve that, we tackle the main challenge ahead for optical PUFs: realising their miniaturisation. To do it, we will develop robust cryptographic primitive that can be implemented in a photonic integrated circuit fabricated using standard CMOS. For that aim, we will first design a photonic circuit implementing the functionality of a strong PUF. Then, we will design a series of basic elements also required for developing a security system capable of generating cryptographic keys based on the PUFs digital signature, such as the XOR operation and basic permutations. Achieving these goals will allow us to realise strong PUFs compatible with electronic devices, especially in the context of IoT devices, which pose severe constraints on memory sizes and power consumption.</td>
-        </tr>
-      </table></div>
-      
-      </div>
-    </details>
-
-    <details>
-      <summary>
-      ARES: Diseño, implementación y validación de raíces de confianza hardware resistentes a ataques para sistemas empotrados seguros
-      </summary>
-      <div class="details-content">
-      <div class="table-wrap"><table border="0" cellspacing="0" cellpadding="8">
-        <tr>
-          <td><b>PI</b></td>
-          <td>Piedad Brox Jiménez, Carlos J. Jiménez Fernández </td>
-        </tr>
-        <tr>
-          <td><b>Participant Institutions</b></td>
-          <td>Instituto de Microelectrónica de Sevilla (IMSE-CNM, CSIC/Univ. Sevilla)</td>
-        </tr>
-        <tr>
-          <td><b>Funding Agency</b></td>
-          <td>Agencia Estatal de Investigación – Proyectos de Generación Conocimiento 2021 AEI </td>
-        </tr>
-        <tr>
-          <td><b>IMSE Budget</b></td>
-          <td>146.410€</td>
-        </tr>
-        <tr>
-          <td><b>Project duration</b></td>
-          <td>1 Sep 2021 – 31 Oct 2025</td>
-        </tr>
-        <tr>
-          <td><b>Abstract</b></td>
-          <td>The inclusion of secure elements in embedded devices is improving in current available commercial solutions. Some manufacturers offer solutions to protect their products against cybersecurity threats. However, the restricted hardware resources of certain devices (e.g. in the Internet-of-Things context) make unfeasible the adoption of some of these complex protection schemes such as Trusted Platform Modules. The design of a Root-of-Trust (RoT) using low-cost hardware modules is presented in this project as alternative. The RoT is conceived as cornerstone, thus deriving trust for the rest of components that compose the embedded system. The RoT will be designed to be a modular, configurable and adaptable structure, thus leveraging the resources to offer dedicated solutions for each particular application case.
-              The tendency of open source initiatives for embedded systems has been consolidated with the advent and rapid growth of the RISC-V Instruction Set Architecture (ISA) together with its comprehensive hardware and software ecosystems. However, the open nature of RISC-V ISA is a double edged-sword for security purposes. The flexibility of the instruction set allows the possibility of developing various cryptography-specific extensions or variants of the ISA with the aim of increasing the level of security.
-              But at the same time, the full-access to many ‘open-hardware’ implementations of the RISC-V ISA could expose them to more vulnerabilities compared to the proprietary world where this information is hidden and protected by strong Intellectual Property rights. Therefore, the development of solutions to foster the security of embedded systems based on this ISA is an open challenge for research community. This project will increase the security of embedded RISC-V systems by incorporating a RoT anchored in the device’s own hardware. This strategy will be also adapted to be used by cores with proprietary ISA, thus allowing to establish a performance comparison between both choices (open and non-open) for embedded systems.
-              The general objective of the ARES project is to provide hardware solutions to improve the security of embedded systems, designing a hardware RoT that includes cryptographic primitives for secure storage, processing and transmission of data. The building components of the RoT will be Physical Unclonable Functions (PUFs) to generate the identity of the electronic device and generate cryptographic keys as well as entropy sources, and cryptographic primitives for data encryption and decryption. All these elements will include measures to verify its correct behavior and countermeasures to prevent physical attacks. Implementations will be carried out in both FPGA and ASIC technology, using ARM and RISC-V processors, suitable to be used in Internet-of-Things (IoT) technology. For the sake of validation, the project will develop a demonstrator to leverage project advances in a sector as eHealth where security is crucial</td>
-        </tr>
-      </table></div>
-      
-      </div>
-    </details>
 
     
-  <h3 class="section-subtitle with-flag">Agency Projects <img class="flag" src="img/csic.png" alt="CSIC logo" loading="lazy" decoding="async"></h3>
-    <details>
-      <summary>
-      TECHNOQUANTUM: Hardware-based Technologies to Secure Digital Systems in the Quantum World
-      </summary>
-      <div class="details-content">
-      <div class="table-wrap"><table border="0" cellspacing="0" cellpadding="8">
-        <tr>
-          <td><b>PI</b></td>
-          <td>Piedad Brox Jiménez </td>
-        </tr>
-        <tr>
-          <td><b>Participant Institutions</b></td>
-          <td>Instituto de Microelectrónica de Sevilla (Spain), Univ. Tampere (Finland), CEA-LIST (France), Eindhoven Univ. Of Technology (The Netherlands), LINKS Foundazione (Italy), Politecnico Di Torino (Italy)</td>
-        </tr>
-        <tr>
-          <td><b>Funding Agency</b></td>
-          <td>iLINK Program funded by CSIC (open public competition among CSIC researchers) </td>
-        </tr>
-        <tr>
-          <td><b>IMSE Budget</b></td>
-          <td>29.951€</td>
-        </tr>
-        <tr>
-          <td><b>Project duration</b></td>
-          <td>2025-2026</td>
-        </tr>
-        <tr>
-          <td><b>Abstract</b></td>
-          <td>The security of most digital infrastructures relies on public key cryptography (PKC), which enables secure communications between entities without sharing any pre-established secret. The robustness of current PKC techniques is based on the computation complexity of two mathematical problems: the factorization of large numbers and the computation of discrete logarithms, which cannot be solved by current computing systems in a reasonable amount of time. However, quantum computing will be able to solve these problems and hence make vulnerable any digital system based on PKC. Therefore, current cryptographic primitives need to be replaced by an upgraded quantum-resistant cryptography, known as Post-Quantum Cryptography (PQC). Providing such PQC requires a multidisciplinary approach combining the expertise of different research teams working in different areas. This proposal aims to establish a consortium able to identify solutions and potential limitations in the development of microelectronic and nanophotonic technologies for secure digital systems in the postquantum world. To achieve this goal, the TECHNOQUANTUM project will create an international network of expert research teams specialized in system and communications security, software and hardware engineering, and electronic and photonic design. Through a series of seminars, short stays, and meetings, the participants will exchange ideas and validate hypothesis, consolidating already-established collaborations and creating new ones. This will result in a strategic plan to design research projects together and participate in international competitive calls, with the aim of building resilient digitized cities, communities and services (in line with the Sustainable Development Goals, SDGs) to drive societal and economic growth.</td>
-        </tr>
-      </table></div>
-      
-      </div>
-    </details>
 
+    <div class="flex flex-col gap-2">
+        <h4 class="text-emerald-400 font-semibold mb-2">Connect</h4>
+        <a class="text-slate-500 hover:text-emerald-400 transition-colors flex items-center gap-2" href="mailto:p.brox@csic.es">
+            <span class="material-symbols-outlined text-[16px]">mail</span>
+            p.brox@csic.es
+        </a>
+        <div class="flex gap-4 mt-3">
+            <a class="text-slate-500 hover:text-emerald-400 transition-colors" href="https://github.com/HWSec-CSIC" title="GitHub Repository">
+            <!-- GitHub SVG -->
+            <svg class="w-[20px] h-[20px]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path fill-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z" clip-rule="evenodd"></path>
+            </svg>
+        </a>
+
+        <a class="text-slate-500 hover:text-emerald-400 transition-colors" href="https://www.linkedin.com/company/instituto-de-microelectr%C3%B3nica-de-sevilla-imse-cnm/" title="LinkedIn Profile">
+            <!-- LinkedIn SVG -->
+            <svg class="w-[20px] h-[20px]" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"></path>
+            </svg>
+        </a>
+            <a class="text-slate-500 hover:text-emerald-400 transition-colors" href="https://maps.app.goo.gl/NFLzyC6rneRJ3e586" target="_blank" rel="noopener noreferrer" title="View on Map">
+                <span class="material-symbols-outlined text-[20px]">location_on</span>
+            </a>
+        </div>
     </div>
-  </section>
 
-  
-
-  <!-- Contact -->
-  <section id="contact" class="section reveal">
-    <div class="container contact">
-      <h2 class="section-title">Contact</h2>
-      <p><a class="btn primary" href="mailto:p.brox@csic.es">Contact us</a></p>
-      <a href="http://www.imse-cnm.csic.es/" target="_blank" rel="noopener">
-        <img src="img/imse.png" alt="IMSE-CSIC" loading="lazy" decoding="async" class="partner" />
-      </a>
+    <div class="col-span-1 md:col-span-2 lg:col-span-4 mt-8 pt-8 border-t border-blue-900/10 text-center flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-slate-500">© 2026 HWSec-CSIC. All rights reserved.</p>
     </div>
-  </section>
-  </main>
-
-  <!-- Footer -->
-  <footer class="site-footer">
-    <div class="container">
-      <p>© 2025 HWSec-CSIC. All rights reserved.</p>
-    </div>
-  </footer>
-
-  <button class="to-top" aria-label="Back to top" hidden>↑</button>
-
-  <script src="script.js" defer></script>
+</div>
+</footer>
 </body>
 </html>

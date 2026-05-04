@@ -1,9 +1,61 @@
 // Minimal interactions: mobile nav and reveal-on-scroll
 
 (function() {
+  const body = document.body;
+  const themeToggle = document.querySelector('.theme-toggle');
+  const themeIcon = themeToggle ? themeToggle.querySelector('.theme-toggle-icon') : null;
+  const themeColorMetas = Array.from(document.querySelectorAll('meta[name="theme-color"]'));
+  const themeStorageKey = 'theme-preference';
+  const themeQuery = window.matchMedia('(prefers-color-scheme: dark)');
+  const lightThemeColor = '#ffffff';
+  const darkThemeColor = '#0b0d12';
+
+  const getPreferredTheme = () => {
+    try {
+      const stored = localStorage.getItem(themeStorageKey);
+      if (stored === 'dark' || stored === 'light') {
+        return stored;
+      }
+    } catch (e) {}
+    return themeQuery.matches ? 'dark' : 'light';
+  };
+
+  const applyTheme = (theme, persist) => {
+    const isDark = theme === 'dark';
+    const themeColor = isDark ? darkThemeColor : lightThemeColor;
+    document.documentElement.classList.toggle('dark', isDark);
+    body.classList.toggle('dark-theme', isDark);
+    body.classList.toggle('theme-light', !isDark);
+    body.style.colorScheme = isDark ? 'dark' : 'light';
+    themeColorMetas.forEach((meta) => {
+      meta.setAttribute('content', themeColor);
+    });
+    if (themeToggle) {
+      themeToggle.setAttribute('aria-pressed', String(isDark));
+      themeToggle.setAttribute('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme');
+    }
+    if (themeIcon) {
+      themeIcon.textContent = isDark ? '☀' : '☾';
+    }
+    if (persist) {
+      try {
+        localStorage.setItem(themeStorageKey, theme);
+      } catch (e) {}
+    }
+  };
+
+  applyTheme(getPreferredTheme(), false);
+  if (themeToggle) {
+    themeToggle.addEventListener('click', () => {
+      applyTheme(body.classList.contains('dark-theme') ? 'light' : 'dark', true);
+    });
+  }
+
+  // Mobile menu toggle (Tailwind design has simpler nav, no complex menu toggle needed)
+  // This code is kept for compatibility with custom navigation if needed
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.site-nav');
-  const links = document.querySelectorAll('.site-nav a');
+  const links = nav ? document.querySelectorAll('.site-nav a') : [];
   if (toggle && nav) {
     toggle.addEventListener('click', () => {
       const isOpen = nav.classList.toggle('open');
@@ -51,9 +103,13 @@
     els.forEach((el) => el.classList.add('revealed'));
   }
 
-  // Scroll spy
+  // Scroll spy - updated to work with new Tailwind nav structure
   const sections = document.querySelectorAll('section[id]');
-  const navLinks = Array.from(document.querySelectorAll('.site-nav a[href^="#"]'));
+  // Try to find nav links in new structure first, fallback to old structure
+  let navLinks = Array.from(document.querySelectorAll('nav a[href^="#"]'));
+  if (navLinks.length === 0) {
+    navLinks = Array.from(document.querySelectorAll('.site-nav a[href^="#"]'));
+  }
   if ('IntersectionObserver' in window && sections.length && navLinks.length) {
     const activeClass = 'active';
     const byId = new Map(navLinks.map((a) => [a.getAttribute('href').replace('#', ''), a]));
@@ -71,7 +127,7 @@
     sections.forEach((s) => spy.observe(s));
   }
 
-  // Back to top
+  // Back to top button - only if element exists
   const toTop = document.querySelector('.to-top');
   if (toTop) {
     const onScroll = () => {
@@ -84,11 +140,12 @@
     onScroll();
   }
 
-  // Auto-hide header
+  // Auto-hide header - only if header element exists
   (function headerAutoHide(){
-    const header = document.querySelector('.site-header');
+    const header = document.querySelector('.site-header') || document.querySelector('header');
     const nav = document.getElementById('primary-nav');
     if (!header) return;
+    header.classList.add('transition-transform', 'duration-300', 'will-change-transform');
     let lastY = window.scrollY;
     let ticking = false;
     const threshold = 8; 
@@ -100,12 +157,12 @@
       const navOpen = nav && nav.classList.contains('open');
 
       if (navOpen || y <= 0 || y < 80) {
-        header.classList.remove('hidden');
+        header.classList.remove('-translate-y-full');
         lastY = y;
         return;
       }
-      if (goingDown) header.classList.add('hidden');
-      else if (goingUp) header.classList.remove('hidden');
+      if (goingDown) header.classList.add('-translate-y-full');
+      else if (goingUp) header.classList.remove('-translate-y-full');
       lastY = y;
     };
     window.addEventListener('scroll', () => {
@@ -128,6 +185,14 @@
       }
     } catch (e) {}
   });
+
+  function debounce(fn, delay) {
+    let timeoutId;
+    return (...args) => {
+      window.clearTimeout(timeoutId);
+      timeoutId = window.setTimeout(() => fn(...args), delay);
+    };
+  }
 
   // Publications
   async function renderPublications() {
@@ -178,35 +243,56 @@
        * El nombre del journal ahora solo aparece integrado en el texto.
        */
 
+      const flashCopied = (button, originalText) => {
+        button.classList.add('is-copied');
+        button.textContent = 'Copied! ✓';
+        window.clearTimeout(button._copyResetTimer);
+        button._copyResetTimer = window.setTimeout(() => {
+          button.classList.remove('is-copied');
+          button.textContent = originalText;
+        }, 2000);
+      };
+
+      const copyValue = (button, value, originalText) => {
+        navigator.clipboard.writeText(value).then(() => {
+          flashCopied(button, originalText);
+        });
+      };
+
       // Actions row (Botones BibTex/Citation)
       const row = document.createElement('div');
       row.className = 'pub-actions';
+
+      const btnDoi = document.createElement('button');
+      btnDoi.type = 'button';
+      btnDoi.textContent = 'Copy DOI';
+      btnDoi.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        copyValue(btnDoi, pub.doi, 'Copy DOI');
+      });
       
       const btnBib = document.createElement('button');
-      btnBib.type = 'button'; btnBib.textContent = 'Copy BibTeX';
+      btnBib.type = 'button';
+      btnBib.textContent = 'Copy BibTeX';
       btnBib.addEventListener('click', (e) => {
-        e.preventDefault(); e.stopPropagation();
+        e.preventDefault();
+        e.stopPropagation();
         const bib = toBibTeX(pub);
-        navigator.clipboard.writeText(bib).then(() => { 
-            const originalText = btnBib.textContent;
-            btnBib.textContent = 'Copied!'; 
-            setTimeout(() => btnBib.textContent = originalText, 1200); 
-        });
+        copyValue(btnBib, bib, 'Copy BibTeX');
       });
       
       const btnCite = document.createElement('button');
-      btnCite.type = 'button'; btnCite.textContent = 'Copy citation';
+      btnCite.type = 'button';
+      btnCite.textContent = 'Copy citation';
       btnCite.addEventListener('click', (e) => {
-        e.preventDefault(); e.stopPropagation();
+        e.preventDefault();
+        e.stopPropagation();
         const cite = toCitation(pub);
-        navigator.clipboard.writeText(cite).then(() => { 
-            const originalText = btnCite.textContent;
-            btnCite.textContent = 'Copied!'; 
-            setTimeout(() => btnCite.textContent = originalText, 1200); 
-        });
+        copyValue(btnCite, cite, 'Copy citation');
       });
       
-      row.append(btnBib, btnCite);
+      row.append(btnDoi, btnBib, btnCite);
 
       const wrapper = document.createElement('div');
       wrapper.append(card, row);
@@ -275,6 +361,8 @@
       render(filtered);
     };
 
+    const applyDebounced = debounce(apply, 300);
+
     try {
       const res = await fetch('data/publications.json', { cache: 'no-store' });
       if (!res.ok) return; 
@@ -285,7 +373,7 @@
     }
 
     if (searchInput) {
-      searchInput.addEventListener('input', () => apply());
+      searchInput.addEventListener('input', applyDebounced);
     }
     if (sortBtn) {
       sortBtn.addEventListener('click', () => {

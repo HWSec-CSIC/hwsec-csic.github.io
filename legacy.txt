@@ -1,0 +1,21 @@
+<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-col sm:flex-row sm:items-center group transition-all duration-300 hover:border-primary/30 relative">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
+<div class="shrink-0 w-full h-64 sm:w-48 sm:h-48 lg:w-56 lg:h-56">
+<img alt="Dr. Eros Camacho-Ruiz" class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500" src="img/team/Camacho-520.jpg"/>
+</div>
+<div class="px-md py-sm flex flex-col gap-sm flex-grow justify-center">
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface">Dr. Eros Camacho-Ruiz</h3>
+<p class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mt-1">Postdoctoral Fellow</p>
+</div>
+<div class="mt-2 flex flex-col gap-2">
+<p class="font-mono-data text-mono-data text-on-surface-variant flex items-center gap-2">
+<span class="material-symbols-outlined text-xs">memory_alt</span> Fault Injection Attacks
+                            </p>
+</div>
+<div class="flex gap-4 mt-2 pt-2 border-t border-surface-variant">
+<a class="text-primary hover:text-secondary transition-colors" href="https://orcid.org/0000-0002-3177-2260" rel="noopener noreferrer" target="_blank" title="ORCID"><span class="material-symbols-outlined">id_card</span></a>
+<a class="text-primary hover:text-secondary transition-colors" href="https://scholar.google.com/citations?user=q1uEoHQAAAAJ&hl=es" rel="noopener noreferrer" target="_blank" title="Google Scholar"><span class="material-symbols-outlined">school</span></a>
+</div>
+</div>
+</article>
