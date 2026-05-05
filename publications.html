@@ -363,14 +363,28 @@
         }
     }
 
+    function removeAccents(str) {
+        return str.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    }
+
     function filterAndSort() {
-        const query = document.getElementById('search-input').value.toLowerCase();
+        const rawQuery = document.getElementById('search-input').value.toLowerCase();
+        const query = removeAccents(rawQuery);
+
         const yearFilter = document.getElementById('year-filter').value;
         const sortOrder = document.getElementById('sort-select').value;
 
         let filtered = publicationsData.filter(pub => {
-            const matchesSearch = pub.title.toLowerCase().includes(query) || pub.authors.some(a => a.toLowerCase().includes(query));
-            const matchesYear = yearFilter === 'all' || pub.year.toString() === yearFilter;
+            const title = removeAccents(pub.title.toLowerCase());
+            const authors = pub.authors.map(a => removeAccents(a.toLowerCase()));
+
+            const matchesSearch =
+                title.includes(query) ||
+                authors.some(a => a.includes(query));
+
+            const matchesYear =
+                yearFilter === 'all' || pub.year.toString() === yearFilter;
+
             return matchesSearch && matchesYear;
         });
 
