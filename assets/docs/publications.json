@@ -1,5 +1,20 @@
 [
   {
+    "title": "Analysis of EM Side-Channel Leakage on an RO-PUF and Proposed Countermeasures",
+    "authors": [
+      "A. Casado-Galán",
+      "S. Sánchez-Solano",
+      "E. Tena-Sánchez",
+      "L. F. Rojas-Muñoz",
+      "F. E. Potestad-Ordóñez",
+      "M. C. Martínez-Rodríguez",
+      "A. J. Acosta-Jiménez"
+    ],
+    "journal": "IEEE Transactions on Dependable and Secure Computing",
+    "year": 2025,
+    "doi": "10.1109/TDSC.2025.3648516"
+  },
+  {
     "title": "Hardware-Rooted Device Identity for IoT: Integrating Silicon PUFs and DICE in RISC-V Embedded Systems",
     "authors": [
       "S. Sisinni",
