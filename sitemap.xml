@@ -4,4 +4,16 @@
     <loc>https://hwsec-csic.github.io/</loc>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://hwsec-csic.github.io/team.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hwsec-csic.github.io/publications.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://hwsec-csic.github.io/projects.html</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>

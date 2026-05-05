@@ -5,10 +5,12 @@ A minimal, Apple‑inspired static site for the HWSec‑CSIC group. Built with p
 ## Structure
 - `index.html` — Home page with sections: Hero, About, Research, People, Publications, Projects, Contact
 - `css/style.css` — Design system: system font, responsive grid, translucent header, glass cards, dark mode preference
-- `js/script.js` — Mobile nav, reveal‑on‑scroll, smooth scrolling, back‑to‑top button
 - `js/script.js` — Mobile nav, reveal‑on‑scroll, smooth scrolling, back‑to‑top button, team filters/list view, animated details, and publications renderer with search/sort/copy DOI
-- `assets/images/` — Images and logos
+- `assets/images/` — Hero and team images
+- `assets/docs/publications.json` — Publications data source
+- `.well-known/security.txt` — Security contact
 - `robots.txt`, `sitemap.xml` — Basic SEO plumbing
+- `favicon.ico` — Site favicon
 
 ## Local preview
 ```bash
@@ -17,7 +19,7 @@ python3 -m http.server 8080
 Open http://localhost:8080
 
 ## Notes
-- All assets are local; no external dependencies.
+- Uses Tailwind CSS via CDN and Google Fonts for typography.
 - Images are set to `loading="lazy"` where appropriate and using `decoding="async"`.
 - The site honors `prefers-reduced-motion` and `prefers-color-scheme: dark`.
 
@@ -41,6 +43,5 @@ Example entry in `assets/docs/publications.json`:
 ```
 
 ## Customization
-- Replace `assets/images/logo.jpeg` with an SVG for sharper rendering.
 - Tune colors in `:root` variables inside `css/style.css`.
 - Add or edit content directly in `index.html`.

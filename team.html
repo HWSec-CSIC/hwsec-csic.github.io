@@ -9,6 +9,7 @@
 <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
 <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link rel="stylesheet" href="/css/style.css" />
 <style>
         .material-symbols-outlined {
             font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
@@ -109,29 +110,38 @@
 </head>
 <body class="bg-background text-on-background min-h-screen flex flex-col font-body-md text-body-md">
 <header class="site-header docked full-width top-0 sticky bg-slate-950/80 backdrop-blur-md border-b border-blue-900/30 shadow-[0_4px_20px_-5px_rgba(15,76,129,0.3)] z-50">
-<div class="flex flex-col md:flex-row justify-between md:items-center gap-3 w-full px-6 py-4 max-w-screen-2xl mx-auto">
-<a class="text-2xl font-bold tracking-tighter text-blue-500 dark:text-blue-400 flex items-center gap-2 font-['Space_Grotesk']" href="index.html">
-<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">memory</span>
-                HWSec-CSIC
-            </a>
-<button class="menu-toggle md:hidden" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
-    <span class="burger" aria-hidden="true">
-        <span class="bar bar1"></span>
-        <span class="bar bar2"></span>
-        <span class="bar bar3"></span>
-    </span>
-</button>
-<nav class="site-nav w-full md:w-auto flex gap-4 md:gap-8 items-center overflow-x-auto whitespace-nowrap font-['Space_Grotesk']" role="navigation">
-<a class="text-slate-400 hover:text-blue-300 transition-colors font-label-sm text-label-sm" href="index.html">About</a>
-<a class="text-blue-400 border-b-2 border-emerald-500 pb-1 font-label-sm text-label-sm hover:bg-blue-900/20 transition-all duration-200" href="team.html">Team</a>
-<a class="text-slate-400 hover:text-blue-300 transition-colors font-label-sm text-label-sm" href="publications.html">Publications</a>
-<a class="text-slate-400 hover:text-blue-300 transition-colors font-label-sm text-label-sm" href="projects.html">Projects</a>
-</nav>
-<div class="w-full md:w-auto flex items-center justify-end gap-3">
-<a class="inline-flex items-center justify-center bg-primary-container text-on-primary-container font-label-sm text-label-sm px-4 py-2 rounded border border-primary/20 hover:brightness-110 transition-all duration-200" href="mailto:p.brox@csic.es">
-                Contact Us
-            </a>
-</div>
+<div class="flex flex-row justify-between items-center w-full px-6 py-4 max-w-screen-2xl mx-auto relative">
+    <a class="text-2xl font-bold tracking-tighter text-blue-500 dark:text-blue-400 flex items-center gap-2 font-['Space_Grotesk'] z-10" href="index.html">
+        <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">memory</span>
+        HWSec-CSIC
+    </a>
+    
+    <!-- Burger Menu: Pushed to right via flex-row and ml-auto -->
+    <button class="menu-toggle md:hidden ml-auto z-10" aria-label="Toggle navigation" aria-expanded="false" aria-controls="primary-nav">
+        <span class="burger" aria-hidden="true">
+            <span class="bar bar1"></span>
+            <span class="bar bar2"></span>
+            <span class="bar bar3"></span>
+        </span>
+    </button>
+    
+    <!-- Navigation Menu -->
+    <nav id="primary-nav" class="site-nav hidden md:flex w-full md:w-auto flex-col md:flex-row gap-6 md:gap-8 items-center font-['Space_Grotesk'] absolute md:static top-[72px] left-0 bg-slate-950 md:bg-transparent p-6 md:p-0 z-50 border-b md:border-none border-blue-900/30 shadow-lg md:shadow-none" role="navigation">
+        <a class="text-slate-400 transition-colors font-label-sm text-label-sm nav-link" href="index.html">About</a>
+        <a class="text-slate-400 transition-colors font-label-sm text-label-sm nav-link" href="team.html">Team</a>
+        <a class="text-slate-400 transition-colors font-label-sm text-label-sm nav-link" href="publications.html">Publications</a>
+        <a class="text-slate-400 transition-colors font-label-sm text-label-sm nav-link" href="projects.html">Projects</a>
+        
+        <!-- Mobile ONLY Contact Button (hidden on desktop, shows in burger) -->
+        <a class="md:hidden mt-2 w-full text-center inline-flex items-center justify-center bg-primary-container text-on-primary-container font-label-sm text-label-sm px-4 py-2 rounded border border-primary/20" href="mailto:p.brox@csic.es">
+            Contact Us
+        </a>
+    </nav>
+    
+    <!-- Added md:ml-8 to push it away from the Projects link -->
+    <div class="hidden md:flex items-center justify-end gap-3 z-10 md:ml-8">
+        <a class="inline-flex items-center justify-center bg-primary-container text-on-primary-container font-label-sm text-label-sm px-4 py-2 rounded border border-primary/20 hover:brightness-110 transition-all duration-200" href="mailto:p.brox@csic.es">Contact Us</a>
+    </div>
 </div>
 </header>
 
@@ -151,15 +161,17 @@
 <h2 class="font-headline-lg text-headline-lg text-on-surface">Permanent Researchers</h2>
 </div>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
-<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-col sm:flex-row sm:items-center group transition-all duration-300 hover:border-primary/30 relative">
+<!-- Forced flex-row so photo is ALWAYS on the left, even on mobile -->
+<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-row items-center group transition-all duration-300 hover:border-primary/30 relative">
 <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
-<div class="shrink-0 w-full sm:w-48 lg:w-56" style="aspect-ratio: 1/1;">
-<img alt="Dr. Piedad Brox Jimenez" class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500" src="assets/images/team/Brox-520.png"/>
+<!-- Shrunk mobile width (w-28) but kept desktop width (sm:w-48) -->
+<div class="shrink-0 w-28 sm:w-48 lg:w-56 h-full" style="aspect-ratio: 1/1;">
+<img alt="Dr. Piedad Brox Jimenez" class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500" src="assets/images/team/Brox-520.jpeg"/>
 </div>
 <div class="px-md flex flex-col flex-grow justify-center py-4">
 <div>
 <h3 class="font-headline-md text-headline-md text-on-surface">Dr. Piedad Brox Jiménez</h3>
-<p class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mt-1">Tenured Scientist</p>
+<p class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mt-1">Research Scientist</p>
 </div>
 <div class="flex gap-4 mt-2 pt-2 border-t border-surface-variant">
 <a class="text-primary hover:text-secondary transition-colors" href="https://orcid.org/0000-0003-1059-5338" rel="noopener noreferrer" target="_blank" title="ORCID">
@@ -172,9 +184,11 @@
 </div>
 </article>
 
-<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-col sm:flex-row sm:items-center group transition-all duration-300 hover:border-primary/30 relative">
+<!-- Forced flex-row so photo is ALWAYS on the left, even on mobile -->
+<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-row items-center group transition-all duration-300 hover:border-primary/30 relative">
 <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
-<div class="shrink-0 w-full sm:w-48 lg:w-56" style="aspect-ratio: 1/1;">
+<!-- Shrunk mobile width (w-28) but kept desktop width (sm:w-48) -->
+<div class="shrink-0 w-28 sm:w-48 lg:w-56 h-full" style="aspect-ratio: 1/1;">
 <img alt="Dr. Macarena C. Martinez-Rodriguez" class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500" src="assets/images/team/Martinez-520.png"/>
 </div>
 <div class="px-md flex flex-col flex-grow justify-center py-4">
@@ -201,10 +215,12 @@
 </div>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
 
-<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-col sm:flex-row sm:items-center group transition-all duration-300 hover:border-primary/30 relative">
+<!-- Forced flex-row so photo is ALWAYS on the left, even on mobile -->
+<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-row items-center group transition-all duration-300 hover:border-primary/30 relative">
 <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
-<div class="shrink-0 w-full sm:w-48 lg:w-56" style="aspect-ratio: 1/1;">
-<img alt="Dr. David Martin Sanchez" class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500" src="assets/images/team/david-520.png"/>
+<!-- Shrunk mobile width (w-28) but kept desktop width (sm:w-48) -->
+<div class="shrink-0 w-28 sm:w-48 lg:w-56 h-full" style="aspect-ratio: 1/1;">
+<img alt="Dr. David Martin Sanchez" class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500" src="assets/images/team/david-520.jpg"/>
 </div>
 <div class="px-md flex flex-col flex-grow justify-center py-4">
 <div>
@@ -230,9 +246,11 @@
 </div>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
 
-<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-col sm:flex-row sm:items-center group transition-all duration-300 hover:border-primary/30 relative">
+<!-- Forced flex-row so photo is ALWAYS on the left, even on mobile -->
+<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-row items-center group transition-all duration-300 hover:border-primary/30 relative">
 <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
-<div class="shrink-0 w-full sm:w-48 lg:w-56" style="aspect-ratio: 1/1;">
+<!-- Shrunk mobile width (w-28) but kept desktop width (sm:w-48) -->
+<div class="shrink-0 w-28 sm:w-48 lg:w-56 h-full" style="aspect-ratio: 1/1;">
 <img alt="Apurba Karmakar" class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500" src="assets/images/team/karmakar-520.jpeg"/>
 </div>
 <div class="px-md flex flex-col gap-sm flex-grow justify-center py-4">
@@ -251,9 +269,11 @@
 </div>
 </article>
 
-<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-col sm:flex-row sm:items-center group transition-all duration-300 hover:border-primary/30 relative">
+<!-- Forced flex-row so photo is ALWAYS on the left, even on mobile -->
+<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-row items-center group transition-all duration-300 hover:border-primary/30 relative">
 <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
-<div class="shrink-0 w-full sm:w-48 lg:w-56" style="aspect-ratio: 1/1;">
+<!-- Shrunk mobile width (w-28) but kept desktop width (sm:w-48) -->
+<div class="shrink-0 w-28 sm:w-48 lg:w-56 h-full" style="aspect-ratio: 1/1;">
 <img alt="Pablo Navarro-Torrero" class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500" src="assets/images/team/Navarro-520.jpg"/>
 </div>
 <div class="px-md flex flex-col gap-sm flex-grow justify-center py-4">
@@ -272,9 +292,11 @@
 </div>
 </article>
 
-<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-col sm:flex-row sm:items-center group transition-all duration-300 hover:border-primary/30 relative">
+<!-- Forced flex-row so photo is ALWAYS on the left, even on mobile -->
+<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-row items-center group transition-all duration-300 hover:border-primary/30 relative">
 <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
-<div class="shrink-0 w-full sm:w-48 lg:w-56" style="aspect-ratio: 1/1;">
+<!-- Shrunk mobile width (w-28) but kept desktop width (sm:w-48) -->
+<div class="shrink-0 w-28 sm:w-48 lg:w-56 h-full" style="aspect-ratio: 1/1;">
 <img alt="Francisco Javier Rubio-Barbero" class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500" src="assets/images/team/rubio-520.jpeg"/>
 </div>
 <div class="px-md flex flex-col gap-sm flex-grow justify-center py-4">
@@ -293,9 +315,11 @@
 </div>
 </article>
 
-<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-col sm:flex-row sm:items-center group transition-all duration-300 hover:border-primary/30 relative">
+<!-- Forced flex-row so photo is ALWAYS on the left, even on mobile -->
+<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-row items-center group transition-all duration-300 hover:border-primary/30 relative">
 <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
-<div class="shrink-0 w-full sm:w-48 lg:w-56" style="aspect-ratio: 1/1;">
+<!-- Shrunk mobile width (w-28) but kept desktop width (sm:w-48) -->
+<div class="shrink-0 w-28 sm:w-48 lg:w-56 h-full" style="aspect-ratio: 1/1;">
 <img alt="Jorge Ciudad Real Lacuesta" class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500" src="assets/images/team/ciudadreal-520.jpeg"/>
 </div>
 <div class="px-md flex flex-col gap-sm flex-grow justify-center py-4">
@@ -314,9 +338,11 @@
 </div>
 </article>
 
-<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-col sm:flex-row sm:items-center group transition-all duration-300 hover:border-primary/30 relative">
+<!-- Forced flex-row so photo is ALWAYS on the left, even on mobile -->
+<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-row items-center group transition-all duration-300 hover:border-primary/30 relative">
 <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
-<div class="shrink-0 w-full sm:w-48 lg:w-56" style="aspect-ratio: 1/1;">
+<!-- Shrunk mobile width (w-28) but kept desktop width (sm:w-48) -->
+<div class="shrink-0 w-28 sm:w-48 lg:w-56 h-full" style="aspect-ratio: 1/1;">
 <img alt="Juan Manuel Moreno Cenizo" class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500" src="assets/images/team/moreno-520.jpeg"/>
 </div>
 <div class="px-md flex flex-col gap-sm flex-grow justify-center py-4">
@@ -335,10 +361,12 @@
 </div>
 </article>
 
-<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-col sm:flex-row sm:items-center group transition-all duration-300 hover:border-primary/30 relative">
+<!-- Forced flex-row so photo is ALWAYS on the left, even on mobile -->
+<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-row items-center group transition-all duration-300 hover:border-primary/30 relative">
 <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
-<div class="shrink-0 w-full sm:w-48 lg:w-56 bg-surface-variant flex items-center justify-center" style="aspect-ratio: 1/1;">
-<span class="material-symbols-outlined text-6xl text-on-surface-variant opacity-50">person</span>
+<!-- Shrunk mobile width (w-28) but kept desktop width (sm:w-48) -->
+<div class="shrink-0 w-28 sm:w-48 lg:w-56 h-full" style="aspect-ratio: 1/1;">
+<img alt="Samuel Gutiérrez Félix" class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500" src="assets/images/team/samuel-520.jpeg"/>
 </div>
 <div class="px-md flex flex-col gap-sm flex-grow justify-center py-4">
 <div>
@@ -346,7 +374,7 @@
 <p class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mt-1">PhD Student</p>
 </div>
 <div class="flex gap-4 mt-2 pt-2 border-t border-surface-variant">
-<a class="text-primary hover:text-secondary transition-colors" href="#" rel="noopener noreferrer" target="_blank" title="ORCID">
+<a class="text-primary hover:text-secondary transition-colors" href=" https://orcid.org/0009-0009-2851-6096" rel="noopener noreferrer" target="_blank" title="ORCID">
     <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.google.com/svg"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z" fill="currentColor"/></svg>
 </a>
 <a class="text-primary hover:text-secondary transition-colors" href="#" rel="noopener noreferrer" target="_blank" title="Google Scholar">
@@ -356,9 +384,11 @@
 </div>
 </article>
 
-<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-col sm:flex-row sm:items-center group transition-all duration-300 hover:border-primary/30 relative">
+<!-- Forced flex-row so photo is ALWAYS on the left, even on mobile -->
+<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-row items-center group transition-all duration-300 hover:border-primary/30 relative">
 <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
-<div class="shrink-0 w-full sm:w-48 lg:w-56 bg-surface-variant flex items-center justify-center" style="aspect-ratio: 1/1;">
+<!-- Shrunk mobile width (w-28) but kept desktop width (sm:w-48) -->
+<div class="shrink-0 w-28 sm:w-48 lg:w-56 h-full" style="aspect-ratio: 1/1;">
 <span class="material-symbols-outlined text-6xl text-on-surface-variant opacity-50">person</span>
 </div>
 <div class="px-md flex flex-col gap-sm flex-grow justify-center py-4">
@@ -385,9 +415,11 @@
     <h2 class="font-headline-lg text-headline-lg text-on-surface">Technical Researchers</h2>
 </div>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
-<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-col sm:flex-row sm:items-center group transition-all duration-300 hover:border-primary/30 relative">
+<!-- Forced flex-row so photo is ALWAYS on the left, even on mobile -->
+<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-row items-center group transition-all duration-300 hover:border-primary/30 relative">
 <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
-<div class="shrink-0 w-full sm:w-48 lg:w-56" style="aspect-ratio: 1/1;">
+<!-- Shrunk mobile width (w-28) but kept desktop width (sm:w-48) -->
+<div class="shrink-0 w-28 sm:w-48 lg:w-56 h-full" style="aspect-ratio: 1/1;">
 <img alt="Pau Ortega Castro" class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500" src="assets/images/team/ortega-520.jpeg"/>
 </div>
 <div class="px-md flex flex-col gap-sm flex-grow justify-center py-4">
@@ -396,7 +428,7 @@
 <p class="font-label-sm text-label-sm text-secondary uppercase tracking-widest mt-1">Technical Researcher</p>
 </div>
 <div class="flex gap-4 mt-2 pt-2 border-t border-surface-variant">
-<a class="text-primary hover:text-secondary transition-colors" href="#" rel="noopener noreferrer" target="_blank" title="ORCID">
+<a class="text-primary hover:text-secondary transition-colors" href="https://orcid.org/0009-0001-1363-6185" rel="noopener noreferrer" target="_blank" title="ORCID">
     <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.google.com/svg"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z" fill="currentColor"/></svg>
 </a>
 <a class="text-primary hover:text-secondary transition-colors" href="#" rel="noopener noreferrer" target="_blank" title="Google Scholar">
@@ -406,9 +438,11 @@
 </div>
 </article>
 
-<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-col sm:flex-row sm:items-center group transition-all duration-300 hover:border-primary/30 relative">
+<!-- Forced flex-row so photo is ALWAYS on the left, even on mobile -->
+<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-row items-center group transition-all duration-300 hover:border-primary/30 relative">
 <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
-<div class="shrink-0 w-full sm:w-48 lg:w-56" style="aspect-ratio: 1/1;">
+<!-- Shrunk mobile width (w-28) but kept desktop width (sm:w-48) -->
+<div class="shrink-0 w-28 sm:w-48 lg:w-56 h-full" style="aspect-ratio: 1/1;">
 <img alt="Ignacio Martinez Fernandez" class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500" src="assets/images/team/ignacio-520.jpeg"/>
 </div>
 <div class="px-md flex flex-col gap-sm flex-grow justify-center py-4">
@@ -420,16 +454,18 @@
 <a class="text-primary hover:text-secondary transition-colors" href="#" rel="noopener noreferrer" target="_blank" title="ORCID">
     <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.google.com/svg"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.025-5.325 5.025h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 4.022-2.484 4.022-3.722 0-2.016-1.284-3.722-4.097-3.722h-2.222z" fill="currentColor"/></svg>
 </a>
-<a class="text-primary hover:text-secondary transition-colors" href="#" rel="noopener noreferrer" target="_blank" title="Google Scholar">
+<a class="text-primary hover:text-secondary transition-colors" href="https://scholar.google.com/citations?hl=en&user=Bgtv9gIAAAAJ&view_op=list_works&sortby=pubdate" rel="noopener noreferrer" target="_blank" title="Google Scholar">
     <svg viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z" fill="currentColor"/></svg>
 </a>
 </div>
 </div>
 </article>
 
-<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-col sm:flex-row sm:items-center group transition-all duration-300 hover:border-primary/30 relative">
+<!-- Forced flex-row so photo is ALWAYS on the left, even on mobile -->
+<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-row items-center group transition-all duration-300 hover:border-primary/30 relative">
 <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
-<div class="shrink-0 w-full sm:w-48 lg:w-56 bg-surface-variant flex items-center justify-center" style="aspect-ratio: 1/1;">
+<!-- Shrunk mobile width (w-28) but kept desktop width (sm:w-48) -->
+<div class="shrink-0 w-28 sm:w-48 lg:w-56 h-full" style="aspect-ratio: 1/1;">
 <span class="material-symbols-outlined text-6xl text-on-surface-variant opacity-50">person</span>
 </div>
 <div class="px-md flex flex-col gap-sm flex-grow justify-center py-4">
@@ -456,9 +492,11 @@
     <h2 class="font-headline-lg text-headline-lg text-on-surface">External Collaborators</h2>
 </div>
 <div class="grid grid-cols-1 lg:grid-cols-2 gap-gutter">
-<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-col sm:flex-row sm:items-center group transition-all duration-300 hover:border-primary/30 relative">
+<!-- Forced flex-row so photo is ALWAYS on the left, even on mobile -->
+<article class="bg-surface-container rounded-xl border border-primary/10 overflow-hidden flex flex-row items-center group transition-all duration-300 hover:border-primary/30 relative">
 <div class="absolute left-0 top-0 bottom-0 w-1 bg-primary opacity-0 group-hover:opacity-100 transition-opacity"></div>
-<div class="shrink-0 w-full sm:w-48 lg:w-56" style="aspect-ratio: 1/1;">
+<!-- Shrunk mobile width (w-28) but kept desktop width (sm:w-48) -->
+<div class="shrink-0 w-28 sm:w-48 lg:w-56 h-full" style="aspect-ratio: 1/1;">
 <img alt="Santiago Sanchez Solano" class="w-full h-full object-cover grayscale opacity-80 group-hover:grayscale-0 transition-all duration-500" src="assets/images/team/santi-520.jpeg"/>
 </div>
 <div class="px-md flex flex-col gap-sm flex-grow justify-center py-4">
@@ -552,5 +590,6 @@
     </div>
 </div>
 </footer>
+<script src="/js/script.js" defer></script>
 </body>
 </html>

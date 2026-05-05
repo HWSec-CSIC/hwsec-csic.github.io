@@ -1,5 +1,30 @@
 [
   {
+    "title": "Hardware-Rooted Device Identity for IoT: Integrating Silicon PUFs and DICE in RISC-V Embedded Systems",
+    "authors": [
+      "S. Sisinni",
+      "L. Ferro",
+      "E. Bravi",
+      "P. Navarro-Torrero",
+      "E. Camacho-Ruiz",
+      "M. C. Martínez-Rodríguez",
+      "P. Brox",
+      "A. Lioy"
+    ],
+    "journal": "IEEE Access",
+    "volume": "14",
+    "year": 2026,
+    "doi": "10.1109/ACCESS.2026.3674839"
+  },
+  {
+    "title": "A Framework for designing High-Order Side-Channel Protected Hardware Implementations of ML-KEM",
+    "authors": ["E. Camacho-Ruiz", "P. Navarro-Torrero","A. Cabrera-Aldaya"],
+    "journal": "IACR TCHES",
+    "volume": "2",
+    "year": 2026,
+    "doi": "10.46586/tches.v2026.i2.272-295"
+  },
+  {
     "title": "A Side-Channel Protected and High-Performance Hardware Implementation for EdDSA25519",
     "authors": ["P. Navarro-Torrero", "E. Camacho-Ruiz", "M.C. Martínez-Rodríguez", "P. Brox"],
     "journal": "IEEE Access",
@@ -16,6 +41,42 @@
     "pages": "39875-39888",
     "year": 2025,
     "doi": "10.1364/OE.572433"
+  },
+  {
+    "title": "Exploiting the acousto-optic effect for developing secure digital identifiers",
+    "authors": [
+      "D. Martín-Sánchez",
+      "P. Brox"
+    ],
+    "journal": "Next-Generation Optical Communication: Components, Sub-Systems, and Systems XIV",
+    "volume": "13374",
+    "year": 2025,
+    "doi": "10.1117/12.3039852"
+  },
+  {
+    "title": "VLSI integration of a RO-based PUF into a 65 nm technology",
+    "authors": [
+      "P. Ortega-Castro",
+      "F. Rojas-Muñoz",
+      "J. M. Mora-Gutiérrez",
+      "P. Brox",
+      "M. C. Martínez-Rodríguez"
+    ],
+    "journal": "2024 IEEE Nordic Circuits and Systems Conference (NorCAS)",
+    "year": 2024,
+    "doi": "10.1109/NorCAS64408.2024.10752474"
+  },
+  {
+    "title": "Design of a Karatsuba Multiplier to Accelerate Digital Signature Schemes on Embedded Systems",
+    "authors": [
+      "P. Navarro-Torrero",
+      "E. Camacho-Ruiz",
+      "M. C. MartÍnez-RodrÍguez",
+      "P. Brox"
+    ],
+    "journal": "2024 IEEE Nordic Circuits and Systems Conference (NorCAS)",
+    "year": 2024,
+    "doi": "10.1109/NorCAS64408.2024.10752484"
   },
   {
     "title": "Hardware-Efficient Configurable Ring-Oscillator-Based Physical Unclonable Function/True Random Number Generator Module for Secure Key Management",

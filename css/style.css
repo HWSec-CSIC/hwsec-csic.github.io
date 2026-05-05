@@ -8,8 +8,8 @@
   --bg-alt: #f5f5f7;
   --ink: #1d1d1f;
   --ink-2: #86868b;
-  --accent: #0066cc;
-  --accent-hover: #0077ed;
+  --accent: #0f4c81; 
+  --accent-hover: #00325a;
   --card-bg: rgba(255, 255, 255, 0.85);
   --card-border: rgba(0, 0, 0, 0.05);
   --solid-content-bg: #ffffff; /* Fondo sólido para lectura perfecta */
@@ -38,8 +38,8 @@
     --bg-alt: #1c1c1e;
     --ink: #f5f5f7;
     --ink-2: #a1a1a6;
-    --accent: #2997ff; 
-    --accent-hover: #47a6ff;
+    --accent: #a0c9ff; 
+    --accent-hover: #d2e4ff;
     --card-bg: rgba(28, 28, 30, 0.8);
     --card-border: rgba(255, 255, 255, 0.1);
     --solid-content-bg: #1c1c1e; /* Fondo sólido oscuro */
@@ -93,14 +93,6 @@ body.dark-theme {
   color-scheme: dark;
 }
 
-body.theme-light .site-header {
-  background: rgba(255, 255, 255, 0.85);
-}
-
-body.dark-theme .site-header {
-  background: rgba(0, 0, 0, 0.8);
-}
-
 /* =========================================
    Base & Reset
    ========================================= */
@@ -151,7 +143,7 @@ body {
 
 img { max-width: 100%; height: auto; display: block; }
 a { color: inherit; text-decoration: none; transition: color 0.2s ease; }
-a:hover { color: var(--accent); }
+/* a:hover { color: var(--accent); } */
 
 .container {
   width: 100%;
@@ -173,15 +165,12 @@ a:hover { color: var(--accent); }
   position: sticky;
   top: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: saturate(180%) blur(20px);
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   border-bottom: 1px solid var(--card-border);
   transition: transform 0.3s ease;
 }
-@media (prefers-color-scheme: dark) {
-  .site-header { background: rgba(0, 0, 0, 0.8); }
-}
+
 .site-header.hidden { transform: translateY(-100%); }
 
 .nav {
@@ -264,6 +253,18 @@ a:hover { color: var(--accent); }
   line-height: 1;
 }
 
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
 .menu-toggle {
   display: none;
   background: none;
@@ -275,8 +276,34 @@ a:hover { color: var(--accent); }
 /* Mobile navigation: show toggle on small screens */
 @media (max-width: 860px) {
   .menu-toggle { display: inline-flex; align-items:center; justify-content:center; width:40px; height:40px; border-radius:8px; background: transparent; border: 1px solid var(--card-border); margin-left:8px; }
-  .site-nav { display: none; position: absolute; top: 64px; left: 0; right: 0; background: var(--card-bg); border-top: 1px solid var(--card-border); padding: 12px 16px; box-shadow: var(--shadow-sm); }
-  .site-nav.open { display: block; }
+  .site-nav {
+    display: none !important;
+    position: absolute;
+    top: 64px;
+    left: 0;
+    right: 0;
+    background: var(--card-bg);
+    border-top: 1px solid var(--card-border);
+    padding: 0 16px;
+    box-shadow: var(--shadow-sm);
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    transform: translateY(-8px);
+    visibility: hidden;
+    pointer-events: none;
+    transition: max-height 280ms cubic-bezier(.2,.9,.2,1), opacity 200ms ease, transform 280ms cubic-bezier(.2,.9,.2,1), visibility 0s linear 280ms, padding 280ms cubic-bezier(.2,.9,.2,1);
+  }
+  .site-nav.open {
+    display: flex !important;
+    max-height: 320px;
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+    pointer-events: auto;
+    padding: 12px 16px;
+    transition: max-height 320ms cubic-bezier(.2,.9,.2,1), opacity 220ms ease, transform 320ms cubic-bezier(.2,.9,.2,1), visibility 0s, padding 320ms cubic-bezier(.2,.9,.2,1);
+  }
   .site-nav ul { flex-direction: column; gap: 8px; }
 }
 
@@ -324,7 +351,7 @@ a:hover { color: var(--accent); }
 
 /* Respect reduced motion */
 @media (prefers-reduced-motion: reduce) {
-  .reveal, .btn { transition: none !important; }
+  .reveal, .btn, .site-nav { transition: none !important; }
 }
 
 .hero-inner {
@@ -667,4 +694,89 @@ details[open] summary { color: var(--accent); }
   .headline { font-size: 40px; }
   .team-member { flex-direction: column; text-align: center; } 
   .team-member .links { justify-content: center; }
+}
+
+@media (max-width: 600px) {
+  .team { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .team-member .avatar { width: 96px; height: 96px; }
+  .team-member h4 { min-height: 40px; font-size: 16px; }
+}
+
+/* --- Page Load Transition --- */
+@keyframes pageFadeIn {
+    from { opacity: 0; transform: translateY(12px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+main {
+    animation: pageFadeIn 0.5s cubic-bezier(0.2, 0.9, 0.2, 1) forwards;
+}
+
+/* --- Polished Hover Animations --- */
+/* Target your primary interactive elements */
+.btn, a.inline-flex, article.group {
+    transition: transform 0.3s cubic-bezier(0.2, 0.9, 0.2, 1), 
+                box-shadow 0.3s ease, 
+                border-color 0.3s ease !important;
+}
+
+/* Add a subtle lift and Sapphire glow to cards on hover */
+article.group:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(15, 76, 129, 0.15);
+}
+
+/* Make button hovers snappier */
+a.inline-flex:hover {
+    transform: translateY(-2px);
+}
+
+/* --- Fix Burger Menu Reveal --- */
+#primary-nav.open {
+    display: flex !important;
+}
+
+/* --- Bright Emerald Hover Animation for Top Bar --- */
+.nav-link {
+    position: relative;
+    color: #dae2fd; /* Light text so it's easy to read */
+}
+
+.nav-link:hover {
+    color: #4edea3 !important; /* Emerald Green */
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -4px;
+    left: 0;
+    background-color: #4edea3; /* Emerald Green underline */
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+/* --- Make Burger Icon Highly Visible --- */
+.menu-toggle {
+    color: #dae2fd !important; /* Light text color */
+    transition: color 0.3s ease;
+}
+
+.menu-toggle:hover {
+    color: #4edea3 !important; /* Emerald green on hover */
+}
+
+/* --- Fix Burger Menu Click Area --- */
+.menu-toggle * {
+    pointer-events: none;
+}
+
+/* --- Automatically hide empty team links (CORRECTED) --- */
+article a[href="#"] {
+    display: none !important;
 }
