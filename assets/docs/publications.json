@@ -1,5 +1,13 @@
 [
   {
+    "title": "Robust and Scalable Cell-Based 65-nm CMOS RO-PUF Implementation",
+    "authors": ["P. Ortega-Castro", "E. Camacho-Ruiz",  "J.M. Mora-Guitiérrez", "M.C. Martínez-Rodríguez", "P. Brox"],
+    "journal": "IEEE Open JSCC",
+    "volume": "to be updated",
+    "year": 2026,
+    "doi": "10.1109/OJSSCS.2026.3689804"
+  },
+  {
     "title": "Analysis of EM Side-Channel Leakage on an RO-PUF and Proposed Countermeasures",
     "authors": [
       "A. Casado-Galán",
