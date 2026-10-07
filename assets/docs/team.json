@@ -1,0 +1,262 @@
+{
+  "groups": [
+    {
+      "id": "permanent-researchers",
+      "label": "Permanent Researchers"
+    },
+    {
+      "id": "post-doctoral-researchers",
+      "label": "Post-Doctoral Researchers"
+    },
+    {
+      "id": "phd-students",
+      "label": "PhD Students"
+    },
+    {
+      "id": "technical-researchers",
+      "label": "Technical Researchers"
+    },
+    {
+      "id": "external-collaborators",
+      "label": "External Collaborators"
+    }
+  ],
+  "members": [
+    {
+      "id": "piedad-brox-jimenez",
+      "name": "Dr. Piedad Brox Jiménez",
+      "authorNames": [
+        "Piedad Brox"
+      ],
+      "role": "Research Scientist",
+      "group": "permanent-researchers",
+      "photo": "assets/images/team/Brox-520.jpeg",
+      "links": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0000-0003-1059-5338"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?user=Q38fPzUAAAAJ&hl=es"
+        }
+      ]
+    },
+    {
+      "id": "macarena-c-martinez-rodriguez",
+      "name": "Dr. Macarena C. Martínez-Rodríguez",
+      "authorNames": [
+        "Macarena Cristina Martínez-Rodríguez"
+      ],
+      "role": "Tenured Scientist",
+      "group": "permanent-researchers",
+      "photo": "assets/images/team/Martinez-520.png",
+      "links": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0000-0003-3025-5736"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?user=TJRg5D4AAAAJ&hl=es"
+        }
+      ]
+    },
+    {
+      "id": "david-martin-sanchez",
+      "name": "Dr. David Martín Sánchez",
+      "role": "Postdoctoral Fellow",
+      "group": "post-doctoral-researchers",
+      "photo": "assets/images/team/david-520.jpg",
+      "links": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0000-0003-0131-5226"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?user=JBEyXwUAAAAJ&hl=es"
+        }
+      ]
+    },
+    {
+      "id": "apurba-karmakar",
+      "name": "Apurba Karmakar",
+      "role": "PhD Candidate",
+      "group": "phd-students",
+      "photo": "assets/images/team/karmakar-520.jpeg",
+      "links": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0009-0000-4743-8622"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?user=ySaOudkAAAAJ&hl=es&oi=ao"
+        }
+      ]
+    },
+    {
+      "id": "pablo-navarro-torrero",
+      "name": "Pablo Navarro-Torrero",
+      "role": "PhD Candidate",
+      "group": "phd-students",
+      "photo": "assets/images/team/Navarro-520.jpg",
+      "links": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0009-0006-9360-4322"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?user=yByHHBwAAAAJ&hl=es"
+        }
+      ]
+    },
+    {
+      "id": "francisco-javier-rubio-barbero",
+      "name": "Francisco Javier Rubio-Barbero",
+      "role": "PhD Student",
+      "group": "phd-students",
+      "photo": "assets/images/team/rubio-520.jpeg",
+      "links": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0000-0002-0971-5825"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?user=wS0BzLgAAAAJ&hl=es"
+        }
+      ]
+    },
+    {
+      "id": "jorge-ciudad-real-lacuesta",
+      "name": "Jorge Ciudad Real Lacuesta",
+      "role": "PhD Student",
+      "group": "phd-students",
+      "photo": "assets/images/team/ciudadreal-520.jpeg",
+      "links": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0009-0001-5179-650X"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?user=-jub32EAAAAJ"
+        }
+      ]
+    },
+    {
+      "id": "juan-manuel-moreno-cenizo",
+      "name": "Juan Manuel Moreno Cenizo",
+      "role": "PhD Student",
+      "group": "phd-students",
+      "photo": "assets/images/team/moreno-520.jpeg",
+      "links": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0009-0002-3789-475X"
+        }
+      ]
+    },
+    {
+      "id": "samuel-gutierrez-felix",
+      "name": "Samuel Gutiérrez Félix",
+      "role": "PhD Student",
+      "group": "phd-students",
+      "photo": "assets/images/team/samuel-520.jpeg",
+      "links": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0009-0009-2851-6096"
+        }
+      ]
+    },
+    {
+      "id": "pau-ortega-castro",
+      "name": "Pau Ortega Castro",
+      "role": "External Collaborator",
+      "group": "external-collaborators",
+      "photo": "assets/images/team/ortega-520.jpeg",
+      "links": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0009-0001-1363-6185"
+        }
+      ]
+    },
+    {
+      "id": "ignacio-martinez-fernandez",
+      "name": "Ignacio Martínez Fernández",
+      "role": "Technical Researcher",
+      "group": "technical-researchers",
+      "photo": "assets/images/team/ignacio-520.jpeg",
+      "links": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?user=Bgtv9gIAAAAJ"
+        }
+      ]
+    },
+    {
+      "id": "samuel-cimarro-almela",
+      "name": "Samuel Cimarro Almela",
+      "role": "Technical Researcher",
+      "group": "technical-researchers",
+      "photo": "assets/images/team/cimarro-520.jpeg",
+      "links": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0009-0003-9985-8989"
+        }
+      ]
+    },
+    {
+      "id": "manuel-roales-sanchez",
+      "name": "Manuel Roales Sánchez",
+      "role": "Technical Researcher",
+      "group": "technical-researchers",
+      "photo": "assets/images/team/manuel-520.jpeg",
+      "links": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0009-0002-6900-482X"
+        }
+      ]
+    },
+    {
+      "id": "isabel-fernandez-poyato",
+      "name": "Isabel Fernández Poyato",
+      "role": "Technical Researcher",
+      "group": "technical-researchers",
+      "photo": "",
+      "links": []
+    },
+    {
+      "id": "cristina-gomez-de-la-rosa",
+      "name": "Cristina Gómez de la Rosa",
+      "role": "Technical Researcher",
+      "group": "technical-researchers",
+      "photo": "",
+      "links": []
+    },
+    {
+      "id": "santiago-sanchez-solano",
+      "name": "Santiago Sánchez Solano",
+      "role": "External Collaborator",
+      "group": "external-collaborators",
+      "photo": "assets/images/team/santi-520.jpeg",
+      "links": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0000-0002-0700-0447"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?user=lirVGPcAAAAJ&hl=en"
+        }
+      ]
+    }
+  ]
+}

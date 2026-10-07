@@ -1,0 +1,40 @@
+{
+  "name": "Trusted Systems-on-Chip based on CMOS and integrated photonics technologies",
+  "url": "https://hwsec-csic.github.io",
+  "institution": "Instituto de Microelectrónica de Sevilla",
+  "institutionShort": "IMSE-CNM · CSIC · Universidad de Sevilla",
+  "address": "Américo Vespucio, 28",
+  "city": "Sevilla TechPark, 41092 Sevilla · Spain",
+  "phone": "+34 954 466 666",
+  "copyrightYear": 2026,
+  "contactFormKey": "02c71a7c-a3b8-47b5-86c8-956b9497e57f",
+  "institutions": [
+    {
+      "label": "IMSE-CNM",
+      "url": "https://www.imse-cnm.csic.es/"
+    },
+    {
+      "label": "CSIC",
+      "url": "https://www.csic.es/"
+    },
+    {
+      "label": "Universidad de Sevilla",
+      "url": "https://www.us.es/"
+    }
+  ],
+  "socialLinks": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/HWSec-CSIC"
+    },
+    {
+      "label": "GitLab",
+      "url": "https://gitlab.com/groups/hwsec"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/company/instituto-de-microelectr%C3%B3nica-de-sevilla-imse-cnm/"
+    }
+  ],
+  "shortName": "HWSec-CSIC"
+}

@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 148" role="img" aria-labelledby="photonics-title photonics-desc">
+  <title id="photonics-title">Integrated photonic waveguide concept</title><desc id="photonics-desc">Optical waveguides coupled to ring resonators, a conceptual illustration of integrated photonics.</desc>
+  <rect x="14" y="20" width="172" height="100" fill="none" stroke="#36506f"/>
+  <g fill="none" stroke="#61d9c5" stroke-width="1.5"><path d="M14 40h172M14 101h172"/><circle cx="67" cy="70" r="25"/><circle cx="135" cy="70" r="25"/><path d="M28 37l5 3-5 3m137 55 5 3-5 3"/></g>
+  <text x="16" y="137" font-family="monospace" font-size="9" fill="#91a5bf">PHOTONIC IC / CONCEPT</text>
+</svg>

@@ -1,0 +1,3556 @@
+{
+  "auditDate": "2026-10-06",
+  "cutoffYearInclusive": 2023,
+  "scope": "At least two distinct authors from the 16 visible members in team.json, including listed External Collaborators. Former/unlisted researchers do not count. Existing archive eligibility applies to every year; discovery covers 2023 onward. ML-KEM was restored on 2026-10-07 as an explicit user-requested exception. Posters, extended abstracts and short communications are imported only with a verified individual DOI.",
+  "catalogueBeforeEligibilityFilter": 21,
+  "catalogueAfterEligibilityFilter": 17,
+  "catalogueSHA256": "eab8765b1b399034e2b201a4a5c15447e93c45016c6887be5a898413b76796e1",
+  "verifiedMissingFullPapers": [
+    {
+      "title": "Digital Design Flow Based on Open Tools for Programmable Logic Devices",
+      "year": 2024,
+      "doi": "10.1109/taee59541.2024.10604893",
+      "authors": [
+        "Pablo Navarro-Torrero",
+        "Luis Felipe Rojas-Muñoz",
+        "Macarena C. Martínez-Rodríguez",
+        "Ángel Barriga-Barros",
+        "Carlos J. Jiménez-Fernández",
+        "María Brox",
+        "Piedad Brox"
+      ],
+      "teamMemberIds": [
+        "pablo-navarro-torrero",
+        "macarena-c-martinez-rodriguez",
+        "piedad-brox-jimenez"
+      ],
+      "type": "conference",
+      "publicationStatus": "published",
+      "venue": "2024 XVI Congreso de Tecnología, Aprendizaje y Enseñanza de la Electrónica (TAEE)",
+      "pages": "1-5",
+      "sources": [
+        "https://api.crossref.org/works/10.1109/taee59541.2024.10604893",
+        "https://doi.org/10.1109/taee59541.2024.10604893",
+        "https://api.crossref.org/works/10.1109%2Ftaee59541.2024.10604893",
+        "https://cordis.europa.eu/project/id/101070660/results"
+      ],
+      "teamMemberCount": 3,
+      "teamMembers": [
+        "Pablo Navarro-Torrero",
+        "Macarena C. Martínez-Rodríguez",
+        "Piedad Brox Jiménez"
+      ],
+      "importStatus": "imported",
+      "importDate": "2026-10-07",
+      "catalogueReference": "10.1109/taee59541.2024.10604893"
+    },
+    {
+      "title": "Full Open-Source Implementation of an Academic RISC-V on FPGA",
+      "year": 2024,
+      "doi": "10.1109/taee59541.2024.10604934",
+      "authors": [
+        "Pablo Navarro-Torrero",
+        "Macarena C. Martínez-Rodríguez",
+        "Ángel Barriga-Barros",
+        "Piedad Brox"
+      ],
+      "teamMemberIds": [
+        "pablo-navarro-torrero",
+        "macarena-c-martinez-rodriguez",
+        "piedad-brox-jimenez"
+      ],
+      "type": "conference",
+      "publicationStatus": "published",
+      "venue": "2024 XVI Congreso de Tecnología, Aprendizaje y Enseñanza de la Electrónica (TAEE)",
+      "pages": "1-5",
+      "sources": [
+        "https://api.crossref.org/works/10.1109/taee59541.2024.10604934",
+        "https://doi.org/10.1109/taee59541.2024.10604934",
+        "https://api.crossref.org/works/10.1109%2FTAEE59541.2024.10604934",
+        "https://cordis.europa.eu/project/id/101070660/results"
+      ],
+      "teamMemberCount": 3,
+      "teamMembers": [
+        "Pablo Navarro-Torrero",
+        "Macarena C. Martínez-Rodríguez",
+        "Piedad Brox Jiménez"
+      ],
+      "importStatus": "imported",
+      "importDate": "2026-10-07",
+      "catalogueReference": "10.1109/taee59541.2024.10604934"
+    },
+    {
+      "title": "Cryptographic Security Through a Hardware Root of Trust",
+      "year": 2024,
+      "doi": "10.1007/978-3-031-55673-9_8",
+      "authors": [
+        "Luis F. Rojas-Muñoz",
+        "Santiago Sánchez-Solano",
+        "Macarena C. Martínez-Rodríguez",
+        "Eros Camacho-Ruiz",
+        "Pablo Navarro-Torrero",
+        "Apurba Karmakar",
+        "Carlos Fernández-García",
+        "Erica Tena-Sánchez",
+        "Francisco E. Potestad-Ordóñez",
+        "Alejandro Casado-Galán",
+        "Pau Ortega-Castro",
+        "Antonio J. Acosta-Jiménez",
+        "Carlos J. Jiménez-Fernández",
+        "Piedad Brox"
+      ],
+      "teamMemberIds": [
+        "santiago-sanchez-solano",
+        "macarena-c-martinez-rodriguez",
+        "pablo-navarro-torrero",
+        "apurba-karmakar",
+        "pau-ortega-castro",
+        "piedad-brox-jimenez"
+      ],
+      "type": "conference",
+      "publicationStatus": "published",
+      "venue": "Applied Reconfigurable Computing. Architectures, Tools, and Applications",
+      "pages": "106-119",
+      "sources": [
+        "https://api.crossref.org/works/10.1007/978-3-031-55673-9_8",
+        "https://doi.org/10.1007/978-3-031-55673-9_8",
+        "https://link.springer.com/chapter/10.1007/978-3-031-55673-9_8",
+        "https://api.crossref.org/works/10.1007%2F978-3-031-55673-9_8",
+        "https://pub.orcid.org/v3.0/0009-0000-4743-8622/work/159412232"
+      ],
+      "note": "A published ARC 2024 conference paper in LNCS, not the separately edited whole proceedings volume.",
+      "teamMemberCount": 6,
+      "teamMembers": [
+        "Santiago Sánchez Solano",
+        "Macarena C. Martínez-Rodríguez",
+        "Pablo Navarro-Torrero",
+        "Apurba Karmakar",
+        "Pau Ortega Castro",
+        "Piedad Brox Jiménez"
+      ],
+      "importStatus": "imported",
+      "importDate": "2026-10-07",
+      "catalogueReference": "10.1007/978-3-031-55673-9_8"
+    },
+    {
+      "title": "A complete SHA-3 hardware library based on a high efficiency Keccak design",
+      "year": 2023,
+      "doi": "10.1109/norcas58970.2023.10305448",
+      "authors": [
+        "Eros Camacho-Ruiz",
+        "Santiago Sánchez-Solano",
+        "Macarena C. Martínez-Rodríguez",
+        "Piedad Brox"
+      ],
+      "teamMemberIds": [
+        "santiago-sanchez-solano",
+        "macarena-c-martinez-rodriguez",
+        "piedad-brox-jimenez"
+      ],
+      "type": "conference",
+      "publicationStatus": "published",
+      "venue": "2023 IEEE Nordic Circuits and Systems Conference (NorCAS)",
+      "pages": "1-7",
+      "sources": [
+        "https://api.crossref.org/works/10.1109/norcas58970.2023.10305448",
+        "https://doi.org/10.1109/norcas58970.2023.10305448"
+      ],
+      "teamMemberCount": 3,
+      "teamMembers": [
+        "Santiago Sánchez Solano",
+        "Macarena C. Martínez-Rodríguez",
+        "Piedad Brox Jiménez"
+      ],
+      "importStatus": "imported",
+      "importDate": "2026-10-07",
+      "catalogueReference": "10.1109/norcas58970.2023.10305448"
+    },
+    {
+      "title": "A Simple Power Analysis of an FPGA implementation of a polynomial multiplier for the NTRU cryptosystem",
+      "year": 2023,
+      "doi": "10.1109/dcis58620.2023.10336001",
+      "authors": [
+        "Eros Camacho-Ruiz",
+        "Santiago Sánchez-Solano",
+        "Macarena C. Martínez-Rodríguez",
+        "Erica Tena-Sanchez",
+        "Piedad Brox"
+      ],
+      "teamMemberIds": [
+        "santiago-sanchez-solano",
+        "macarena-c-martinez-rodriguez",
+        "piedad-brox-jimenez"
+      ],
+      "type": "conference",
+      "publicationStatus": "published",
+      "venue": "2023 38th Conference on Design of Circuits and Integrated Systems (DCIS)",
+      "pages": "1-6",
+      "sources": [
+        "https://api.crossref.org/works/10.1109/dcis58620.2023.10336001",
+        "https://doi.org/10.1109/dcis58620.2023.10336001"
+      ],
+      "teamMemberCount": 3,
+      "teamMembers": [
+        "Santiago Sánchez Solano",
+        "Macarena C. Martínez-Rodríguez",
+        "Piedad Brox Jiménez"
+      ],
+      "importStatus": "imported",
+      "importDate": "2026-10-07",
+      "catalogueReference": "10.1109/dcis58620.2023.10336001"
+    },
+    {
+      "title": "HW/SW implementation of RSA digital signature on a RISC-V-based System-on-Chip",
+      "year": 2023,
+      "doi": "10.1109/DCIS58620.2023.10335970",
+      "authors": [
+        "Apurba Karmakar",
+        "Santiago Sánchez-Solano",
+        "Macarena C. Martínez-Rodríguez",
+        "Piedad Brox"
+      ],
+      "teamMemberIds": [
+        "apurba-karmakar",
+        "santiago-sanchez-solano",
+        "macarena-c-martinez-rodriguez",
+        "piedad-brox-jimenez"
+      ],
+      "type": "conference",
+      "publicationStatus": "published",
+      "venue": "2023 38th Conference on Design of Circuits and Integrated Systems (DCIS)",
+      "pages": "1-6",
+      "sources": [
+        "https://api.crossref.org/works/10.1109/dcis58620.2023.10335970",
+        "https://doi.org/10.1109/dcis58620.2023.10335970",
+        "https://easychair.org/smart-program/DCIS2023/2023-11-16.html",
+        "https://pub.orcid.org/v3.0/0009-0000-4743-8622/work/148717152",
+        "https://doi.org/10.1109/DCIS58620.2023.10335970"
+      ],
+      "teamMemberCount": 4,
+      "teamMembers": [
+        "Apurba Karmakar",
+        "Santiago Sánchez Solano",
+        "Macarena C. Martínez-Rodríguez",
+        "Piedad Brox Jiménez"
+      ],
+      "importStatus": "imported",
+      "importDate": "2026-10-07",
+      "catalogueReference": "10.1109/DCIS58620.2023.10335970"
+    },
+    {
+      "title": "Optimizing Secure Elements Implementation Methods for a seamless Post-Quantum Transition",
+      "year": 2025,
+      "doi": "10.1109/iscc65549.2025.11326228",
+      "authors": [
+        "Eros Camacho-Ruiz",
+        "Pablo Navarro-Torrero",
+        "Macarena C. Martínez-Rodríguez",
+        "Piedad Brox"
+      ],
+      "teamMemberIds": [
+        "pablo-navarro-torrero",
+        "macarena-c-martinez-rodriguez",
+        "piedad-brox-jimenez"
+      ],
+      "type": "conference",
+      "publicationStatus": "published",
+      "venue": "2025 IEEE Symposium on Computers and Communications (ISCC)",
+      "pages": "1-6",
+      "sources": [
+        "https://ieeexplore.ieee.org/document/11326228/",
+        "https://api.crossref.org/works/10.1109%2FISCC65549.2025.11326228",
+        "https://doi.org/10.1109/iscc65549.2025.11326228",
+        "https://qubip.eu/qsns2025/"
+      ],
+      "note": "Publisher-deposited Crossref and Scholar use the 2025 conference year; CORDIS lists 2026. DOI and four-author list verified; one work.",
+      "teamMemberCount": 3,
+      "teamMembers": [
+        "Pablo Navarro-Torrero",
+        "Macarena C. Martínez-Rodríguez",
+        "Piedad Brox Jiménez"
+      ],
+      "importStatus": "imported",
+      "importDate": "2026-10-07",
+      "catalogueReference": "10.1109/iscc65549.2025.11326228"
+    },
+    {
+      "title": "Open Source API for a Hardware Root-of-Trust",
+      "year": 2025,
+      "doi": null,
+      "authors": [
+        "Eros Camacho-Ruiz",
+        "Luis F. Rojas-Muñoz",
+        "Apurba Karmakar",
+        "Pablo Navarro-Torrero",
+        "Piedad Brox",
+        "Macarena C. Martínez-Rodríguez"
+      ],
+      "teamMemberIds": [
+        "apurba-karmakar",
+        "pablo-navarro-torrero",
+        "piedad-brox-jimenez",
+        "macarena-c-martinez-rodriguez"
+      ],
+      "type": "conference",
+      "publicationStatus": "published",
+      "venue": "XVIII Reunión Española sobre Criptología y Seguridad de la Información (RECSI 2024)",
+      "sources": [
+        "https://publicaciones.unileon.es/product/xviii-reunion-espanola-sobre-criptologia-y-seguridad-de-la-informacion-xviii-recsi/",
+        "https://buleria.unileon.es/bitstream/handle/10612/24551/Reuni%C3%B3n_Espa%C3%B1ola_Criptolog%C3%ADa_Seguridad_Informaci%C3%B3n.pdf?isAllowed=y&sequence=1",
+        "https://digital.csic.es/handle/10261/384049",
+        "https://buleria.unileon.es/handle/10612/24551",
+        "https://pub.orcid.org/v3.0/0009-0000-4743-8622/work/182055976"
+      ],
+      "note": "RECSI event held in 2024; proceedings published in 2025 per University of León. One work despite two Scholar years. No individual DOI verified; the whole-book DOI is not assigned to this paper. Correct author spelling is Apurba Karmakar, confirmed by the user.",
+      "pagesVerification": "Indexed primary University of León proceedings confirm the first page 87 and final page 92 (Figure 5, Future Work and references); pages 87–92 verified on 2026-10-07.",
+      "conferenceYear": 2024,
+      "teamMemberCount": 4,
+      "teamMembers": [
+        "Apurba Karmakar",
+        "Pablo Navarro-Torrero",
+        "Piedad Brox Jiménez",
+        "Macarena C. Martínez-Rodríguez"
+      ],
+      "importStatus": "imported",
+      "importDate": "2026-10-07",
+      "catalogueReference": "open-source-api-hardware-root-trust-recsi-2024",
+      "id": "open-source-api-hardware-root-trust-recsi-2024",
+      "url": "https://hdl.handle.net/10261/384049",
+      "pages": "87-92"
+    },
+    {
+      "title": "Contribuciones a la implementación de sistemas electrónicos digitales embebidos sobre hardware reconfigurable",
+      "year": 2023,
+      "doi": null,
+      "authors": [
+        "Alejandro José Cabrera Sarmiento",
+        "Luís Manuel Garcés Socarrás",
+        "Alejandro Cabrera Aldaya",
+        "Raudel Cuiman Márquez",
+        "Santiago Sánchez Solano",
+        "Piedad Brox Jiménez",
+        "Egidio Ieno Junior",
+        "Tales Cleber Pimenta",
+        "Billy Bob Brumley"
+      ],
+      "teamMemberIds": [
+        "santiago-sanchez-solano",
+        "piedad-brox-jimenez"
+      ],
+      "type": "journal",
+      "publicationStatus": "published-full-research-paper-verified",
+      "venue": "Anales de la Academia de Ciencias de Cuba",
+      "volume": "13",
+      "issue": "4",
+      "article": "e1482",
+      "sources": [
+        "https://scielo.sld.cu/scielo.php?script=sci_arttext&pid=S2304-01062023000400007&lng=es",
+        "https://search.scielo.org/?count=15&lang=es&q=procesador",
+        "https://revistaccuba.sld.cu/index.php/revacc/article/view/1482",
+        "https://revistaccuba.sld.cu/index.php/revacc/article/download/1482/1862"
+      ],
+      "note": "Primary publisher citation metadata and the 13-page PDF confirm all nine ordered authors and original research article status. Published online 2023-10-31 in the October–December 2023 issue, 13(4), e1482. No individual DOI verified; imported using the direct publisher URL.",
+      "teamMemberCount": 2,
+      "teamMembers": [
+        "Santiago Sánchez Solano",
+        "Piedad Brox Jiménez"
+      ],
+      "publishedOnlineDate": "2023-10-31",
+      "originalAuditClassification": "primary-index-verified/direct-record-pending; resolved on 2026-10-07",
+      "importStatus": "imported",
+      "importDate": "2026-10-07",
+      "catalogueReference": "contribuciones-hardware-reconfigurable-2023",
+      "id": "contribuciones-hardware-reconfigurable-2023",
+      "url": "https://revistaccuba.sld.cu/index.php/revacc/article/view/1482"
+    }
+  ],
+  "verifiedMissingShortProceedingsCommunications": [
+    {
+      "title": "Análisis y evaluación de un RO-PUF como TRNG",
+      "year": 2023,
+      "doi": null,
+      "authors": [
+        "Luis F. Rojas-Muñoz",
+        "Santiago Sánchez-Solano",
+        "Macarena C. Martínez-Rodríguez",
+        "Piedad Brox"
+      ],
+      "teamMemberIds": [
+        "santiago-sanchez-solano",
+        "macarena-c-martinez-rodriguez",
+        "piedad-brox-jimenez"
+      ],
+      "type": "conference-short-communication",
+      "publicationStatus": "published",
+      "venue": "Actas de las VIII Jornadas Nacionales de Investigación en Ciberseguridad (JNIC 2023)",
+      "pages": "571-572",
+      "sources": [
+        "https://www.spirs-project.eu/dissemination/publications/",
+        "https://2023.jnic.es/wp-content/uploads/2023/06/PROGRAMA-JNIC-2023-Definitivo.pdf",
+        "https://www.investigo.biblioteca.uvigo.es/xmlui/handle/11093/4952"
+      ],
+      "note": "Distinct two-page published proceedings contribution. Full author list in official event program and project dissemination list; exact pages in proceedings table-of-contents and Scholar.",
+      "teamMemberCount": 3,
+      "teamMembers": [
+        "Santiago Sánchez Solano",
+        "Macarena C. Martínez-Rodríguez",
+        "Piedad Brox Jiménez"
+      ],
+      "importStatus": "not-imported",
+      "importDecisionDate": "2026-10-07",
+      "importReason": "No individual DOI independently verified; excluded under the user’s DOI requirement for posters, extended abstracts and other short outputs.",
+      "doiVerification": {
+        "date": "2026-10-07",
+        "sources": [
+          "https://www.spirs-project.eu/dissemination/publications/",
+          "https://2023.jnic.es/wp-content/uploads/2023/06/PROGRAMA-JNIC-2023-Definitivo.pdf",
+          "https://www.investigo.biblioteca.uvigo.es/xmlui/handle/11093/4952"
+        ],
+        "registryChecks": [
+          "Crossref exact-title/bibliographic search: no matching title and author record",
+          "DataCite exact-title search: no matching record"
+        ],
+        "result": "No individual DOI verified. DOIs of cited works, the SPIRS project and entire proceedings are not article identifiers."
+      }
+    }
+  ],
+  "otherResearchOutputs": [
+    {
+      "title": "Security assessment methodology for RISC-V cores",
+      "year": 2025,
+      "doi": null,
+      "authors": [
+        "Apurba Karmakar",
+        "Pablo Navarro-Torrero",
+        "Eros Camacho-Ruiz",
+        "Macarena C. Martínez-Rodríguez",
+        "Piedad Brox"
+      ],
+      "teamMemberIds": [
+        "apurba-karmakar",
+        "pablo-navarro-torrero",
+        "macarena-c-martinez-rodriguez",
+        "piedad-brox-jimenez"
+      ],
+      "type": "extended-abstract/poster",
+      "venue": "RISC-V Summit Europe 2025",
+      "sources": [
+        "https://riscv-europe.org/summit/2025/media/proceedings/2025-05-14-RISC-V-Summit-Europe-P2.2.06-KARMARKAR-abstract.pdf"
+      ],
+      "note": "Official extended abstract and companion poster, not a full refereed proceedings paper; surname spelling retained as published.",
+      "teamMemberCount": 4,
+      "teamMembers": [
+        "Apurba Karmakar",
+        "Pablo Navarro-Torrero",
+        "Macarena C. Martínez-Rodríguez",
+        "Piedad Brox Jiménez"
+      ],
+      "importStatus": "not-imported",
+      "importDecisionDate": "2026-10-07",
+      "importReason": "No individual DOI independently verified; excluded under the user’s DOI requirement for posters, extended abstracts and other short outputs.",
+      "doiVerification": {
+        "date": "2026-10-07",
+        "sources": [
+          "https://riscv-europe.org/summit/2025/media/proceedings/2025-05-14-RISC-V-Summit-Europe-P2.2.06-KARMARKAR-abstract.pdf"
+        ],
+        "registryChecks": [
+          "Crossref exact-title/bibliographic search: no matching title and author record",
+          "DataCite exact-title search: no matching record"
+        ],
+        "result": "No individual DOI verified. DOIs of cited works, the SPIRS project and entire proceedings are not article identifiers."
+      }
+    },
+    {
+      "title": "Root of Trust Components to Increase Security of RISC-V Based Systems on Chips",
+      "year": 2023,
+      "doi": null,
+      "authors": [
+        "Luis F. Rojas-Muñoz",
+        "Macarena C. Martínez-Rodríguez",
+        "Santiago Sánchez-Solano",
+        "Piedad Brox"
+      ],
+      "teamMemberIds": [
+        "macarena-c-martinez-rodriguez",
+        "santiago-sanchez-solano",
+        "piedad-brox-jimenez"
+      ],
+      "type": "extended-abstract/poster",
+      "venue": "RISC-V Summit Europe 2023",
+      "sources": [
+        "https://riscv-europe.org/summit/2023/media/proceedings/posters/2023-06-06-Luis-Felipe-ROJAS-MU%C3%91OZ-abstract.pdf"
+      ],
+      "note": "Official published extended abstract and companion poster; author order from abstract PDF.",
+      "teamMemberCount": 3,
+      "teamMembers": [
+        "Macarena C. Martínez-Rodríguez",
+        "Santiago Sánchez Solano",
+        "Piedad Brox Jiménez"
+      ],
+      "importStatus": "not-imported",
+      "importDecisionDate": "2026-10-07",
+      "importReason": "No individual DOI independently verified; excluded under the user’s DOI requirement for posters, extended abstracts and other short outputs.",
+      "doiVerification": {
+        "date": "2026-10-07",
+        "sources": [
+          "https://riscv-europe.org/summit/2023/media/proceedings/posters/2023-06-06-Luis-Felipe-ROJAS-MU%C3%91OZ-abstract.pdf"
+        ],
+        "registryChecks": [
+          "Crossref exact-title/bibliographic search: no matching title and author record",
+          "DataCite exact-title search: no matching record"
+        ],
+        "result": "No individual DOI verified. DOIs of cited works, the SPIRS project and entire proceedings are not article identifiers."
+      }
+    },
+    {
+      "title": "Secure platform for ICT systems rooted at the silicon manufacturing process",
+      "year": 2023,
+      "doi": null,
+      "authors": [
+        "Caaliph Andriamisaina",
+        "Farhat Thabet",
+        "Jean-Roch Coulon",
+        "Guillaume Chauvon",
+        "Alejandro Cabrera Aldaya",
+        "Nicola Tuveri",
+        "Macarena C. Martínez-Rodríguez",
+        "Piedad Brox"
+      ],
+      "teamMemberIds": [
+        "macarena-c-martinez-rodriguez",
+        "piedad-brox-jimenez"
+      ],
+      "type": "extended-abstract/poster",
+      "venue": "RISC-V Summit Europe 2023",
+      "sources": [
+        "https://riscv-europe.org/summit/2023/media/proceedings/posters/2023-06-06-Caaliph-ANDRIAMISAINA-abstract.pdf",
+        "https://digital.csic.es/handle/10261/338837"
+      ],
+      "note": "Official two-page extended abstract, dated June 2023. Distinct from the 2022 JNIC project overview with a different author list.",
+      "teamMemberCount": 2,
+      "teamMembers": [
+        "Macarena C. Martínez-Rodríguez",
+        "Piedad Brox Jiménez"
+      ],
+      "importStatus": "not-imported",
+      "importDecisionDate": "2026-10-07",
+      "importReason": "No individual DOI independently verified; excluded under the user’s DOI requirement for posters, extended abstracts and other short outputs.",
+      "doiVerification": {
+        "date": "2026-10-07",
+        "sources": [
+          "https://riscv-europe.org/summit/2023/media/proceedings/posters/2023-06-06-Caaliph-ANDRIAMISAINA-abstract.pdf",
+          "https://digital.csic.es/handle/10261/338837"
+        ],
+        "registryChecks": [
+          "Crossref exact-title/bibliographic search: no matching title and author record",
+          "DataCite exact-title search: no matching record"
+        ],
+        "result": "No individual DOI verified. DOIs of cited works, the SPIRS project and entire proceedings are not article identifiers."
+      }
+    },
+    {
+      "title": "Exploring Open-Source and Proprietary Design Tools to Implement a Symmetric Cipher on FPGAs",
+      "year": 2023,
+      "doi": null,
+      "authors": [
+        "Pablo Navarro Torrero",
+        "Luis Felipe Rojas Muñoz",
+        "Piedad Brox Jiménez",
+        "Santiago Sánchez Solano"
+      ],
+      "teamMemberIds": [
+        "pablo-navarro-torrero",
+        "piedad-brox-jimenez",
+        "santiago-sanchez-solano"
+      ],
+      "type": "poster/presentation",
+      "venue": "DCIS 2023, Poster Session 15, 17 November 2023",
+      "sources": [
+        "https://easychair.org/smart-program/DCIS2023/2023-11-17.html",
+        "https://digital.csic.es/handle/10261/342452"
+      ],
+      "note": "Presentation/abstract verified by official DCIS program, author order differs from Scholar. No DOI or full proceedings paper independently verified; CSIC record is protected by an access challenge.",
+      "teamMemberCount": 3,
+      "teamMembers": [
+        "Pablo Navarro-Torrero",
+        "Piedad Brox Jiménez",
+        "Santiago Sánchez Solano"
+      ],
+      "importStatus": "not-imported",
+      "importDecisionDate": "2026-10-07",
+      "importReason": "No individual DOI independently verified; excluded under the user’s DOI requirement for posters, extended abstracts and other short outputs.",
+      "doiVerification": {
+        "date": "2026-10-07",
+        "sources": [
+          "https://easychair.org/smart-program/DCIS2023/2023-11-17.html",
+          "https://digital.csic.es/handle/10261/342452"
+        ],
+        "registryChecks": [
+          "Crossref exact-title/bibliographic search: no matching title and author record",
+          "DataCite exact-title search: no matching record"
+        ],
+        "result": "No individual DOI verified. DOIs of cited works, the SPIRS project and entire proceedings are not article identifiers."
+      }
+    }
+  ],
+  "primaryIndexVerifiedPendingDirectRecord": [],
+  "removedExistingPublications": [
+    {
+      "title": "Sensitive Broadband Ultrasound Sensor Based on a Low-Loss High-Q Fused-Silica Plano-Concave Microresonator",
+      "doi": "10.1364/OE.572433",
+      "teamMemberIds": [
+        "david-martin-sanchez"
+      ],
+      "reason": "Only one distinct author belongs to the current visible roster; excluded by the user’s minimum-two-author policy.",
+      "sources": [
+        "https://doi.org/10.1364/OE.572433"
+      ]
+    },
+    {
+      "title": "Laser Frequency Noise Characterisation Using High-Finesse Plano-Concave Optical Microresonators",
+      "doi": "10.1364/OL.510516",
+      "teamMemberIds": [
+        "david-martin-sanchez"
+      ],
+      "reason": "Only one distinct author belongs to the current visible roster; excluded by the user’s minimum-two-author policy.",
+      "sources": [
+        "https://doi.org/10.1364/OL.510516"
+      ]
+    },
+    {
+      "title": "An ABCD Transfer Matrix Model of Gaussian Beam Propagation in Plano-Concave Optical Microresonators",
+      "doi": "10.1364/OE.484212",
+      "teamMemberIds": [
+        "david-martin-sanchez"
+      ],
+      "reason": "Only one distinct author belongs to the current visible roster; excluded by the user’s minimum-two-author policy.",
+      "sources": [
+        "https://doi.org/10.1364/OE.484212"
+      ]
+    }
+  ],
+  "currentCatalogueEligibility": [
+    {
+      "title": "Robust and Scalable Cell-Based 65-nm CMOS RO-PUF Implementation",
+      "reference": "10.1109/OJSSCS.2026.3689804",
+      "teamMemberIds": [
+        "macarena-c-martinez-rodriguez",
+        "pau-ortega-castro",
+        "piedad-brox-jimenez"
+      ],
+      "teamMemberCount": 3,
+      "eligibility": "at-least-two-current-team-members"
+    },
+    {
+      "title": "Analysis of EM Side-Channel Leakage on an RO-PUF and Proposed Countermeasures",
+      "reference": "10.1109/TDSC.2025.3648516",
+      "teamMemberIds": [
+        "macarena-c-martinez-rodriguez",
+        "santiago-sanchez-solano"
+      ],
+      "teamMemberCount": 2,
+      "eligibility": "at-least-two-current-team-members"
+    },
+    {
+      "title": "Hardware-Rooted Device Identity for IoT: Integrating Silicon PUFs and DICE in RISC-V Embedded Systems",
+      "reference": "10.1109/ACCESS.2026.3674839",
+      "teamMemberIds": [
+        "macarena-c-martinez-rodriguez",
+        "pablo-navarro-torrero",
+        "piedad-brox-jimenez"
+      ],
+      "teamMemberCount": 3,
+      "eligibility": "at-least-two-current-team-members"
+    },
+    {
+      "title": "A Framework for designing High-Order Side-Channel Protected Hardware Implementations of ML-KEM",
+      "reference": "10.46586/tches.v2026.i2.272-295",
+      "teamMemberIds": [
+        "pablo-navarro-torrero"
+      ],
+      "teamMemberCount": 1,
+      "eligibility": "explicit-user-requested-exception",
+      "eligibilityException": "Restored by explicit user request on 2026-10-07; Pablo Navarro-Torrero is the only author in the current team roster."
+    },
+    {
+      "title": "A Side-Channel Protected and High-Performance Hardware Implementation for EdDSA25519",
+      "reference": "10.1109/ACCESS.2025.3584696",
+      "teamMemberIds": [
+        "macarena-c-martinez-rodriguez",
+        "pablo-navarro-torrero",
+        "piedad-brox-jimenez"
+      ],
+      "teamMemberCount": 3,
+      "eligibility": "at-least-two-current-team-members"
+    },
+    {
+      "title": "Exploiting the acousto-optic effect for developing secure digital identifiers",
+      "reference": "10.1117/12.3039852",
+      "teamMemberIds": [
+        "david-martin-sanchez",
+        "piedad-brox-jimenez"
+      ],
+      "teamMemberCount": 2,
+      "eligibility": "at-least-two-current-team-members"
+    },
+    {
+      "title": "VLSI integration of a RO-based PUF into a 65 nm technology",
+      "reference": "10.1109/NorCAS64408.2024.10752474",
+      "teamMemberIds": [
+        "macarena-c-martinez-rodriguez",
+        "pau-ortega-castro",
+        "piedad-brox-jimenez"
+      ],
+      "teamMemberCount": 3,
+      "eligibility": "at-least-two-current-team-members"
+    },
+    {
+      "title": "Design of a Karatsuba Multiplier to Accelerate Digital Signature Schemes on Embedded Systems",
+      "reference": "10.1109/NorCAS64408.2024.10752484",
+      "teamMemberIds": [
+        "macarena-c-martinez-rodriguez",
+        "pablo-navarro-torrero",
+        "piedad-brox-jimenez"
+      ],
+      "teamMemberCount": 3,
+      "eligibility": "at-least-two-current-team-members"
+    },
+    {
+      "title": "Hardware-Efficient Configurable Ring-Oscillator-Based Physical Unclonable Function/True Random Number Generator Module for Secure Key Management",
+      "reference": "10.3390/s24175674",
+      "teamMemberIds": [
+        "macarena-c-martinez-rodriguez",
+        "piedad-brox-jimenez",
+        "santiago-sanchez-solano"
+      ],
+      "teamMemberCount": 3,
+      "eligibility": "at-least-two-current-team-members"
+    },
+    {
+      "title": "Timing-Attack-Resistant Acceleration of NTRU Round 3 Encryption on Resource-Constrained Embedded Systems",
+      "reference": "10.3390/cryptography7020029",
+      "teamMemberIds": [
+        "macarena-c-martinez-rodriguez",
+        "piedad-brox-jimenez",
+        "santiago-sanchez-solano"
+      ],
+      "teamMemberCount": 3,
+      "eligibility": "at-least-two-current-team-members"
+    },
+    {
+      "title": "On-Line Evaluation and Monitoring of Security Features of an RO-Based PUF/TRNG for IoT Devices",
+      "reference": "10.3390/s23084070",
+      "teamMemberIds": [
+        "macarena-c-martinez-rodriguez",
+        "piedad-brox-jimenez",
+        "santiago-sanchez-solano"
+      ],
+      "teamMemberCount": 3,
+      "eligibility": "at-least-two-current-team-members"
+    },
+    {
+      "title": "True Random Number Generation Capability of a Ring Oscillator PUF for Reconfigurable Devices",
+      "reference": "10.3390/electronics11234028",
+      "teamMemberIds": [
+        "macarena-c-martinez-rodriguez",
+        "piedad-brox-jimenez",
+        "santiago-sanchez-solano"
+      ],
+      "teamMemberCount": 3,
+      "eligibility": "at-least-two-current-team-members"
+    },
+    {
+      "title": "Timing-Optimized Hardware Implementation to Accelerate Polynomial Multiplication in the NTRU Algorithm",
+      "reference": "10.1145/3445979",
+      "teamMemberIds": [
+        "macarena-c-martinez-rodriguez",
+        "piedad-brox-jimenez",
+        "santiago-sanchez-solano"
+      ],
+      "teamMemberCount": 3,
+      "eligibility": "at-least-two-current-team-members"
+    },
+    {
+      "title": "Towards a Side-Channel-Resistant and Scalable ChaCha20-Poly1305 Hardware Implementation",
+      "reference": "chacha20-poly1305-ares-2026",
+      "teamMemberIds": [
+        "francisco-javier-rubio-barbero",
+        "macarena-c-martinez-rodriguez",
+        "pablo-navarro-torrero",
+        "piedad-brox-jimenez"
+      ],
+      "teamMemberCount": 4,
+      "eligibility": "at-least-two-current-team-members"
+    },
+    {
+      "title": "Efficient Second-Order Masked KECCAK Implementation without Online Fresh Randomness",
+      "reference": "10.5220/0015074600004103",
+      "teamMemberIds": [
+        "juan-manuel-moreno-cenizo",
+        "macarena-c-martinez-rodriguez",
+        "piedad-brox-jimenez"
+      ],
+      "teamMemberCount": 3,
+      "eligibility": "at-least-two-current-team-members"
+    },
+    {
+      "title": "A Hybrid Classical and Post-Quantum Secure Element for Constrained Devices",
+      "reference": "hybrid-secure-element-qsns-2026",
+      "teamMemberIds": [
+        "macarena-c-martinez-rodriguez",
+        "pablo-navarro-torrero",
+        "piedad-brox-jimenez"
+      ],
+      "teamMemberCount": 3,
+      "eligibility": "at-least-two-current-team-members"
+    },
+    {
+      "title": "Open-Source Framework for Secure Hardware Design with Simulation-based Leakage Assessment",
+      "reference": "10.23919/DATE69613.2026.11539436",
+      "teamMemberIds": [
+        "francisco-javier-rubio-barbero",
+        "macarena-c-martinez-rodriguez",
+        "pablo-navarro-torrero",
+        "piedad-brox-jimenez"
+      ],
+      "teamMemberCount": 4,
+      "eligibility": "at-least-two-current-team-members"
+    },
+    {
+      "title": "Multi-Partner Project: Quantum-Secure IoT-based Digital Manufacturing Pilot in QUBIP project",
+      "reference": "10.23919/DATE69613.2026.11539463",
+      "teamMemberIds": [
+        "pablo-navarro-torrero",
+        "piedad-brox-jimenez"
+      ],
+      "teamMemberCount": 2,
+      "eligibility": "at-least-two-current-team-members"
+    },
+    {
+      "title": "Digital Design Flow Based on Open Tools for Programmable Logic Devices",
+      "reference": "10.1109/taee59541.2024.10604893",
+      "teamMemberIds": [
+        "macarena-c-martinez-rodriguez",
+        "pablo-navarro-torrero",
+        "piedad-brox-jimenez"
+      ],
+      "teamMemberCount": 3,
+      "eligibility": "at-least-two-current-team-members"
+    },
+    {
+      "title": "Full Open-Source Implementation of an Academic RISC-V on FPGA",
+      "reference": "10.1109/taee59541.2024.10604934",
+      "teamMemberIds": [
+        "macarena-c-martinez-rodriguez",
+        "pablo-navarro-torrero",
+        "piedad-brox-jimenez"
+      ],
+      "teamMemberCount": 3,
+      "eligibility": "at-least-two-current-team-members"
+    },
+    {
+      "title": "Cryptographic Security Through a Hardware Root of Trust",
+      "reference": "10.1007/978-3-031-55673-9_8",
+      "teamMemberIds": [
+        "apurba-karmakar",
+        "macarena-c-martinez-rodriguez",
+        "pablo-navarro-torrero",
+        "pau-ortega-castro",
+        "piedad-brox-jimenez",
+        "santiago-sanchez-solano"
+      ],
+      "teamMemberCount": 6,
+      "eligibility": "at-least-two-current-team-members"
+    },
+    {
+      "title": "A complete SHA-3 hardware library based on a high efficiency Keccak design",
+      "reference": "10.1109/norcas58970.2023.10305448",
+      "teamMemberIds": [
+        "macarena-c-martinez-rodriguez",
+        "piedad-brox-jimenez",
+        "santiago-sanchez-solano"
+      ],
+      "teamMemberCount": 3,
+      "eligibility": "at-least-two-current-team-members"
+    },
+    {
+      "title": "A Simple Power Analysis of an FPGA implementation of a polynomial multiplier for the NTRU cryptosystem",
+      "reference": "10.1109/dcis58620.2023.10336001",
+      "teamMemberIds": [
+        "macarena-c-martinez-rodriguez",
+        "piedad-brox-jimenez",
+        "santiago-sanchez-solano"
+      ],
+      "teamMemberCount": 3,
+      "eligibility": "at-least-two-current-team-members"
+    },
+    {
+      "title": "HW/SW implementation of RSA digital signature on a RISC-V-based System-on-Chip",
+      "reference": "10.1109/DCIS58620.2023.10335970",
+      "teamMemberIds": [
+        "apurba-karmakar",
+        "macarena-c-martinez-rodriguez",
+        "piedad-brox-jimenez",
+        "santiago-sanchez-solano"
+      ],
+      "teamMemberCount": 4,
+      "eligibility": "at-least-two-current-team-members"
+    },
+    {
+      "title": "Optimizing Secure Elements Implementation Methods for a seamless Post-Quantum Transition",
+      "reference": "10.1109/iscc65549.2025.11326228",
+      "teamMemberIds": [
+        "macarena-c-martinez-rodriguez",
+        "pablo-navarro-torrero",
+        "piedad-brox-jimenez"
+      ],
+      "teamMemberCount": 3,
+      "eligibility": "at-least-two-current-team-members"
+    },
+    {
+      "title": "Open Source API for a Hardware Root-of-Trust",
+      "reference": "open-source-api-hardware-root-trust-recsi-2024",
+      "teamMemberIds": [
+        "apurba-karmakar",
+        "macarena-c-martinez-rodriguez",
+        "pablo-navarro-torrero",
+        "piedad-brox-jimenez"
+      ],
+      "teamMemberCount": 4,
+      "eligibility": "at-least-two-current-team-members"
+    },
+    {
+      "title": "Contribuciones a la implementación de sistemas electrónicos digitales embebidos sobre hardware reconfigurable",
+      "reference": "contribuciones-hardware-reconfigurable-2023",
+      "teamMemberIds": [
+        "piedad-brox-jimenez",
+        "santiago-sanchez-solano"
+      ],
+      "teamMemberCount": 2,
+      "eligibility": "at-least-two-current-team-members"
+    }
+  ],
+  "suggestedAuthorNames": {},
+  "profileCoverage": [
+    {
+      "memberId": "piedad-brox-jimenez",
+      "name": "Dr. Piedad Brox Jiménez",
+      "linkedProfiles": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0000-0003-1059-5338"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?user=Q38fPzUAAAAJ&hl=es"
+        }
+      ],
+      "evidence": {
+        "name": "Piedad Brox Jiménez",
+        "orcid": "0000-0003-1059-5338",
+        "scholar": "Q38fPzUAAAAJ",
+        "orcidURL": "https://orcid.org/0000-0003-1059-5338",
+        "scholarURL": "https://scholar.google.com/citations?user=Q38fPzUAAAAJ&hl=en&pagesize=100&sortby=pubdate",
+        "orcidAccess": "complete public works API fetched; UI requires JavaScript",
+        "orcidTotalGroups": 98,
+        "orcidDated2023PlusDistinctWorks": 8,
+        "orcidUndatedSummariesScreened": 4,
+        "scholarAccess": "public HTML successfully fetched via urllib; web reader could not render it",
+        "scholarRowsFetched": 100,
+        "scholarDated2023PlusRowsScreened": 37,
+        "scholarUndatedRowsScreened": 0,
+        "scholarCoverageNote": "Sorted by publication date; fetched page includes all dated 2023+ rows and older rows. Three Macarena undated rows remain unverified for date relevance; self-maintained profiles do not prove completeness of every possible publication."
+      }
+    },
+    {
+      "memberId": "macarena-c-martinez-rodriguez",
+      "name": "Dr. Macarena C. Martínez-Rodríguez",
+      "linkedProfiles": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0000-0003-3025-5736"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?user=TJRg5D4AAAAJ&hl=es"
+        }
+      ],
+      "evidence": {
+        "name": "Macarena C. Martínez-Rodríguez",
+        "orcid": "0000-0003-3025-5736",
+        "scholar": "TJRg5D4AAAAJ",
+        "orcidURL": "https://orcid.org/0000-0003-3025-5736",
+        "scholarURL": "https://scholar.google.com/citations?user=TJRg5D4AAAAJ&hl=en&pagesize=100&sortby=pubdate",
+        "orcidAccess": "complete public works API fetched; UI requires JavaScript",
+        "orcidTotalGroups": 42,
+        "orcidDated2023PlusDistinctWorks": 16,
+        "orcidUndatedSummariesScreened": 2,
+        "scholarAccess": "public HTML successfully fetched via urllib; web reader could not render it",
+        "scholarRowsFetched": 65,
+        "scholarDated2023PlusRowsScreened": 25,
+        "scholarUndatedRowsScreened": 3,
+        "scholarCoverageNote": "Sorted by publication date; fetched page includes all dated 2023+ rows and older rows. Three Macarena undated rows remain unverified for date relevance; self-maintained profiles do not prove completeness of every possible publication."
+      }
+    },
+    {
+      "memberId": "david-martin-sanchez",
+      "name": "Dr. David Martín Sánchez",
+      "linkedProfiles": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0000-0003-0131-5226"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?user=JBEyXwUAAAAJ&hl=es"
+        }
+      ],
+      "evidence": {
+        "member": "David Martín Sánchez",
+        "orcid": "https://orcid.org/0000-0003-0131-5226",
+        "orcidAccess": "public works and person APIs successful",
+        "orcidGroupsTotal": 23,
+        "orcidSummariesTotal": 44,
+        "orcid2023OrUndatedSummaryRows": 10,
+        "orcidUniqueRecentTitleStrings": 6,
+        "scholarAccess": "full public page successful; no CAPTCHA",
+        "scholarTotalRows": 29,
+        "scholar2023OrUndatedRows": 10,
+        "notes": ""
+      }
+    },
+    {
+      "memberId": "apurba-karmakar",
+      "name": "Apurba Karmakar",
+      "linkedProfiles": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0009-0000-4743-8622"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?user=ySaOudkAAAAJ&hl=es&oi=ao"
+        }
+      ],
+      "evidence": {
+        "member": "Apurba Karmakar",
+        "orcid": "https://orcid.org/0009-0000-4743-8622",
+        "orcidAccess": "public works and person APIs successful",
+        "orcidGroupsTotal": 4,
+        "orcidSummariesTotal": 4,
+        "orcid2023OrUndatedSummaryRows": 4,
+        "orcidUniqueRecentTitleStrings": 4,
+        "scholarAccess": "full public page successful; no CAPTCHA",
+        "scholarTotalRows": 4,
+        "scholar2023OrUndatedRows": 4,
+        "notes": ""
+      }
+    },
+    {
+      "memberId": "pablo-navarro-torrero",
+      "name": "Pablo Navarro-Torrero",
+      "linkedProfiles": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0009-0006-9360-4322"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?user=yByHHBwAAAAJ&hl=es"
+        }
+      ],
+      "evidence": {
+        "memberId": "pablo-navarro-torrero",
+        "orcid": "0009-0006-9360-4322",
+        "orcidUrl": "https://pub.orcid.org/v3.0/0009-0006-9360-4322/works",
+        "orcidGroups": 8,
+        "orcidRawWorkSummaries": 14,
+        "orcidUnique2023plusDois": 8,
+        "orcidRead": "complete public work-summary response; nonpublic works cannot be audited",
+        "scholar2023plusRows": 16,
+        "scholarRead": "complete linked public profile via urllib, pagesize=100; no challenge; fewer than 100 rows"
+      }
+    },
+    {
+      "memberId": "francisco-javier-rubio-barbero",
+      "name": "Francisco Javier Rubio-Barbero",
+      "linkedProfiles": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0000-0002-0971-5825"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?user=wS0BzLgAAAAJ&hl=es"
+        }
+      ],
+      "evidence": {
+        "memberId": "francisco-javier-rubio-barbero",
+        "orcid": "0000-0002-0971-5825",
+        "orcidUrl": "https://pub.orcid.org/v3.0/0000-0002-0971-5825/works",
+        "orcidGroups": 7,
+        "orcidRawWorkSummaries": 18,
+        "orcidUnique2023plusDois": 6,
+        "orcidRead": "complete public work-summary response; nonpublic works cannot be audited",
+        "scholar2023plusRows": 7,
+        "scholarRead": "complete linked public profile via urllib, pagesize=100; no challenge; fewer than 100 rows"
+      }
+    },
+    {
+      "memberId": "jorge-ciudad-real-lacuesta",
+      "name": "Jorge Ciudad Real Lacuesta",
+      "linkedProfiles": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0009-0001-5179-650X"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?user=-jub32EAAAAJ"
+        }
+      ],
+      "evidence": {
+        "member": "Jorge Ciudad Real Lacuesta",
+        "orcid": "https://orcid.org/0009-0001-5179-650X",
+        "orcidAccess": "public works and person APIs successful",
+        "orcidGroupsTotal": 10,
+        "orcidSummariesTotal": 17,
+        "orcid2023OrUndatedSummaryRows": 17,
+        "orcidUniqueRecentTitleStrings": 10,
+        "scholarAccess": "full public page successful; no CAPTCHA",
+        "scholarTotalRows": 5,
+        "scholar2023OrUndatedRows": 5,
+        "notes": "Repeated ORCID authors equal to Jorge Ciudad-Real are corrupt duplicate entries; count distinct roster identities, not repetitions. Publisher/Crossref/official proceedings used for screening."
+      }
+    },
+    {
+      "memberId": "juan-manuel-moreno-cenizo",
+      "name": "Juan Manuel Moreno Cenizo",
+      "linkedProfiles": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0009-0002-3789-475X"
+        }
+      ],
+      "evidence": {
+        "memberId": "juan-manuel-moreno-cenizo",
+        "orcid": "0009-0002-3789-475X",
+        "orcidUrl": "https://pub.orcid.org/v3.0/0009-0002-3789-475X/works",
+        "orcidGroups": 0,
+        "orcidRawWorkSummaries": 0,
+        "orcidUnique2023plusDois": 0,
+        "orcidRead": "complete public work-summary response; nonpublic works cannot be audited",
+        "scholarRead": "No Google Scholar link exists for this member in team.json."
+      }
+    },
+    {
+      "memberId": "samuel-gutierrez-felix",
+      "name": "Samuel Gutiérrez Félix",
+      "linkedProfiles": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0009-0009-2851-6096"
+        }
+      ],
+      "evidence": {
+        "member": "Samuel Gutiérrez Félix",
+        "status": "User-supplied ORCID restored on 2026-10-07 after the original audit; works not reviewed",
+        "profileRestoredDate": "2026-10-07",
+        "orcidRead": "Not reviewed; this restored profile was not among the 12 linked ORCID records read in the original audit.",
+        "searches": [
+          "Exact full name + IMSE/CSIC",
+          "Exact full name + ORCID/Scholar"
+        ],
+        "notes": "Public workshop participation and IMSE optical-simulation activity found during the original audit, not publications. No independently verified scholarly profile was found at that time. The user supplied ORCID 0009-0009-2851-6096 for restoration on 2026-10-07; its works have not been reviewed. Cannot claim zero papers.",
+        "sourceURLs": [
+          "https://indico.cern.ch/event/1480598/page/37961-participant-list"
+        ]
+      }
+    },
+    {
+      "memberId": "pau-ortega-castro",
+      "name": "Pau Ortega Castro",
+      "linkedProfiles": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0009-0001-1363-6185"
+        }
+      ],
+      "evidence": {
+        "memberId": "pau-ortega-castro",
+        "orcid": "0009-0001-1363-6185",
+        "orcidUrl": "https://pub.orcid.org/v3.0/0009-0001-1363-6185/works",
+        "orcidGroups": 3,
+        "orcidRawWorkSummaries": 3,
+        "orcidUnique2023plusDois": 3,
+        "orcidRead": "complete public work-summary response; nonpublic works cannot be audited",
+        "scholarRead": "No Google Scholar link exists for this member in team.json."
+      }
+    },
+    {
+      "memberId": "ignacio-martinez-fernandez",
+      "name": "Ignacio Martínez Fernández",
+      "linkedProfiles": [
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?user=Bgtv9gIAAAAJ"
+        }
+      ],
+      "evidence": {
+        "member": "Ignacio Martínez Fernández",
+        "scholar": "https://scholar.google.com/citations?user=Bgtv9gIAAAAJ",
+        "scholarAccess": "full public page successful; no CAPTCHA",
+        "scholarTotalRows": 34,
+        "scholar2023OrUndatedRows": 14,
+        "status": "Identity mismatch / not covered for IMSE researcher",
+        "notes": "Profile is Profesor, Universidad de Sevilla, with economics/cultural-heritage papers and economics coauthors. Appears a namesake; no current roster coauthor among screened rows. Also found UC3M computational-electromagnetics namesake; do not merge. No independently verified IMSE ORCID/Scholar found."
+      }
+    },
+    {
+      "memberId": "samuel-cimarro-almela",
+      "name": "Samuel Cimarro Almela",
+      "linkedProfiles": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0009-0003-9985-8989"
+        }
+      ],
+      "evidence": {
+        "member": "Samuel Cimarro Almela",
+        "orcid": "https://orcid.org/0009-0003-9985-8989",
+        "orcidAccess": "public works and person APIs successful",
+        "orcidGroupsTotal": 0,
+        "orcidSummariesTotal": 0,
+        "orcid2023OrUndatedSummaryRows": 0,
+        "orcidUniqueRecentTitleStrings": 0,
+        "scholarAccess": "no linked Scholar profile",
+        "scholarTotalRows": null,
+        "scholar2023OrUndatedRows": null,
+        "notes": "Public ORCID record has zero works, which does not prove absence of publications elsewhere."
+      }
+    },
+    {
+      "memberId": "manuel-roales-sanchez",
+      "name": "Manuel Roales Sánchez",
+      "linkedProfiles": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0009-0002-6900-482X"
+        }
+      ],
+      "evidence": {
+        "member": "Manuel Roales Sánchez",
+        "orcid": "https://orcid.org/0009-0002-6900-482X",
+        "orcidAccess": "public works and person APIs successful",
+        "orcidGroupsTotal": 0,
+        "orcidSummariesTotal": 0,
+        "orcid2023OrUndatedSummaryRows": 0,
+        "orcidUniqueRecentTitleStrings": 0,
+        "scholarAccess": "no linked Scholar profile",
+        "scholarTotalRows": null,
+        "scholar2023OrUndatedRows": null,
+        "notes": "Public ORCID record has zero works, which does not prove absence of publications elsewhere."
+      }
+    },
+    {
+      "memberId": "isabel-fernandez-poyato",
+      "name": "Isabel Fernández Poyato",
+      "linkedProfiles": [],
+      "evidence": {
+        "member": "Isabel Fernández Poyato",
+        "status": "No linked ORCID/Scholar; not covered by complete scholarly profile",
+        "searches": [
+          "Exact full name + IMSE/CSIC",
+          "Exact full name + ORCID/Scholar"
+        ],
+        "notes": "University of Córdoba physics/CSIC SVO workshop references found, but no verified IMSE scholarly profile. Name match is insufficient for profile ownership. Cannot claim zero papers.",
+        "sourceURLs": [
+          "https://svo.cab.inta-csic.es/?page_id=351"
+        ]
+      }
+    },
+    {
+      "memberId": "cristina-gomez-de-la-rosa",
+      "name": "Cristina Gómez de la Rosa",
+      "linkedProfiles": [],
+      "evidence": {
+        "member": "Cristina Gómez de la Rosa",
+        "status": "No linked ORCID/Scholar; not covered by complete scholarly profile",
+        "searches": [
+          "Exact full name + IMSE/CSIC",
+          "Exact full name + ORCID/Scholar/PUF"
+        ],
+        "notes": "University of Sevilla PUF student thesis indexed with this exact author and physics affiliation; not a multi-author paper. LinkedIn has physics/microelectronics context but is not a publication inventory. No verified ORCID/Scholar; cannot claim zero papers.",
+        "sourceURLs": [
+          "https://idus.us.es/server/api/core/bitstreams/1ec8c998-8ab0-4332-ab3f-67d1e471f22e/content"
+        ]
+      }
+    },
+    {
+      "memberId": "santiago-sanchez-solano",
+      "name": "Santiago Sánchez Solano",
+      "linkedProfiles": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0000-0002-0700-0447"
+        },
+        {
+          "label": "Google Scholar",
+          "url": "https://scholar.google.com/citations?user=lirVGPcAAAAJ&hl=en"
+        }
+      ],
+      "evidence": {
+        "name": "Santiago Sánchez Solano",
+        "orcid": "0000-0002-0700-0447",
+        "scholar": "lirVGPcAAAAJ",
+        "orcidURL": "https://orcid.org/0000-0002-0700-0447",
+        "scholarURL": "https://scholar.google.com/citations?user=lirVGPcAAAAJ&hl=en&pagesize=100&sortby=pubdate",
+        "orcidAccess": "complete public works API fetched; UI requires JavaScript",
+        "orcidTotalGroups": 102,
+        "orcidDated2023PlusDistinctWorks": 7,
+        "orcidUndatedSummariesScreened": 4,
+        "scholarAccess": "public HTML successfully fetched via urllib; web reader could not render it",
+        "scholarRowsFetched": 100,
+        "scholarDated2023PlusRowsScreened": 13,
+        "scholarUndatedRowsScreened": 0,
+        "scholarCoverageNote": "Sorted by publication date; fetched page includes all dated 2023+ rows and older rows. Three Macarena undated rows remain unverified for date relevance; self-maintained profiles do not prove completeness of every possible publication."
+      }
+    }
+  ],
+  "discoveryInventoryComparedWith21RecordBaseline": [
+    {
+      "title": "Robust and Scalable Cell-Based 65-nm CMOS RO-PUF Implementation",
+      "years": [
+        2026
+      ],
+      "doi": "10.1109/OJSSCS.2026.3689804",
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-1059-5338/work/213476017",
+          "title": "Robust and Scalable Cell-Based 65-nm CMOS RO-PUF Implementation",
+          "year": 2026,
+          "doi": "10.1109/OJSSCS.2026.3689804",
+          "sourceType": "journal-article",
+          "putCode": 213476017
+        },
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:EYYDruWGBe4C",
+          "title": "Robust and Scalable Cell-Based 65-nm CMOS RO-PUF Implementation",
+          "year": 2026,
+          "doi": "10.1109/OJSSCS.2026.3689804"
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/213482255",
+          "title": "Robust and Scalable Cell-Based 65-nm CMOS RO-PUF Implementation",
+          "year": 2026,
+          "doi": "10.1109/OJSSCS.2026.3689804",
+          "sourceType": "journal-article",
+          "putCode": 213482255
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TJRg5D4AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=TJRg5D4AAAAJ:NaGl4SEjCO4C",
+          "title": "Robust and Scalable Cell-Based 65-nm CMOS RO-PUF Implementation",
+          "year": 2026,
+          "doi": "10.1109/OJSSCS.2026.3689804"
+        }
+      ],
+      "classification": "existing",
+      "reason": "DOI or normalized exact title already present in the 21-record local catalogue.",
+      "currentImportStatus": "in-catalogue",
+      "catalogueReference": "10.1109/OJSSCS.2026.3689804"
+    },
+    {
+      "title": "A Side-Channel Protected and High-Performance Hardware Implementation for EdDSA25519",
+      "years": [
+        2025
+      ],
+      "doi": "10.1109/ACCESS.2025.3584696",
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-1059-5338/work/186969931",
+          "title": "A Side-Channel Protected and High-Performance Hardware Implementation for EdDSA25519",
+          "year": 2025,
+          "doi": "10.1109/ACCESS.2025.3584696",
+          "sourceType": "journal-article",
+          "putCode": 186969931
+        },
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:vDijr-p_gm4C",
+          "title": "A side-channel protected and high-performance hardware implementation for eddsa25519",
+          "year": 2025,
+          "doi": "10.1109/ACCESS.2025.3584696"
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/186972621",
+          "title": "A Side-Channel Protected and High-Performance Hardware Implementation for EdDSA25519",
+          "year": 2025,
+          "doi": "10.1109/ACCESS.2025.3584696",
+          "sourceType": "journal-article",
+          "putCode": 186972621
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TJRg5D4AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=TJRg5D4AAAAJ:NMxIlDl6LWMC",
+          "title": "A side-channel protected and high-performance hardware implementation for eddsa25519",
+          "year": 2025,
+          "doi": "10.1109/ACCESS.2025.3584696"
+        }
+      ],
+      "classification": "existing",
+      "reason": "DOI or normalized exact title already present in the 21-record local catalogue.",
+      "currentImportStatus": "in-catalogue",
+      "catalogueReference": "10.1109/ACCESS.2025.3584696"
+    },
+    {
+      "title": "Hardware-Efficient Configurable Ring-Oscillator-Based Physical Unclonable Function/True Random Number Generator Module for Secure Key Management",
+      "years": [
+        2024
+      ],
+      "doi": "10.3390/s24175674",
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-1059-5338/work/166670188",
+          "title": "Hardware-Efficient Configurable Ring-Oscillator-Based Physical Unclonable Function/True Random Number Generator Module for Secure Key Management",
+          "year": 2024,
+          "doi": "10.3390/s24175674",
+          "sourceType": "journal-article",
+          "putCode": 166670188
+        },
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-1059-5338/work/166839719",
+          "title": "Hardware-Efficient Configurable Ring-Oscillator-Based Physical Unclonable Function/True Random Number Generator Module for Secure Key Management",
+          "year": 2024,
+          "doi": "10.3390/s24175674",
+          "sourceType": "journal-article",
+          "putCode": 166839719
+        },
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:uJ-U7cs_P_0C",
+          "title": "Hardware-efficient configurable ring-oscillator-based physical unclonable function/true random number generator module for secure key management",
+          "year": 2024,
+          "doi": "10.3390/s24175674"
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/166670557",
+          "title": "Hardware-Efficient Configurable Ring-Oscillator-Based Physical Unclonable Function/True Random Number Generator Module for Secure Key Management",
+          "year": 2024,
+          "doi": "10.3390/s24175674",
+          "sourceType": "journal-article",
+          "putCode": 166670557
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/166839718",
+          "title": "Hardware-Efficient Configurable Ring-Oscillator-Based Physical Unclonable Function/True Random Number Generator Module for Secure Key Management",
+          "year": 2024,
+          "doi": "10.3390/s24175674",
+          "sourceType": "journal-article",
+          "putCode": 166839718
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/175153208",
+          "title": "Hardware-Efficient Configurable Ring-Oscillator-Based Physical Unclonable Function/True Random Number Generator Module for Secure Key Management",
+          "year": 2024,
+          "doi": "10.3390/s24175674",
+          "sourceType": "journal-article",
+          "putCode": 175153208
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TJRg5D4AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=TJRg5D4AAAAJ:k_IJM867U9cC",
+          "title": "Hardware-efficient configurable ring-oscillator-based physical unclonable function/true random number generator module for secure key management",
+          "year": 2024,
+          "doi": "10.3390/s24175674"
+        },
+        {
+          "profile": "Santiago Sánchez Solano",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0002-0700-0447/work/166668488",
+          "title": "Hardware-Efficient Configurable Ring-Oscillator-Based Physical Unclonable Function/True Random Number Generator Module for Secure Key Management",
+          "year": 2024,
+          "doi": "10.3390/s24175674",
+          "sourceType": "journal-article",
+          "putCode": 166668488
+        },
+        {
+          "profile": "Santiago Sánchez Solano",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0002-0700-0447/work/166839716",
+          "title": "Hardware-Efficient Configurable Ring-Oscillator-Based Physical Unclonable Function/True Random Number Generator Module for Secure Key Management",
+          "year": 2024,
+          "doi": "10.3390/s24175674",
+          "sourceType": "journal-article",
+          "putCode": 166839716
+        },
+        {
+          "profile": "Santiago Sánchez Solano",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lirVGPcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lirVGPcAAAAJ:hsZV8lGYWTMC",
+          "title": "Hardware-efficient configurable ring-oscillator-based physical unclonable function/true random number generator module for secure key management",
+          "year": 2024,
+          "doi": "10.3390/s24175674"
+        }
+      ],
+      "classification": "existing",
+      "reason": "DOI or normalized exact title already present in the 21-record local catalogue.",
+      "currentImportStatus": "in-catalogue",
+      "catalogueReference": "10.3390/s24175674"
+    },
+    {
+      "title": "Hardware-Efficient Configurable RO-Based PUF/TRNG Module for Secure Key Management",
+      "years": [
+        2024
+      ],
+      "doi": "10.20944/preprints202407.1670.v1",
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-1059-5338/work/164177946",
+          "title": "Hardware-Efficient Configurable RO-Based PUF/TRNG Module for Secure Key Management",
+          "year": 2024,
+          "doi": "10.20944/preprints202407.1670.v1",
+          "sourceType": "preprint",
+          "putCode": 164177946
+        },
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-1059-5338/work/164407575",
+          "title": "Hardware-Efficient Configurable RO-Based PUF/TRNG Module for Secure Key Management",
+          "year": null,
+          "doi": "10.20944/preprints202407.1670.v1",
+          "sourceType": "working-paper",
+          "putCode": 164407575
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/164177567",
+          "title": "Hardware-Efficient Configurable RO-Based PUF/TRNG Module for Secure Key Management",
+          "year": 2024,
+          "doi": "10.20944/preprints202407.1670.v1",
+          "sourceType": "preprint",
+          "putCode": 164177567
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/164407574",
+          "title": "Hardware-Efficient Configurable RO-Based PUF/TRNG Module for Secure Key Management",
+          "year": null,
+          "doi": "10.20944/preprints202407.1670.v1",
+          "sourceType": "working-paper",
+          "putCode": 164407574
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/175153209",
+          "title": "Hardware-Efficient Configurable RO-Based PUF/TRNG Module for Secure Key Management",
+          "year": 2024,
+          "doi": "10.20944/preprints202407.1670.v1",
+          "sourceType": "journal-article",
+          "putCode": 175153209
+        },
+        {
+          "profile": "Santiago Sánchez Solano",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0002-0700-0447/work/164178503",
+          "title": "Hardware-Efficient Configurable RO-Based PUF/TRNG Module for Secure Key Management",
+          "year": 2024,
+          "doi": "10.20944/preprints202407.1670.v1",
+          "sourceType": "preprint",
+          "putCode": 164178503
+        },
+        {
+          "profile": "Santiago Sánchez Solano",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0002-0700-0447/work/164407571",
+          "title": "Hardware-Efficient Configurable RO-Based PUF/TRNG Module for Secure Key Management",
+          "year": null,
+          "doi": "10.20944/preprints202407.1670.v1",
+          "sourceType": "working-paper",
+          "putCode": 164407571
+        }
+      ],
+      "classification": "excluded",
+      "reason": "Preprint/working-paper version; final 2023/2024 journal work is already catalogued, or final 2022 work lies outside scope."
+    },
+    {
+      "title": "Timing-Attack-Resistant Acceleration of NTRU Round 3 Encryption on Resource-Constrained Embedded Systems",
+      "years": [
+        2023
+      ],
+      "doi": "10.3390/cryptography7020029",
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-1059-5338/work/136189186",
+          "title": "Timing-Attack-Resistant Acceleration of NTRU Round 3 Encryption on Resource-Constrained Embedded Systems",
+          "year": 2023,
+          "doi": "10.3390/cryptography7020029",
+          "sourceType": "journal-article",
+          "putCode": 136189186
+        },
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-1059-5338/work/136375088",
+          "title": "Timing-Attack-Resistant Acceleration of NTRU Round 3 Encryption on Resource-Constrained Embedded Systems",
+          "year": 2023,
+          "doi": "10.3390/cryptography7020029",
+          "sourceType": "journal-article",
+          "putCode": 136375088
+        },
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:N5tVd3kTz84C",
+          "title": "Timing-attack-resistant acceleration of NTRU round 3 encryption on resource-constrained embedded systems",
+          "year": 2023,
+          "doi": "10.3390/cryptography7020029"
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/175153069",
+          "title": "Timing-attack-resistant acceleration of NTRU round 3 encryption on resource-constrained embedded systems",
+          "year": 2023,
+          "doi": "10.3390/cryptography7020029",
+          "sourceType": "journal-article",
+          "putCode": 175153069
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/136189772",
+          "title": "Timing-Attack-Resistant Acceleration of NTRU Round 3 Encryption on Resource-Constrained Embedded Systems",
+          "year": 2023,
+          "doi": "10.3390/cryptography7020029",
+          "sourceType": "journal-article",
+          "putCode": 136189772
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/136375086",
+          "title": "Timing-Attack-Resistant Acceleration of NTRU Round 3 Encryption on Resource-Constrained Embedded Systems",
+          "year": 2023,
+          "doi": "10.3390/cryptography7020029",
+          "sourceType": "journal-article",
+          "putCode": 136375086
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TJRg5D4AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=TJRg5D4AAAAJ:qUcmZB5y_30C",
+          "title": "Timing-attack-resistant acceleration of NTRU round 3 encryption on resource-constrained embedded systems",
+          "year": 2023,
+          "doi": "10.3390/cryptography7020029"
+        },
+        {
+          "profile": "Santiago Sánchez Solano",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0002-0700-0447/work/136189074",
+          "title": "Timing-Attack-Resistant Acceleration of NTRU Round 3 Encryption on Resource-Constrained Embedded Systems",
+          "year": 2023,
+          "doi": "10.3390/cryptography7020029",
+          "sourceType": "journal-article",
+          "putCode": 136189074
+        },
+        {
+          "profile": "Santiago Sánchez Solano",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0002-0700-0447/work/136375087",
+          "title": "Timing-Attack-Resistant Acceleration of NTRU Round 3 Encryption on Resource-Constrained Embedded Systems",
+          "year": 2023,
+          "doi": "10.3390/cryptography7020029",
+          "sourceType": "journal-article",
+          "putCode": 136375087
+        },
+        {
+          "profile": "Santiago Sánchez Solano",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lirVGPcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lirVGPcAAAAJ:7Hz3ACDFbsoC",
+          "title": "Timing-attack-resistant acceleration of NTRU round 3 encryption on resource-constrained embedded systems",
+          "year": 2023,
+          "doi": "10.3390/cryptography7020029"
+        }
+      ],
+      "classification": "existing",
+      "reason": "DOI or normalized exact title already present in the 21-record local catalogue.",
+      "currentImportStatus": "in-catalogue",
+      "catalogueReference": "10.3390/cryptography7020029"
+    },
+    {
+      "title": "On-Line Evaluation and Monitoring of Security Features of an RO-Based PUF/TRNG for IoT Devices",
+      "years": [
+        2023
+      ],
+      "doi": "10.3390/s23084070",
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-1059-5338/work/133320406",
+          "title": "On-Line Evaluation and Monitoring of Security Features of an RO-Based PUF/TRNG for IoT Devices",
+          "year": 2023,
+          "doi": "10.3390/s23084070",
+          "sourceType": "journal-article",
+          "putCode": 133320406
+        },
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-1059-5338/work/133597843",
+          "title": "On-Line Evaluation and Monitoring of Security Features of an RO-Based PUF/TRNG for IoT Devices",
+          "year": 2023,
+          "doi": "10.3390/s23084070",
+          "sourceType": "journal-article",
+          "putCode": 133597843
+        },
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:VL0QpB8kHFEC",
+          "title": "On-line evaluation and monitoring of security features of an RO-based PUF/TRNG for IoT devices",
+          "year": 2023,
+          "doi": "10.3390/s23084070"
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/175153221",
+          "title": "On-line evaluation and monitoring of security features of an RO-based PUF/TRNG for IoT devices",
+          "year": 2023,
+          "doi": "10.3390/s23084070",
+          "sourceType": "journal-article",
+          "putCode": 175153221
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/133319862",
+          "title": "On-Line Evaluation and Monitoring of Security Features of an RO-Based PUF/TRNG for IoT Devices",
+          "year": 2023,
+          "doi": "10.3390/s23084070",
+          "sourceType": "journal-article",
+          "putCode": 133319862
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/133597842",
+          "title": "On-Line Evaluation and Monitoring of Security Features of an RO-Based PUF/TRNG for IoT Devices",
+          "year": 2023,
+          "doi": "10.3390/s23084070",
+          "sourceType": "journal-article",
+          "putCode": 133597842
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TJRg5D4AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=TJRg5D4AAAAJ:IWHjjKOFINEC",
+          "title": "On-line evaluation and monitoring of security features of an RO-based PUF/TRNG for IoT devices",
+          "year": 2023,
+          "doi": "10.3390/s23084070"
+        },
+        {
+          "profile": "Santiago Sánchez Solano",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0002-0700-0447/work/133319775",
+          "title": "On-Line Evaluation and Monitoring of Security Features of an RO-Based PUF/TRNG for IoT Devices",
+          "year": 2023,
+          "doi": "10.3390/s23084070",
+          "sourceType": "journal-article",
+          "putCode": 133319775
+        },
+        {
+          "profile": "Santiago Sánchez Solano",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0002-0700-0447/work/133597841",
+          "title": "On-Line Evaluation and Monitoring of Security Features of an RO-Based PUF/TRNG for IoT Devices",
+          "year": 2023,
+          "doi": "10.3390/s23084070",
+          "sourceType": "journal-article",
+          "putCode": 133597841
+        },
+        {
+          "profile": "Santiago Sánchez Solano",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lirVGPcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lirVGPcAAAAJ:cK4Rrx0J3m0C",
+          "title": "On-line evaluation and monitoring of security features of an RO-based PUF/TRNG for IoT devices",
+          "year": 2023,
+          "doi": "10.3390/s23084070"
+        }
+      ],
+      "classification": "existing",
+      "reason": "DOI or normalized exact title already present in the 21-record local catalogue.",
+      "currentImportStatus": "in-catalogue",
+      "catalogueReference": "10.3390/s23084070"
+    },
+    {
+      "title": "On-Line Evaluation and Monitoring of Security Features of an RO-Based PUF/TRNG for IoT Devices",
+      "years": [
+        2023
+      ],
+      "doi": "10.20944/preprints202303.0324.v2",
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-1059-5338/work/131230173",
+          "title": "On-Line Evaluation and Monitoring of Security Features of an RO-Based PUF/TRNG for IoT Devices",
+          "year": 2023,
+          "doi": "10.20944/preprints202303.0324.v2",
+          "sourceType": "preprint",
+          "putCode": 131230173
+        },
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-1059-5338/work/131545792",
+          "title": "On-Line Evaluation and Monitoring of Security Features of an RO-Based PUF/TRNG for IoT Devices",
+          "year": null,
+          "doi": "10.20944/preprints202303.0324.v2",
+          "sourceType": "working-paper",
+          "putCode": 131545792
+        },
+        {
+          "profile": "Santiago Sánchez Solano",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0002-0700-0447/work/131230587",
+          "title": "On-Line Evaluation and Monitoring of Security Features of an RO-Based PUF/TRNG for IoT Devices",
+          "year": 2023,
+          "doi": "10.20944/preprints202303.0324.v2",
+          "sourceType": "preprint",
+          "putCode": 131230587
+        },
+        {
+          "profile": "Santiago Sánchez Solano",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0002-0700-0447/work/131545790",
+          "title": "On-Line Evaluation and Monitoring of Security Features of an RO-Based PUF/TRNG for IoT Devices",
+          "year": null,
+          "doi": "10.20944/preprints202303.0324.v2",
+          "sourceType": "working-paper",
+          "putCode": 131545790
+        }
+      ],
+      "classification": "excluded",
+      "reason": "Preprint/working-paper version; final 2023/2024 journal work is already catalogued, or final 2022 work lies outside scope.",
+      "currentImportStatus": "in-catalogue",
+      "catalogueReference": "10.3390/s23084070"
+    },
+    {
+      "title": "On-Line Evaluation and Monitoring of Security Features of an RO-Based PUF/TRNG for IoT Devices",
+      "years": [
+        2023
+      ],
+      "doi": "10.20944/preprints202303.0324.v1",
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-1059-5338/work/131147553",
+          "title": "On-Line Evaluation and Monitoring of Security Features of an RO-Based PUF/TRNG for IoT Devices",
+          "year": 2023,
+          "doi": "10.20944/preprints202303.0324.v1",
+          "sourceType": "preprint",
+          "putCode": 131147553
+        },
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-1059-5338/work/131394914",
+          "title": "On-Line Evaluation and Monitoring of Security Features of an RO-Based PUF/TRNG for IoT Devices",
+          "year": null,
+          "doi": "10.20944/preprints202303.0324.v1",
+          "sourceType": "working-paper",
+          "putCode": 131394914
+        },
+        {
+          "profile": "Santiago Sánchez Solano",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0002-0700-0447/work/131146178",
+          "title": "On-Line Evaluation and Monitoring of Security Features of an RO-Based PUF/TRNG for IoT Devices",
+          "year": 2023,
+          "doi": "10.20944/preprints202303.0324.v1",
+          "sourceType": "preprint",
+          "putCode": 131146178
+        },
+        {
+          "profile": "Santiago Sánchez Solano",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0002-0700-0447/work/131394912",
+          "title": "On-Line Evaluation and Monitoring of Security Features of an RO-Based PUF/TRNG for IoT Devices",
+          "year": null,
+          "doi": "10.20944/preprints202303.0324.v1",
+          "sourceType": "working-paper",
+          "putCode": 131394912
+        }
+      ],
+      "classification": "excluded",
+      "reason": "Preprint/working-paper version; final 2023/2024 journal work is already catalogued, or final 2022 work lies outside scope.",
+      "currentImportStatus": "in-catalogue",
+      "catalogueReference": "10.3390/s23084070"
+    },
+    {
+      "title": "Efficient RO-PUF for Generation of Identifiers and Keys in Resource-Constrained Embedded Systems",
+      "years": [],
+      "doi": "10.20944/preprints202209.0129.v1",
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-1059-5338/work/119029074",
+          "title": "Efficient RO-PUF for Generation of Identifiers and Keys in Resource-Constrained Embedded Systems",
+          "year": null,
+          "doi": "10.20944/preprints202209.0129.v1",
+          "sourceType": "working-paper",
+          "putCode": 119029074
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/119029070",
+          "title": "Efficient RO-PUF for Generation of Identifiers and Keys in Resource-Constrained Embedded Systems",
+          "year": null,
+          "doi": "10.20944/preprints202209.0129.v1",
+          "sourceType": "working-paper",
+          "putCode": 119029070
+        },
+        {
+          "profile": "Santiago Sánchez Solano",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0002-0700-0447/work/119029073",
+          "title": "Efficient RO-PUF for Generation of Identifiers and Keys in Resource-Constrained Embedded Systems",
+          "year": null,
+          "doi": "10.20944/preprints202209.0129.v1",
+          "sourceType": "working-paper",
+          "putCode": 119029073
+        }
+      ],
+      "classification": "excluded",
+      "reason": "Preprint/working-paper version; final 2023/2024 journal work is already catalogued, or final 2022 work lies outside scope."
+    },
+    {
+      "title": "Open-Source Framework for Secure Hardware Design with Simulation-based Leakage Assessment",
+      "years": [
+        2026
+      ],
+      "doi": "10.23919/DATE69613.2026.11539436",
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:vbGhcppDl1QC",
+          "title": "Open-Source Framework for Secure Hardware Design with Simulation-based Leakage Assessment",
+          "year": 2026,
+          "doi": "10.23919/DATE69613.2026.11539436"
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TJRg5D4AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=TJRg5D4AAAAJ:RGFaLdJalmkC",
+          "title": "Open-Source Framework for Secure Hardware Design with Simulation-based Leakage Assessment",
+          "year": 2026,
+          "doi": "10.23919/DATE69613.2026.11539436"
+        }
+      ],
+      "classification": "existing",
+      "reason": "DOI or normalized exact title already present in the 21-record local catalogue.",
+      "currentImportStatus": "in-catalogue",
+      "catalogueReference": "10.23919/DATE69613.2026.11539436"
+    },
+    {
+      "title": "Multi-Partner Project: Quantum-Secure IoT-based Digital Manufacturing Pilot in QUBIP project",
+      "years": [
+        2026
+      ],
+      "doi": "10.23919/DATE69613.2026.11539463",
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:ML0RJ9NH7IQC",
+          "title": "Multi-Partner Project: Quantum-Secure IoT-based Digital Manufacturing Pilot in QUBIP project",
+          "year": 2026,
+          "doi": "10.23919/DATE69613.2026.11539463"
+        }
+      ],
+      "classification": "existing",
+      "reason": "DOI or normalized exact title already present in the 21-record local catalogue.",
+      "currentImportStatus": "in-catalogue",
+      "catalogueReference": "10.23919/DATE69613.2026.11539463"
+    },
+    {
+      "title": "Hardware-Rooted Device Identity for IoT: Integrating Silicon PUFs and DICE in RISC-V Embedded Systems",
+      "years": [
+        2026
+      ],
+      "doi": "10.1109/ACCESS.2026.3674839",
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:p__nRnzSRKYC",
+          "title": "Hardware-Rooted Device Identity for IoT: Integrating Silicon PUFs and DICE in RISC-V Embedded Systems",
+          "year": 2026,
+          "doi": "10.1109/ACCESS.2026.3674839"
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/208776913",
+          "title": "Hardware-Rooted Device Identity for IoT: Integrating Silicon PUFs and DICE in RISC-V Embedded Systems",
+          "year": 2026,
+          "doi": "10.1109/ACCESS.2026.3674839",
+          "sourceType": "journal-article",
+          "putCode": 208776913
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TJRg5D4AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=TJRg5D4AAAAJ:ns9cj8rnVeAC",
+          "title": "Hardware-Rooted Device Identity for IoT: Integrating Silicon PUFs and DICE in RISC-V Embedded Systems",
+          "year": 2026,
+          "doi": "10.1109/ACCESS.2026.3674839"
+        }
+      ],
+      "classification": "existing",
+      "reason": "DOI or normalized exact title already present in the 21-record local catalogue.",
+      "currentImportStatus": "in-catalogue",
+      "catalogueReference": "10.1109/ACCESS.2026.3674839"
+    },
+    {
+      "title": "Efficient Second-Order Masked KECCAK Implementation without Online Fresh Randomness",
+      "years": [
+        2026
+      ],
+      "doi": "10.5220/0015074600004103",
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:hMsQuOkrut0C",
+          "title": "Efficient Second-Order Masked KECCAK Implementation without Online Fresh Randomness",
+          "year": 2026,
+          "doi": "10.5220/0015074600004103"
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TJRg5D4AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=TJRg5D4AAAAJ:lSLTfruPkqcC",
+          "title": "Efficient Second-Order Masked KECCAK Implementation without Online Fresh Randomness",
+          "year": 2026,
+          "doi": "10.5220/0015074600004103"
+        }
+      ],
+      "classification": "existing",
+      "reason": "DOI or normalized exact title already present in the 21-record local catalogue.",
+      "currentImportStatus": "in-catalogue",
+      "catalogueReference": "10.5220/0015074600004103"
+    },
+    {
+      "title": "A Hybrid Classical and Post-Quantum Secure Element for Constrained Devices",
+      "years": [
+        2026
+      ],
+      "doi": null,
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:ILKRHgRFtOwC",
+          "title": "A Hybrid Classical and Post-Quantum Secure Element for Constrained Devices",
+          "year": 2026,
+          "doi": null
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TJRg5D4AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=TJRg5D4AAAAJ:RYcK_YlVTxYC",
+          "title": "A Hybrid Classical and Post-Quantum Secure Element for Constrained Devices",
+          "year": 2026,
+          "doi": null
+        }
+      ],
+      "classification": "existing",
+      "reason": "DOI or normalized exact title already present in the 21-record local catalogue.",
+      "currentImportStatus": "in-catalogue",
+      "catalogueReference": "hybrid-secure-element-qsns-2026"
+    },
+    {
+      "title": "Acousto-optic system and method for generating physical unclonable functions (PUFs)",
+      "years": [
+        2025
+      ],
+      "doi": null,
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:BwyfMAYsbu0C",
+          "title": "Acousto-optic system and method for generating physical unclonable functions (PUFs)",
+          "year": 2025,
+          "doi": null
+        }
+      ],
+      "classification": "excluded",
+      "reason": "Patent with two current team inventors (David Martín Sánchez/Piedad Brox), not a research paper; no patent identifier fabricated."
+    },
+    {
+      "title": "Optimizing Secure Elements Implementation Methods for a seamless Post-Quantum Transition",
+      "years": [
+        2025
+      ],
+      "doi": "10.1109/ISCC65549.2025.11326228",
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:4MWp96NkSFoC",
+          "title": "Optimizing Secure Elements Implementation Methods for a seamless Post-Quantum Transition",
+          "year": 2025,
+          "doi": null
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TJRg5D4AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=TJRg5D4AAAAJ:GnPB-g6toBAC",
+          "title": "Optimizing Secure Elements Implementation Methods for a seamless Post-Quantum Transition",
+          "year": 2025,
+          "doi": null
+        }
+      ],
+      "classification": "missing",
+      "reason": "Publisher-deposited Crossref metadata verifies DOI 10.1109/ISCC65549.2025.11326228, the 2025 conference year and the complete four-author list. Three distinct current roster authors meet the inclusion rule.",
+      "verifiedTeamMemberIds": [
+        "pablo-navarro-torrero",
+        "macarena-c-martinez-rodriguez",
+        "piedad-brox-jimenez"
+      ],
+      "verificationSources": [
+        "https://api.crossref.org/works/10.1109/ISCC65549.2025.11326228",
+        "https://doi.org/10.1109/ISCC65549.2025.11326228"
+      ],
+      "currentImportStatus": "in-catalogue",
+      "catalogueReference": "10.1109/iscc65549.2025.11326228"
+    },
+    {
+      "title": "Applied Reconfigurable Computing. Architectures, Tools, and Applications: 21st International Symposium, ARC 2025, Seville, Spain, April 9–11, 2025, Proceedings",
+      "years": [
+        2025
+      ],
+      "doi": null,
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:epqYDVWIO7EC",
+          "title": "Applied Reconfigurable Computing. Architectures, Tools, and Applications: 21st International Symposium, ARC 2025, Seville, Spain, April 9–11, 2025, Proceedings",
+          "year": 2025,
+          "doi": null
+        }
+      ],
+      "classification": "excluded",
+      "reason": "Edited whole proceedings volume; only Piedad Brox among listed current editors, below two-member threshold. Distinct from individual ARC papers."
+    },
+    {
+      "title": "Exploiting the acousto-optic effect for developing secure digital identifiers",
+      "years": [
+        2025
+      ],
+      "doi": "10.1117/12.3039852",
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:yB1At4FlUx8C",
+          "title": "Exploiting the acousto-optic effect for developing secure digital identifiers",
+          "year": 2025,
+          "doi": "10.1117/12.3039852"
+        }
+      ],
+      "classification": "existing",
+      "reason": "DOI or normalized exact title already present in the 21-record local catalogue.",
+      "currentImportStatus": "in-catalogue",
+      "catalogueReference": "10.1117/12.3039852"
+    },
+    {
+      "title": "Security assessment methodology for RISC-V cores",
+      "years": [
+        2025
+      ],
+      "doi": null,
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:AvfA0Oy_GE0C",
+          "title": "Security assessment methodology for RISC-V cores",
+          "year": 2025,
+          "doi": null
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TJRg5D4AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=TJRg5D4AAAAJ:YFjsv_pBGBYC",
+          "title": "Security assessment methodology for RISC-V cores",
+          "year": 2025,
+          "doi": null
+        }
+      ],
+      "classification": "missing-other-output",
+      "reason": "Official extended abstract and companion poster, not a full refereed proceedings paper; surname spelling retained as published.",
+      "verifiedTeamMemberIds": [
+        "apurba-karmakar",
+        "pablo-navarro-torrero",
+        "macarena-c-martinez-rodriguez",
+        "piedad-brox-jimenez"
+      ]
+    },
+    {
+      "title": "Open Source API for a Hardware Root-of-Trust",
+      "years": [
+        2024,
+        2025
+      ],
+      "doi": null,
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:uc_IGeMz5qoC",
+          "title": "Open Source API for a Hardware Root-of-Trust",
+          "year": 2025,
+          "doi": null
+        },
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:0KyAp5RtaNEC",
+          "title": "Open Source API for a Hardware Root-of-Trust",
+          "year": 2024,
+          "doi": null
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TJRg5D4AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=TJRg5D4AAAAJ:hMod-77fHWUC",
+          "title": "Open Source API for a Hardware Root-of-Trust",
+          "year": 2025,
+          "doi": null
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TJRg5D4AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=TJRg5D4AAAAJ:blknAaTinKkC",
+          "title": "Open Source API for a Hardware Root-of-Trust",
+          "year": 2024,
+          "doi": null
+        }
+      ],
+      "classification": "missing",
+      "reason": "Publisher explicitly dates proceedings to 2025, conference was October 2024. Scholar has both 2024 and 2025 records for this one paper. Full author order from indexed primary proceedings as verified by collaborator; Correct author spelling Apurba Karmakar was confirmed by the user on 2026-10-07.",
+      "verifiedTeamMemberIds": [
+        "apurba-karmakar",
+        "pablo-navarro-torrero",
+        "piedad-brox-jimenez",
+        "macarena-c-martinez-rodriguez"
+      ],
+      "currentImportStatus": "in-catalogue",
+      "catalogueReference": "open-source-api-hardware-root-trust-recsi-2024"
+    },
+    {
+      "title": "Design of a Karatsuba multiplier to accelerate digital signature schemes on embedded systems",
+      "years": [
+        2024
+      ],
+      "doi": "10.1109/NorCAS64408.2024.10752484",
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:XD-gHx7UXLsC",
+          "title": "Design of a Karatsuba multiplier to accelerate digital signature schemes on embedded systems",
+          "year": 2024,
+          "doi": "10.1109/NorCAS64408.2024.10752484"
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/175153108",
+          "title": "Design of a Karatsuba Multiplier to Accelerate Digital Signature Schemes on Embedded Systems",
+          "year": 2024,
+          "doi": "10.1109/norcas64408.2024.10752484",
+          "sourceType": "journal-article",
+          "putCode": 175153108
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TJRg5D4AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=TJRg5D4AAAAJ:M3NEmzRMIkIC",
+          "title": "Design of a Karatsuba multiplier to accelerate digital signature schemes on embedded systems",
+          "year": 2024,
+          "doi": "10.1109/NorCAS64408.2024.10752484"
+        }
+      ],
+      "classification": "existing",
+      "reason": "DOI or normalized exact title already present in the 21-record local catalogue."
+    },
+    {
+      "title": "VLSI integration of a RO-based PUF into a 65 nm technology",
+      "years": [
+        2024
+      ],
+      "doi": "10.1109/NorCAS64408.2024.10752474",
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:z_wVstp3MssC",
+          "title": "VLSI integration of a RO-based PUF into a 65 nm technology",
+          "year": 2024,
+          "doi": "10.1109/NorCAS64408.2024.10752474"
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/175153101",
+          "title": "VLSI integration of a RO-based PUF into a 65 nm technology",
+          "year": 2024,
+          "doi": "10.1109/norcas64408.2024.10752474",
+          "sourceType": "journal-article",
+          "putCode": 175153101
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TJRg5D4AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=TJRg5D4AAAAJ:maZDTaKrznsC",
+          "title": "VLSI integration of a RO-based PUF into a 65 nm technology",
+          "year": 2024,
+          "doi": "10.1109/NorCAS64408.2024.10752474"
+        }
+      ],
+      "classification": "existing",
+      "reason": "DOI or normalized exact title already present in the 21-record local catalogue.",
+      "currentImportStatus": "in-catalogue",
+      "catalogueReference": "10.1109/NorCAS64408.2024.10752474"
+    },
+    {
+      "title": "Seguridad en el hardware: introdución y caso práctico",
+      "years": [
+        2024
+      ],
+      "doi": null,
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:t7zJ5fGR-2UC",
+          "title": "Seguridad en el hardware: introdución y caso práctico",
+          "year": 2024,
+          "doi": null
+        }
+      ],
+      "classification": "excluded",
+      "reason": "Training/course resource, one team author (Piedad Brox)."
+    },
+    {
+      "title": "Hardware-Efficient Configurable RO-Based PUF/TRNG Module for Secure Key Management",
+      "years": [
+        2024
+      ],
+      "doi": null,
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:evX43VCCuoAC",
+          "title": "Hardware-Efficient Configurable RO-Based PUF/TRNG Module for Secure Key Management",
+          "year": 2024,
+          "doi": null
+        },
+        {
+          "profile": "Santiago Sánchez Solano",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lirVGPcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lirVGPcAAAAJ:-mN3Mh-tlDkC",
+          "title": "Hardware-Efficient Configurable RO-Based PUF/TRNG Module for Secure Key Management",
+          "year": 2024,
+          "doi": null
+        }
+      ],
+      "classification": "excluded",
+      "reason": "Preprint/working-paper version of existing final Sensors 2024 DOI 10.3390/s24175674; do not add another final-paper record."
+    },
+    {
+      "title": "Full open-source implementation of an academic RISC-V on FPGA",
+      "years": [
+        2024
+      ],
+      "doi": "10.1109/taee59541.2024.10604934",
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:j8SEvjWlNXcC",
+          "title": "Full open-source implementation of an academic RISC-V on FPGA",
+          "year": 2024,
+          "doi": "10.1109/taee59541.2024.10604934"
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/175153052",
+          "title": "Full Open-Source Implementation of an Academic RISC-V on FPGA",
+          "year": 2024,
+          "doi": "10.1109/taee59541.2024.10604934",
+          "sourceType": "journal-article",
+          "putCode": 175153052
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TJRg5D4AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=TJRg5D4AAAAJ:isC4tDSrTZIC",
+          "title": "Full open-source implementation of an academic RISC-V on FPGA",
+          "year": 2024,
+          "doi": "10.1109/taee59541.2024.10604934"
+        }
+      ],
+      "classification": "missing",
+      "reason": "Verified published proceedings paper missing from current catalogue.",
+      "verifiedTeamMemberIds": [
+        "pablo-navarro-torrero",
+        "macarena-c-martinez-rodriguez",
+        "piedad-brox-jimenez"
+      ]
+    },
+    {
+      "title": "Digital design flow based on open tools for programmable logic devices",
+      "years": [
+        2024
+      ],
+      "doi": "10.1109/taee59541.2024.10604893",
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:fEOibwPWpKIC",
+          "title": "Digital design flow based on open tools for programmable logic devices",
+          "year": 2024,
+          "doi": "10.1109/taee59541.2024.10604893"
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/175153210",
+          "title": "Digital Design Flow Based on Open Tools for Programmable Logic Devices",
+          "year": 2024,
+          "doi": "10.1109/taee59541.2024.10604893",
+          "sourceType": "journal-article",
+          "putCode": 175153210
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TJRg5D4AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=TJRg5D4AAAAJ:TFP_iSt0sucC",
+          "title": "Digital design flow based on open tools for programmable logic devices",
+          "year": 2024,
+          "doi": "10.1109/taee59541.2024.10604893"
+        }
+      ],
+      "classification": "missing",
+      "reason": "Verified published proceedings paper missing from current catalogue.",
+      "verifiedTeamMemberIds": [
+        "pablo-navarro-torrero",
+        "macarena-c-martinez-rodriguez",
+        "piedad-brox-jimenez"
+      ]
+    },
+    {
+      "title": "Applied Reconfigurable Computing. Architectures, Tools, and Applications: 20th International Symposium, ARC 2024, Aveiro, Portugal, March 20–22, 2024, Proceedings",
+      "years": [
+        2024
+      ],
+      "doi": null,
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:ipzZ9siozwsC",
+          "title": "Applied Reconfigurable Computing. Architectures, Tools, and Applications: 20th International Symposium, ARC 2024, Aveiro, Portugal, March 20–22, 2024, Proceedings",
+          "year": 2024,
+          "doi": null
+        }
+      ],
+      "classification": "excluded",
+      "reason": "Edited whole proceedings volume; only Piedad Brox among listed current editors, below two-member threshold."
+    },
+    {
+      "title": "Cryptographic security through a hardware root of trust",
+      "years": [
+        2024
+      ],
+      "doi": "10.1007/978-3-031-55673-9_8",
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:ZfRJV9d4-WMC",
+          "title": "Cryptographic security through a hardware root of trust",
+          "year": 2024,
+          "doi": "10.1007/978-3-031-55673-9_8"
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/175153213",
+          "title": "Cryptographic Security Through a Hardware Root of Trust",
+          "year": 2024,
+          "doi": "10.1007/978-3-031-55673-9_8",
+          "sourceType": "book-chapter",
+          "putCode": 175153213
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/155191301",
+          "title": "Cryptographic Security Through a Hardware Root of Trust",
+          "year": 2024,
+          "doi": "10.1007/978-3-031-55673-9_8",
+          "sourceType": "book-chapter",
+          "putCode": 155191301
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TJRg5D4AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=TJRg5D4AAAAJ:j3f4tGmQtD8C",
+          "title": "Cryptographic security through a hardware root of trust",
+          "year": 2024,
+          "doi": "10.1007/978-3-031-55673-9_8"
+        },
+        {
+          "profile": "Santiago Sánchez Solano",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0002-0700-0447/work/155190411",
+          "title": "Cryptographic Security Through a Hardware Root of Trust",
+          "year": 2024,
+          "doi": "10.1007/978-3-031-55673-9_8",
+          "sourceType": "book-chapter",
+          "putCode": 155190411
+        },
+        {
+          "profile": "Santiago Sánchez Solano",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lirVGPcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lirVGPcAAAAJ:jU7OWUQzBzMC",
+          "title": "Cryptographic security through a hardware root of trust",
+          "year": 2024,
+          "doi": "10.1007/978-3-031-55673-9_8"
+        }
+      ],
+      "classification": "missing",
+      "reason": "A published ARC 2024 conference paper in LNCS, not the separately edited whole proceedings volume.",
+      "verifiedTeamMemberIds": [
+        "santiago-sanchez-solano",
+        "macarena-c-martinez-rodriguez",
+        "pablo-navarro-torrero",
+        "apurba-karmakar",
+        "pau-ortega-castro",
+        "piedad-brox-jimenez"
+      ]
+    },
+    {
+      "title": "Mesa redonda:\" El fomento de las vocaciones STEM en proyectos de investigación: inspirando a mujeres y niñas\"",
+      "years": [
+        2024
+      ],
+      "doi": null,
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:Z5m8FVwuT1cC",
+          "title": "Mesa redonda:\" El fomento de las vocaciones STEM en proyectos de investigación: inspirando a mujeres y niñas\"",
+          "year": 2024,
+          "doi": null
+        }
+      ],
+      "classification": "excluded",
+      "reason": "Panel/event resource, only one current team member among listed participants (Piedad Brox)."
+    },
+    {
+      "title": "Contribuciones a la implementación de sistemas electrónicos digitales embebidos sobre hardware reconfigurable",
+      "years": [
+        2023
+      ],
+      "doi": null,
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:9Nmd_mFXekcC",
+          "title": "Contribuciones a la implementación de sistemas electrónicos digitales embebidos sobre hardware reconfigurable",
+          "year": 2023,
+          "doi": null
+        },
+        {
+          "profile": "Santiago Sánchez Solano",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lirVGPcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lirVGPcAAAAJ:LPtt_HFRSbwC",
+          "title": "Contribuciones a la implementaciÃ³n de sistemas electrÃ³nicos digitales embebidos sobre hardware reconfigurable",
+          "year": 2023,
+          "doi": null
+        }
+      ],
+      "classification": "missing-primary-index",
+      "reason": "Primary SciELO indexed metadata confirms full nine-author list, December 2023, 13(4), e1482. Publisher/SciELO direct host unavailable (DNS resolution); root independently checking before categorizing fully verified.",
+      "verifiedTeamMemberIds": [
+        "santiago-sanchez-solano",
+        "piedad-brox-jimenez"
+      ],
+      "currentImportStatus": "in-catalogue",
+      "catalogueReference": "contribuciones-hardware-reconfigurable-2023",
+      "currentVerificationStatus": "Primary publisher record and complete original research paper verified on 2026-10-07."
+    },
+    {
+      "title": "Dispositivo y método de función física no clonable (PUF) basada en ruido telegráfico aleatorio (RTN)",
+      "years": [
+        2023
+      ],
+      "doi": null,
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:-_dYPAW6P2MC",
+          "title": "Dispositivo y método de función física no clonable (PUF) basada en ruido telegráfico aleatorio (RTN)",
+          "year": 2023,
+          "doi": null
+        }
+      ],
+      "classification": "excluded",
+      "reason": "Patent; only Piedad Brox among current roster. Eros Camacho-Ruiz is not a current JSON team member."
+    },
+    {
+      "title": "HW/SW implementation of RSA digital signature on a RISC-V-based System-on-Chip",
+      "years": [
+        2023
+      ],
+      "doi": "10.1109/dcis58620.2023.10335970",
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:7T2F9Uy0os0C",
+          "title": "HW/SW implementation of RSA digital signature on a RISC-V-based System-on-Chip",
+          "year": 2023,
+          "doi": "10.1109/dcis58620.2023.10335970"
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/159927177",
+          "title": "HW/SW implementation of RSA digital signature on a RISC-V-based System-on-Chip",
+          "year": 2023,
+          "doi": "10.1109/dcis58620.2023.10335970",
+          "sourceType": "conference-paper",
+          "putCode": 159927177
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TJRg5D4AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=TJRg5D4AAAAJ:4JMBOYKVnBMC",
+          "title": "HW/SW implementation of RSA digital signature on a RISC-V-based System-on-Chip",
+          "year": 2023,
+          "doi": "10.1109/dcis58620.2023.10335970"
+        },
+        {
+          "profile": "Santiago Sánchez Solano",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lirVGPcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lirVGPcAAAAJ:wKETBy42zhYC",
+          "title": "HW/SW implementation of RSA digital signature on a RISC-V-based System-on-Chip",
+          "year": 2023,
+          "doi": "10.1109/dcis58620.2023.10335970"
+        }
+      ],
+      "classification": "missing",
+      "reason": "Verified published proceedings paper missing from current catalogue.",
+      "verifiedTeamMemberIds": [
+        "apurba-karmakar",
+        "santiago-sanchez-solano",
+        "macarena-c-martinez-rodriguez",
+        "piedad-brox-jimenez"
+      ],
+      "currentImportStatus": "in-catalogue",
+      "catalogueReference": "10.1109/DCIS58620.2023.10335970"
+    },
+    {
+      "title": "A Simple Power Analysis of an FPGA implementation of a polynomial multiplier for the NTRU cryptosystem",
+      "years": [
+        2023
+      ],
+      "doi": "10.1109/dcis58620.2023.10336001",
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:NJ774b8OgUMC",
+          "title": "A Simple Power Analysis of an FPGA implementation of a polynomial multiplier for the NTRU cryptosystem",
+          "year": 2023,
+          "doi": "10.1109/dcis58620.2023.10336001"
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/175153214",
+          "title": "A Simple Power Analysis of an FPGA implementation of a polynomial multiplier for the NTRU cryptosystem",
+          "year": 2023,
+          "doi": "10.1109/dcis58620.2023.10336001",
+          "sourceType": "other",
+          "putCode": 175153214
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/159927246",
+          "title": "A Simple Power Analysis of an FPGA implementation of a polynomial multiplier for the NTRU cryptosystem",
+          "year": 2023,
+          "doi": "10.1109/dcis58620.2023.10336001",
+          "sourceType": "conference-paper",
+          "putCode": 159927246
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TJRg5D4AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=TJRg5D4AAAAJ:RHpTSmoSYBkC",
+          "title": "A Simple Power Analysis of an FPGA implementation of a polynomial multiplier for the NTRU cryptosystem",
+          "year": 2023,
+          "doi": "10.1109/dcis58620.2023.10336001"
+        },
+        {
+          "profile": "Santiago Sánchez Solano",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lirVGPcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lirVGPcAAAAJ:7H_MAutzIkAC",
+          "title": "A Simple Power Analysis of an FPGA implementation of a polynomial multiplier for the NTRU cryptosystem",
+          "year": 2023,
+          "doi": "10.1109/dcis58620.2023.10336001"
+        }
+      ],
+      "classification": "missing",
+      "reason": "Verified published proceedings paper missing from current catalogue.",
+      "verifiedTeamMemberIds": [
+        "santiago-sanchez-solano",
+        "macarena-c-martinez-rodriguez",
+        "piedad-brox-jimenez"
+      ],
+      "currentImportStatus": "in-catalogue",
+      "catalogueReference": "10.1109/dcis58620.2023.10336001"
+    },
+    {
+      "title": "A complete SHA-3 hardware library based on a high efficiency Keccak design",
+      "years": [
+        2023
+      ],
+      "doi": "10.1109/norcas58970.2023.10305448",
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:JQOojiI6XY0C",
+          "title": "A complete SHA-3 hardware library based on a high efficiency Keccak design",
+          "year": 2023,
+          "doi": "10.1109/norcas58970.2023.10305448"
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/175153082",
+          "title": "A complete SHA-3 hardware library based on a high efficiency Keccak design",
+          "year": 2023,
+          "doi": "10.1109/norcas58970.2023.10305448",
+          "sourceType": "other",
+          "putCode": 175153082
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/159927278",
+          "title": "A complete SHA-3 hardware library based on a high efficiency Keccak design",
+          "year": 2023,
+          "doi": "10.1109/norcas58970.2023.10305448",
+          "sourceType": "conference-paper",
+          "putCode": 159927278
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TJRg5D4AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=TJRg5D4AAAAJ:mB3voiENLucC",
+          "title": "A complete SHA-3 hardware library based on a high efficiency Keccak design",
+          "year": 2023,
+          "doi": "10.1109/norcas58970.2023.10305448"
+        },
+        {
+          "profile": "Santiago Sánchez Solano",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lirVGPcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lirVGPcAAAAJ:1taIhTC69MYC",
+          "title": "A complete SHA-3 hardware library based on a high efficiency Keccak design",
+          "year": 2023,
+          "doi": "10.1109/norcas58970.2023.10305448"
+        }
+      ],
+      "classification": "missing",
+      "reason": "Verified published proceedings paper missing from current catalogue.",
+      "verifiedTeamMemberIds": [
+        "santiago-sanchez-solano",
+        "macarena-c-martinez-rodriguez",
+        "piedad-brox-jimenez"
+      ],
+      "currentImportStatus": "in-catalogue",
+      "catalogueReference": "10.1109/norcas58970.2023.10305448"
+    },
+    {
+      "title": "CSIC Cicerón 6.5 Dispositivos electrónicos para construir un mundo digital seguro",
+      "years": [
+        2023
+      ],
+      "doi": null,
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:VLnqNzywnoUC",
+          "title": "CSIC Cicerón 6.5 Dispositivos electrónicos para construir un mundo digital seguro",
+          "year": 2023,
+          "doi": null
+        }
+      ],
+      "classification": "excluded",
+      "reason": "Outreach/presentation resource, one team author (Piedad Brox)."
+    },
+    {
+      "title": "Method and device for physical unclonable function (PUF) based on random telegraph noise (RTN)",
+      "years": [
+        2023
+      ],
+      "doi": null,
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:35r97b3x0nAC",
+          "title": "Method and device for physical unclonable function (PUF) based on random telegraph noise (RTN)",
+          "year": 2023,
+          "doi": null
+        }
+      ],
+      "classification": "excluded",
+      "reason": "English-language patent record corresponding to RTN invention; only Piedad Brox among current roster."
+    },
+    {
+      "title": "Secure platform for ICT systems rooted at the silicon manufacturing process",
+      "years": [
+        2023
+      ],
+      "doi": null,
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:uLbwQdceFCQC",
+          "title": "Secure platform for ICT systems rooted at the silicon manufacturing process",
+          "year": 2023,
+          "doi": null
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TJRg5D4AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=TJRg5D4AAAAJ:HDshCWvjkbEC",
+          "title": "Secure platform for ICT systems rooted at the silicon manufacturing process",
+          "year": 2023,
+          "doi": null
+        }
+      ],
+      "classification": "missing-other-output",
+      "reason": "Official two-page extended abstract, dated June 2023. Distinct from the 2022 JNIC project overview with a different author list.",
+      "verifiedTeamMemberIds": [
+        "macarena-c-martinez-rodriguez",
+        "piedad-brox-jimenez"
+      ]
+    },
+    {
+      "title": "Root of Trust Components to Increase Security of RISC-V Based Systems on Chips",
+      "years": [
+        2023
+      ],
+      "doi": null,
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:dQ2og3OwTAUC",
+          "title": "Root of Trust Components to Increase Security of RISC-V Based Systems on Chips",
+          "year": 2023,
+          "doi": null
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TJRg5D4AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=TJRg5D4AAAAJ:-f6ydRqryjwC",
+          "title": "Root of Trust Components to Increase Security of RISC-V Based Systems on Chips",
+          "year": 2023,
+          "doi": null
+        },
+        {
+          "profile": "Santiago Sánchez Solano",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lirVGPcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lirVGPcAAAAJ:IaI1MmNe2tcC",
+          "title": "Root of Trust Components to Increase Security of RISC-V Based Systems on Chips",
+          "year": 2023,
+          "doi": null
+        }
+      ],
+      "classification": "missing-other-output",
+      "reason": "Official published extended abstract and companion poster; author order from abstract PDF.",
+      "verifiedTeamMemberIds": [
+        "macarena-c-martinez-rodriguez",
+        "santiago-sanchez-solano",
+        "piedad-brox-jimenez"
+      ]
+    },
+    {
+      "title": "Exploring Open-Source and Proprietary Design Tools to Implement a Symmetric Cipher on FPGAs",
+      "years": [
+        2023
+      ],
+      "doi": null,
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:tKAzc9rXhukC",
+          "title": "Exploring Open-Source and Proprietary Design Tools to Implement a Symmetric Cipher on FPGAs",
+          "year": 2023,
+          "doi": null
+        },
+        {
+          "profile": "Santiago Sánchez Solano",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lirVGPcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lirVGPcAAAAJ:owLR8QvbtFgC",
+          "title": "Exploring Open-Source and Proprietary Design Tools to Implement a Symmetric Cipher on FPGAs",
+          "year": 2023,
+          "doi": null
+        }
+      ],
+      "classification": "missing-other-output",
+      "reason": "Presentation/abstract verified by official DCIS program, author order differs from Scholar. No DOI or full proceedings paper independently verified; CSIC record is protected by an access challenge.",
+      "verifiedTeamMemberIds": [
+        "pablo-navarro-torrero",
+        "piedad-brox-jimenez",
+        "santiago-sanchez-solano"
+      ]
+    },
+    {
+      "title": "Análisis y evaluación de un RO-PUF como TRNG",
+      "years": [
+        2023
+      ],
+      "doi": null,
+      "sources": [
+        {
+          "profile": "Piedad Brox Jiménez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=Q38fPzUAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=Q38fPzUAAAAJ:UHK10RUVsp4C",
+          "title": "Análisis y evaluación de un RO-PUF como TRNG",
+          "year": 2023,
+          "doi": null
+        },
+        {
+          "profile": "Santiago Sánchez Solano",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lirVGPcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lirVGPcAAAAJ:FiytvqdAVhgC",
+          "title": "Análisis y evaluación de un RO-PUF como TRNG",
+          "year": 2023,
+          "doi": null
+        }
+      ],
+      "classification": "missing",
+      "reason": "Distinct two-page published proceedings contribution. Full author list in official event program and project dissemination list; exact pages in proceedings table-of-contents and Scholar.",
+      "verifiedTeamMemberIds": [
+        "santiago-sanchez-solano",
+        "macarena-c-martinez-rodriguez",
+        "piedad-brox-jimenez"
+      ]
+    },
+    {
+      "title": "Analysis of EM Side-Channel Leakage on an RO-PUF and Proposed Countermeasures",
+      "years": [
+        2025,
+        2026
+      ],
+      "doi": "10.1109/tdsc.2025.3648516",
+      "sources": [
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/210346376",
+          "title": "Analysis of EM Side-Channel Leakage on an RO-PUF and Proposed Countermeasures",
+          "year": 2025,
+          "doi": "10.1109/tdsc.2025.3648516",
+          "sourceType": "journal-article",
+          "putCode": 210346376
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "ORCID",
+          "url": "https://pub.orcid.org/v3.0/0000-0003-3025-5736/work/214834494",
+          "title": "Analysis of EM Side-Channel Leakage on an RO-PUF and Proposed Countermeasures",
+          "year": 2026,
+          "doi": "10.1109/TDSC.2025.3648516",
+          "sourceType": "journal-article",
+          "putCode": 214834494
+        },
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TJRg5D4AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=TJRg5D4AAAAJ:O3NaXMp0MMsC",
+          "title": "Analysis of EM Side-Channel Leakage on an RO-PUF and Proposed Countermeasures",
+          "year": 2025,
+          "doi": "10.1109/TDSC.2025.3648516"
+        },
+        {
+          "profile": "Santiago Sánchez Solano",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=lirVGPcAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=lirVGPcAAAAJ:SjuI4pbJlxcC",
+          "title": "Analysis of EM Side-Channel Leakage on an RO-PUF and Proposed Countermeasures",
+          "year": 2025,
+          "doi": "10.1109/TDSC.2025.3648516"
+        }
+      ],
+      "classification": "existing",
+      "reason": "DOI or normalized exact title already present in the 21-record local catalogue.",
+      "currentImportStatus": "in-catalogue",
+      "catalogueReference": "10.1109/TDSC.2025.3648516"
+    },
+    {
+      "title": "Hardware abierto para la investigación",
+      "years": [
+        2023
+      ],
+      "doi": null,
+      "sources": [
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TJRg5D4AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=TJRg5D4AAAAJ:hFOr9nPyWt4C",
+          "title": "Hardware abierto para la investigación",
+          "year": 2023,
+          "doi": null
+        }
+      ],
+      "classification": "excluded",
+      "reason": "Outreach/training resource; Macarena is the only current roster member, Luis Felipe Rojas-Muñoz is not in team.json."
+    },
+    {
+      "title": "Circuit Theory & Applications",
+      "years": [],
+      "doi": null,
+      "sources": [
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TJRg5D4AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=TJRg5D4AAAAJ:r0BpntZqJG4C",
+          "title": "Circuit Theory & Applications",
+          "year": null,
+          "doi": null
+        }
+      ],
+      "classification": "unresolved-undated",
+      "reason": "No verified date >=2023 / qualifying current roster authors established; retain for explicit follow-up rather than claim exhaustive completion."
+    },
+    {
+      "title": "ASIC-in-the-loop methodology for verification of piecewise affine controllers",
+      "years": [],
+      "doi": null,
+      "sources": [
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TJRg5D4AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=TJRg5D4AAAAJ:mVmsd5A6BfQC",
+          "title": "ASIC-in-the-loop methodology for verification of piecewise affine controllers",
+          "year": null,
+          "doi": null
+        }
+      ],
+      "classification": "unresolved-undated",
+      "reason": "No verified date >=2023 / qualifying current roster authors established; retain for explicit follow-up rather than claim exhaustive completion."
+    },
+    {
+      "title": "Dispositivo para generar funciones multivariables afines a tramos con computación on-line del árbol de búsqueda",
+      "years": [],
+      "doi": null,
+      "sources": [
+        {
+          "profile": "Macarena C. Martínez-Rodríguez",
+          "source": "Google Scholar",
+          "url": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=TJRg5D4AAAAJ&pagesize=100&sortby=pubdate&citation_for_view=TJRg5D4AAAAJ:ufrVoPGSRksC",
+          "title": "Dispositivo para generar funciones multivariables afines a tramos con computación on-line del árbol de búsqueda",
+          "year": null,
+          "doi": null
+        }
+      ],
+      "classification": "unresolved-undated",
+      "reason": "No verified date >=2023 / qualifying current roster authors established; retain for explicit follow-up rather than claim exhaustive completion."
+    }
+  ],
+  "additionalExclusions": [
+    {
+      "title": "Harvesting random telegraph noise for true random number generation",
+      "year": 2025,
+      "doi": "10.1016/j.aeue.2025.155801",
+      "authors": [
+        "F.J. Rubio-Barbero",
+        "F. de los Santos-Prieto",
+        "R. Castro-Lopez",
+        "E. Roca",
+        "F.V. Fernandez"
+      ],
+      "teamMemberIds": [
+        "francisco-javier-rubio-barbero"
+      ],
+      "teamMemberCount": 1,
+      "journal": "AEU - International Journal of Electronics and Communications",
+      "type": "journal-article",
+      "pages": "155801",
+      "evidenceUrls": [
+        "https://api.crossref.org/works/10.1016%2Fj.aeue.2025.155801",
+        "https://doi.org/10.1016/j.aeue.2025.155801"
+      ],
+      "publisher": "Elsevier BV",
+      "classification": "excluded: fewer than two current roster members",
+      "notes": "Only Francisco Javier Rubio-Barbero is in the current team. Eros Camacho-Ruiz, Rafael Castro-López, Elisenda Roca, Francisco V. Fernández and Fernando de los Santos-Prieto are not in the current roster."
+    },
+    {
+      "title": "Optimization-based bit selection technique to improve the reliability of PUFs",
+      "year": 2024,
+      "doi": "10.1109/smacd61181.2024.10745432",
+      "authors": [
+        "F. De Los Santos-Prieto",
+        "F. J. Rubio-Barbero",
+        "R. Castro-Lopez",
+        "E. Roca",
+        "F.V. Fernandez"
+      ],
+      "teamMemberIds": [
+        "francisco-javier-rubio-barbero"
+      ],
+      "teamMemberCount": 1,
+      "journal": "2024 20th International Conference on Synthesis, Modeling, Analysis and Simulation Methods and Applications to Circuit Design (SMACD)",
+      "type": "proceedings-article",
+      "pages": "1-4",
+      "evidenceUrls": [
+        "https://api.crossref.org/works/10.1109%2FSMACD61181.2024.10745432",
+        "https://doi.org/10.1109/smacd61181.2024.10745432"
+      ],
+      "publisher": "IEEE",
+      "classification": "excluded: fewer than two current roster members",
+      "notes": "Only Francisco Javier Rubio-Barbero is in the current team. Eros Camacho-Ruiz, Rafael Castro-López, Elisenda Roca, Francisco V. Fernández and Fernando de los Santos-Prieto are not in the current roster."
+    },
+    {
+      "title": "Harvesting RTN for True Random Number Generators and Physical Unclonable Functions",
+      "year": 2024,
+      "doi": "10.1109/smacd61181.2024.10745416",
+      "authors": [
+        "F. J. Rubio-Barbero",
+        "F. de Los Santos-Prieto",
+        "R. Castro-Lopez",
+        "E. Roca",
+        "F.V. Fernandez"
+      ],
+      "teamMemberIds": [
+        "francisco-javier-rubio-barbero"
+      ],
+      "teamMemberCount": 1,
+      "journal": "2024 20th International Conference on Synthesis, Modeling, Analysis and Simulation Methods and Applications to Circuit Design (SMACD)",
+      "type": "proceedings-article",
+      "pages": "1-4",
+      "evidenceUrls": [
+        "https://api.crossref.org/works/10.1109%2FSMACD61181.2024.10745416",
+        "https://doi.org/10.1109/smacd61181.2024.10745416"
+      ],
+      "publisher": "IEEE",
+      "classification": "excluded: fewer than two current roster members",
+      "notes": "Only Francisco Javier Rubio-Barbero is in the current team. Eros Camacho-Ruiz, Rafael Castro-López, Elisenda Roca, Francisco V. Fernández and Fernando de los Santos-Prieto are not in the current roster."
+    },
+    {
+      "title": "A Peak Detect & Hold circuit to measure and exploit RTN in a 65-nm CMOS PUF",
+      "year": 2023,
+      "doi": "10.1109/smacd58065.2023.10192247",
+      "authors": [
+        "F. J. Rubio-Barbero",
+        "E. Camacho-Ruiz",
+        "R. Castro-Lopez",
+        "E. Roca",
+        "F.V. Fernandez"
+      ],
+      "teamMemberIds": [
+        "francisco-javier-rubio-barbero"
+      ],
+      "teamMemberCount": 1,
+      "journal": "2023 19th International Conference on Synthesis, Modeling, Analysis and Simulation Methods and Applications to Circuit Design (SMACD)",
+      "type": "proceedings-article",
+      "pages": "1-4",
+      "evidenceUrls": [
+        "https://api.crossref.org/works/10.1109%2FSMACD58065.2023.10192247",
+        "https://doi.org/10.1109/smacd58065.2023.10192247"
+      ],
+      "publisher": "IEEE",
+      "classification": "excluded: fewer than two current roster members",
+      "notes": "Only Francisco Javier Rubio-Barbero is in the current team. Eros Camacho-Ruiz, Rafael Castro-López, Elisenda Roca, Francisco V. Fernández and Fernando de los Santos-Prieto are not in the current roster."
+    },
+    {
+      "title": "Design considerations for a CMOS 65-nm RTN-based PUF",
+      "year": 2023,
+      "doi": "10.1109/smacd58065.2023.10192200",
+      "authors": [
+        "E. Camacho-Ruiz",
+        "F. J. Rubio-Barbero",
+        "R. Castro-Lopez",
+        "E. Roca",
+        "F. V. Fernandez"
+      ],
+      "teamMemberIds": [
+        "francisco-javier-rubio-barbero"
+      ],
+      "teamMemberCount": 1,
+      "journal": "2023 19th International Conference on Synthesis, Modeling, Analysis and Simulation Methods and Applications to Circuit Design (SMACD)",
+      "type": "proceedings-article",
+      "pages": "1-4",
+      "evidenceUrls": [
+        "https://api.crossref.org/works/10.1109%2FSMACD58065.2023.10192200",
+        "https://doi.org/10.1109/smacd58065.2023.10192200"
+      ],
+      "publisher": "IEEE",
+      "classification": "excluded: fewer than two current roster members",
+      "notes": "Only Francisco Javier Rubio-Barbero is in the current team. Eros Camacho-Ruiz, Rafael Castro-López, Elisenda Roca, Francisco V. Fernández and Fernando de los Santos-Prieto are not in the current roster."
+    },
+    {
+      "title": "A Comprehensive Approach to Improving the Thermal Reliability of RTN-Based PUFs",
+      "year": 2025,
+      "doi": "10.1109/tcsi.2024.3458057",
+      "authors": [
+        "F. de Los Santos-Prieto",
+        "F. J. Rubio-Barbero",
+        "R. Castro-Lopez",
+        "E. Roca",
+        "F. V. Fernandez"
+      ],
+      "teamMemberIds": [
+        "francisco-javier-rubio-barbero"
+      ],
+      "teamMemberCount": 1,
+      "journal": "IEEE Transactions on Circuits and Systems I: Regular Papers",
+      "type": "journal-article",
+      "pages": "661-670",
+      "evidenceUrls": [
+        "https://api.crossref.org/works/10.1109%2FTCSI.2024.3458057",
+        "https://doi.org/10.1109/tcsi.2024.3458057"
+      ],
+      "publisher": "Institute of Electrical and Electronics Engineers (IEEE)",
+      "classification": "excluded: fewer than two current roster members",
+      "notes": "Only Francisco Javier Rubio-Barbero is in the current team. Eros Camacho-Ruiz, Rafael Castro-López, Elisenda Roca, Francisco V. Fernández and Fernando de los Santos-Prieto are not in the current roster."
+    },
+    {
+      "title": "Gill regeneration in the mayfly\n                    <i>Cloeon</i>\n                    uncovers new molecular pathways in insect regeneration",
+      "year": 2024,
+      "doi": "10.1098/rsob.240118",
+      "authors": [
+        "Carlos A. Martin-Blanco",
+        "Pablo Navarro",
+        "José Esteban-Collado",
+        "Florenci Serras",
+        "Isabel Almudi",
+        "Fernando Casares"
+      ],
+      "teamMemberIds": [
+        "pablo-navarro-torrero"
+      ],
+      "teamMemberCount": 1,
+      "journal": "Open Biology",
+      "type": "journal-article",
+      "pages": null,
+      "evidenceUrls": [
+        "https://api.crossref.org/works/10.1098%2Frsob.240118",
+        "https://doi.org/10.1098/rsob.240118"
+      ],
+      "publisher": "The Royal Society",
+      "classification": "excluded: fewer than two current roster members",
+      "notes": "Crossref attaches Pablo’s current ORCID to the shorter byline Pablo Navarro, but none of the other authors are current roster members. Even crediting Pablo this is below the threshold."
+    },
+    {
+      "member": "David Martín Sánchez",
+      "title": "Acousto-optic system and method for generating physical unclonable functions (PUFs)",
+      "year": 2025,
+      "reason": "Patent application, not a research paper; inventors David Martín Sánchez and Piedad Brox satisfy membership count but publication type does not.",
+      "sourceURLs": [
+        "https://data.epo.org/publication-server/rest/v1.2/publication-dates/2025-12-03/patents/EP4657794NWA1/document.pdf"
+      ]
+    },
+    {
+      "member": "David Martín Sánchez",
+      "title": "Acoustic background noise in photoacoustic tomography",
+      "year": 2025,
+      "doi": "10.1117/12.3098254",
+      "authors": [
+        "D. M. Marques",
+        "D. Martin-Sanchez",
+        "O. Ogunlade",
+        "E. Zhang",
+        "P. Beard",
+        "J. A. Guggenheim"
+      ],
+      "reason": "Only one current team member (David).",
+      "sourceURLs": [
+        "https://pub.orcid.org/v3.0/0000-0003-0131-5226/work/202482829"
+      ]
+    },
+    {
+      "member": "David Martín Sánchez",
+      "title": "Development of high sensitivity plano-concave optical microresonators sensors for photoacoustic imaging",
+      "year": 2023,
+      "doi": "10.1117/12.2654566",
+      "reason": "Conference presentation/abstract with only one roster member. ORCID also lists proceedings editors; do not treat editors as paper authors.",
+      "sourceURLs": [
+        "https://pub.orcid.org/v3.0/0000-0003-0131-5226/work/216199234"
+      ]
+    },
+    {
+      "member": "David Martín Sánchez",
+      "title": "Development of arrays of highly sensitive plano-concave optical microresonator sensors for photo-acoustic imaging applications (Conference Presentation)",
+      "year": 2025,
+      "doi": "10.1117/12.3049339",
+      "authors": [
+        "Sankhyabrata Bandyopadhyay",
+        "David Martin Sanchez",
+        "Edward Zhang",
+        "James A. Guggenheim",
+        "Paul C. Beard"
+      ],
+      "reason": "Only one current team member and explicitly conference presentation. Full author list from official SPIE technical program.",
+      "sourceURLs": [
+        "https://www.spiecareercenter.org/documents/ConferencesExhibitions/Programs/2025/PW25-Technical-Program.pdf"
+      ]
+    },
+    {
+      "member": "David Martín Sánchez",
+      "title": "Exploiting the acousto-optic effect for developing secure digital identifiers",
+      "year": 2025,
+      "doi": "10.1117/12.3039852",
+      "reason": "Qualifies with David and Piedad, but already in catalog. Publisher-deposited Crossref lists only those two authors, correcting ORCID which includes editors.",
+      "sourceURLs": [
+        "https://api.crossref.org/works/10.1117%2F12.3039852"
+      ]
+    },
+    {
+      "member": "David Martín Sánchez",
+      "reason": "The three previously listed 2023–2025 optics journal papers have only David as a current roster author and were removed by the minimum-two-member rule. The supplementary Figshare PDF is not a separate paper. An undated Scholar photonic-pores item also has only David as a roster author and fails the membership threshold."
+    },
+    {
+      "member": "Jorge Ciudad Real Lacuesta",
+      "reason": "All recent optical-receiver, albedometer, and supervised-student records have only Jorge as current team member. Repeated self-author ORCID strings, case variants, journal/conference type variants, and truncated duplicate title must not be counted as extra members or new papers. Two different2025Optoel papers share book-level DOI10.5821/ebook-9791387613549; it is not an article DOI.",
+      "sourceURLs": [
+        "https://optoel.es/2025/wp-content/uploads/2025/07/LIBRO-ACTAS-OPTOEL2025.pdf",
+        "https://api.crossref.org/works/10.26754%2Fjji-i3a.202511922",
+        "https://api.crossref.org/works/10.26754%2Fjji-i3a.202511951",
+        "https://api.crossref.org/works/10.1109%2FICTON67126.2025.11125437",
+        "https://api.crossref.org/works/10.1109%2FCLEO%2FEUROPE-EQEC65582.2025.11110230",
+        "https://optoel.es/2025/wp-content/uploads/2025/06/Sesiones-de-Posteres-OPTOEL2025.pdf"
+      ],
+      "verifiedFullAuthorLists": [
+        {
+          "title": "Diseño e Implementación de un Albedómetro Espectral. Variación del Albedo del Manto Nivoso con Diferentes Contaminantes",
+          "authors": [
+            "Adrián Subías Martín",
+            "Pascual Navarro",
+            "Jorge Ciudad-Real",
+            "Víctor Herráiz-López",
+            "Iñigo Salinas",
+            "Rafael Alonso"
+          ],
+          "doi": "10.26754/jji-i3a.202511922"
+        },
+        {
+          "title": "Receptores ópticos coherentes integrados insensibles a la polarización mediante compensación de errores de fabricación",
+          "authors": [
+            "Natalia Herguedas",
+            "David Izquierdo",
+            "Pascual Sevillano",
+            "Jorge Ciudad-Real",
+            "Jesús Subías",
+            "Ignacio Garcés"
+          ],
+          "doi": "10.26754/jji-i3a.202511951"
+        },
+        {
+          "title": "Development and Validation of a Spectral Albedometer (200-2500 nm): Cuasi-Simultaneous Measurement of Solar and Snow Cover Reflected Radiation",
+          "authors": [
+            "Adrián Subías Martín",
+            "Pascual Navarro",
+            "Jorge Ciudad-Real",
+            "Víctor Herráiz-López",
+            "Iñigo Salinas",
+            "Rafael Alonso"
+          ],
+          "sourceURL": "https://optoel.es/2025/wp-content/uploads/2025/07/LIBRO-ACTAS-OPTOEL2025.pdf"
+        },
+        {
+          "title": "Simplified Polarization Independent Integrated Coherent Receiver for Passive Optical Networks",
+          "authors": [
+            "Natalia Herguedas",
+            "Jorge Ciudad-Real",
+            "David Izquierdo",
+            "Pascual Sevillano",
+            "Ignacio Garcés"
+          ],
+          "sourceURL": "https://optoel.es/2025/wp-content/uploads/2025/07/LIBRO-ACTAS-OPTOEL2025.pdf"
+        },
+        {
+          "title": "Fabrication-Tolerant Integrated Polarization-Independent Receiver for Coherent PONs Based on LO SOP Tuning",
+          "authors": [
+            "N. Herguedas",
+            "D. Izquierdo",
+            "P. Sevillano",
+            "J. Ciudad-Real",
+            "I. Garcés"
+          ],
+          "doi": "10.1109/ECOC66593.2025.11263171",
+          "sourceURL": "https://pub.orcid.org/v3.0/0009-0001-5179-650X/work/211895800"
+        },
+        {
+          "title": "Polarization Dependence of a 100G Simplified PolMux Heterodyne Coherent Receiver for Optical Access Networks",
+          "authors": [
+            "D. Izquierdo",
+            "P. Sevillano",
+            "M. Barrio",
+            "N. Herguedas",
+            "J. Ciudad-Real",
+            "I. Garcés"
+          ],
+          "doi": "10.1109/CLEO/EUROPE-EQEC65582.2025.11110230"
+        },
+        {
+          "title": "Roadmap to Simplified Coherent Heterodyne Receivers for 100 Gb/s PONs",
+          "authors": [
+            "David Izquierdo",
+            "Pascual Sevillano",
+            "Miguel Barrio",
+            "Natalia Herguedas",
+            "Jorge Ciudad-Real",
+            "Alicia López",
+            "Ignacio Garcés"
+          ],
+          "doi": "10.1109/ICTON67126.2025.11125437"
+        }
+      ]
+    },
+    {
+      "member": "Ignacio Martínez Fernández",
+      "reason": "34-row linked Scholar profile belongs to an economics namesake; recent records have no second roster member. Exclude entire inventory and mark member coverage unresolved."
+    },
+    {
+      "member": "Cristina Gómez de la Rosa",
+      "reason": "Student thesis is not a multi-author research paper; supervisors or bibliography references cannot be counted as coauthors."
+    }
+  ],
+  "limitations": [
+    "ORCID records and Scholar profiles are self-maintained, not an exhaustive institutional publication registry.",
+    "Public Scholar HTML was accessible; direct web reader rendering was unavailable.",
+    "CSIC publication pages and OAI request endpoint returned Anubis access challenge; no challenge bypass attempted.",
+    "Three undated Macarena Scholar entries were retained separately; relevance to 2023+ scope not verified.",
+    "Cuba publisher and SciELO direct access failed during the original audit; the publisher record and full 13-page PDF were successfully read on 2026-10-07.",
+    "The DCIS 2023 FPGA-tools item is verified as a poster/presentation only; author order differs across program and Scholar, and proceedings DOI remains unverified.",
+    "Google Scholar web tool failed, but direct requests to the same official public profiles succeeded. Thus Scholar coverage is not blocked.",
+    "DIGITAL.CSIC returned anti-bot challenges; no bypass was attempted. Affected final PDFs for DCIS2023 and institutional API paper; RECSI full-paper title/author/venue also verified from primary University of León proceedings.",
+    "Two first Crossref requests returned 429; sequential retries succeeded for all omitted DOI candidates.",
+    "Juan Manuel has zero public ORCID works and no linked Scholar; this is not proof he has no publications.",
+    "Google Scholar public profiles fetched successfully via normal urllib requests; browser web tool itself could not render Scholar.",
+    "ORCID person and works records successful for all five linked profiles assigned here.",
+    "Several concurrent Crossref DOI requests returned429; metadata successfully returned for relevant Jorge screening works and David existing paper; primary publisher/conference records independently verify missing papers.",
+    "Direct CSIC and University of León repository downloads returned anti-bot challenge HTML; no bypass attempted. Publisher and indexed primary conference PDFs provide author/year evidence.",
+    "No complete scholarly profile found during the original audit for Samuel Gutiérrez Félix, Isabel Fernández Poyato, Cristina Gómez de la Rosa; Samuel's user-supplied ORCID was restored on 2026-10-07 after that audit and its works have not been reviewed. The apparent wrong linked Scholar for Ignacio means audit cannot establish exhaustive coverage for those four."
+  ],
+  "importState": "Imported all nine confirmed missing full papers and restored ML-KEM with its exact author list under an explicit user-requested exception on 2026-10-07. Current catalogue: 27 publications, 26 satisfying the usual two-member rule and one documented exception; six featured items after the subsequent user-requested KECCAK feature addition. Five shorter outputs were not imported because no individual DOI was independently verified. The three one-member optics papers and previously user-removed 2020 paper remain excluded.",
+  "updatedDate": "2026-10-07",
+  "catalogueBeforeRequestedImport": 17,
+  "catalogueAfterRequestedImport": 27,
+  "featuredItemsAfterRequestedImport": 5,
+  "restoredByExplicitUserRequest": [
+    {
+      "title": "A Framework for designing High-Order Side-Channel Protected Hardware Implementations of ML-KEM",
+      "doi": "10.46586/tches.v2026.i2.272-295",
+      "teamMemberIds": [
+        "pablo-navarro-torrero"
+      ],
+      "sources": [
+        "https://doi.org/10.46586/tches.v2026.i2.272-295"
+      ],
+      "previousRemovalReason": "Only one distinct author belongs to the current visible roster; excluded by the user’s minimum-two-author policy.",
+      "restoredDate": "2026-10-07",
+      "reason": "Restored by explicit user request on 2026-10-07; Pablo Navarro-Torrero is the only author in the current team roster.",
+      "authors": [
+        "E. Camacho-Ruiz",
+        "P. Navarro-Torrero",
+        "A. Cabrera Aldaya"
+      ],
+      "featuredReferenceRestored": "hope-mlkem"
+    }
+  ],
+  "authorCorrections": [
+    {
+      "memberId": "apurba-karmakar",
+      "correctName": "Apurba Karmakar",
+      "confirmedBy": "Explicit user correction on 2026-10-07",
+      "action": "Corrected author metadata; no misspelled surname alias added. Original source URLs remain unchanged."
+    }
+  ],
+  "featuredItemsCurrent": 6,
+  "featuredWorkUpdates": [
+    {
+      "date": "2026-10-07",
+      "reference": "10.5220/0015074600004103",
+      "featuredId": "masked-keccak",
+      "action": "Added existing SECRYPT 2026 publication to featured research without adding a duplicate catalogue record.",
+      "requestedRotationIntervalSeconds": 10
+    }
+  ]
+}

@@ -1,9 +1,14 @@
 [
   {
     "title": "Robust and Scalable Cell-Based 65-nm CMOS RO-PUF Implementation",
-    "authors": ["P. Ortega-Castro", "E. Camacho-Ruiz",  "J.M. Mora-Guitiérrez", "M.C. Martínez-Rodríguez", "P. Brox"],
-    "journal": "IEEE Open JSCC",
-    "volume": "to be updated",
+    "authors": [
+      "P. Ortega-Castro",
+      "E. Camacho-Ruiz",
+      "J. M. Mora-Gutiérrez",
+      "P. Brox",
+      "M. C. Martínez-Rodríguez"
+    ],
+    "journal": "IEEE Open Journal of the Solid-State Circuits Society",
     "year": 2026,
     "doi": "10.1109/OJSSCS.2026.3689804"
   },
@@ -41,29 +46,31 @@
   },
   {
     "title": "A Framework for designing High-Order Side-Channel Protected Hardware Implementations of ML-KEM",
-    "authors": ["E. Camacho-Ruiz", "P. Navarro-Torrero","A. Cabrera-Aldaya"],
-    "journal": "IACR TCHES",
-    "volume": "2",
+    "authors": [
+      "E. Camacho-Ruiz",
+      "P. Navarro-Torrero",
+      "A. Cabrera Aldaya"
+    ],
+    "journal": "IACR Transactions on Cryptographic Hardware and Embedded Systems",
+    "volume": "2026",
+    "issue": "2",
+    "pages": "272-295",
     "year": 2026,
-    "doi": "10.46586/tches.v2026.i2.272-295"
+    "doi": "10.46586/tches.v2026.i2.272-295",
+    "eligibilityException": "Restored by explicit user request on 2026-10-07; Pablo Navarro-Torrero is the only author in the current team roster."
   },
   {
     "title": "A Side-Channel Protected and High-Performance Hardware Implementation for EdDSA25519",
-    "authors": ["P. Navarro-Torrero", "E. Camacho-Ruiz", "M.C. Martínez-Rodríguez", "P. Brox"],
+    "authors": [
+      "P. Navarro-Torrero",
+      "E. Camacho-Ruiz",
+      "M.C. Martínez-Rodríguez",
+      "P. Brox"
+    ],
     "journal": "IEEE Access",
     "volume": "13",
     "year": 2025,
     "doi": "10.1109/ACCESS.2025.3584696"
-  },
-  {
-    "title": "Sensitive Broadband Ultrasound Sensor Based on a Low-Loss High-Q Fused-Silica Plano-Concave Microresonator",
-    "authors": ["D. Martín-Sánchez", "E. Z. Zhang", "Z. Liu", "J. A. Guggenheim", "P. C. Beard"],
-    "journal": "Optics Express",
-    "volume": "33",
-    "issue": "19",
-    "pages": "39875-39888",
-    "year": 2025,
-    "doi": "10.1364/OE.572433"
   },
   {
     "title": "Exploiting the acousto-optic effect for developing secure digital identifiers",
@@ -74,7 +81,8 @@
     "journal": "Next-Generation Optical Communication: Components, Sub-Systems, and Systems XIV",
     "volume": "13374",
     "year": 2025,
-    "doi": "10.1117/12.3039852"
+    "doi": "10.1117/12.3039852",
+    "type": "conference"
   },
   {
     "title": "VLSI integration of a RO-based PUF into a 65 nm technology",
@@ -87,7 +95,10 @@
     ],
     "journal": "2024 IEEE Nordic Circuits and Systems Conference (NorCAS)",
     "year": 2024,
-    "doi": "10.1109/NorCAS64408.2024.10752474"
+    "doi": "10.1109/NorCAS64408.2024.10752474",
+    "type": "conference",
+    "pages": "1-7",
+    "url": "https://hdl.handle.net/10261/372696"
   },
   {
     "title": "Design of a Karatsuba Multiplier to Accelerate Digital Signature Schemes on Embedded Systems",
@@ -99,11 +110,17 @@
     ],
     "journal": "2024 IEEE Nordic Circuits and Systems Conference (NorCAS)",
     "year": 2024,
-    "doi": "10.1109/NorCAS64408.2024.10752484"
+    "doi": "10.1109/NorCAS64408.2024.10752484",
+    "type": "conference"
   },
   {
     "title": "Hardware-Efficient Configurable Ring-Oscillator-Based Physical Unclonable Function/True Random Number Generator Module for Secure Key Management",
-    "authors": ["S. Sánchez-Solano", "L.F. Rojas-Muñoz", "M.C. Martínez-Rodríguez", "P. Brox"],
+    "authors": [
+      "S. Sánchez-Solano",
+      "L.F. Rojas-Muñoz",
+      "M.C. Martínez-Rodríguez",
+      "P. Brox"
+    ],
     "journal": "Sensors",
     "volume": "24",
     "issue": "17",
@@ -112,18 +129,13 @@
     "doi": "10.3390/s24175674"
   },
   {
-    "title": "Laser Frequency Noise Characterisation Using High-Finesse Plano-Concave Optical Microresonators",
-    "authors": ["D. Martín-Sánchez", "E. Z. Zhang", "J. Paterson", "J. A. Guggenheim", "Z. Liu", "P. C. Beard"],
-    "journal": "Optics Letters",
-    "volume": "49",
-    "issue": "3",
-    "pages": "678-681",
-    "year": 2024,
-    "doi": "10.1364/OL.510516"
-  },
-  {
     "title": "Timing-Attack-Resistant Acceleration of NTRU Round 3 Encryption on Resource-Constrained Embedded Systems",
-    "authors": ["E. Camacho-Ruiz", "M.C. Martínez-Rodríguez", "S. Sánchez-Solano", "P. Brox"],
+    "authors": [
+      "E. Camacho-Ruiz",
+      "M.C. Martínez-Rodríguez",
+      "S. Sánchez-Solano",
+      "P. Brox"
+    ],
     "journal": "Cryptography",
     "volume": "7",
     "issue": "2",
@@ -133,7 +145,12 @@
   },
   {
     "title": "On-Line Evaluation and Monitoring of Security Features of an RO-Based PUF/TRNG for IoT Devices",
-    "authors": ["L.F. Rojas-Muñoz", "S. Sánchez-Solano", "M.C. Martínez-Rodríguez", "P. Brox"],
+    "authors": [
+      "L.F. Rojas-Muñoz",
+      "S. Sánchez-Solano",
+      "M.C. Martínez-Rodríguez",
+      "P. Brox"
+    ],
     "journal": "Sensors",
     "volume": "23",
     "issue": "8",
@@ -142,18 +159,13 @@
     "doi": "10.3390/s23084070"
   },
   {
-    "title": "An ABCD Transfer Matrix Model of Gaussian Beam Propagation in Plano-Concave Optical Microresonators",
-    "authors": ["D. Martín-Sánchez", "J. Li", "E. Z. Zhang", "P. C. Beard", "J. A. Guggenheim"],
-    "journal": "Optics Express",
-    "volume": "31",
-    "issue": "10",
-    "pages": "16523-16534",
-    "year": 2023,
-    "doi": "10.1364/OE.484212"
-  },
-  {
     "title": "True Random Number Generation Capability of a Ring Oscillator PUF for Reconfigurable Devices",
-    "authors": ["L.F. Rojas-Muñoz", "S. Sánchez-Solano", "M.C. Martínez-Rodríguez", "P. Brox"],
+    "authors": [
+      "L.F. Rojas-Muñoz",
+      "S. Sánchez-Solano",
+      "M.C. Martínez-Rodríguez",
+      "P. Brox"
+    ],
     "journal": "Electronics",
     "volume": "11",
     "issue": "23",
@@ -163,7 +175,12 @@
   },
   {
     "title": "Timing-Optimized Hardware Implementation to Accelerate Polynomial Multiplication in the NTRU Algorithm",
-    "authors": ["E. Camacho-Ruiz", "S. Sánchez-Solano", "P. Brox", "M.C. Martínez-Rodríguez"],
+    "authors": [
+      "E. Camacho-Ruiz",
+      "S. Sánchez-Solano",
+      "P. Brox",
+      "M.C. Martínez-Rodríguez"
+    ],
     "journal": "ACM Journal on Emerging Technologies in Computing Systems",
     "volume": "17",
     "issue": "3",
@@ -172,12 +189,240 @@
     "doi": "10.1145/3445979"
   },
   {
-    "title": "Simultaneous Refractive Index Sensing Using an Array of Suspended Porous Silicon Membranes",
-    "authors": ["D. Martín-Sánchez", "T. Angelova", "J. Garcia-Ruperez"],
-    "journal": "IEEE Sensors Journal",
-    "volume": "20",
-    "issue": "15",
-    "year": 2020,
-    "doi": "10.1109/JSEN.2020.2983218"
+    "id": "chacha20-poly1305-ares-2026",
+    "title": "Towards a Side-Channel-Resistant and Scalable ChaCha20-Poly1305 Hardware Implementation",
+    "authors": [
+      "F. J. Rubio-Barbero",
+      "P. Navarro-Torrero",
+      "E. Camacho-Ruiz",
+      "M. C. Martínez-Rodríguez",
+      "P. Brox"
+    ],
+    "journal": "The International Conference on Availability, Reliability and Security (ARES 2026)",
+    "year": 2026,
+    "type": "conference",
+    "url": "https://www.ares-conference.eu/conference/program"
+  },
+  {
+    "title": "Efficient Second-Order Masked KECCAK Implementation without Online Fresh Randomness",
+    "authors": [
+      "Juan Manuel Moreno-Cenizo",
+      "Eros Camacho-Ruiz",
+      "Macarena C. Martínez-Rodríguez",
+      "Piedad Brox"
+    ],
+    "journal": "Proceedings of the 23rd International Conference on Security and Cryptography (SECRYPT)",
+    "volume": "1",
+    "pages": "459-464",
+    "year": 2026,
+    "doi": "10.5220/0015074600004103",
+    "type": "conference",
+    "url": "https://hdl.handle.net/10261/439601"
+  },
+  {
+    "id": "hybrid-secure-element-qsns-2026",
+    "title": "A Hybrid Classical and Post-Quantum Secure Element for Constrained Devices",
+    "authors": [
+      "P. Navarro-Torrero",
+      "E. Camacho-Ruiz",
+      "M. C. Martínez-Rodríguez",
+      "P. Brox"
+    ],
+    "journal": "3rd Workshop on Quantum-Secure Networks and Systems (QSNS), IEEE Symposium on Computers and Communications (ISCC)",
+    "year": 2026,
+    "type": "conference",
+    "url": "https://hdl.handle.net/10261/438838"
+  },
+  {
+    "title": "Open-Source Framework for Secure Hardware Design with Simulation-based Leakage Assessment",
+    "authors": [
+      "Pablo Navarro-Torrero",
+      "Francisco J. Rubio-Barbero",
+      "Eros Camacho-Ruiz",
+      "Macarena C. Martínez-Rodríguez",
+      "Piedad Brox-Jiménez"
+    ],
+    "journal": "2026 Design, Automation & Test in Europe Conference (DATE)",
+    "pages": "1-3",
+    "year": 2026,
+    "doi": "10.23919/DATE69613.2026.11539436",
+    "type": "conference",
+    "url": "https://hdl.handle.net/10261/438836"
+  },
+  {
+    "title": "Multi-Partner Project: Quantum-Secure IoT-based Digital Manufacturing Pilot in QUBIP project",
+    "authors": [
+      "Eros Camacho-Ruiz",
+      "Pablo Navarro-Torrero",
+      "Piedad Brox",
+      "Maria Chiara Molteni",
+      "Alberto Battistello",
+      "Davide Bellizia",
+      "Agostino Sette",
+      "Enrico Bisio",
+      "Nicola Tuveri",
+      "Enrico Bravi",
+      "Francesco Vaccaro",
+      "Grazia D’Onghia",
+      "Andrea Vesco"
+    ],
+    "journal": "2026 Design, Automation & Test in Europe Conference (DATE)",
+    "pages": "1-6",
+    "year": 2026,
+    "doi": "10.23919/DATE69613.2026.11539463",
+    "type": "conference",
+    "url": "https://hdl.handle.net/10261/438837"
+  },
+  {
+    "title": "Digital Design Flow Based on Open Tools for Programmable Logic Devices",
+    "authors": [
+      "Pablo Navarro-Torrero",
+      "Luis Felipe Rojas-Muñoz",
+      "Macarena C. Martínez-Rodríguez",
+      "Ángel Barriga-Barros",
+      "Carlos J. Jiménez-Fernández",
+      "María Brox",
+      "Piedad Brox"
+    ],
+    "journal": "2024 XVI Congreso de Tecnología, Aprendizaje y Enseñanza de la Electrónica (TAEE)",
+    "year": 2024,
+    "type": "conference",
+    "doi": "10.1109/taee59541.2024.10604893",
+    "pages": "1-5"
+  },
+  {
+    "title": "Full Open-Source Implementation of an Academic RISC-V on FPGA",
+    "authors": [
+      "Pablo Navarro-Torrero",
+      "Macarena C. Martínez-Rodríguez",
+      "Ángel Barriga-Barros",
+      "Piedad Brox"
+    ],
+    "journal": "2024 XVI Congreso de Tecnología, Aprendizaje y Enseñanza de la Electrónica (TAEE)",
+    "year": 2024,
+    "type": "conference",
+    "doi": "10.1109/taee59541.2024.10604934",
+    "pages": "1-5"
+  },
+  {
+    "title": "Cryptographic Security Through a Hardware Root of Trust",
+    "authors": [
+      "Luis F. Rojas-Muñoz",
+      "Santiago Sánchez-Solano",
+      "Macarena C. Martínez-Rodríguez",
+      "Eros Camacho-Ruiz",
+      "Pablo Navarro-Torrero",
+      "Apurba Karmakar",
+      "Carlos Fernández-García",
+      "Erica Tena-Sánchez",
+      "Francisco E. Potestad-Ordóñez",
+      "Alejandro Casado-Galán",
+      "Pau Ortega-Castro",
+      "Antonio J. Acosta-Jiménez",
+      "Carlos J. Jiménez-Fernández",
+      "Piedad Brox"
+    ],
+    "journal": "Applied Reconfigurable Computing. Architectures, Tools, and Applications",
+    "year": 2024,
+    "type": "conference",
+    "doi": "10.1007/978-3-031-55673-9_8",
+    "pages": "106-119",
+    "volume": "14553"
+  },
+  {
+    "title": "A complete SHA-3 hardware library based on a high efficiency Keccak design",
+    "authors": [
+      "Eros Camacho-Ruiz",
+      "Santiago Sánchez-Solano",
+      "Macarena C. Martínez-Rodríguez",
+      "Piedad Brox"
+    ],
+    "journal": "2023 IEEE Nordic Circuits and Systems Conference (NorCAS)",
+    "year": 2023,
+    "type": "conference",
+    "doi": "10.1109/norcas58970.2023.10305448",
+    "pages": "1-7"
+  },
+  {
+    "title": "A Simple Power Analysis of an FPGA implementation of a polynomial multiplier for the NTRU cryptosystem",
+    "authors": [
+      "Eros Camacho-Ruiz",
+      "Santiago Sánchez-Solano",
+      "Macarena C. Martínez-Rodríguez",
+      "Erica Tena-Sanchez",
+      "Piedad Brox"
+    ],
+    "journal": "2023 38th Conference on Design of Circuits and Integrated Systems (DCIS)",
+    "year": 2023,
+    "type": "conference",
+    "doi": "10.1109/dcis58620.2023.10336001",
+    "pages": "1-6"
+  },
+  {
+    "title": "HW/SW implementation of RSA digital signature on a RISC-V-based System-on-Chip",
+    "authors": [
+      "Apurba Karmakar",
+      "Santiago Sánchez-Solano",
+      "Macarena C. Martínez-Rodríguez",
+      "Piedad Brox"
+    ],
+    "journal": "2023 38th Conference on Design of Circuits and Integrated Systems (DCIS)",
+    "year": 2023,
+    "type": "conference",
+    "doi": "10.1109/DCIS58620.2023.10335970",
+    "pages": "1-6"
+  },
+  {
+    "title": "Optimizing Secure Elements Implementation Methods for a seamless Post-Quantum Transition",
+    "authors": [
+      "Eros Camacho-Ruiz",
+      "Pablo Navarro-Torrero",
+      "Macarena C. Martínez-Rodríguez",
+      "Piedad Brox"
+    ],
+    "journal": "2025 IEEE Symposium on Computers and Communications (ISCC)",
+    "year": 2025,
+    "type": "conference",
+    "doi": "10.1109/iscc65549.2025.11326228",
+    "pages": "1-6"
+  },
+  {
+    "title": "Open Source API for a Hardware Root-of-Trust",
+    "authors": [
+      "Eros Camacho-Ruiz",
+      "Luis F. Rojas-Muñoz",
+      "Apurba Karmakar",
+      "Pablo Navarro-Torrero",
+      "Piedad Brox",
+      "Macarena C. Martínez-Rodríguez"
+    ],
+    "journal": "XVIII Reunión Española sobre Criptología y Seguridad de la Información (RECSI 2024)",
+    "year": 2025,
+    "type": "conference",
+    "id": "open-source-api-hardware-root-trust-recsi-2024",
+    "url": "https://hdl.handle.net/10261/384049",
+    "pages": "87-92"
+  },
+  {
+    "id": "contribuciones-hardware-reconfigurable-2023",
+    "title": "Contribuciones a la implementación de sistemas electrónicos digitales embebidos sobre hardware reconfigurable",
+    "authors": [
+      "Alejandro José Cabrera Sarmiento",
+      "Luís Manuel Garcés Socarrás",
+      "Alejandro Cabrera Aldaya",
+      "Raudel Cuiman Márquez",
+      "Santiago Sánchez Solano",
+      "Piedad Brox Jiménez",
+      "Egidio Ieno Junior",
+      "Tales Cleber Pimenta",
+      "Billy Bob Brumley"
+    ],
+    "year": 2023,
+    "journal": "Anales de la Academia de Ciencias de Cuba",
+    "volume": "13",
+    "issue": "4",
+    "article": "e1482",
+    "type": "journal",
+    "url": "https://revistaccuba.sld.cu/index.php/revacc/article/view/1482"
   }
 ]

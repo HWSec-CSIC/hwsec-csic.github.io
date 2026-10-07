@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 680 300" role="img" aria-labelledby="mlkem-title mlkem-desc">
+  <title id="mlkem-title">Conceptual protected ML-KEM datapath</title><desc id="mlkem-desc">Input and control connect to masked arithmetic and a Keccak module. Parallel shares illustrate higher-order masking. This is a simplified explanatory diagram, not the implemented circuit layout.</desc>
+  <g fill="#91a5bf" font-family="monospace" font-size="10" letter-spacing="1"><text x="26" y="29">HOPE-MLKEM / PROTECTED DATAPATH</text><text x="26" y="280">CONCEPTUAL VIEW</text><text x="500" y="280">RTL → FPGA / ASIC</text></g>
+  <g fill="none" stroke="#36506f"><path d="M20 51h640M20 254h640"/><rect x="29" y="92" width="99" height="112"/><rect x="163" y="72" width="350" height="151"/><rect x="548" y="92" width="102" height="112"/></g>
+  <g fill="#102540" stroke="#2d8cff"><rect x="183" y="109" width="94" height="79"/><rect x="291" y="109" width="94" height="79"/><rect x="399" y="109" width="94" height="79"/></g>
+  <g font-family="monospace" fill="#e9edf4" font-size="12"><text x="42" y="139">INPUT /</text><text x="42" y="158">CONTROL</text><text x="198" y="151">SHARE 0</text><text x="306" y="151">SHARE 1</text><text x="414" y="151">SHARE n</text><text x="568" y="144">KECCAK</text><text x="568" y="162" fill="#61d9c5">MODULE</text></g>
+  <g fill="none" stroke="#61d9c5" stroke-width="1.5"><path d="M128 132h23V98h350v34h47M128 167h23v35h350v-35h47M230 98v11m108-11v11m108-11v11m-216 79v14m108-14v14m108-14v14"/><circle cx="151" cy="132" r="3" fill="#07111f"/><circle cx="501" cy="167" r="3" fill="#07111f"/></g>
+  <g fill="#91a5bf" font-family="monospace" font-size="9"><text x="186" y="88">MASKED ARITHMETIC / PARALLEL SHARES</text><text x="230" y="240">CONFIGURABLE PROTECTION ORDER</text></g>
+</svg>

@@ -1,0 +1,15 @@
+<section class="container page-heading">
+  <div><h1>People</h1><p class="page-description">Researchers, engineers and collaborators working on secure hardware and integrated photonics.</p></div>
+  <div class="page-note"><span class="big-number">$people_count</span><span class="eyebrow">People · $group_count categories</span></div>
+</section>
+<section class="container directory-section" aria-label="Team directory" data-directory="team">
+  <div class="filter-bar" data-enhancement hidden>
+    <div class="search-field"><label class="sr-only" for="team-search">Search people, roles or research interests</label>$search_icon<input id="team-search" type="search" placeholder="Find a person, role or research interest…" autocomplete="off" data-search></div>
+    <div class="select-field"><label for="team-group">Group</label><select id="team-group" data-group-filter><option value="all">All groups</option>$group_options</select></div>
+    <button class="reset-button" type="button" data-reset>Reset filters</button>
+  </div>
+  <p class="results-line" data-enhancement hidden><span data-results role="status" aria-live="polite">$people_count people</span></p>
+  <div data-list>$team_sections</div>
+  $team_photo_credits
+  <div class="empty-state" data-empty hidden><h2>No people found.</h2><p>Try another name or group.</p><button class="text-link" type="button" data-reset>Clear filters $arrow</button></div>
+</section>

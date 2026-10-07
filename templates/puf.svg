@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 148" role="img" aria-labelledby="puf-title puf-desc">
+  <title id="puf-title">Ring oscillator PUF concept</title><desc id="puf-desc">Two oscillator loops feeding a comparison block, illustrating a silicon physical unclonable function.</desc>
+  <g fill="none" stroke="#2d8cff" stroke-width="1.4"><path d="M22 29h24l15 12-15 12H22zM22 79h24l15 12-15 12H22zM61 41h22v22H14V41h8m39 50h22v22H14V91h8M83 41h24v23h21M83 91h24V77h21"/></g>
+  <rect x="128" y="54" width="53" height="35" fill="#61d9c5"/><text x="141" y="77" font-family="monospace" font-size="13" fill="#07111f">Δf</text><text x="16" y="137" font-family="monospace" font-size="9" fill="#91a5bf">RO-PUF / CONCEPT</text>
+</svg>

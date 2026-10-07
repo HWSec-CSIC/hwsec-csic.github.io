@@ -1,0 +1,18 @@
+<section class="container page-heading">
+  <div><h1>Publications</h1><p class="page-description">Journal articles and conference contributions in hardware security, cryptography and photonics.</p></div>
+  <div class="page-note"><span class="big-number">$publication_count</span><span class="eyebrow">Publications · $year_range</span></div>
+</section>
+<section class="container directory-section" aria-label="Publication archive" data-directory="publications">
+  <div class="filter-bar" data-enhancement hidden>
+    <div class="search-field"><label class="sr-only" for="publication-search">Search publications by title, author, journal or DOI</label>$search_icon<input id="publication-search" type="search" placeholder="Search titles, authors, journals or DOI…" autocomplete="off" data-search></div>
+    <div class="select-field"><label for="publication-year">Year</label><select id="publication-year" data-year-filter><option value="all">All years</option>$year_options</select></div>
+    <div class="select-field"><label for="publication-type">Type</label><select id="publication-type" data-type-filter><option value="all">All types</option><option value="journal">Journal</option><option value="conference">Conference</option></select></div>
+    <button class="reset-button" type="button" data-reset>Reset filters</button>
+  </div>
+  <div class="archive-topline" data-enhancement hidden>
+    <span data-results role="status" aria-live="polite">$publication_count publications</span>
+    <div class="sort-field"><label for="publication-sort">Sort by</label><select id="publication-sort" data-sort><option value="newest">Newest first</option><option value="oldest">Oldest first</option></select></div>
+  </div>
+  <div class="publication-list" data-list>$publication_sections</div>
+  <div class="empty-state" data-empty hidden><h2>No publications found.</h2><p>Try another search term, year or publication type.</p><button class="text-link" type="button" data-reset>Clear filters $arrow</button></div>
+</section>

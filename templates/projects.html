@@ -1,0 +1,15 @@
+<section class="container page-heading">
+  <div><h1>Projects</h1><p class="page-description">European, national and agency-funded programmes connecting secure silicon, cryptography and photonic technologies.</p></div>
+  <div class="page-note"><span class="big-number">$project_count</span><span class="eyebrow">Research projects</span></div>
+</section>
+<section class="container directory-section" aria-label="Research projects" data-directory="projects">
+  <div class="filter-bar" data-enhancement hidden>
+    <div class="search-field"><label class="sr-only" for="project-search">Search projects, researchers or funding programmes</label>$search_icon<input id="project-search" type="search" placeholder="Find a project, researcher or programme…" autocomplete="off" data-search></div>
+    <div class="select-field"><label for="project-group">Group</label><select id="project-group" data-group-filter><option value="all">All groups</option>$project_group_options</select></div>
+    <div class="select-field"><label for="project-status">Status</label><select id="project-status" data-status-filter><option value="all">All projects</option><option value="upcoming">Upcoming</option><option value="ongoing">Ongoing</option><option value="completed">Completed</option></select></div>
+    <button class="reset-button" type="button" data-reset>Reset filters</button>
+  </div>
+  <p class="results-line" data-enhancement hidden><span data-results role="status" aria-live="polite">$project_count projects</span></p>
+  <div data-list>$project_sections</div>
+  <div class="empty-state" data-empty hidden><h2>No projects found.</h2><p>Try another search term, group or status.</p><button class="text-link" type="button" data-reset>Clear filters $arrow</button></div>
+</section>

@@ -1,0 +1,122 @@
+[
+  {
+    "id": "chacha20-poly1305",
+    "kind": "publication",
+    "reference": "chacha20-poly1305-ares-2026",
+    "heading": "ChaCha20-Poly1305",
+    "description": "Research into scalable ChaCha20-Poly1305 hardware and side-channel resistance for authenticated encryption, presented at ARES 2026.",
+    "topics": [
+      "Authenticated encryption",
+      "Hardware implementation",
+      "Side-channel protection"
+    ],
+    "cover": {
+      "image": "assets/images/lab/spirs-measurement.webp",
+      "alt": "Laboratory evaluation hardware connected to probes and ribbon cables",
+      "caption": "SPIRS hardware evaluation · group photograph.",
+      "width": 1440,
+      "height": 810
+    }
+  },
+  {
+    "id": "puf-trng-evaluation",
+    "kind": "publication",
+    "reference": "10.3390/s23084070",
+    "heading": "RO-PUF/TRNG evaluation",
+    "description": "On-line evaluation and monitoring of an RO-based PUF/TRNG for IoT devices, including laboratory characterization under voltage and temperature variations.",
+    "topics": [
+      "Physical security",
+      "PUFs and TRNGs",
+      "Laboratory characterization"
+    ],
+    "figure": {
+      "image": "assets/images/research/ro-puf-trng-characterization-setup.png",
+      "alt": "RO-PUF/TRNG characterization setup from Figure 15: development board (1), power supplies (2), and temperature control system (3).",
+      "caption": "Figure 15. RO-PUF/TRNG characterization under voltage and temperature variations.",
+      "credit": "Luis F. Rojas-Muñoz, Santiago Sánchez-Solano, Macarena C. Martínez-Rodríguez and Piedad Brox",
+      "source": "https://doi.org/10.3390/s23084070",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "licenseLabel": "CC BY 4.0",
+      "width": 1034,
+      "height": 472
+    }
+  },
+  {
+    "id": "hope-mlkem",
+    "kind": "publication",
+    "reference": "10.46586/tches.v2026.i2.272-295",
+    "heading": "HOPE-MLKEM",
+    "description": "A framework for designing high-order side-channel-protected ML-KEM hardware, illustrated by the paper’s scheduling strategy for K-PKE.KeyGen.",
+    "topics": [
+      "Post-quantum cryptography",
+      "ML-KEM",
+      "Side-channel protection"
+    ],
+    "figure": {
+      "image": "assets/images/research/hope-mlkem-scheduling.png",
+      "alt": "Scheduling strategy for K-PKE.KeyGen in ML-KEM-512, reproduced from Figure 6 of the HOPE-MLKEM paper.",
+      "caption": "Figure 6. Example scheduling strategy for K-PKE.KeyGen in ML-KEM-512.",
+      "credit": "Eros Camacho-Ruiz, Pablo Navarro-Torrero and Alejandro Cabrera Aldaya",
+      "source": "https://doi.org/10.46586/tches.v2026.i2.272-295",
+      "license": "https://creativecommons.org/licenses/by/4.0/",
+      "licenseLabel": "CC BY 4.0",
+      "width": 2427,
+      "height": 469
+    }
+  },
+  {
+    "id": "masked-keccak",
+    "kind": "publication",
+    "reference": "10.5220/0015074600004103",
+    "heading": "Second-order masked KECCAK",
+    "description": "An efficient second-order masked KECCAK hardware implementation that does not require online fresh randomness, presented at SECRYPT 2026.",
+    "topics": [
+      "KECCAK",
+      "Second-order masking",
+      "Hardware security"
+    ],
+    "cover": {
+      "image": "assets/images/lab/spirs-evaluation.webp",
+      "alt": "SPIRS hardware evaluation board photographed in the laboratory",
+      "caption": "SPIRS evaluation board · laboratory context.",
+      "width": 1200,
+      "height": 675
+    }
+  },
+  {
+    "id": "silicon-puf",
+    "kind": "publication",
+    "reference": "10.1109/OJSSCS.2026.3689804",
+    "heading": "Ring-oscillator PUFs in 65-nm CMOS",
+    "description": "A robust and scalable ring-oscillator PUF implementation in 65-nm CMOS, using the physical properties of silicon for hardware identity.",
+    "topics": [
+      "65-nm CMOS",
+      "RO-PUF"
+    ],
+    "cover": {
+      "image": "assets/images/lab/wire-bonded-die.webp",
+      "alt": "Wire-bonded die inside a chip package, photographed in our laboratory",
+      "caption": "Wire-bonded device package · group photograph.",
+      "width": 960,
+      "height": 944
+    }
+  },
+  {
+    "id": "cryptopic",
+    "kind": "project",
+    "reference": "cryptopic",
+    "heading": "CryptoPIC",
+    "description": "CryptoPIC investigates physically unclonable functions and cryptographic primitives in photonic integrated circuits.",
+    "topics": [
+      "CryptoPIC",
+      "Integrated photonics"
+    ],
+    "cover": {
+      "image": "assets/images/lab/optical-bench.webp",
+      "alt": "Microscope above fibre alignment stages on an optical laboratory bench",
+      "caption": "Optical laboratory bench · group photograph.",
+      "width": 1440,
+      "height": 960
+    }
+  }
+]

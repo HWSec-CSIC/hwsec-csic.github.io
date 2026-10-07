@@ -1,0 +1,62 @@
+[
+  {
+    "image": "packaged-chip.webp",
+    "source": "inputs/Fotos_SPIRS/A60A1685.jpg",
+    "sourceSHA256": "76c8cdedf17d7be1d29c9fec5a925702cdf03d6e4d21c635c2195a1745121a0e",
+    "sourceWidth": 6720,
+    "sourceHeight": 3780,
+    "width": 1920,
+    "height": 1080,
+    "description": "Wire-bonded chip package; homepage hero."
+  },
+  {
+    "image": "spirs-evaluation.webp",
+    "source": "inputs/Fotos_SPIRS/A60A1673.jpg",
+    "sourceSHA256": "1b5eda06c4664739cc86df1d7a435bc5e430c7add91485af36c6f838a3a1ca4a",
+    "sourceWidth": 6720,
+    "sourceHeight": 3780,
+    "width": 1200,
+    "height": 675,
+    "description": "SPIRS evaluation board; secure SoCs research area."
+  },
+  {
+    "image": "wire-bonded-die.webp",
+    "source": "inputs/Fotos_SPIRS/A60A1681.jpg",
+    "sourceSHA256": "46a9019c88591a2cd0086f376a4bf0b8d06c2f562861fac47e09313d2d72698d",
+    "sourceWidth": 1724,
+    "sourceHeight": 1696,
+    "width": 960,
+    "height": 944,
+    "description": "Exposed die and bond wires; physical security research area."
+  },
+  {
+    "image": "fibre-alignment.webp",
+    "source": "inputs/Mesa óptica - set up/DSC01395.JPG",
+    "sourceSHA256": "6523480e9de307eccdd98e7e1b6fa0fcb17e5752c7a9bad911391f50b502c9e0",
+    "sourceWidth": 6000,
+    "sourceHeight": 4000,
+    "width": 1200,
+    "height": 800,
+    "description": "Fibre alignment stages; integrated photonics research area."
+  },
+  {
+    "image": "spirs-measurement.webp",
+    "source": "inputs/Fotos_SPIRS/_60A9978.jpg",
+    "sourceSHA256": "90112134b809db0adab43d016eb152afe22c089fd96cedff4666c9cca355c460",
+    "sourceWidth": 6391,
+    "sourceHeight": 3595,
+    "width": 1440,
+    "height": 810,
+    "description": "SPIRS hardware connected to probes and cables; evaluation context."
+  },
+  {
+    "image": "optical-bench.webp",
+    "source": "inputs/Mesa óptica - set up/DSC01384.JPG",
+    "sourceSHA256": "5f1561e1dab1efb14b91286b1ceec51f1068e892401c54f48282536d2fbe8e7a",
+    "sourceWidth": 6000,
+    "sourceHeight": 4000,
+    "width": 1440,
+    "height": 960,
+    "description": "Optical bench with microscope and alignment stages; photonics context."
+  }
+]

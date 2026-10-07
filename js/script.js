@@ -1,519 +1,424 @@
-// Minimal interactions: mobile nav and reveal-on-scroll
+/* Progressive enhancements. All research content is already in the HTML. */
+(() => {
+  'use strict';
 
-(function() {
-  const body = document.body;
-  const themeToggle = document.querySelector('.theme-toggle');
-  const themeIcon = themeToggle ? themeToggle.querySelector('.theme-toggle-icon') : null;
-  const themeColorMetas = Array.from(document.querySelectorAll('meta[name="theme-color"]'));
-  const themeStorageKey = 'theme-preference';
-  const themeQuery = window.matchMedia('(prefers-color-scheme: dark)');
-  const mobileNavQuery = window.matchMedia('(max-width: 860px)');
-  const lightThemeColor = '#ffffff';
-  const darkThemeColor = '#0b0d12';
-  let liveRegion = document.querySelector('[data-live-region="site-status"]');
-
-  if (!liveRegion) {
-    liveRegion = document.createElement('div');
-    liveRegion.className = 'sr-only';
-    liveRegion.setAttribute('aria-live', 'polite');
-    liveRegion.setAttribute('aria-atomic', 'true');
-    liveRegion.setAttribute('data-live-region', 'site-status');
-    document.body.appendChild(liveRegion);
+  const root = document.documentElement;
+  root.classList.add('js');
+  const liveRegion = document.getElementById('site-status');
+  function announce(message) {
+    if (liveRegion) liveRegion.textContent = message;
   }
 
-  const announce = (message) => {
-    liveRegion.textContent = '';
-    window.setTimeout(() => {
-      liveRegion.textContent = message;
-    }, 10);
-  };
+  const year = document.querySelector('[data-current-year]');
+  if (year) year.textContent = String(Math.max(Number(year.textContent), new Date().getFullYear()));
 
-  const getPreferredTheme = () => {
-    try {
-      const stored = localStorage.getItem(themeStorageKey);
-      if (stored === 'dark' || stored === 'light') {
-        return stored;
-      }
-    } catch (e) {}
-    return themeQuery.matches ? 'dark' : 'light';
-  };
-
-  const applyTheme = (theme, persist) => {
-    const isDark = theme === 'dark';
-    const themeColor = isDark ? darkThemeColor : lightThemeColor;
-    document.documentElement.classList.toggle('dark', isDark);
-    body.classList.toggle('dark-theme', isDark);
-    body.classList.toggle('theme-light', !isDark);
-    body.style.colorScheme = isDark ? 'dark' : 'light';
-    themeColorMetas.forEach((meta) => {
-      meta.setAttribute('content', themeColor);
-    });
-    if (themeToggle) {
-      themeToggle.setAttribute('aria-pressed', String(isDark));
-      themeToggle.setAttribute('aria-label', isDark ? 'Switch to light theme' : 'Switch to dark theme');
-    }
-    if (themeIcon) {
-      themeIcon.textContent = isDark ? '☀' : '☾';
-    }
-    if (persist) {
-      try {
-        localStorage.setItem(themeStorageKey, theme);
-      } catch (e) {}
-    }
-  };
-
-  applyTheme(getPreferredTheme(), false);
-  if (themeToggle) {
-    themeToggle.addEventListener('click', () => {
-      applyTheme(body.classList.contains('dark-theme') ? 'light' : 'dark', true);
-    });
+  // Project dates use the visitor's calendar, with both boundary days included.
+  // Comparing ISO calendar strings avoids UTC offsets from Date('YYYY-MM-DD').
+  const today = new Date();
+  const calendarDay = `${String(today.getFullYear()).padStart(4, '0')}-${String(today.getMonth() + 1).padStart(2, '0')}-${String(today.getDate()).padStart(2, '0')}`;
+  const projectLabels = {upcoming: 'Upcoming', ongoing: 'Ongoing', completed: 'Completed'};
+  const projectItems = Array.from(document.querySelectorAll('[data-project]'));
+  function validCalendarDate(value) {
+    if (!/^\d{4}-\d{2}-\d{2}$/.test(value || '')) return false;
+    const [fullYear, month, day] = value.split('-').map(Number);
+    const parsed = new Date(0);
+    parsed.setHours(12, 0, 0, 0);
+    parsed.setFullYear(fullYear, month - 1, day);
+    return fullYear > 0 && parsed.getFullYear() === fullYear && parsed.getMonth() === month - 1 && parsed.getDate() === day;
   }
+  projectItems.forEach((item) => {
+    const start = item.dataset.startDate;
+    const end = item.dataset.endDate;
+    let status = item.dataset.status === 'active' ? 'ongoing' : item.dataset.status;
+    if (validCalendarDate(start) && validCalendarDate(end) && start <= end) {
+      status = calendarDay < start ? 'upcoming' : (calendarDay > end ? 'completed' : 'ongoing');
+    }
+    if (!projectLabels[status]) return;
+    item.dataset.status = status;
+    const badge = item.querySelector('[data-project-status]');
+    if (badge) {
+      Object.keys(projectLabels).concat('active').forEach((key) => badge.classList.remove(`status-${key}`));
+      badge.classList.add(`status-${status}`);
+      const dot = document.createElement('span');
+      dot.setAttribute('aria-hidden', 'true');
+      badge.replaceChildren(dot, document.createTextNode(projectLabels[status]));
+    }
+  });
+  const projectById = new Map(projectItems.map((item) => [item.dataset.project, item]));
+  const ongoingProjectCount = Array.from(projectById.values()).filter((item) => item.dataset.status === 'ongoing').length;
+  document.querySelectorAll('[data-active-project-count]').forEach((element) => {
+    element.textContent = String(ongoingProjectCount);
+  });
+  document.querySelectorAll('[data-current-projects]').forEach((list) => {
+    const items = Array.from(list.querySelectorAll('[data-current-project-item]'));
+    const ongoing = items.filter((item) => item.dataset.status === 'ongoing');
+    const candidates = ongoing.length ? ongoing : [
+      ...items.filter((item) => item.dataset.status === 'upcoming'),
+      ...items.filter((item) => item.dataset.status === 'completed')
+    ];
+    const selected = new Set(candidates.slice(0, 3));
+    items.forEach((item) => { item.hidden = !selected.has(item); });
+  });
 
-  // Mobile menu toggle (Tailwind design has simpler nav, no complex menu toggle needed)
-  // This code is kept for compatibility with custom navigation if needed
+  // The menu supports keyboard use, Escape, outside clicks and viewport changes.
   const toggle = document.querySelector('.menu-toggle');
   const nav = document.querySelector('.site-nav');
-  const links = nav ? document.querySelectorAll('.site-nav a') : [];
+  const mobile = window.matchMedia('(max-width: 900px)');
   if (toggle && nav) {
-    nav.id = nav.id || 'primary-nav';
-    const syncNavA11y = () => {
-      if (mobileNavQuery.matches) {
-        nav.setAttribute('aria-hidden', nav.classList.contains('open') ? 'false' : 'true');
-      } else {
-        nav.setAttribute('aria-hidden', 'false');
-      }
-    };
-
-    syncNavA11y();
-
-    const onKeydown = (e) => {
-      if (e.key === 'Escape') closeMenu();
-      if (e.key === 'Tab' && nav.classList.contains('open')) handleTabTrap(e);
-    };
-
-    const onDocClick = (e) => {
-      if (!nav.contains(e.target) && e.target !== toggle && nav.classList.contains('open')) closeMenu();
-    };
-
-    function openMenu() {
-      nav.classList.add('open');
-      toggle.classList.add('open');
-      toggle.setAttribute('aria-expanded', 'true');
-      nav.setAttribute('aria-hidden', 'false');
-      const first = nav.querySelector('a,button,[tabindex]:not([tabindex="-1"])');
-      if (first) first.focus();
-      document.addEventListener('keydown', onKeydown);
-      document.addEventListener('click', onDocClick);
-      announce('Navigation menu opened.');
+    toggle.hidden = false;
+    function setMenu(open, returnFocus = false) {
+      const isOpen = open && mobile.matches;
+      nav.classList.toggle('open', isOpen);
+      toggle.setAttribute('aria-expanded', String(isOpen));
+      toggle.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
+      nav.inert = mobile.matches && !isOpen;
+      if (returnFocus && mobile.matches) toggle.focus();
     }
-
-    function closeMenu() {
-      nav.classList.remove('open');
-      toggle.classList.remove('open');
-      toggle.setAttribute('aria-expanded', 'false');
-      syncNavA11y();
-      toggle.focus();
-      document.removeEventListener('keydown', onKeydown);
-      document.removeEventListener('click', onDocClick);
-      announce('Navigation menu closed.');
-    }
-
-    function handleTabTrap(e) {
-      const focusable = Array.from(nav.querySelectorAll('a,button,[tabindex]:not([tabindex="-1"])')).filter(n => !n.hasAttribute('disabled'));
-      if (!focusable.length) return;
-      const first = focusable[0];
-      const last = focusable[focusable.length - 1];
-      if (e.shiftKey && document.activeElement === first) {
-        e.preventDefault();
-        last.focus();
-      } else if (!e.shiftKey && document.activeElement === last) {
-        e.preventDefault();
-        first.focus();
-      }
-    }
-
-    toggle.addEventListener('click', () => {
-      if (nav.classList.contains('open')) closeMenu();
-      else openMenu();
+    toggle.addEventListener('click', () => setMenu(toggle.getAttribute('aria-expanded') !== 'true'));
+    nav.addEventListener('click', (event) => {
+      if (event.target.closest('a')) setMenu(false);
     });
-    // Close menu on link click (mobile)
-    links.forEach((a) => a.addEventListener('click', () => { if (nav.classList.contains('open')) closeMenu(); }));
-
-    if (typeof mobileNavQuery.addEventListener === 'function') {
-      mobileNavQuery.addEventListener('change', syncNavA11y);
-    } else if (typeof mobileNavQuery.addListener === 'function') {
-      mobileNavQuery.addListener(syncNavA11y);
-    }
-  }
-
-  // Smooth scroll
-  const prefersReduced = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (!prefersReduced) {
-    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
-      anchor.addEventListener('click', function (e) {
-        const id = this.getAttribute('href');
-        if (id.length > 1) {
-          const target = document.querySelector(id);
-          if (target) {
-            e.preventDefault();
-            target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-          }
-        }
-      });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && nav.classList.contains('open')) setMenu(false, true);
     });
-  }
-
-  // Reveal on scroll
-  const els = document.querySelectorAll('.reveal');
-  if ('IntersectionObserver' in window && els.length) {
-    const io = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('revealed');
-          io.unobserve(entry.target);
-        }
-      });
-    }, { rootMargin: '0px 0px -10% 0px', threshold: 0.1 });
-    els.forEach((el) => io.observe(el));
-  } else {
-    els.forEach((el) => el.classList.add('revealed'));
-  }
-
-  // Scroll spy - updated to work with new Tailwind nav structure
-  const sections = document.querySelectorAll('section[id]');
-  // Try to find nav links in new structure first, fallback to old structure
-  let navLinks = Array.from(document.querySelectorAll('nav a[href^="#"]'));
-  if (navLinks.length === 0) {
-    navLinks = Array.from(document.querySelectorAll('.site-nav a[href^="#"]'));
-  }
-  if ('IntersectionObserver' in window && sections.length && navLinks.length) {
-    const activeClass = 'active';
-    const byId = new Map(navLinks.map((a) => [a.getAttribute('href').replace('#', ''), a]));
-    const spy = new IntersectionObserver((entries) => {
-      entries.forEach((entry) => {
-        const id = entry.target.id;
-        const link = byId.get(id);
-        if (!link) return;
-        if (entry.isIntersecting) {
-          navLinks.forEach((a) => a.classList.remove(activeClass));
-          link.classList.add(activeClass);
-        }
-      });
-    }, { rootMargin: '-30% 0px -60% 0px', threshold: 0.1 });
-    sections.forEach((s) => spy.observe(s));
-  }
-
-  // Back to top button - only if element exists
-  const toTop = document.querySelector('.to-top');
-  if (toTop) {
-    const onScroll = () => {
-      toTop.hidden = window.scrollY <= 320;
-    };
-    window.addEventListener('scroll', onScroll, { passive: true });
-    toTop.addEventListener('click', () => {
-      window.scrollTo({ top: 0, behavior: prefersReduced ? 'auto' : 'smooth' });
+    document.addEventListener('click', (event) => {
+      if (!nav.contains(event.target) && !toggle.contains(event.target)) setMenu(false);
     });
-    onScroll();
-  }
-
-  // Keep header visible on scroll for a stable mobile experience
-  (function headerVisible(){
-    const header = document.querySelector('.site-header') || document.querySelector('header');
-    if (!header) return;
-    header.classList.remove('transition-transform', 'duration-300');
-    // ensure header remains fixed and visible
-    header.style.transform = 'translateY(0)';
-  })();
-
-  // Security links
-  document.querySelectorAll('a[href^="http"]').forEach((a) => {
-    try {
-      const url = new URL(a.href, window.location.origin);
-      if (url.origin !== window.location.origin) {
-        if (!a.hasAttribute('rel')) a.setAttribute('rel', 'noopener noreferrer');
-        else if (!/noopener|noreferrer/.test(a.getAttribute('rel'))) a.setAttribute('rel', a.getAttribute('rel') + ' noopener noreferrer');
-        a.setAttribute('target', '_blank');
-      }
-    } catch (e) {}
-  });
-
-  function debounce(fn, delay) {
-    let timeoutId;
-    return (...args) => {
-      window.clearTimeout(timeoutId);
-      timeoutId = window.setTimeout(() => fn(...args), delay);
-    };
-  }
-
-  // Publications
-  async function renderPublications() {
-    const list = document.getElementById('pubs-list');
-    if (!list) return;
-
-    const searchInput = document.getElementById('pubs-search');
-    const sortBtn = document.getElementById('pubs-sort');
-    let pubs = [];
-    let sortDesc = true; // default: newest first
-
-    const normalize = (s) => (s || '').toString().toLowerCase();
-
-    const buildItem = (pub) => {
-      const authors = Array.isArray(pub.authors) ? pub.authors.join(', ') : pub.authors;
-      
-      // HTML del Journal destacado (en negrita/azul) dentro de la cita
-      const journalHtml = pub.journal 
-        ? `<span class="journal-name">${pub.journal}</span>` 
-        : '';
-
-      const volumeInfo = [pub.volume && `vol. ${pub.volume}`, pub.issue && `no. ${pub.issue}`].filter(Boolean).join(', ');
-      const sourcePart = [journalHtml, volumeInfo].filter(Boolean).join(', ');
-      const pagesPart = pub.pages || pub.article ? [pub.pages, pub.article && `article ${pub.article}`].filter(Boolean).join(', ') : null;
-
-      // Construcción de la línea de texto
-      const parts = [
-        `<strong>${pub.title}</strong>`, 
-        authors,
-        sourcePart,
-        pagesPart,
-        pub.year
-      ].filter(Boolean);
-
-      const htmlContent = parts.slice(0, -1).join(', ') + ', ' + parts.slice(-1);
-
-      const card = document.createElement('a');
-      card.className = 'pub-card';
-      card.href = `https://doi.org/${pub.doi}`;
-      card.target = '_blank';
-      card.rel = 'noopener noreferrer';
-      card.setAttribute('aria-label', `Open DOI for ${pub.title}`);
-      
-      // Insertamos el HTML generado
-      card.innerHTML = htmlContent;
-
-      /* * ELIMINADO: Código que añadía el 'chip' (etiqueta superior)
-       * El nombre del journal ahora solo aparece integrado en el texto.
-       */
-
-      const flashCopied = (button, originalText) => {
-        button.classList.add('is-copied');
-        button.textContent = 'Copied! ✓';
-        window.clearTimeout(button._copyResetTimer);
-        button._copyResetTimer = window.setTimeout(() => {
-          button.classList.remove('is-copied');
-          button.textContent = originalText;
-        }, 2000);
-      };
-
-      const copyValue = (button, value, originalText) => {
-        navigator.clipboard.writeText(value).then(() => {
-          flashCopied(button, originalText);
-        });
-      };
-
-      // Actions row (Botones BibTex/Citation)
-      const row = document.createElement('div');
-      row.className = 'pub-actions';
-
-      const btnDoi = document.createElement('button');
-      btnDoi.type = 'button';
-      btnDoi.textContent = 'Copy DOI';
-      btnDoi.addEventListener('click', (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        copyValue(btnDoi, pub.doi, 'Copy DOI');
-      });
-      
-      const btnBib = document.createElement('button');
-      btnBib.type = 'button';
-      btnBib.textContent = 'Copy BibTeX';
-      btnBib.addEventListener('click', (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        const bib = toBibTeX(pub);
-        copyValue(btnBib, bib, 'Copy BibTeX');
-      });
-      
-      const btnCite = document.createElement('button');
-      btnCite.type = 'button';
-      btnCite.textContent = 'Copy citation';
-      btnCite.addEventListener('click', (e) => {
-        e.preventDefault();
-        e.stopPropagation();
-        const cite = toCitation(pub);
-        copyValue(btnCite, cite, 'Copy citation');
-      });
-      
-      row.append(btnDoi, btnBib, btnCite);
-
-      const wrapper = document.createElement('div');
-      wrapper.append(card, row);
-      return wrapper;
-    };
-
-    function toBibTeX(p) {
-      const key = (p.authors?.[0] || 'key').split(/[ ,.-]/)[0].toLowerCase() + p.year;
-      const author = (p.authors || []).join(' and ');
-      const fields = [
-        ['author', author], ['title', p.title], ['journal', p.journal],
-        p.volume && ['volume', p.volume], p.issue && ['number', p.issue], p.pages && ['pages', p.pages], p.article && ['pages', p.article],
-        ['year', String(p.year)], ['doi', p.doi]
-      ].filter(Boolean);
-      return `@article{${key},\n` + fields.map(([k,v]) => `  ${k} = {${v}}`).join(',\n') + `\n}`;
-    }
-    
-    function toCitation(p) {
-      const auth = (p.authors || []).join(', ');
-      const volIss = [p.volume && `vol. ${p.volume}`, p.issue && `no. ${p.issue}`].filter(Boolean).join(', ');
-      const pg = p.pages || (p.article && `article ${p.article}`) || '';
-      return `${auth}. ${p.title}. ${p.journal}${volIss ? ', ' + volIss : ''}${pg ? ', ' + pg : ''}, ${p.year}. https://doi.org/${p.doi}`;
-    }
-
-    const render = (items) => {
-      list.innerHTML = '';
-      const groups = new Map();
-      items.forEach((p) => {
-        const y = p.year || 'Unknown';
-        if (!groups.has(y)) groups.set(y, []);
-        groups.get(y).push(p);
-      });
-      
-      const years = Array.from(groups.keys()).sort((a, b) => {
-          return sortDesc ? b - a : a - b;
-      });
-
-      years.forEach((y, idx) => {
-        const det = document.createElement('details');
-        det.open = (idx === 0 && sortDesc); 
-        const sum = document.createElement('summary');
-        sum.textContent = String(y);
-        det.appendChild(sum);
-        const ul = document.createElement('ul');
-        ul.className = 'pubs';
-        groups.get(y).forEach((p) => {
-          const li = document.createElement('li');
-          li.appendChild(buildItem(p));
-          ul.appendChild(li);
-        });
-        det.appendChild(ul);
-        list.appendChild(det);
-      });
-    };
-
-    const apply = () => {
-      const q = normalize(searchInput ? searchInput.value : '');
-      let filtered = pubs;
-      if (q) {
-        filtered = pubs.filter((p) => {
-          const hay = [p.title, (p.authors || []).join(', '), p.journal, p.doi].map(normalize).join(' ');
-          return hay.includes(q);
-        });
-      }
-      filtered.sort((a, b) => (sortDesc ? b.year - a.year : a.year - b.year));
-      render(filtered);
-    };
-
-    const applyDebounced = debounce(apply, 300);
-
-    try {
-      const res = await fetch('assets/docs/publications.json', { cache: 'no-store' });
-      if (!res.ok) return; 
-      pubs = await res.json();
-      apply();
-    } catch (e) {
-      return;
-    }
-
-    if (searchInput) {
-      searchInput.addEventListener('input', applyDebounced);
-    }
-    if (sortBtn) {
-      sortBtn.addEventListener('click', () => {
-        sortDesc = !sortDesc;
-        sortBtn.textContent = sortDesc ? 'Sort by year ↓' : 'Sort by year ↑';
-        apply();
-      });
-      sortBtn.textContent = 'Sort by year ↓';
-    }
-  }
-  renderPublications();
-
-  // Projects toggles
-  (function projectToggles(){
-    const btnOpen = document.getElementById('proj-expand');
-    const btnClose = document.getElementById('proj-collapse');
-    if (!btnOpen || !btnClose) return;
-    const all = () => Array.from(document.querySelectorAll('#projects details'));
-    btnOpen.addEventListener('click', () => all().forEach(d => d.open = true));
-    btnClose.addEventListener('click', () => all().forEach(d => d.open = false));
-  })();
-
-  // Animate details
-  document.querySelectorAll('details').forEach((det) => {
-    const content = det.querySelector('.details-content');
-    if (!content) return;
-    if (!det.open) content.style.height = '0px';
-    det.addEventListener('toggle', () => {
-      if (det.open) {
-        content.style.height = '0px';
-        void content.offsetHeight; 
-        content.style.height = content.scrollHeight + 'px';
-        const onEnd = () => { content.style.height = 'auto'; content.removeEventListener('transitionend', onEnd); };
-        content.addEventListener('transitionend', onEnd);
-      } else {
-        content.style.height = content.scrollHeight + 'px';
-        requestAnimationFrame(() => { content.style.height = '0px'; });
-      }
+    document.addEventListener('focusin', (event) => {
+      if (!nav.contains(event.target) && !toggle.contains(event.target)) setMenu(false);
     });
-  });
+    mobile.addEventListener('change', () => setMenu(false));
+    setMenu(false);
+  }
 
-  // Team Logic
-  document.querySelectorAll('.team-member').forEach((m) => {
-      const role = m.getAttribute('data-role');
-      if (!role) return;
-      let badges = m.querySelector('.badges');
-      if (!badges) {
-        badges = document.createElement('div');
-        badges.className = 'badges';
-        const h4 = m.querySelector('h4');
-        const roleEl = m.querySelector('.role') || h4;
-        roleEl.insertAdjacentElement('afterend', badges);
-      }
-      const chip = document.createElement('span');
-      chip.className = `chip role-chip role-${role}`;
-      chip.textContent = (role.toLowerCase() === 'phd') ? 'PhD' : (role.charAt(0).toUpperCase() + role.slice(1));
-      badges.appendChild(chip);
-  });
+  const normalize = (value) => value.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase().trim();
+  const directories = document.querySelectorAll('[data-directory]');
+  directories.forEach((directory) => {
+    const items = Array.from(directory.querySelectorAll('[data-item]'));
+    const sections = Array.from(directory.querySelectorAll('[data-section]'));
+    const search = directory.querySelector('[data-search]');
+    const filters = [
+      ['group', directory.querySelector('[data-group-filter]')],
+      ['year', directory.querySelector('[data-year-filter]')],
+      ['type', directory.querySelector('[data-type-filter]')],
+      ['status', directory.querySelector('[data-status-filter]')]
+    ].filter(([, control]) => control);
+    const sort = directory.querySelector('[data-sort]');
+    const noun = {team: 'people', publications: 'publications', projects: 'projects'}[directory.dataset.directory];
+    const singular = {team: 'person', publications: 'publication', projects: 'project'}[directory.dataset.directory];
+    const index = new Map(items.map((item) => [item, normalize(item.dataset.searchText || '')]));
+    const countLabel = (count) => `${count} ${count === 1 ? singular : noun}`;
 
-  const filterButtons = document.querySelectorAll('.team-controls .pill[data-filter]');
-  function applyFilter(filter) {
-    const f = filter || 'all';
-    document.querySelectorAll('#people .section-subtitle').forEach((heading) => {
-      const grid = heading.nextElementSibling;
-      if (!grid || !grid.classList.contains('team')) return;
-      const items = Array.from(grid.querySelectorAll('.team-member'));
-      let any = false;
+    function applyFilters() {
+      const words = normalize(search ? search.value : '').split(/\s+/).filter(Boolean);
+      let total = 0;
       items.forEach((item) => {
-        const role = item.getAttribute('data-role');
-        const show = (f === 'all') || (role === f);
-        item.style.display = show ? '' : 'none';
-        if (show) any = true;
+        const matchesText = words.every((word) => index.get(item).includes(word));
+        const matchesFilters = filters.every(([key, control]) => control.value === 'all' || item.dataset[key] === control.value);
+        item.hidden = !matchesText || !matchesFilters;
+        if (!item.hidden) total += 1;
       });
-      const visible = any || f === 'all';
-      heading.style.display = visible ? '' : 'none';
-      grid.style.display = visible ? '' : 'none';
+      sections.forEach((section) => {
+        const count = Array.from(section.querySelectorAll('[data-item]')).filter((item) => !item.hidden).length;
+        section.hidden = count === 0;
+        const label = section.querySelector('[data-section-count]');
+        if (label) label.textContent = countLabel(count);
+      });
+      const results = directory.querySelector('[data-results]');
+      if (results) results.textContent = `${countLabel(total)}${total !== items.length ? ` of ${items.length}` : ''}`;
+      const empty = directory.querySelector('[data-empty]');
+      if (empty) empty.hidden = total !== 0;
+      if (sort) {
+        const direction = sort.value === 'oldest' ? 1 : -1;
+        const list = directory.querySelector('[data-list]');
+        [...sections].sort((a, b) => direction * (Number(a.dataset.year) - Number(b.dataset.year))).forEach((section) => list.appendChild(section));
+      }
+    }
+
+    if (search) search.addEventListener('input', applyFilters);
+    filters.forEach(([, control]) => control.addEventListener('change', applyFilters));
+    if (sort) sort.addEventListener('change', applyFilters);
+    directory.querySelectorAll('[data-reset]').forEach((button) => {
+      button.addEventListener('click', () => {
+        if (search) search.value = '';
+        filters.forEach(([, control]) => { control.value = 'all'; });
+        if (sort) sort.value = 'newest';
+        applyFilters();
+        if (search) search.focus();
+      });
     });
-  }
-  
-  filterButtons.forEach((btn) => {
-    btn.addEventListener('click', () => {
-      const val = btn.getAttribute('data-filter');
-      filterButtons.forEach((b) => { b.classList.remove('active'); });
-      btn.classList.add('active');
-      applyFilter(val);
+    directory.querySelectorAll('[data-enhancement]').forEach((element) => { element.hidden = false; });
+    applyFilters();
+  });
+
+  // Rotate every ten seconds while the highlights are visible and unattended.
+  // Every record remains readable without JavaScript.
+  document.querySelectorAll('[data-featured]').forEach((featured) => {
+    const items = Array.from(featured.querySelectorAll('[data-featured-item]'));
+    const previous = featured.querySelector('[data-featured-prev]');
+    const next = featured.querySelector('[data-featured-next]');
+    const status = featured.querySelector('[data-featured-status]');
+    const controls = featured.querySelector('[data-featured-controls]');
+    const rotation = featured.querySelector('[data-featured-toggle]');
+    const progress = featured.querySelector('[data-featured-progress]');
+    const progressFill = featured.querySelector('[data-featured-progress-fill]');
+    if (items.length < 2 || !previous || !next) return;
+    const rotationInterval = 10000;
+    const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    let selected = 0;
+    let timer = null;
+    let progressFrame = null;
+    let progressStarted = null;
+    let progressValue = 0;
+    let userPaused = false;
+    let reducedMotionOverride = false;
+    let hovered = false;
+    let focused = featured.contains(document.activeElement);
+    const bounds = featured.getBoundingClientRect();
+    let inView = bounds.bottom > 0 && bounds.top < window.innerHeight;
+
+    function rotationPaused() {
+      return userPaused || (motion.matches && !reducedMotionOverride);
+    }
+    function canRotate() {
+      return !rotationPaused() && !hovered && !focused && !document.hidden && inView;
+    }
+    function paintProgress(value) {
+      progressValue = Math.min(1, Math.max(0, value));
+      if (progressFill) progressFill.style.transform = `scaleX(${progressValue})`;
+      if (progress) {
+        progress.setAttribute('aria-valuenow', String(Math.round(progressValue * 100)));
+        const seconds = Math.ceil((1 - progressValue) * rotationInterval / 1000);
+        const text = canRotate() ? `${seconds} ${seconds === 1 ? 'second' : 'seconds'} until the next highlight` : 'Automatic rotation paused';
+        if (progress.getAttribute('aria-valuetext') !== text) progress.setAttribute('aria-valuetext', text);
+      }
+    }
+    function stopProgress() {
+      window.cancelAnimationFrame(progressFrame);
+      progressFrame = null;
+      if (progressStarted !== null) paintProgress((performance.now() - progressStarted) / rotationInterval);
+      progressStarted = null;
+    }
+    function advanceProgress() {
+      if (progressStarted === null) return;
+      paintProgress((performance.now() - progressStarted) / rotationInterval);
+      progressFrame = canRotate() && progressValue < 1 ? window.requestAnimationFrame(advanceProgress) : null;
+    }
+    function show(index, announceChange = false) {
+      stopProgress();
+      paintProgress(0);
+      selected = (index + items.length) % items.length;
+      items.forEach((item, itemIndex) => { item.hidden = itemIndex !== selected; });
+      const heading = items[selected].querySelector('h3');
+      const title = items[selected].dataset.featuredTitle || (heading ? heading.textContent.trim() : 'Featured research');
+      // Announce manual navigation, without interrupting reading during rotation.
+      if (status && announceChange) status.textContent = `${selected + 1} of ${items.length} · ${title}`;
+    }
+    function scheduleRotation() {
+      window.clearTimeout(timer);
+      timer = null;
+      stopProgress();
+      if (rotation) {
+        const paused = rotationPaused();
+        rotation.textContent = paused ? 'Resume' : 'Pause';
+        rotation.setAttribute('aria-label', `${paused ? 'Resume' : 'Pause'} automatic research highlights`);
+      }
+      if (canRotate()) {
+        progressStarted = performance.now();
+        paintProgress(0);
+        if (progressFill) progressFrame = window.requestAnimationFrame(advanceProgress);
+        timer = window.setTimeout(() => {
+          timer = null;
+          if (!canRotate()) return;
+          show(selected + 1);
+          scheduleRotation();
+        }, rotationInterval);
+      } else {
+        paintProgress(progressValue);
+      }
+    }
+    function navigate(offset) {
+      show(selected + offset, true);
+      scheduleRotation();
+    }
+    previous.addEventListener('click', () => navigate(-1));
+    next.addEventListener('click', () => navigate(1));
+    [previous, next].forEach((button) => {
+      button.hidden = false;
+      button.addEventListener('keydown', (event) => {
+        if (event.key === 'ArrowLeft' || event.key === 'ArrowRight') {
+          event.preventDefault();
+          navigate(event.key === 'ArrowLeft' ? -1 : 1);
+        }
+      });
+    });
+    if (rotation) {
+      rotation.addEventListener('click', () => {
+        if (rotationPaused()) {
+          userPaused = false;
+          reducedMotionOverride = motion.matches;
+        } else {
+          userPaused = true;
+        }
+        scheduleRotation();
+      });
+    }
+    featured.addEventListener('pointerenter', (event) => {
+      if (event.pointerType === 'touch') return;
+      hovered = true;
+      scheduleRotation();
+    });
+    featured.addEventListener('pointerleave', () => {
+      hovered = false;
+      scheduleRotation();
+    });
+    featured.addEventListener('focusin', () => {
+      focused = true;
+      scheduleRotation();
+    });
+    featured.addEventListener('focusout', (event) => {
+      focused = featured.contains(event.relatedTarget);
+      scheduleRotation();
+    });
+    document.addEventListener('visibilitychange', scheduleRotation);
+    motion.addEventListener('change', () => {
+      reducedMotionOverride = false;
+      scheduleRotation();
+    });
+    if (typeof window.IntersectionObserver === 'function') {
+      const observer = new IntersectionObserver(([entry]) => {
+        if (inView === entry.isIntersecting) return;
+        inView = entry.isIntersecting;
+        scheduleRotation();
+      });
+      observer.observe(featured);
+    } else {
+      // Older browsers still get timed rotation and the interaction controls.
+      inView = true;
+    }
+    if (controls) controls.hidden = false;
+    if (progress) progress.hidden = false;
+    show(0);
+    scheduleRotation();
+  });
+
+  // Citation text stays selectable even if clipboard access is unavailable.
+  document.querySelectorAll('[data-copy]').forEach((button) => {
+    button.hidden = false;
+    button.addEventListener('click', async () => {
+      const panel = button.closest('.citation-panel');
+      const source = panel.querySelector(`[data-${button.dataset.copy}]`);
+      try {
+        if (!navigator.clipboard || !navigator.clipboard.writeText) throw new Error('Clipboard unavailable');
+        await navigator.clipboard.writeText(source.textContent);
+        const original = button.dataset.originalLabel || button.textContent;
+        button.dataset.originalLabel = original;
+        button.textContent = 'Copied';
+        button.classList.add('is-copied');
+        announce(`${button.dataset.copy === 'bibtex' ? 'BibTeX' : 'Citation'} copied to clipboard.`);
+        window.clearTimeout(button._resetTimer);
+        button._resetTimer = window.setTimeout(() => {
+          button.textContent = original;
+          button.classList.remove('is-copied');
+        }, 2000);
+      } catch {
+        const selection = window.getSelection();
+        const range = document.createRange();
+        range.selectNodeContents(source);
+        selection.removeAllRanges();
+        selection.addRange(range);
+        announce('Clipboard access is unavailable. The citation is selected; use your device’s copy command.');
+      }
     });
   });
-  
-  const initialActive = document.querySelector('.team-controls .pill[data-filter].active');
-  applyFilter(initialActive ? initialActive.getAttribute('data-filter') : 'all');
 
+  // Landing-page content gently enters once, without a continuous scroll handler.
+  // CSS is visible by default; only supported, motion-enabled browsers opt in.
+  if (document.body.classList.contains('page-index') && typeof window.IntersectionObserver === 'function') {
+    const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
+    if (!motion.matches) {
+      document.querySelectorAll('[data-scroll-reveal-group]').forEach((group) => {
+        Array.from(group.children).filter((item) => !item.hidden).forEach((item, index) => {
+          item.setAttribute('data-scroll-reveal', '');
+          item.style.setProperty('--reveal-delay', `${Math.min(index, 3) * 60}ms`);
+        });
+      });
+      const targets = Array.from(document.querySelectorAll('[data-scroll-reveal]'));
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) reveal(entry.target);
+        });
+      }, {rootMargin: '0px 0px -24px 0px', threshold: 0});
+      function reveal(element, immediate = false) {
+        if (immediate) element.classList.add('reveal-immediate');
+        element.classList.remove('reveal-pending');
+        observer.unobserve(element);
+      }
+      targets.forEach((element) => {
+        // Keep the hero, visible content and restored scroll positions ready.
+        if (element.getBoundingClientRect().top >= window.innerHeight) {
+          element.classList.add('reveal-pending');
+          observer.observe(element);
+        }
+      });
+      document.addEventListener('focusin', (event) => {
+        const target = event.target.closest('[data-scroll-reveal]');
+        if (target) reveal(target, true);
+      });
+      motion.addEventListener('change', (event) => {
+        if (event.matches) {
+          targets.forEach((target) => reveal(target, true));
+          observer.disconnect();
+        }
+      });
+    }
+  }
+
+  const form = document.getElementById('contact-form');
+  if (form) {
+    const button = form.querySelector('button[type="submit"]');
+    const status = document.getElementById('form-status');
+    function showStatus(message, error = false) {
+      status.textContent = message;
+      status.classList.toggle('is-error', error);
+      status.hidden = false;
+    }
+    form.addEventListener('submit', async (event) => {
+      event.preventDefault();
+      if (button.disabled) return;
+      const data = new FormData(form);
+      if (!data.get('h-captcha-response')) {
+        showStatus('Please complete the verification before sending. If it hasn’t loaded, reload this page and try again.', true);
+        status.focus();
+        return;
+      }
+      const originalChildren = Array.from(button.childNodes, (node) => node.cloneNode(true));
+      button.disabled = true;
+      button.textContent = 'Sending…';
+      showStatus('Sending your message…');
+      const controller = new AbortController();
+      const timeout = window.setTimeout(() => controller.abort(), 20000);
+      try {
+        const response = await fetch(form.action, {
+          method: 'POST',
+          headers: {'Content-Type': 'application/json', 'Accept': 'application/json'},
+          body: JSON.stringify(Object.fromEntries(data)),
+          signal: controller.signal
+        });
+        const result = await response.json();
+        if (!response.ok || result.success !== true) throw new Error('Delivery failed');
+        form.reset();
+        showStatus('Thank you. Your message has been sent to the HWSec-CSIC team.');
+        status.focus();
+      } catch {
+        showStatus('Your message could not be sent. Please try again, or call us at ' + document.querySelector('.footer-phone').textContent + '. Your message is still in the form.', true);
+        status.focus();
+      } finally {
+        window.clearTimeout(timeout);
+        if (window.hcaptcha && typeof window.hcaptcha.reset === 'function') window.hcaptcha.reset();
+        button.disabled = false;
+        button.replaceChildren(...originalChildren);
+      }
+    });
+  }
 })();

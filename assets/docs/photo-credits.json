@@ -1,0 +1,48 @@
+{
+  "datasets": [
+    {
+      "id": "spirs",
+      "label": "SPIRS",
+      "photographer": "Juan Carlos Ortiz",
+      "affiliation": "CSIC Andalucía",
+      "url": "",
+      "paths": [
+        "assets/images/lab/packaged-chip.webp",
+        "assets/images/lab/spirs-evaluation.webp",
+        "assets/images/lab/wire-bonded-die.webp",
+        "assets/images/lab/spirs-measurement.webp"
+      ]
+    },
+    {
+      "id": "photonics",
+      "label": "Photonics",
+      "photographer": "Sofía Villar",
+      "affiliation": "IMSE-CNM",
+      "url": "",
+      "paths": [
+        "assets/images/lab/fibre-alignment.webp",
+        "assets/images/lab/optical-bench.webp"
+      ]
+    },
+    {
+      "id": "group",
+      "label": "Group photograph",
+      "photographer": "",
+      "affiliation": "",
+      "url": "",
+      "paths": [
+        "assets/images/grupo.jpeg"
+      ]
+    },
+    {
+      "id": "team",
+      "label": "Team portraits",
+      "photographer": "",
+      "affiliation": "",
+      "url": "",
+      "paths": [
+        "assets/images/team"
+      ]
+    }
+  ]
+}

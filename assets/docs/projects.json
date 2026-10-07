@@ -1,0 +1,300 @@
+{
+  "groups": [
+    {
+      "id": "european-projects",
+      "label": "European Projects"
+    },
+    {
+      "id": "national-projects",
+      "label": "National Projects"
+    },
+    {
+      "id": "agency-projects",
+      "label": "Agency Projects"
+    }
+  ],
+  "projects": [
+    {
+      "id": "q-fence",
+      "name": "Q-FENCE",
+      "title": "Securing Tomorrow’s Digital Infrastructure with Quantum-Resistant Cryptography",
+      "group": "european-projects",
+      "abstract": "A hybrid security framework combining classical, quantum and post-quantum cryptographic techniques to protect digital infrastructure.",
+      "details": [
+        {
+          "label": "PI",
+          "value": "Piedad Brox Jiménez"
+        },
+        {
+          "label": "Participants",
+          "value": "SETU (Ireland), CSIC, Polito, Uni Luxembourg, UCC, etc."
+        },
+        {
+          "label": "Call",
+          "value": "HORIZON-CL3-2024-CS-01"
+        },
+        {
+          "label": "GA",
+          "value": "101225708"
+        },
+        {
+          "label": "IMSE Budget",
+          "value": "517.500€"
+        },
+        {
+          "label": "Total Budget",
+          "value": "5.312.198,75€"
+        }
+      ],
+      "funder": "European Commission (Horizon Europe)",
+      "programme": "Horizon Europe",
+      "startDate": "2025-11-01",
+      "endDate": "2028-10-31"
+    },
+    {
+      "id": "decide",
+      "name": "DECIDE",
+      "title": "Democratizing European Chip Innovation and Design Ecosystem",
+      "group": "european-projects",
+      "abstract": "A virtual chip design platform that broadens access to advanced semiconductor technologies for European startups, SMEs and research institutions.",
+      "details": [
+        {
+          "label": "PI",
+          "value": "Macarena C. Martínez Rodríguez"
+        },
+        {
+          "label": "Participants",
+          "value": "IMEC (BE), CEA (FR), Fraunhofer (DE), IHP (DE), Silicon Austria Labs, CSIC, etc."
+        },
+        {
+          "label": "Call",
+          "value": "DIGITAL-Chips-2024-CSA-CDP-1"
+        },
+        {
+          "label": "GA",
+          "value": "101218811"
+        },
+        {
+          "label": "IMSE Budget",
+          "value": "840.327€"
+        },
+        {
+          "label": "Total Budget",
+          "value": "24.980.603,06€"
+        }
+      ],
+      "funder": "European Commission (Chips JU)",
+      "programme": "Chips JU",
+      "startDate": "2025-01-01",
+      "endDate": "2028-12-31"
+    },
+    {
+      "id": "qubip",
+      "name": "QUBIP",
+      "title": "Quantum-oriented Update to Browsers and Infrastructures for the PQ Transition",
+      "group": "european-projects",
+      "abstract": "Methods and recommended practices for migrating browsers and infrastructure to post-quantum cryptography, with a focus on making the transition repeatable.",
+      "details": [
+        {
+          "label": "PI",
+          "value": "Piedad Brox Jiménez"
+        },
+        {
+          "label": "Participants",
+          "value": "LINKS Foundation, CSIC, Tampere Univ, Telefónica I+D, POLITO, etc."
+        },
+        {
+          "label": "Call",
+          "value": "HORIZON-CL3-2022-CS-01-03"
+        },
+        {
+          "label": "GA",
+          "value": "251944"
+        },
+        {
+          "label": "IMSE Budget",
+          "value": "303.720€"
+        },
+        {
+          "label": "Total Budget",
+          "value": "4.999.648€"
+        }
+      ],
+      "funder": "European Commission (Horizon Europe)",
+      "programme": "Horizon Europe",
+      "startDate": "2023-09-01",
+      "endDate": "2026-08-31"
+    },
+    {
+      "id": "sqprim",
+      "name": "SQPRIM",
+      "title": "Secure post-quantum cryptographic primitives",
+      "group": "european-projects",
+      "abstract": "Optical and ultrasound physically unclonable functions (PUFs) for robust device identification in the post-quantum era.",
+      "details": [
+        {
+          "label": "PI",
+          "value": "Piedad Brox Jiménez"
+        },
+        {
+          "label": "Participants",
+          "value": "IMSE-CNM, CSIC"
+        },
+        {
+          "label": "GA",
+          "value": "253397"
+        },
+        {
+          "label": "IMSE Budget",
+          "value": "167.236,25 €"
+        }
+      ],
+      "funder": "MARIE SKLODOWSKA CURIE – Horizon Europe",
+      "programme": "MSCA · Horizon Europe",
+      "startDate": "2023-07-01",
+      "endDate": "2025-08-31"
+    },
+    {
+      "id": "goit",
+      "name": "GoIT",
+      "title": "Open-source hardware: a step towards Europe’s digital Independence",
+      "group": "european-projects",
+      "abstract": "Open-source silicon and hardware platforms to support European digital independence and technological sovereignty.",
+      "details": [
+        {
+          "label": "PI",
+          "value": "Piedad Brox Jiménez"
+        },
+        {
+          "label": "Participants",
+          "value": "Elektronikas un Datorzinatnu Instituts (LV), ITEFI-CSIC, Sorbonne Université (FR), etc."
+        },
+        {
+          "label": "Call",
+          "value": "HORIZON-CL4-2021-DIGITAL-EMERGING-01"
+        },
+        {
+          "label": "GA",
+          "value": "240413"
+        },
+        {
+          "label": "IMSE Budget",
+          "value": "167.236,25 €"
+        }
+      ],
+      "funder": "European Commission (Horizon Europe)",
+      "programme": "Horizon Europe",
+      "startDate": "2022-09-01",
+      "endDate": "2025-02-28"
+    },
+    {
+      "id": "spirs",
+      "name": "SPIRS",
+      "title": "Secure Platform for ICT Systems Rooted at the Silicon Manufacturing Process",
+      "group": "european-projects",
+      "abstract": "An open hardware platform combining a dedicated root of trust and a processor core. The project explores secure boot, trusted execution and decentralised trust for IoT, 5G and Industry 4.0 systems.",
+      "details": [
+        {
+          "label": "PI",
+          "value": "Piedad Brox Jiménez"
+        },
+        {
+          "label": "Participants",
+          "value": "IMSE-CNM-CSIC, ITEFI-CSIC, POLITO, Telefónica I+D, Links Foundation, etc."
+        },
+        {
+          "label": "Call",
+          "value": "H2020-EU.2.1.1. INDUSTRIAL LEADERSHIP"
+        },
+        {
+          "label": "GA",
+          "value": "952622"
+        },
+        {
+          "label": "Total Budget",
+          "value": "5.041.091,25€"
+        }
+      ],
+      "funder": "European Commission (Horizon Europe)",
+      "programme": "Horizon 2020",
+      "startDate": "2021-10-01",
+      "endDate": "2024-09-30"
+    },
+    {
+      "id": "cryptopic",
+      "name": "CryptoPIC",
+      "title": "Advanced security in Photonic Integrated Circuits",
+      "group": "national-projects",
+      "abstract": "Physical unclonable functions and cryptographic primitives in photonic integrated circuits, with a focus on miniaturisation and standard CMOS fabrication.",
+      "details": [
+        {
+          "label": "PI",
+          "value": "David Martín Sánchez, Piedad Brox Jiménez"
+        },
+        {
+          "label": "Participants",
+          "value": "IMSE-CNM (CSIC/Univ. Sevilla) and IMB-CNM (CSIC)"
+        },
+        {
+          "label": "IMSE Budget",
+          "value": "114.850€"
+        }
+      ],
+      "funder": "Agencia Estatal de Investigación (Generación Conocimiento)",
+      "programme": "AEI · Generación de Conocimiento",
+      "startDate": "2025-11-01",
+      "endDate": "2028-10-30"
+    },
+    {
+      "id": "ares",
+      "name": "ARES",
+      "title": "Diseño, implementación y validación de raíces de confianza hardware resistentes a ataques",
+      "group": "national-projects",
+      "abstract": "Hardware roots of trust resistant to attacks, combining physically unclonable functions and cryptographic primitives for RISC-V and ARM-based IoT devices.",
+      "details": [
+        {
+          "label": "PI",
+          "value": "Piedad Brox Jiménez, Carlos J. Jiménez Fernández"
+        },
+        {
+          "label": "Participants",
+          "value": "IMSE-CNM (CSIC/Univ. Sevilla)"
+        },
+        {
+          "label": "IMSE Budget",
+          "value": "146.410€"
+        }
+      ],
+      "funder": "Agencia Estatal de Investigación (Generación Conocimiento)",
+      "programme": "AEI · Generación de Conocimiento",
+      "startDate": "2021-09-01",
+      "endDate": "2025-10-31"
+    },
+    {
+      "id": "technoquantum",
+      "name": "TECHNOQUANTUM",
+      "title": "Hardware-based Technologies to Secure Digital Systems in the Quantum World",
+      "group": "agency-projects",
+      "abstract": "Collaborative research on microelectronic and nanophotonic technologies for secure digital systems in the post-quantum world.",
+      "details": [
+        {
+          "label": "PI",
+          "value": "Piedad Brox Jiménez"
+        },
+        {
+          "label": "Participants",
+          "value": "IMSE-CNM, Univ. Tampere, CEA-LIST, Eindhoven Univ. of Technology, LINKS, POLITO"
+        },
+        {
+          "label": "IMSE Budget",
+          "value": "29.951€"
+        }
+      ],
+      "funder": "CSIC (iLINK Program)",
+      "programme": "CSIC · iLINK",
+      "startDate": "2025-01-01",
+      "endDate": "2026-12-31",
+      "datePrecision": "year"
+    }
+  ]
+}
