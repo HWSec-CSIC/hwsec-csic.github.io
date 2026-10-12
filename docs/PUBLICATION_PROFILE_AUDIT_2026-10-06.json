@@ -1255,15 +1255,22 @@
     {
       "memberId": "isabel-fernandez-poyato",
       "name": "Isabel Fernández Poyato",
-      "linkedProfiles": [],
+      "linkedProfiles": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0009-0004-8969-587X"
+        }
+      ],
       "evidence": {
         "member": "Isabel Fernández Poyato",
-        "status": "No linked ORCID/Scholar; not covered by complete scholarly profile",
+        "status": "User-supplied ORCID added on 2026-10-12 after the original audit; works not reviewed",
+        "profileAddedDate": "2026-10-12",
+        "orcidRead": "Not reviewed; this added profile was not among the 12 linked ORCID records read in the original audit.",
         "searches": [
           "Exact full name + IMSE/CSIC",
           "Exact full name + ORCID/Scholar"
         ],
-        "notes": "University of Córdoba physics/CSIC SVO workshop references found, but no verified IMSE scholarly profile. Name match is insufficient for profile ownership. Cannot claim zero papers.",
+        "notes": "University of Córdoba physics/CSIC SVO workshop references found during the original audit, but no verified IMSE scholarly profile at that time. The user supplied ORCID 0009-0004-8969-587X on 2026-10-12; its works have not been reviewed. Cannot claim zero papers.",
         "sourceURLs": [
           "https://svo.cab.inta-csic.es/?page_id=351"
         ]
@@ -1272,15 +1279,22 @@
     {
       "memberId": "cristina-gomez-de-la-rosa",
       "name": "Cristina Gómez de la Rosa",
-      "linkedProfiles": [],
+      "linkedProfiles": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0009-0003-3166-5945"
+        }
+      ],
       "evidence": {
         "member": "Cristina Gómez de la Rosa",
-        "status": "No linked ORCID/Scholar; not covered by complete scholarly profile",
+        "status": "User-supplied ORCID added on 2026-10-12 after the original audit; works not reviewed",
+        "profileAddedDate": "2026-10-12",
+        "orcidRead": "Not reviewed; this added profile was not among the 12 linked ORCID records read in the original audit.",
         "searches": [
           "Exact full name + IMSE/CSIC",
           "Exact full name + ORCID/Scholar/PUF"
         ],
-        "notes": "University of Sevilla PUF student thesis indexed with this exact author and physics affiliation; not a multi-author paper. LinkedIn has physics/microelectronics context but is not a publication inventory. No verified ORCID/Scholar; cannot claim zero papers.",
+        "notes": "University of Sevilla PUF student thesis indexed with this exact author and physics affiliation; not a multi-author paper. LinkedIn has physics/microelectronics context but is not a publication inventory. No independently verified scholarly profile was found during the original audit. The user supplied ORCID 0009-0003-3166-5945 on 2026-10-12; its works have not been reviewed. Cannot claim zero papers.",
         "sourceURLs": [
           "https://idus.us.es/server/api/core/bitstreams/1ec8c998-8ab0-4332-ab3f-67d1e471f22e/content"
         ]
@@ -3507,7 +3521,7 @@
     "ORCID person and works records successful for all five linked profiles assigned here.",
     "Several concurrent Crossref DOI requests returned429; metadata successfully returned for relevant Jorge screening works and David existing paper; primary publisher/conference records independently verify missing papers.",
     "Direct CSIC and University of León repository downloads returned anti-bot challenge HTML; no bypass attempted. Publisher and indexed primary conference PDFs provide author/year evidence.",
-    "No complete scholarly profile found during the original audit for Samuel Gutiérrez Félix, Isabel Fernández Poyato, Cristina Gómez de la Rosa; Samuel's user-supplied ORCID was restored on 2026-10-07 after that audit and its works have not been reviewed. The apparent wrong linked Scholar for Ignacio means audit cannot establish exhaustive coverage for those four."
+    "No complete scholarly profile found during the original audit for Samuel Gutiérrez Félix, Isabel Fernández Poyato, Cristina Gómez de la Rosa; Samuel's user-supplied ORCID was restored on 2026-10-07; Isabel's and Cristina's were added on 2026-10-12 after that audit. Their works have not been reviewed. The apparent wrong linked Scholar for Ignacio means audit cannot establish exhaustive coverage for those four."
   ],
   "importState": "Imported all nine confirmed missing full papers and restored ML-KEM with its exact author list under an explicit user-requested exception on 2026-10-07. Current catalogue: 27 publications, 26 satisfying the usual two-member rule and one documented exception; six featured items after the subsequent user-requested KECCAK feature addition. Five shorter outputs were not imported because no individual DOI was independently verified. The three one-member optics papers and previously user-removed 2020 paper remain excluded.",
   "updatedDate": "2026-10-07",

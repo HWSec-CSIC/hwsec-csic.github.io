@@ -43,6 +43,16 @@
       "paths": [
         "assets/images/team"
       ]
+    },
+    {
+      "id": "pa34",
+      "label": "PA34 laboratory hardware",
+      "photographer": "Sofía Villar",
+      "affiliation": "IMSE-CNM",
+      "url": "",
+      "paths": [
+        "assets/images/research/chacha20-poly1305-fpga.jpg"
+      ]
     }
   ]
 }

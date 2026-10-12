@@ -11,11 +11,11 @@
       "Side-channel protection"
     ],
     "cover": {
-      "image": "assets/images/lab/spirs-measurement.webp",
-      "alt": "Laboratory evaluation hardware connected to probes and ribbon cables",
-      "caption": "SPIRS hardware evaluation · group photograph.",
-      "width": 1440,
-      "height": 810
+      "image": "assets/images/research/chacha20-poly1305-fpga.jpg",
+      "alt": "Red CW305 FPGA target board with coaxial connections and an attached evaluation board",
+      "caption": "CW305 FPGA evaluation hardware · laboratory photograph.",
+      "width": 6000,
+      "height": 4000
     }
   },
   {

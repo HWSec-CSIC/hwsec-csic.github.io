@@ -152,7 +152,9 @@
       "name": "Juan Manuel Moreno Cenizo",
       "role": "PhD Student",
       "group": "phd-students",
-      "photo": "assets/images/team/moreno-520.jpeg",
+      "photo": "assets/images/team/juan-manuel-moreno-cenizo.jpg",
+      "photoPosition": "50% 65%",
+      "photoScale": 1.5,
       "links": [
         {
           "label": "ORCID",
@@ -230,16 +232,30 @@
       "name": "Isabel Fernández Poyato",
       "role": "Technical Researcher",
       "group": "technical-researchers",
-      "photo": "",
-      "links": []
+      "photo": "assets/images/team/isabel-fernandez-poyato.jpg",
+      "photoPosition": "50% 100%",
+      "photoScale": 2,
+      "links": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0009-0004-8969-587X"
+        }
+      ]
     },
     {
       "id": "cristina-gomez-de-la-rosa",
       "name": "Cristina Gómez de la Rosa",
-      "role": "Technical Researcher",
+      "role": "JAE Intro Fellowship",
       "group": "technical-researchers",
-      "photo": "",
-      "links": []
+      "photo": "assets/images/team/cristina-gomez-de-la-rosa.jpg",
+      "photoPosition": "50% 85%",
+      "photoScale": 1.9,
+      "links": [
+        {
+          "label": "ORCID",
+          "url": "https://orcid.org/0009-0003-3166-5945"
+        }
+      ]
     },
     {
       "id": "santiago-sanchez-solano",

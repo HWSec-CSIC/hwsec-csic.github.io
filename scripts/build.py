@@ -112,6 +112,9 @@ def validate(site: dict, team: dict, publications: list, projects: dict) -> None
         if 'photoPosition' in member:
             require(isinstance(member['photoPosition'], str) and bool(re.fullmatch(r'(?:100|\d{1,2})% (?:100|\d{1,2})%', member['photoPosition'])),
                     f'{path}.photoPosition: use two percentages, e.g. "50% 30%".')
+        if 'photoScale' in member:
+            require(type(member['photoScale']) in (int, float) and 1 <= member['photoScale'] <= 3,
+                    f'{path}.photoScale: use a number between 1 and 3.')
         for name in ('bio', 'affiliation', 'photo'):
             if name in member:
                 require(isinstance(member[name], str), f'{path}.{name}: expected a string.')
@@ -275,7 +278,10 @@ def team_sections(team: dict) -> str:
         for member in members:
             if member.get('photo'):
                 position = member.get('photoPosition', '50% 30%')
-                photo = f'<img src="{e(member["photo"])}" alt="{e(member["name"])}" loading="lazy" decoding="async" style="object-position: {e(position)}">'
+                style = f'object-position: {e(position)}'
+                if member.get('photoScale', 1) != 1:
+                    style += f'; transform: scale({e(member["photoScale"])}); transform-origin: {e(position)}'
+                photo = f'<img src="{e(member["photo"])}" alt="{e(member["name"])}" loading="lazy" decoding="async" style="{style}">'
             else:
                 initials = ''.join(part[0] for part in member['name'].removeprefix('Dr. ').split()[:2])
                 photo = f'<span class="initials" aria-hidden="true">{e(initials)}</span>'

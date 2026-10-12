@@ -154,10 +154,11 @@ class PhotoCreditTests(unittest.TestCase):
 
     def test_repository_configuration_uses_the_supplied_credits(self):
         datasets = load_photo_credits(Path(__file__).resolve().parents[1])
-        self.assertEqual([dataset['id'] for dataset in datasets], ['spirs', 'photonics', 'group', 'team'])
+        self.assertEqual([dataset['id'] for dataset in datasets], ['spirs', 'photonics', 'group', 'team', 'pa34'])
         self.assertEqual([(dataset['photographer'], dataset.get('affiliation', '')) for dataset in datasets[:2]],
                          [('Juan Carlos Ortiz', 'CSIC Andalucía'), ('Sofía Villar', 'IMSE-CNM')])
-        self.assertTrue(all(dataset['photographer'] == '' for dataset in datasets[2:]))
+        self.assertTrue(all(dataset['photographer'] == '' for dataset in datasets[2:4]))
+        self.assertEqual((datasets[4]['photographer'], datasets[4]['affiliation']), ('Sofía Villar', 'IMSE-CNM'))
         self.assertTrue(all(dataset['url'] == '' for dataset in datasets))
 
 

@@ -67,7 +67,7 @@ These three optical papers remain excluded; the user requested restoration only 
 
 ## Profile coverage and limitations
 
-The original audit read all **12 linked ORCID records** and **nine linked Scholar pages**. The linked Scholar page for Ignacio appears to belong to an economics researcher and is not accepted as verified coverage of the IMSE team member. No complete, independently verified scholarly profile was found for Samuel Gutiérrez Félix, Isabel Fernández Poyato or Cristina Gómez de la Rosa during that audit. Samuel's user-supplied ORCID was restored on **7 October 2026**, after the original audit; its works have not been reviewed. An empty ORCID inventory does not establish that an author has no papers; Juan Manuel’s existing 2026 paper illustrates that limitation.
+The original audit read all **12 linked ORCID records** and **nine linked Scholar pages**. The linked Scholar page for Ignacio appears to belong to an economics researcher and is not accepted as verified coverage of the IMSE team member. No complete, independently verified scholarly profile was found for Samuel Gutiérrez Félix, Isabel Fernández Poyato or Cristina Gómez de la Rosa during that audit. Samuel's user-supplied ORCID was restored on **7 October 2026**; Isabel's and Cristina's were added on **12 October 2026**, after the original audit. Their works have not been reviewed. An empty ORCID inventory does not establish that an author has no papers; Juan Manuel’s existing 2026 paper illustrates that limitation.
 
 | Team member | Profile coverage |
 | --- | --- |
@@ -84,8 +84,8 @@ The original audit read all **12 linked ORCID records** and **nine linked Schola
 | Ignacio Martínez Fernández | [Google Scholar](https://scholar.google.com/citations?user=Bgtv9gIAAAAJ) — apparent economics namesake; link needs verification |
 | Samuel Cimarro Almela | [ORCID](https://orcid.org/0009-0003-9985-8989) — zero public ORCID works |
 | Manuel Roales Sánchez | [ORCID](https://orcid.org/0009-0002-6900-482X) — zero public ORCID works |
-| Isabel Fernández Poyato | No verified linked scholarly profile |
-| Cristina Gómez de la Rosa | No verified linked scholarly profile |
+| Isabel Fernández Poyato | [ORCID](https://orcid.org/0009-0004-8969-587X) — user-supplied link added on 12 October 2026 after the original audit; works not reviewed |
+| Cristina Gómez de la Rosa | [ORCID](https://orcid.org/0009-0003-3166-5945) — user-supplied link added on 12 October 2026 after the original audit; works not reviewed |
 | Santiago Sánchez Solano | [ORCID](https://orcid.org/0000-0002-0700-0447); [Google Scholar](https://scholar.google.com/citations?user=lirVGPcAAAAJ&hl=en) |
 
 Self-maintained profiles may omit work or contain duplicate dates, preprints and patents. Discovery was checked by normalized DOI/title; complete publisher/conference author lists were used to count distinct roster identities. Several Jorge ORCID records repeat his name; those repetitions do not establish multiple team authors. Solo-roster papers from Francisco’s previous research group were excluded. Patents, datasets, duplicates of existing works, preprints, and unresolved undated entries are recorded separately in the structured audit.

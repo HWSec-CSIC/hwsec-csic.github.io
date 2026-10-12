@@ -89,16 +89,17 @@ Ejemplo de perfil con todos los campos disponibles. Sustituye los valores por lo
 | `group` | Obligatorio. Debe coincidir con el `id` de una categoría. |
 | `photo` | Opcional. Ruta local de una foto existente o URL HTTPS. Si se omite o queda vacío, se muestran iniciales. |
 | `photoPosition` | Opcional. Dos porcentajes para ajustar el encuadre, por ejemplo `50% 20%`. Por defecto: `50% 30%`. |
+| `photoScale` | Opcional. Número entre `1` y `3` para ampliar el retrato dentro de su marco, alrededor de `photoPosition`. Por defecto: `1`. Útil para fotos con mucho fondo. |
 | `affiliation`, `bio` | Textos opcionales. Solo se muestran si están rellenados. |
 | `tags` | Lista opcional de intereses. También se incluye en las búsquedas. |
 | `links` | Lista opcional de `{ "label": "…", "url": "https://…" }`. Permite ORCID, Scholar, web personal u otros enlaces. Omite los enlaces que no existan. |
 | `visible` | Opcional; `true` por defecto. `false` oculta el perfil sin borrarlo del archivo. |
 
-Para añadir una persona: guarda su foto, copia un perfil, asigna un `id` único y modifica sus campos. Para cambiar su categoría, cambia `group`. Los contadores y el directorio se actualizan al regenerar. Todas las categorías usan fichas con retratos compactos del mismo tamaño y proporción 4:5, incluidos estudiantes de doctorado e investigadores técnicos. Los retratos conservan su color original; usa `photoPosition` para centrar la cara. El encuadre se aplica con CSS sin modificar el archivo original.
+Para añadir una persona: guarda su foto, copia un perfil, asigna un `id` único y modifica sus campos. Para cambiar su categoría, cambia `group`. Los contadores y el directorio se actualizan al regenerar. Todas las categorías usan fichas con retratos compactos del mismo tamaño y proporción 4:5, incluidos estudiantes de doctorado e investigadores técnicos. Los retratos conservan su color original; usa `photoPosition` para centrar la cara y `photoScale` si necesitas acercarla. El encuadre se aplica con CSS sin modificar el archivo original.
 
 Los enlaces a GitHub, GitLab, LinkedIn, ORCID y Google Scholar se reconocen por su URL y se presentan con su icono. La etiqueta sigue disponible para lectores de pantalla y al pasar el puntero. Mantén `label` y `url` en los datos; los enlaces a otros sitios conservan texto visible. Este comportamiento también se aplica a los enlaces generales y al código de publicaciones y destacados.
 
-Isabel Fernández Poyato y Cristina Gómez de la Rosa están incluidas como `Technical Researcher`, con `photo: ""` y sin enlaces añadidos. Sus perfiles muestran iniciales mientras no se disponga de una foto. Para completarlos, guarda la fotografía en `assets/images/team/` y cambia únicamente `photo`; añade los enlaces y otros datos que correspondan.
+Isabel Fernández Poyato y Cristina Gómez de la Rosa incluyen sus fotografías y los ORCID `0009-0004-8969-587X` y `0009-0003-3166-5945`, respectivamente, facilitados por el usuario. Los originales se conservan y se encuadran con `photoPosition` y `photoScale`. Cristina figura como `JAE Intro Fellowship` dentro de `technical-researchers`. Para completar un perfil, guarda la fotografía en `assets/images/team/` y actualiza `photo`; añade los enlaces y otros datos que correspondan.
 
 ## Publicaciones
 
@@ -216,13 +217,13 @@ Los nueve proyectos actuales usan fechas como fuente única. Para compatibilidad
 
 ## Trabajos destacados
 
-`featured.json` selecciona publicaciones y proyectos existentes para la sección oscura de investigación destacada. En escritorio, cada trabajo combina una imagen a la izquierda y su información a la derecha; en móvil, ambos se apilan. Con JavaScript se muestra un trabajo cada vez y el carrusel avanza automáticamente **cada 10 segundos**. Las flechas permiten recorrerlo manualmente y el botón **Pause/Resume** controla la rotación. Sin JavaScript, todos los trabajos quedan visibles. Para cambiar el orden, mueve los registros.
+`featured.json` selecciona publicaciones y proyectos existentes para la sección oscura de investigación destacada. En escritorio, cada trabajo combina una imagen a la izquierda y su información a la derecha; en móvil, ambos se apilan. Con JavaScript se muestra un trabajo cada vez, se elige el inicial al azar en cada carga de la página y el carrusel avanza automáticamente **cada 5 segundos**. Las flechas permiten recorrerlo manualmente y el botón **Pause/Resume** controla la rotación. Sin JavaScript, todos los trabajos quedan visibles. Para cambiar el orden de recorrido, mueve los registros.
 
-La rotación se detiene temporalmente cuando el puntero o el foco del teclado están dentro del carrusel, la pestaña está oculta o la sección está fuera de la pantalla. Al volver, empieza un nuevo intervalo completo de 10 segundos. Una pausa elegida con **Pause** se conserva hasta pulsar **Resume**. Si el visitante prefiere movimiento reducido, la rotación empieza pausada y puede activarse expresamente con **Resume**; las flechas siguen disponibles. Los cambios automáticos no generan anuncios periódicos para lectores de pantalla; la navegación manual anuncia el título seleccionado.
+La rotación se detiene temporalmente cuando el puntero o el foco del teclado están dentro del carrusel, la pestaña está oculta o la sección está fuera de la pantalla. Al volver, empieza un nuevo intervalo completo de 5 segundos. Una pausa elegida con **Pause** se conserva hasta pulsar **Resume**. Si el visitante prefiere movimiento reducido, la rotación empieza pausada y puede activarse expresamente con **Resume**; las flechas siguen disponibles. Los cambios automáticos no generan anuncios periódicos para lectores de pantalla; la navegación manual anuncia el título seleccionado.
 
-Una barra azul bajo la cabecera muestra el progreso hacia el siguiente cambio. Se llena durante el mismo intervalo de 10 segundos, queda detenida al pausar y vuelve a empezar al reanudar o cambiar de trabajo. Su información accesible indica los segundos restantes o el estado de pausa. Sin JavaScript, la barra permanece oculta.
+Una barra azul bajo la cabecera muestra el progreso hacia el siguiente cambio. Se llena durante el mismo intervalo de 5 segundos, queda detenida al pausar y vuelve a empezar al reanudar o cambiar de trabajo. Su información accesible indica los segundos restantes o el estado de pausa. Sin JavaScript, la barra permanece oculta.
 
-La selección actual contiene seis trabajos, en este orden: ChaCha20-Poly1305 (ARES 2026), evaluación RO-PUF/TRNG (Sensors 2023), HOPE-MLKEM, KECCAK con enmascaramiento de segundo orden (SECRYPT 2026), RO-PUF en CMOS de 65 nm y CryptoPIC. La primera entrada determina el trabajo mostrado al abrir la página; el número de entradas y los controles se derivan de los registros, sin un límite fijo. Ejemplo real de RO-PUF/TRNG, que utiliza su figura científica como imagen principal:
+La selección actual contiene seis trabajos, en este orden: ChaCha20-Poly1305 (ARES 2026), evaluación RO-PUF/TRNG (Sensors 2023), HOPE-MLKEM, KECCAK con enmascaramiento de segundo orden (SECRYPT 2026), RO-PUF en CMOS de 65 nm y CryptoPIC. Con JavaScript, cualquiera de las entradas puede abrir la sección; después se sigue el orden del JSON y se vuelve al principio al llegar al final. El número de entradas y los controles se derivan de los registros, sin un límite fijo. Ejemplo real de RO-PUF/TRNG, que utiliza su figura científica como imagen principal:
 
 ```json
 {
@@ -252,11 +253,11 @@ La selección actual contiene seis trabajos, en este orden: ChaCha20-Poly1305 (A
 
 ```json
 "cover": {
-  "image": "assets/images/lab/spirs-measurement.webp",
-  "alt": "Laboratory evaluation hardware connected to probes and ribbon cables",
-  "caption": "SPIRS hardware evaluation · group photograph.",
-  "width": 1440,
-  "height": 810
+  "image": "assets/images/research/chacha20-poly1305-fpga.jpg",
+  "alt": "Red CW305 FPGA target board with coaxial connections and an attached evaluation board",
+  "caption": "CW305 FPGA evaluation hardware · laboratory photograph.",
+  "width": 6000,
+  "height": 4000
 }
 ```
 
@@ -288,7 +289,7 @@ Las figuras de RO-PUF/TRNG y HOPE-MLKEM tienen licencia CC BY 4.0 y muestran aut
 
 ## Fotografías del laboratorio
 
-La portada, las áreas y los destacados con `cover` utilizan fotografías propias seleccionadas de `inputs/Fotos_SPIRS/` e `inputs/Mesa óptica - set up/`. Las copias publicadas se guardan en `assets/images/lab/*.webp`; `assets/images/lab/SOURCES.md` relaciona cada recurso con su original y describe el contexto conocido. Los destacados con `figure` conservan sus recursos científicos originales.
+La portada, las áreas y varios destacados con `cover` utilizan fotografías propias seleccionadas de `inputs/Fotos_SPIRS/` e `inputs/Mesa óptica - set up/`. Sus copias publicadas se guardan en `assets/images/lab/*.webp`; `assets/images/lab/SOURCES.md` relaciona cada recurso con su original y describe el contexto conocido. ChaCha20-Poly1305 utiliza la foto del equipo CW305 facilitada por el usuario, conservada en `assets/images/research/chacha20-poly1305-fpga.jpg`; su procedencia está en `assets/images/research/SOURCES.md`. Los destacados con `figure` conservan sus recursos científicos originales.
 
 `scripts/prepare_photos.py` permite reproducir la reducción de tamaño y conversión a WebP. La preparación de imágenes requiere **Pillow** como dependencia opcional; el generador, el servidor y la lectura de la web siguen sin necesitarlo. Se conserva la proporción y no se aplican retoques ni alteraciones de color. El repositorio conserva en `inputs/` las seis fotografías originales seleccionadas que permiten reproducir los WebP actuales; estos originales no se referencian como recursos de las páginas.
 
@@ -306,7 +307,7 @@ El campo opcional heredado `diagram` sigue admitiendo `mlkem`, `puf` o `photonic
 
 ## Créditos fotográficos
 
-Los autores de las fotografías se editan en `assets/docs/photo-credits.json`. Su lista `datasets` contiene cuatro colecciones: `spirs`, con las cuatro imágenes del laboratorio SPIRS de Juan Carlos Ortiz (CSIC Andalucía); `photonics`, con las dos imágenes de fotónica de Sofía Villar (IMSE-CNM); `group`, para la foto del grupo; y `team`, para el directorio de retratos del equipo. Los autores de `group` y `team` siguen vacíos hasta disponer de esa información. Para cambiar el crédito de una colección, edita su campo `photographer` una sola vez y ejecuta `python3 scripts/build.py`. Puedes indicar la institución en `affiliation` y añadir un enlace HTTPS al perfil del fotógrafo en `url`.
+Los autores de las fotografías se editan en `assets/docs/photo-credits.json`. Su lista `datasets` contiene cinco colecciones: `spirs`, con las cuatro imágenes del laboratorio SPIRS de Juan Carlos Ortiz (CSIC Andalucía); `photonics`, con las dos imágenes de fotónica de Sofía Villar (IMSE-CNM); `group`, para la foto del grupo; `team`, para el directorio de retratos del equipo; y `pa34`, para la foto de Sofía Villar (IMSE-CNM) del equipo CW305 usada en ChaCha20-Poly1305. Los autores de `group` y `team` siguen vacíos hasta disponer de esa información. Para cambiar el crédito de una colección, edita su campo `photographer` una sola vez y ejecuta `python3 scripts/build.py`. Puedes indicar la institución en `affiliation` y añadir un enlace HTTPS al perfil del fotógrafo en `url`.
 
 Ejemplo de la entrada SPIRS:
 

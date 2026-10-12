@@ -1,5 +1,14 @@
 # Real research asset sources
 
+## ChaCha20-Poly1305 featured photograph
+
+- User-supplied photograph added on 12 October 2026 for the ChaCha20-Poly1305 featured work.
+- Original: `Fotos_PA34/DSC01621.JPG`, 6000 × 4000 pixels, EXIF orientation 1.
+- Published asset: `chacha20-poly1305-fpga.jpg`, copied unchanged from the original.
+- SHA-256: `f4852dbf22892c252312ac301fc0378becfc6b0f0abc5a58b755a368a58dada7`.
+- Shows a red CW305 FPGA target board, coaxial connections and an attached evaluation board on a laboratory table.
+- Photographer: Sofía Villar (IMSE-CNM), confirmed by the user on 12 October 2026; attribution is maintained in the `pa34` collection in `assets/docs/photo-credits.json`.
+
 ## HOPE-MLKEM
 - Article: Eros Camacho-Ruiz, Pablo Navarro-Torrero, Alejandro Cabrera Aldaya. A Framework for designing High-Order Side-Channel Protected Hardware Implementations of ML-KEM. IACR TCHES 2026(2), 272–295.
 - DOI: https://doi.org/10.46586/tches.v2026.i2.272-295

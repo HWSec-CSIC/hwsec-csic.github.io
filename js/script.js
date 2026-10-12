@@ -151,7 +151,7 @@
     applyFilters();
   });
 
-  // Rotate every ten seconds while the highlights are visible and unattended.
+  // Start at a random highlight and rotate every five seconds while visible and unattended.
   // Every record remains readable without JavaScript.
   document.querySelectorAll('[data-featured]').forEach((featured) => {
     const items = Array.from(featured.querySelectorAll('[data-featured-item]'));
@@ -163,7 +163,7 @@
     const progress = featured.querySelector('[data-featured-progress]');
     const progressFill = featured.querySelector('[data-featured-progress-fill]');
     if (items.length < 2 || !previous || !next) return;
-    const rotationInterval = 10000;
+    const rotationInterval = 5000;
     const motion = window.matchMedia('(prefers-reduced-motion: reduce)');
     let selected = 0;
     let timer = null;
@@ -298,7 +298,7 @@
     }
     if (controls) controls.hidden = false;
     if (progress) progress.hidden = false;
-    show(0);
+    show(Math.floor(Math.random() * items.length));
     scheduleRotation();
   });
 
