@@ -15,6 +15,43 @@
   ],
   "projects": [
     {
+      "id": "ode4ec-dig",
+      "name": "ODE4EC-DIG",
+      "title": "Open Design Environment for European Chips - Digital SoC Design",
+      "group": "european-projects",
+      "abstract": "ODE4EC-DIG aims to develop a complete, open-source Electronic Design Automation (EDA) flow for digital System-on-Chip (SoC) design, targeting advanced 65-28nm technology nodes.",
+      "details": [
+        {
+          "label": "PI",
+          "value": "Piedad Brox Jiménez"
+        },
+        {
+          "label": "Participants",
+          "value": "Polimi, CSIC, SU, ETHZ, JMU, BSC, HW, CEA, JKU, IHP, etc."
+        },
+        {
+          "label": "Call",
+          "value": "HORIZON-JU-CHIPS-2025-IA-EDA-two-stage"
+        },
+        {
+          "label": "GA",
+          "value": "101252715"
+        },
+        {
+          "label": "IMSE Budget",
+          "value": "497.725€ (EC) + 497.725€ (AEI)"
+        },
+        {
+          "label": "Total Budget",
+          "value": "8.182.400,49€"
+        }
+      ],
+      "funder": "European Commission (Horizon Europe) + Spanish State Reseach Agency (AEI - Agencia Estatal de Investigación)",
+      "programme": "HORIZON JU Innovation Actions",
+      "startDate": "2026-07-01",
+      "endDate": "2029-06-30"
+    },
+    {
       "id": "q-fence",
       "name": "Q-FENCE",
       "title": "Securing Tomorrow’s Digital Infrastructure with Quantum-Resistant Cryptography",
