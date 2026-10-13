@@ -79,9 +79,10 @@ class ProjectDateTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, "datePrecision"):
                 validate_project_dates(invalid)
 
-    def test_all_nine_projects_have_dates_and_retain_the_supplied_duration(self):
+    def test_all_projects_have_dates_and_retain_the_supplied_duration(self):
         data = json.loads((ROOT / "assets/docs/projects.json").read_text())
         expected = {
+            "ode4ec-dig": "1 Jul 2026 – 30 Jun 2029",
             "q-fence": "1 Nov 2025 – 31 Oct 2028",
             "decide": "1 Jan 2025 – 31 Dec 2028",
             "qubip": "1 Sep 2023 – 31 Aug 2026",
@@ -102,7 +103,7 @@ class ProjectDateTests(unittest.TestCase):
                 self.assertEqual(project_period(project), expected[project["id"]])
         ongoing = {project["id"] for project in data["projects"]
                    if project_status(project, date(2026, 10, 6)) == "ongoing"}
-        self.assertEqual(ongoing, {"q-fence", "decide", "cryptopic", "technoquantum"})
+        self.assertEqual(ongoing, {"ode4ec-dig", "q-fence", "decide", "cryptopic", "technoquantum"})
 
 
 if __name__ == "__main__":

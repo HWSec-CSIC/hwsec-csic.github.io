@@ -213,7 +213,7 @@ El estado se calcula con las mismas fechas al generar el HTML y al cargar la pá
 
 La portada selecciona los tres primeros proyectos en curso según el orden del JSON y recalcula esa selección al cargar. Si no queda ninguno en curso, muestra hasta tres próximos proyectos y, después, proyectos completados. El contador incluye todos los proyectos en curso, no solo los tres visibles. El directorio permite combinar búsqueda, categoría y estado; el resumen y la financiación se pueden desplegar sin JavaScript.
 
-Los nueve proyectos actuales usan fechas como fuente única. Para compatibilidad, un registro antiguo sin fechas puede usar `status: "upcoming"`, `"ongoing"` o `"completed"`; `"active"` también se reconoce como `"ongoing"`. Ese estado manual no evoluciona con el calendario: añade las dos fechas para obtener la actualización automática. Si hay fechas y un `status` heredado, prevalecen las fechas.
+Los diez proyectos actuales usan fechas como fuente única. Para compatibilidad, un registro antiguo sin fechas puede usar `status: "upcoming"`, `"ongoing"` o `"completed"`; `"active"` también se reconoce como `"ongoing"`. Ese estado manual no evoluciona con el calendario: añade las dos fechas para obtener la actualización automática. Si hay fechas y un `status` heredado, prevalecen las fechas.
 
 ## Trabajos destacados
 

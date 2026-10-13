@@ -353,7 +353,7 @@ class ContentTests(unittest.TestCase):
         self.assertIn('Full-size figure', output)
 
     def test_project_period_tracks_dates_and_accepts_explicit_override(self):
-        project = deepcopy(self.projects['projects'][0])
+        project = deepcopy(next(project for project in self.projects['projects'] if project['id'] == 'q-fence'))
         project['endDate'] = '2029-10-31'
         self.assertEqual(build.project_period(project), '1 Nov 2025 – 31 Oct 2029')
         project['endDate'] = '2025-12-31'
